@@ -141,7 +141,7 @@
   </tr>
   <tr>
                 <th>TF</th>
-                <td>17/11/2024</td>
+                <td>10/06/2025</td>
                 <td>
                     <ul>
           <li>Daniel Chávarri</li>
@@ -633,3 +633,519 @@ Necesidades Satisfechas: DebtGo les ofrece la oportunidad para comprartir sus co
 Descripción: Este segmento abarca a personas con emprendedimientos o propietarios de pequeñas empresas, y aquellos que necesitan préstamos para iniciar o expandir sus negocios. Estos individuos enfrentan situaciones financieras apremiantes y buscan soluciones rápidas y efectivas para gestionar sus negocios, sus deudas y mejorar su flujo de efectivo.
 
 Necesidades Satisfechas: DebtGo les proporciona una plataforma centralizada para gestionar y consolidar sus deudas, crear planes de pago personalizados, y evitar el pago de intereses adicionales. Además, se ofrece el servicio de consultoría personalizada con consultores financieros expertos, que tienen experiencia en el rubro y la habilidad para ayudar a estos emprendedores a realizar sus objetivos.
+
+# Capítulo II: Requirements Elicitation & Analysis 
+
+## 2.1. Competidores
+
+Comprender el panorama competitivo es crucial para el éxito de DebtGo. En esta sección, identificaremos y describiremos a nuestros principales competidores directos e indirectos que operan en el ámbito de la gestión de deudas y la educación financiera. Analizaremos sus modelos de negocio, estrategias de marketing, productos y servicios, y los canales de distribución que utilizan. Además, realizaremos un análisis comparativo detallado de sus fortalezas, debilidades, oportunidades y amenazas (SWOT) en relación con DebtGo. Este análisis nos permitirá entender mejor el entorno competitivo y ajustar nuestras estrategias para maximizar nuestra ventaja en el mercado.
+
+1. Mint (Intuit): Mint es una aplicación popular para la gestión de finanzas personales que ofrece seguimiento de gastos, presupuestos y alertas financieras. Es conocida por su interfaz intuitiva y sus capacidades de agregación de datos financieros.
+
+2. You Need a Budget (YNAB): YNAB se centra en la creación de presupuestos y la gestión de finanzas personales mediante un enfoque basado en la asignación de cada dólar a una tarea específica. Ofrece herramientas para planificar el gasto y gestionar las deudas.
+
+3. Credit Karma: Credit Karma ofrece herramientas para el seguimiento del crédito, la gestión de deudas y la comparación de productos financieros. Aunque su enfoque principal es el monitoreo del crédito, también proporciona recomendaciones para la gestión de deudas.
+
+## 2.1.1. Analisis competitivo
+
+El análisis competitivo implica examinar detenidamente a nuestros competidores para identificar sus fortalezas, debilidades, oportunidades y amenazas. Esto nos proporcionará una visión clara de nuestro posicionamiento en el mercado y nos ayudará a desarrollar estrategias efectivas.
+
+<table>
+  <tr>
+    <th colspan="7" valign="top"><b>Competitive Analysis Landscape</b></th>
+  </tr>
+  <tr>
+    <td colspan="2" rowspan="2">¿Por qué llevar a cabo este análisis?</td>
+    <td colspan="5">Escriba en el recuadro la pregunta que busca responder o el objetivo de este análisis.</td>
+  </tr>
+  <tr>
+    <td colspan="5">El análisis competitivo es fundamental para entender el entorno en el que DebtGo opera, identificar las fortalezas y debilidades de los competidores, y descubrir oportunidades y amenazas en el mercado. Este análisis ayuda a posicionar mejor nuestra startup en relación con los competidores y a definir estrategias que maximicen nuestra ventaja competitiva.</td>
+  </tr>
+  <tr>
+    <td colspan="3">Nombre y Logo</td>
+    <td colspan="1" valign="top" style="font-weight: bold;">
+        DebtGo
+        <br>
+        <div style="text-align: center; margin-top: 10px;">
+                <img src="assets/Chapter-2/debtgo-logo.png" alt="Logo DebtGo" style="width: 65;"></img>
+        </div>
+    <td colspan="1" valign="top" style="font-weight: bold;">
+    Mint
+    <div style="text-align: center;">
+                <img src="assets/Chapter-2/mint-logo.png" alt="Logo Mint" style="width: 40;"></img>
+        </div>
+    </td>
+    <td colspan="1" valign="top" style="font-weight: bold;">
+      YNAB
+      <div style="text-align: center; margin-top: 20px;">
+                <img src="assets/Chapter-2/ynab-logo.png" alt="Logo YNAB" style="width: 65;"></img>
+            </div>
+      </td>
+    <td colspan="1" valign="top" style="font-weight: bold;" >
+      Credit Karma
+      <div style="text-align: center; margin-top: 10px;">
+                <img src="assets/Chapter-2/credit-karma-logo.png" alt="Logo Credit Karma" style="width: 65;"></img>
+            </div>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="1" rowspan="2"><p>Perfil</p></td>
+    <td colspan="2">Overview</td>
+    <td colspan="1" valign="top">Aplicación para gestionar deudas y educación financiera. Ofrece herramientas para seguimiento de ingresos, gastos y presupuestos.</td>
+    <td colspan="1" valign="top">Plataforma para gestión de finanzas personales con seguimiento de gastos y presupuestos.</td>
+    <td colspan="1" valign="top">Herramienta enfocada en la creación de presupuestos y asignación de fondos.</td>
+    <td colspan="1" valign="top">Servicio de monitoreo de crédito con herramientas de gestión de deudas y recomendaciones financieras.</td>
+  </tr>
+  <tr>
+    <td colspan="2">Ventaja competitiva¿Qué valor ofrece a los clientes?</td>
+    <td colspan="1" valign="top">Personalización avanzada de presupuestos y recomendaciones financieras.</td>
+    <td colspan="1" valign="top">Amplia integración con cuentas bancarias y tarjetas.</td>
+    <td colspan="1" valign="top">Enfoque en la metodología de presupuesto y planificación.</td>
+    <td colspan="1" valign="top">Monitoreo de crédito gratuito y recomendaciones personalizadas.</td>
+  </tr>
+  <tr>
+    <td colspan="1" rowspan="2"><p>Perfil de Marketing</p></td>
+    <td colspan="2">Mercado objetivo</td>
+    <td colspan="1" valign="top">Jóvenes y adultos que desean mejorar su educación financiera y gestionar sus deudas.</td>
+    <td colspan="1" valign="top">Usuarios interesados en el seguimiento de gastos y la gestión financiera.</td>
+    <td colspan="1" valign="top">Personas que buscan un enfoque riguroso en la creación y seguimiento de presupuestos.</td>
+    <td colspan="1" valign="top">Usuarios que desean monitorear su crédito y gestionar deudas.</td>
+  </tr>
+  <tr>
+    <td colspan="2">Estrategias de marketing</td>
+    <td colspan="1" valign="top">Marketing digital dirigido a usuarios interesados en finanzas personales.</td>
+    <td colspan="1" valign="top">Publicidad a través de canales digitales y colaboraciones con influencers financieros.</td>
+    <td colspan="1" valign="top">Marketing basado en testimonios y demostraciones del enfoque de presupuesto.</td>
+    <td colspan="1" valign="top">Publicidad a través de contenido educativo sobre crédito y finanzas personales.</td>
+  </tr>
+  <tr>
+    <td colspan="1" rowspan="3"><p>Perfil de Producto</p></td>
+    <td colspan="2">Productos & Servicios</td>
+    <td colspan="1" valign="top">Aplicación móvil con suscripción para características premium y servicios de consultoría financiera personalizada.</td>
+    <td colspan="1" valign="top">Aplicación gratuita con opciones premium para características avanzadas.</td>
+    <td colspan="1" valign="top">Suscripción mensual para acceso a herramientas de presupuesto y planificación.</td>
+    <td colspan="1" valign="top">Aplicación gratuita con características premium para monitoreo avanzado y recomendaciones.</td>
+  </tr>
+  <tr>
+    <td colspan="2">Precios & Costos</td>
+    <td colspan="1" valign="top">Tarifa mensual o anual para suscripción premium, tarifas adicionales para consultoría y talleres.</td>
+    <td colspan="1" valign="top">Gratuita con opciones de pago para características adicionales.</td>
+    <td colspan="1" valign="top">Suscripción mensual o anual.</td>
+    <td colspan="1" valign="top">Gratuita con opciones de pago para características avanzadas.</td>
+  </tr>
+  <tr>
+    <td colspan="2">Canales de distribución (Web y/o Móvil)</td>
+    <td colspan="1" valign="top">Web y móvil (iOS y Android).</td>
+    <td colspan="1" valign="top">Web y móvil (iOS y Android).</td>
+    <td colspan="1" valign="top">Web y móvil (iOS y Android).</td>
+    <td colspan="1" valign="top">Web y móvil (iOS y Android).</td>
+  </tr>
+  <tr>
+    <td colspan="1" rowspan="5"><p>Análisis SWOT</p></td>
+    <td colspan="6">Realice esto para su startup y sus competidores. Sus fortalezas deberían apoyar sus oportunidades y contribuir a lo que ustedes definen como su posible ventaja competitiva.</td>
+  </tr>
+  <tr>
+    <td colspan="2">Fortalezas</td>
+    <td colspan="1" valign="top">Innovación en personalización y enfoque en educación financiera.</td>
+    <td colspan="1" valign="top">Amplia integración con bancos y tarjetas.</td>
+    <td colspan="1" valign="top">Método comprobado de asignación de presupuesto.</td>
+    <td colspan="1" valign="top">Monitoreo de crédito gratuito y recomendaciones personalizadas.</td>
+  </tr>
+  <tr>
+    <td colspan="2">Debilidades</td>
+    <td colspan="1" valign="top">Falta de reconocimiento de marca en comparación con competidores establecidos.</td>
+    <td colspan="1" valign="top">Dependencia de ingresos por publicidad y promociones.</td>
+    <td colspan="1" valign="top">Curva de aprendizaje en la metodología de presupuesto.</td>
+    <td colspan="1" valign="top">Limitación en la profundidad del análisis de finanzas más allá del crédito.</td>
+  </tr>
+  <tr>
+    <td colspan="2">Oportunidades</td>
+    <td colspan="1" valign="top">Creciente interés en la educación financiera y gestión de deudas.</td>
+    <td colspan="1" valign="top">Expansión en mercados internacionales.</td>
+    <td colspan="1" valign="top">Integración de características adicionales basadas en IA.</td>
+    <td colspan="1" valign="top">Expansión en servicios de planificación financiera.</td>
+  </tr>
+  <tr>
+    <td colspan="2">Amenazas</td>
+    <td colspan="1" valign="top">Competencia creciente y posibles cambios en regulaciones financieras.</td>
+    <td colspan="1" valign="top">Competencia de aplicaciones de finanzas personales más integrales.</td>
+    <td colspan="1" valign="top">Competencia de plataformas con características similares.</td>
+    <td colspan="1" valign="top">Cambios en regulaciones de crédito y competencia de herramientas de gestión financiera.</td>
+  </tr>
+</table>
+
+## 2.1.2. Estrategias y tácticas frente a competidores
+
+Desarrollar estrategias y tácticas sólidas para enfrentar a nuestros competidores es fundamental para alcanzar una ventaja competitiva sostenible. En esta sección, exploraremos cómo podemos diferenciarnos y destacarnos en el mercado.
+
+<strong>Estrategias y Tácticas Preliminares de DebtGo:</strong>
+
+#1 Diferenciación a través de Persoanlización Avanzada:
+- **Estrategia:** Posicionar a DebtGo como la opción más avanzada en personalización de presupuestos y recomendaciones financieras.
+- **Táctica:** Desarrollar y promocionar funcionalidades de inteligencia artificial que ofrezcan recomendaciones financieras ultra-personalizadas. Realizar campañas de marketing que destaquen esta capacidad única y cómo se traduce en mejores resultados financieros para los usuarios.
+
+#2 Enfoque en Educación Financiera:
+- **Estrategia:** Aprovechar el interés creciente en la educación financiera para atraer usuarios que buscan mejorar su bienestar financiero a través de conocimientos prácticos y personalizados.
+- **Táctica:** Ofrecer contenido educativo exclusivo y talleres interactivos como parte del paquete premium. Publicar estudios de caso y testimonios de usuarios que han logrado mejorar sus finanzas utilizando DebtGo.
+
+#3 Optimización de la Experiencia de Usuario (UX):
+- **Estrategia:** Garantizar que la experiencia de usuario sea superior y sin distracciones, en comparación con competidores que dependen de modelos basados en publicidad.
+- **Táctica:** Implementar una interfaz de usuario intuitiva y realizar pruebas continuas para optimizar la navegación y la usabilidad. Recolectar y analizar feedback de usuarios para realizar mejoras continuas.
+
+#4 Innovación Tecnológica:
+- **Estrategia:** Utilizar la tecnología de vanguardia para mantener una ventaja competitiva y diferenciarse en el mercado.
+- **Táctica:** Invertir en el desarrollo de tecnologías emergentes, como el aprendizaje automático y la inteligencia artificial, para ofrecer características innovadoras que los competidores aún no tienen. Lanzar nuevas funcionalidades en fases para mantener el interés y la retención de los usuarios.
+ 
+#5 Vigilancia y Adaptación Continua:
+- **Estrategia:** Monitorear continuamente el panorama competitivo para adaptar las estrategias y tácticas en función de las tendencias y cambios del mercado.
+- **Tácticas:** Establecer un equipo dedicado a la investigación competitiva y al análisis del mercado. Ajustar las estrategias de marketing y producto basadas en la evolución de las ofertas de los competidores y las expectativas de los usuarios.
+
+Estas estrategias y tácticas nos ayudarán a posicionar a DebtGo de manera efectiva en el mercado, aprovechando sus fortalezas y oportunidades mientras se enfrentan a las debilidades y amenazas que presentan los competidores.
+
+## 2.2. Entrevistas
+### 2.2.1. Diseño de entrevistas
+
+**Segmento Objetivo: Consultores financieros:**
+
+1. ¿Cuál es su nombre completo?
+2. ¿Cuál es su edad?
+3. ¿En qué distrito reside actualmente?
+4. ¿Cuál es su ocupación/profesión y cuántos años de experiencia tiene en el campo de la economía o la consultoría financiera?
+5. ¿Está familiarizado con el término "educación financiera"? ¿Cómo lo definiría en su propio contexto profesional?
+6. ¿Qué dispositivos tecnológicos utiliza con mayor frecuencia en su trabajo diario? ¿Cuál considera más esencial para su actividad profesional?
+7. ¿Qué redes sociales utiliza para mantenerse actualizado en temas financieros o económicos? ¿Cómo las utiliza en su práctica profesional?
+8. ¿Ha visto algún tipo de anuncio o promoción relacionada con aplicaciones de gestión financiera en su dispositivo? ¿Cuál fue su impresión?
+9. ¿En su rol actual, gestiona o asesora sobre responsabilidades económicas de empresas o individuos? ¿Podría darme un ejemplo?
+10. ¿Conoce INFOCORP u otras bases de datos de informes crediticios? ¿Qué importancia les da en su práctica profesional?
+11. ¿Qué desafíos ve en la gestión de finanzas personales de sus clientes o en su propia vida financiera?
+12. ¿Ha utilizado o recomendado alguna aplicación para la gestión de finanzas personales o empresariales? ¿Qué características le parecen más útiles?
+13. En su opinión, ¿cuál es la necesidad más importante en la educación financiera de las personas actuales? ¿Cómo cree que una app como DebtGo podría abordar esta necesidad?
+14. ¿Considera que una aplicación de gestión financiera personalizada puede tener un impacto significativo en la mejora de las finanzas personales de los usuarios? ¿Por qué sí o por qué no?
+
+**Segmento Objetivo: Gestores de Deudas y Emprendedores**
+
+1. ¿Cuál es su nombre completo?
+2. ¿Cuál es su edad?
+3. ¿En qué distrito reside actualmente?
+4. ¿Qué tipo de empresa estás interesado en iniciar?
+5. ¿Cuál es tu nivel de conocimiento de finanzas? 
+6. ¿Has trabajado con consultores financieros anteriormente? ¿Crees que deberían tener experiencia en tu rubro para poder asesorarte?
+7. ¿Tienes alguna experiencia en la obtención de préstamos?
+8. ¿Está familiarizado con términos financieros como crédito, interés, liquidez, etc.? 
+9. ¿Qué pasos en el proceso de la obtención de préstamos resultan más confusos?
+10. ¿Qué te preocupa más al momento de solicitar préstamos para tu negocio? (ie.  interés, condiciones, etc)
+11. ¿A qué plataformas consideras acudir para adquirir préstamos? ¿Por qué?
+12. ¿Qué criterios utilizas para identificar si una publicidad de préstamos es real, o si es un intento de estafa?
+13. ¿Utilizas aplicaciones de banca móvil? ¿Cómo te sientes acerca del nivel de seguridad ofrecido por estas aplicaciones?
+14. ¿A qué nivel estarías dispuesto a compartir tus datos financieros en una aplicación de consultas financieras?
+15. ¿Qué condiciones o garantías lo harían sentir más seguro al momento de compartir información financiera?
+
+### 2.2.2. Registro de entrevistas
+
+**Segmento Objetivo: Consultores financieros:**
+
+**Entrevista #1**
+
+- Nombre: 
+- Edad: 
+- Distrito:
+- Duración: 
+
+![image](assets/Chapter-2/Entrevista1_seg1.png)
+
+[Entrevista 1 - video]()
+
+Resumen:
+
+
+
+**Entrevista #2**
+- Nombre: 
+- Edad:  
+- Distrito: 
+- Duración: 
+
+![image](assets/Chapter-2/rafa2.png)
+
+[Entrevista 2 - video]()
+
+Resumen: 
+
+
+**Entrevista #3**
+- Nombre: 
+-
+- Distrito: 
+- Duración:
+
+![image](assets/Chapter-2/entrevista-3.png)
+
+[Entrevista 3 - video]()
+
+Resumen: 
+
+
+
+**Segmento Objetivo: Gestores de Deudas y Emprendedores**
+
+**Entrevista #1**
+
+- Nombre: Emilio Chávarri
+- Edad: 54 años
+- Distrito: San Juan de Lurigancho 
+- Duración: 4:38 minutos
+
+![image](assets/Chapter-2/Entrevista1.JPG)
+
+[Entrevista 1 - video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202211108_upc_edu_pe/EYsHot_bR4FLtZs1tok9abIBf1ZfOJsBVIy0KEwKFc6AEA?e=bER0c8&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifSwicGxheWJhY2tPcHRpb25zIjp7InN0YXJ0VGltZUluU2Vjb25kcyI6Mi40OH19): https://shorturl.at/M76Qv
+
+Resumen:
+
+Emilio Chávarri, de 54 años, es una persona que quiere emprender en el rubro de comunicaciones, tiene experiencia en la obtención de préstamos a entidades bancarias pero presenta dificultades en cuanto a firma de documentos de préstamos, ya que hay muchos términos que se tiene que leer y entender. Lo que más le preocupa de solicitar préstamos es el interés que va a pagar por el mismo. El criterio que utiliza para identificar si una publicidad de préstamo es real, primeramente ve qué empresa es la que está publicitando, y luego por medio del internet va al mercado de valores para ver la condición financiera de la empresa. También utiliza ciertas aplicaciones de banca móvil y a su vez, siente que es muy segura y que conforme pasa el tiempo los bancos van mejorando en cuestión de seguridad. Finalmente, las condiciones con las que se sentiría seguro al momento de compartir información financiera es la seguridad de la misma aplicación, ver cuántas restricciones tiene para acceder a su información, conocer más a la empresa, su ubicación, el software que está utilizando, que tan fácil es usarlo.
+
+**Entrevista #2** 
+- Nombre: 
+- Edad: 
+- Distrito: 
+- Duración: 
+
+![image](assets/Chapter-2/entrevista2.png)
+
+[Entrevista 2 - video]()
+
+Resumen:
+
+
+
+**Entrevista #3**
+- Nombre: 
+- Edad:  
+- Distrito: 
+- Duración:  
+
+![image](assets/Chapter-2/seg2Entri.png)
+
+[Entrevista 3 - video]()
+
+Resumen: 
+
+### 2.2.3. Análisis de entrevistas
+
+**Segmento Objetivo: Consultores financieros:**
+
+*Perfil Profesional y Uso de Herramientas:*
+
+
+
+*Educación Financiera y Retos:*
+
+
+
+*Percepción de Aplicaciones Financieras:*
+
+
+
+*Uso de Infocorp y Control Crediticio:*
+
+
+
+*Tecnología y Redes Sociales:*
+
+
+
+*Potencial de DebtGo:*
+
+
+
+**Segmento Objetivo: Gestores de Deudas y Emprendedores**
+
+1. Conocimiento y Experiencia Financiera
+
+Todos los entrevistados reconocen la importancia de tener asesores financieros con experiencia, y aunque algunos tienen un nivel básico de conocimiento, también muestran inseguridad y confusión, especialmente en temas como intereses y condiciones de préstamos.
+
+2. Preocupaciones al Solicitar Préstamos
+
+El interés y las condiciones del préstamo son factores clave para todos los entrevistados. Hay una necesidad de mayor claridad y seguridad en estos aspectos para reducir el miedo a incumplir o ser engañados.
+
+3. Confianza en Plataformas y Aplicaciones Bancarias: 
+
+Todos los entrevistados utilizan banca móvil y confían en su seguridad, especialmente con el uso de huellas digitales o sistemas de autenticación robustos. Aunque confían en la seguridad de las aplicaciones bancarias, hay una cierta desconfianza hacia plataformas nuevas o no tradicionales para la obtención de préstamos. Es importante ofrecer un nivel de transparencia y garantías de seguridad adicional en cualquier aplicación de asesoría financiera.
+
+4. Disponibilidad para Compartir Datos Financieros
+
+La privacidad y el control sobre los datos financieros son importantes para todos. Para fomentar la confianza en la plataforma, sería esencial ofrecer medidas de seguridad robustas y garantías de control sobre el tiempo que la información estará disponible.
+
+5. Percepciones sobre Publicidad y Estafas
+
+Los tres entrevistados adoptan un enfoque prudente para evitar estafas. La plataforma de asesoría financiera debe ofrecer transparencia en cuanto a sus políticas y contar con testimonios de clientes reales para aumentar la confianza.
+
+## 2.3. Needfinding
+### 2.3.1. User Personas
+
+Para esta sección se han creado personajes ficticios, cada uno diseñado para representar a un segmento específico de usuarios. La información utilizada para desarrollar estos "User personas" proviene de entrevistas previas realizadas a cada segmento objetivo. Estas entrevistas tenían como objetivo comprender mejor a las personas a las que se dirige la aplicación. Se consideraron datos demográficos, metas, motivaciones frustraciones, marcas relacionadas con el tema de la aplicación canales digitales más utilizados, entre otros. La creación de esta sección se llevó a cabo utilizando la plataforma UXPressia.
+
+**Segmento Objetivo: Consultores financieros:**
+
+#### User Persona 1: 
+
+![image](assets/Chapter-2/userpersona4.png)
+*Imagen (N°2). Elaboración propia. Realizado en UXPRESSIA*
+
+**Segmento Objetivo: Gestores de Deudas y Emprendedores**
+
+#### User Persona 2:
+
+![image](assets/Chapter-2/User1.png)
+*Imagen (N°3). Elaboración propia. Realizado en UXPRESSIA*
+
+<!-- ![image](assets/Chapter-2/User3.png)
+*Imagen (N°). Elaboración propia. Realizado en UXPRESSIA* -->
+
+### 2.3.2. User Task Matrix
+En esta sección se presenta el user task matrix, herramienta centrada en los segmentos objetivos, que nos permitirá identificar las tareas y objetivos claves de los usuarios. Además, nos permitirá priorizar características y funcionalidades al momento de realizar el product backlog. Para la frecuencia se han considerado cinco opciones:nunca ,casi nunca, a veces, a menudo ,siempre; y para la importancia tres opciones: bajo, medio, alto". En relación con la matriz de tareas de los usuarios, podemos identificar tanto las tareas de mayor frecuencia como las de mayor importancia, así como las diferencias y similitudes entre los diferentes tipos de usuarios.
+
+<table>
+<tr><th rowspan="2" valign="top">
+<b><i>User task Matrix</i></b></th>
+<th colspan="2" valign="top">
+<b><i>Segmento 1</i></b></th>
+<th colspan="2" valign="top"><p>
+<b><i>Segmento 2</i></b>
+ <p><p><b><i></i></b></p>
+ </th></tr>
+<tr><td valign="top"><b><i>Frecuencia</i></b> </td>
+<td valign="top"><b><i>Importancia</i></b></td>
+<td valign="top"><b><i>Frecuencia</i></b> </td>
+<td valign="top"><b><i>Importancia</i></b></td>
+</tr>
+<tr><td>Registrarse en la plataforma </td>
+<td><b><i>A menudo</i></b></td>
+<td><b><i>Alta</i></b></td>
+<td><b><i>A menudo</i></b></td>
+<td><b><i>Medio</i></b></td>
+</tr>
+<tr><td>Completar perfil de usuario</td>
+<td><b><i>Amenudo</i></b></td>
+<td><b><i>Alta</i></b></td>
+<td><b><i>A menudo</i></b></td>
+<td><b><i>Medio</i></b></td>
+</tr>
+<tr><td>Indicar nivel de experiencia en gestión financiera</td>
+<td><b><i>A menudo</i></b></td>
+<td><b><i>Muy alta</i></b></td>
+<td><b><i>A menudo</i></b></td>
+<td><b><i>Muy alta</i></b></td></tr>
+<tr><td>Consultar deudas pendientes</td>
+<td><b><i>Alta</i></b></td>
+<td><b><i>Medio</i></b></td>
+<td><b><i>Siempre</i></b></td>
+<td><b><i>Alta</i></b></td>
+</tr>
+<tr><td>Elegir opción entre gestión de deudas o gastos personales </td>
+<td><b><i>Alta</i></b></td>
+<td><b><i>Alta</i></b></td>
+<td><b><i>A menudo</i></b></td>
+<td><b><i>Alta</i></b></td>
+</tr>
+<tr><td>Interactuar con un asesor financiero online</td>
+<td><b><i>Casi nunca</i></b></td>
+<td><b><i>Baja</i></b></td>
+<td><b><i>Casi nunca</i></b></td>
+<td><b><i>Baja</i></b></td>
+</tr>
+<tr><td>Seleccionar servicios</td>
+<td><b><i>Alta</i></b></td>
+<td><b><i>Alta</i></b></td>
+<td><b><i>A menudo</i></b></td>
+<td><b><i>Alta</i></b></td>
+</tr>
+<tr><td>Explorar artículos</td>
+<td><b><i>A menudo</i></b></td>
+<td><b><i>Alta</i></b></td>
+<td><b><i>A menudo</i></b></td>
+<td><b><i>Alta</i></b></td>
+</tr>
+</table>
+
+### 2.3.3. User Journey Mapping
+En esta sección, explicaremos en detalle los user journey mapping para dos tipos de usuarios distintos: Consultores Financieros/Economistas y Gestores de Deudas y Emprendedores. Estos mapas proporcionarán una visión exhaustiva de cómo cada segmento de usuario interactúa con la plataforma, desde su primer contacto hasta su uso continuo y el análisis de resultados. Mejoraremos la presentación de estos mapas, destacando las etapas clave y las necesidades específicas de cada usuario para garantizar una comprensión clara y concisa de su experiencia a lo largo de su viaje:
+
+**Segmento Objetivo: Consultores financieros:**
+
+![image](assets/Chapter-2/journeymap4.png)
+
+*Imagen (N°4). Elaboración propia. Realizado en UXPRESSIA* 
+
+**Segmento Objetivo: Gestores de Deudas y Emprendedores**
+
+![image](assets/Chapter-2/seg2.png)
+
+*Imagen (N°5). Elaboración propia. Realizado en UXPRESSIA.*
+
+<!-- ![image](assets/Chapter-2/JourneyMap3.png)
+
+*Imagen (N°). Elaboración propia. Realizado en UXPRESSIA. -->
+
+### 2.3.4. Empathy Mapping
+
+**Segmento objetivo: Consultores financieros**
+
+![image](assets/Chapter-2/empathymap_2.png)
+*Imagen (N°6). Elaboración propia. Realizado en UXPRESSIA.*
+
+**Segmento objetivo: Emprendedores**
+
+![image](assets/Chapter-2/emprendedores.png)
+*Imagen (N°7). Elaboración propia. Realizado en UXPRESSIA.*
+
+### 2.3.5. As-is Scenario Mapping
+
+**Segmento objetivo: Consultores financieros**
+![image](assets/Chapter-2/asisMap-consultores.jpg)
+*Imagen (N°8). Elaboración propia. Realizado en [Miro](https://miro.com/app/board/uXjVKilDDEs=/?share_link_id=237055566961).*
+
+
+**Segmento objetivo: Emprendedores**
+![image](assets/Chapter-2/asisMap-emprendedores.png)
+*Imagen (N°9). Elaboración propia. Realizado en [Miro](https://miro.com/app/board/uXjVKilDDEs=/?share_link_id=237055566961).*
+
+<!-- ![image](assets/Chapter-2/ScenarioMapping3.jpg)
+*Imagen (N°). Elaboración propia. Realizado en [Miro](https://miro.com/app/board/uXjVKisf19Y=/).*
+ -->
+## 2.4. Ubiquitous Language
+
+<strong>1. Debt Management (Gestión de Deudas):</strong> Proceso mediante el cual los usuarios monitorean, controlan y organizan el pago de sus deudas personales o empresariales para evitar caer en mora o aumentar los intereses acumulados.
+
+<strong>2. Financial Literacy (Educación Financiera):</strong> Nivel de conocimiento que los usuarios tienen sobre conceptos financieros básicos, como cómo funcionan los préstamos, los intereses y cómo se gestionan las deudas de manera efectiva.
+
+<strong>3. Custom Payment Plans (Planes de Pago Personalizados):</strong> Soluciones de pago que DebtGo ofrece a los usuarios, adaptadas a sus necesidades financieras específicas, con el fin de ayudarlos a saldar sus deudas de manera eficiente y estructurada.
+
+<strong>4. Income and Expense Tracking (Seguimiento de Ingresos y Gastos):</strong> Funcionalidad de DebtGo que permite a los usuarios registrar y monitorear sus ingresos y gastos diarios para obtener una visión clara de su situación financiera.
+
+<strong>5. Financial Consultants (Consultores Financieros):</strong> Profesionales especializados que proporcionan asesoramiento personalizado a los usuarios de DebtGo para ayudarlos a mejorar su gestión de deudas y finanzas personales.
+
+<strong>6. Personalized Budgeting (Presupuestación Personalizada):</strong> Herramienta que permite a los usuarios crear presupuestos ajustados a su realidad económica, ayudándoles a manejar sus ingresos, gastos y deudas de forma organizada.
+
+<strong>7. Financial Workshops (Talleres Financieros):</strong> Sesiones educativas en línea ofrecidas por DebtGo para mejorar el conocimiento financiero de los usuarios, capacitándolos en la gestión de deudas y en la toma de decisiones financieras informadas.
+
+<strong>8. Debt Cycle (Ciclo de Endeudamiento):</strong> Situación en la que los usuarios adquieren nuevas deudas para pagar deudas anteriores, lo que incrementa su carga financiera y perpetúa el problema de la deuda.
+
+<strong>9. Interest Accumulation (Acumulación de Intereses):</strong> Proceso por el cual los intereses sobre una deuda se incrementan con el tiempo si los pagos no se realizan puntualmente.
+
+<strong>10. Debt Reminders (Recordatorios de Deuda):</strong> Notificaciones automáticas que DebtGo envía a los usuarios para recordarles las fechas de vencimiento de los pagos de sus deudas y evitar penalidades por retraso.
+
+<strong>11. Financial Stress (Estrés Financiero):</strong> Estado emocional negativo que experimentan los usuarios debido a la incapacidad de gestionar sus deudas de manera efectiva, lo que puede tener consecuencias graves en su bienestar personal y salud mental.
+
+<strong>12. Debt Consolidation (Consolidación de Deudas):</strong> Estrategia de gestión de deudas que permite a los usuarios combinar múltiples deudas en una sola, con condiciones de pago más favorables.
+
+<strong>13. Subscription Model (Modelo de Suscripción):</strong> Estructura de pago en la que los usuarios de DebtGo pueden acceder a características premium, como análisis financieros avanzados y contenido educativo exclusivo, mediante una tarifa mensual o anual.
+
+<strong>14. Financial Advisory (Asesoría Financiera):</strong> Servicio ofrecido por DebtGo que proporciona recomendaciones y planes personalizados a los usuarios para ayudarles a tomar decisiones financieras informadas.
+
+<strong>15. Credit Score (Historial Crediticio):</strong> Registro de la capacidad de un usuario para pagar sus deudas, que influye en su elegibilidad para obtener futuros créditos o préstamos.
+
+<strong>16. Debt Accumulation (Acumulación de Deudas):</strong> Proceso mediante el cual los usuarios incrementan la cantidad total de sus deudas debido a la falta de pagos o al uso constante de crédito sin una gestión adecuada.
+
+<strong>17. Default Risk (Riesgo de Mora):</strong> Posibilidad de que los usuarios no puedan cumplir con sus obligaciones financieras, lo que puede resultar en penalidades o acciones legales.
+
+<strong>18. Artificial Intelligence (Inteligencia Artificial):</strong> Tecnología que DebtGo planea integrar para personalizar aún más las recomendaciones financieras y mejorar la experiencia del usuario mediante el análisis avanzado de su comportamiento financiero.
