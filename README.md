@@ -1363,7 +1363,7 @@ En esta sección, se presenta el Impact Mapping elaborado para DebtGo, que busca
 - Servicio de notificaciones
 
 **Representación visual (simplificada):**
-![image](assets/Chapter-4/)
+![image](assets/Chapter-4/EventStorming.jpg)
 *Imagen (N°14). Elaboración propia. Realizado en Miro*
 
 ## 1.2 Candidate Context Discovery
@@ -1382,9 +1382,6 @@ En esta sección, se presenta el Impact Mapping elaborado para DebtGo, que busca
   
 **Relaciones iniciales:**
 
-LoanManagement ────┐  
-                   ├─→ PaymentTracking  
-FinancialEducation ┘  
 
 ## 1.3 Domain Message Flows Modeling
 
@@ -1400,10 +1397,4 @@ FinancialEducation ┘
 
 **Diagrama textual:**
 
-+-------------+       +----------------+       +-----------------+
-|  Usuario    | →   | LoanManagement | →   | PaymentTracking |
-+-------------+       +----------------+       +-----------------+
-                              ↓  
-                      +-----------------+
-                      | ConsultantNetwork|
-                      +-----------------+
+
