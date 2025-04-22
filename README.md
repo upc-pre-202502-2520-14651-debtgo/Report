@@ -1351,9 +1351,9 @@ En esta sección, se presenta el Impact Mapping elaborado para DebtGo, que busca
 
 **Procesos agrupados:** 
 **1. Gestión de Préstamos:**
-   - Solicitud → Validación → Aprobación
+   - Solicitud → Validación → Aprobación <br> <br>
 **2. Seguimiento de Pagos:** 
-   - Registro → Actualización → Notificación
+   - Registro → Actualización → Notificación <br> <br>
 **3. Educación Financiera:**  
    - Recomendación de contenido → Recordatorios
   
