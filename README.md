@@ -1397,7 +1397,7 @@ En esta sección, se presenta el Impact Mapping elaborado para DebtGo, que busca
 **5. Usuario → ConsultantNetwork:** "Agendar consulta con experto"  
 
 **Diagrama textual:**
-![image](assets/Chapter-4/Diagrama-textual.JPG) <br>
+![image](assets/Chapter-4/Diagrama-Textual.JPG) <br>
 *Imagen (N°16). Elaboración propia. Realizado en Miro*
 
 #### 4.1.1.3. Bounded Context Canvases
