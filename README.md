@@ -1349,7 +1349,7 @@ En esta sección, se presenta el Impact Mapping elaborado para DebtGo, que busca
 → [Usuario registra pago] → [Sistema actualiza saldo]  
 → [Notificación enviada] → [Consultor asigna plan de pagos]
 
-**Procesos agrupados:** <br>
+**Procesos agrupados:** 
 **1. Gestión de Préstamos:**
    - Solicitud → Validación → Aprobación
 **2. Seguimiento de Pagos:** 
