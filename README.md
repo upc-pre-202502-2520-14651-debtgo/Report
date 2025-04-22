@@ -1380,8 +1380,8 @@ En esta sección, se presenta el Impact Mapping elaborado para DebtGo, que busca
 4. **ConsultantNetwork (Supporting):**  
    - Conexión usuario-consultor, agenda.
   
-**Relaciones iniciales:**
-![image](assets/Chapter-4/Relaciones-Iniciales.JPG)
+**Relaciones iniciales:** <br>
+![image](assets/Chapter-4/Relaciones-Iniciales.JPG) <br>
 *Imagen (N°15). Elaboración propia. Realizado en Miro*
 
 #### 4.1.1.2 Domain Message Flows Modeling
@@ -1397,9 +1397,9 @@ En esta sección, se presenta el Impact Mapping elaborado para DebtGo, que busca
 **5. Usuario → ConsultantNetwork:** "Agendar consulta con experto"  
 
 **Diagrama textual:**
-![image](assets/Chapter-4/Diagrama-textual.JPG)
+![image](assets/Chapter-4/Diagrama-textual.JPG) <br>
 *Imagen (N°16). Elaboración propia. Realizado en Miro*
 
 #### 4.1.1.3. Bounded Context Canvases
-![image](assets/Chapter-4/BCC-LoanManagement.JPG)
+![image](assets/Chapter-4/BCC-LoanManagement.JPG) <br>
 *Imagen (N°17). Elaboración propia. Realizado en Miro*
