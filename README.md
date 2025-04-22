@@ -1340,7 +1340,7 @@ En esta sección, se presenta el Impact Mapping elaborado para DebtGo, que busca
 ## 4.1. Strategic-Level Domain-Driven Design
 ### 4.1.1. EventStorming
 
-**Sesión realizada:** 2 horas con equipo técnico y expertos de dominio.
+**Sesión realizada:** 2 horas con equipo técnico y expertos de dominio. <br>
 **Herramienta:** Miro.
 
 **Eventos identificados (flujo principal):**
@@ -1349,11 +1349,11 @@ En esta sección, se presenta el Impact Mapping elaborado para DebtGo, que busca
 → [Usuario registra pago] → [Sistema actualiza saldo]  
 → [Notificación enviada] → [Consultor asigna plan de pagos]
 
-**Procesos agrupados:**
+**Procesos agrupados:** <br>
 **1. Gestión de Préstamos:**
-   - Solicitud → Validación → Aprobación  
+   - Solicitud → Validación → Aprobación <br>  
 **2. Seguimiento de Pagos:** 
-   - Registro → Actualización → Notificación  
+   - Registro → Actualización → Notificación <br> 
 **3. Educación Financiera:**  
    - Recomendación de contenido → Recordatorios
   
