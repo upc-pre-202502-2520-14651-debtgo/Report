@@ -1366,7 +1366,7 @@ En esta sección, se presenta el Impact Mapping elaborado para DebtGo, que busca
 ![image](assets/Chapter-4/EventStorming.jpg)
 *Imagen (N°14). Elaboración propia. Realizado en Miro*
 
-##### 4.1.1.1. Candidate Context Discovery
+#### 4.1.1.1. Candidate Context Discovery
 
 **Técnica aplicada:** Start-with-value **(enfoque en el core: gestión de deudas)**.
 **Bounded Contexts identificados:**
@@ -1384,7 +1384,7 @@ En esta sección, se presenta el Impact Mapping elaborado para DebtGo, que busca
 ![image](assets/Chapter-4/Relaciones-Iniciales.JPG) <br>
 *Imagen (N°15). Elaboración propia. Realizado en Miro*
 
-#### 4.1.1.2 Domain Message Flows Modeling
+### 4.1.1.2 Domain Message Flows Modeling
 
 **Técnica:** Domain Storytelling.
 
