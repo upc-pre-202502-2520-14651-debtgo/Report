@@ -1335,3 +1335,75 @@ En esta sección, se presenta el Impact Mapping elaborado para DebtGo, que busca
 |21|US32|Talleres gratuitos|**Como** consultor financiero, **deseo** otorgar talleres financieras gratuitos **para** atraer a posibles clientes	|5|
 |22|US30|Articulos financieros|**Como** emprendedor, **deseo** tener acceso a artículos relacionados **para** incrementar mi conocimiento del tema|2|
 |23|US01|Demostración de la aplicación|**Como** visitante, **deseo** ver una demostración de la aplicación **para** entender rápidamente lo que ofrece|3|
+
+# Capítulo IV: Solution Software Design
+## 4.1. Strategic-Level Domain-Driven Design
+### 4.1.1. EventStorming
+
+**Sesión realizada:** 2 horas con equipo técnico y expertos de dominio.
+**Herramienta:** Miro.
+
+**Eventos identificados (flujo principal):**
+[Usuario solicita préstamo] → [Sistema valida historial crediticio]  
+→ [Préstamo aprobado/rechazado] → [Contrato generado]  
+→ [Usuario registra pago] → [Sistema actualiza saldo]  
+→ [Notificación enviada] → [Consultor asigna plan de pagos]
+
+**Procesos agrupados:**
+**1. Gestión de Préstamos:**
+   - Solicitud → Validación → Aprobación  
+**2. Seguimiento de Pagos:** 
+   - Registro → Actualización → Notificación  
+**3. Educación Financiera:**  
+   - Recomendación de contenido → Recordatorios
+  
+**Actores clave:**
+- Usuario **(emprendedor/consultor)**  
+- Sistema de validación crediticia  
+- Servicio de notificaciones
+
+**Representación visual (simplificada):**
+![image](assets/Chapter-4/)
+*Imagen (N°14). Elaboración propia. Realizado en Miro*
+
+## 1.2 Candidate Context Discovery
+
+**Técnica aplicada:** Start-with-value **(enfoque en el core: gestión de deudas)**.
+**Bounded Contexts identificados:**
+
+1. **LoanManagement (Core):**  
+   - Responsable: Solicitud, aprobación, cálculo de intereses.  
+2. **PaymentTracking (Supporting):**  
+   - Registro de pagos, alertas de mora.  
+3. **FinancialEducation (Generic):**  
+   - Cursos, artículos, recomendaciones.  
+4. **ConsultantNetwork (Supporting):**  
+   - Conexión usuario-consultor, agenda.
+  
+**Relaciones iniciales:**
+
+LoanManagement ────┐  
+                   ├─→ PaymentTracking  
+FinancialEducation ┘  
+
+## 1.3 Domain Message Flows Modeling
+
+**Técnica:** Domain Storytelling.
+
+**Flujo de mensajes (ejemplo):**
+
+**1. Usuario (LoanManagement):** "Solicitar préstamo de $10,000"  
+**2. LoanManagement → PaymentTracking:** "Validar capacidad de pago"  
+**3. PaymentTracking → LoanManagement:** "Límite aprobado: $8,000"  
+**4. LoanManagement → Usuario:** "Oferta: $8,000 a 12 meses"  
+**5. Usuario → ConsultantNetwork:** "Agendar consulta con experto"  
+
+**Diagrama textual:**
+
++-------------+       +----------------+       +-----------------+
+|  Usuario    | →   | LoanManagement | →   | PaymentTracking |
++-------------+       +----------------+       +-----------------+
+                              ↓  
+                      +-----------------+
+                      | ConsultantNetwork|
+                      +-----------------+
