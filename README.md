@@ -1381,7 +1381,7 @@ En esta sección, se presenta el Impact Mapping elaborado para DebtGo, que busca
    - Conexión usuario-consultor, agenda.
   
 **Relaciones iniciales:**
-![image](assets/Chapter-4/RelacionesIniciales.JPG)
+![image](assets/Chapter-4/Relaciones-Iniciales.JPG)
 *Imagen (N°15). Elaboración propia. Realizado en Miro*
 
 #### 4.1.1.2 Domain Message Flows Modeling
@@ -1401,5 +1401,5 @@ En esta sección, se presenta el Impact Mapping elaborado para DebtGo, que busca
 *Imagen (N°16). Elaboración propia. Realizado en Miro*
 
 #### 4.1.1.3. Bounded Context Canvases
-![image](assets/Chapter-4/BCCLoanManagement.JPG)
+![image](assets/Chapter-4/BCCL-oanManagement.JPG)
 *Imagen (N°17). Elaboración propia. Realizado en Miro*
