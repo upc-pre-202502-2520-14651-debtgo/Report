@@ -1396,7 +1396,7 @@ En esta sección, se presenta el Impact Mapping elaborado para DebtGo, que busca
 **4. LoanManagement → Usuario:** "Oferta: $8,000 a 12 meses"  
 **5. Usuario → ConsultantNetwork:** "Agendar consulta con experto"  
 
-**Diagrama textual:**
+**Diagrama textual:** <br>
 ![image](assets/Chapter-4/Diagrama-Textual.JPG) <br>
 *Imagen (N°16). Elaboración propia. Realizado en Miro*
 
