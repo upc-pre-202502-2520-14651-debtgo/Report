@@ -508,7 +508,7 @@ A manera de escalabilidad, proponemos introducir a futuro el uso de inteligencia
     <td valign="top">
       <p><b>Góngora Sánchez, Marco Antonio</b></p>
       <p>
-       Soy estudiante de la UPC. Estoy en la carrera de Ingeniería de Software ya a que siempre me gustó el desarrollo y la comprensión de esta. Tengo conocimientos básicos en C++, Python, Vue y medio-avanzado en Java, SpringBoot y SQL. Con respecto a mis aptitudes es la cooperación en equipo, responsabilidad y creatividad tanto en diseño/estilos cómo en arquitectura de software.
+       Soy estudiante de la UPC. Estoy en la carrera de Ingeniería de Software ya que siempre me gustó el desarrollo y la comprensión de esta. Tengo conocimientos básicos en C++, Python, Vue y medio-avanzado en Java, SpringBoot y SQL. Con respecto a mis aptitudes es la cooperación en equipo, responsabilidad y creatividad tanto en diseño/estilos cómo en arquitectura de software.
       </p>
     </td>
   </tr>
@@ -911,7 +911,7 @@ Emilio Chávarri, de 55 años, es una persona que quiere emprender en el rubro d
 
 ![image](assets/Chapter-2/ander_interview.png)
 
-[Entrevista 2 - video](https://drive.google.com/file/d/1BDNR6m4pev595W2D6D7KUWTR8FsIgsWh/view?usp=sharing)
+[Entrevista 2 - video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211a085_upc_edu_pe/Edu_0dP5NCxBuyzn5nvd06gB_mYaiu180sc8nROeIBoA7A?e=oqPL3o&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
 
 Resumen:
 
