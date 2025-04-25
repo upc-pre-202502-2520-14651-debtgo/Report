@@ -503,12 +503,12 @@ A manera de escalabilidad, proponemos introducir a futuro el uso de inteligencia
   </tr>
   <tr>
     <th>
-      <img src="" width="800px">
+      <img src="assets/Chapter-1/marco.jpg" width="800px">
     </th>
     <td valign="top">
       <p><b>Góngora Sánchez, Marco Antonio</b></p>
       <p>
-       
+       Soy estudiante de la UPC. Estoy en la carrera de Ingeniería de Software ya a que siempre me gustó el desarrollo y la comprensión de esta. Tengo conocimientos básicos en C++, Python, Vue y medio-avanzado en Java, SpringBoot y SQL. Con respecto a mis aptitudes es la cooperación en equipo, responsabilidad y creatividad tanto en diseño/estilos cómo en arquitectura de software.
       </p>
     </td>
   </tr>
