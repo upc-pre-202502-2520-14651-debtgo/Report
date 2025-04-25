@@ -904,18 +904,18 @@ Resumen:
 Emilio Chávarri, de 55 años, es una persona que quiere emprender en el rubro de comunicaciones, tiene experiencia en la obtención de préstamos a entidades bancarias pero presenta dificultades en cuanto a firma de documentos de préstamos, ya que hay muchos términos que se tiene que leer y entender. Lo que más le preocupa de solicitar préstamos es el interés que va a pagar por el mismo. El criterio que utiliza para identificar si una publicidad de préstamo es real, primeramente ve qué empresa es la que está publicitando, y luego por medio del internet va al mercado de valores para ver la condición financiera de la empresa. También utiliza ciertas aplicaciones de banca móvil y a su vez, siente que es muy segura y que conforme pasa el tiempo los bancos van mejorando en cuestión de seguridad. Finalmente, las condiciones con las que se sentiría seguro al momento de compartir información financiera es la seguridad de la misma aplicación, ver cuántas restricciones tiene para acceder a su información, conocer más a la empresa, su ubicación, el software que está utilizando, que tan fácil es usarlo.
 
 **Entrevista #2** 
-- Nombre: 
-- Edad: 
-- Distrito: 
-- Duración: 
+- Nombre: Anderson Gonza
+- Edad: 22 años
+- Distrito: Villa El Salvador
+- Duración: 6:24 minutos
 
-![image](assets/Chapter-2/)
+![image](assets/Chapter-2/ander_interview.png)
 
-[Entrevista 2 - video]()
+[Entrevista 2 - video](https://drive.google.com/file/d/1BDNR6m4pev595W2D6D7KUWTR8FsIgsWh/view?usp=sharing)
 
 Resumen:
 
-
+Anderson Gonza, de 22 años y residente en Villa El Salvador, está interesado en iniciar un negocio de cafetería con enfoque en coworking. Tiene conocimientos básicos de finanzas adquiridos en la universidad y, aunque no ha trabajado con consultores financieros, considera importante que tengan experiencia en su rubro. Solo ha gestionado préstamos personales y está aprendiendo sobre préstamos empresariales, sintiendo confusión principalmente al elegir el tipo adecuado y entender completamente las condiciones. Le preocupan los intereses, las condiciones de los contratos y el riesgo de endeudamiento. Prefiere plataformas reconocidas como BCP e Interbank, y verifica la autenticidad de las ofertas de préstamos buscando reseñas y comprobando su regulación ante la SBS. Utiliza aplicaciones como Yape, Plin y BCP, confiando en ellas pero tomando precauciones adicionales. Estaría dispuesto a compartir información básica como ingresos, gastos y metas financieras, siempre que la aplicación sea segura, regulada, transparente y cuente con buenas reseñas.
 
 **Entrevista #3**
 - Nombre: 
@@ -961,11 +961,11 @@ Resumen:
 
 1. Conocimiento y Experiencia Financiera
 
-Todos los entrevistados reconocen la importancia de tener asesores financieros con experiencia, y aunque algunos tienen un nivel básico de conocimiento, también muestran inseguridad y confusión, especialmente en temas como intereses y condiciones de préstamos.
+Todos los entrevistados reconocen la importancia de tener asesores financieros con experiencia en el rubro específico de sus negocios, y aunque algunos tienen un nivel básico de conocimiento, también muestran inseguridad y confusión, especialmente en temas como intereses, tipos de préstamos y condiciones de contractuales, especialmente al momento de emprender.
 
 2. Preocupaciones al Solicitar Préstamos
 
-El interés y las condiciones del préstamo son factores clave para todos los entrevistados. Hay una necesidad de mayor claridad y seguridad en estos aspectos para reducir el miedo a incumplir o ser engañados.
+El interés, las condiciones del préstamo y el riesgo de endeudamiento son factores clave de preocupación para todos los entrevistados. Hay una necesidad de mayor claridad y seguridad en estos aspectos para reducir el miedo a incumplir o ser engañados.
 
 3. Confianza en Plataformas y Aplicaciones Bancarias: 
 
@@ -973,7 +973,7 @@ Todos los entrevistados utilizan banca móvil y confían en su seguridad, especi
 
 4. Disponibilidad para Compartir Datos Financieros
 
-La privacidad y el control sobre los datos financieros son importantes para todos. Para fomentar la confianza en la plataforma, sería esencial ofrecer medidas de seguridad robustas y garantías de control sobre el tiempo que la información estará disponible.
+La privacidad y el control sobre los datos financieros son importantes para todos. Para fomentar la confianza en la plataforma, sería esencial ofrecer medidas de seguridad robustas, transparencia sobre qué datos se recolectan (limitándose a información básica como ingresos, gastos y metas financieras) y garantías de control sobre el tiempo que la información estará disponible.
 
 5. Percepciones sobre Publicidad y Estafas
 
