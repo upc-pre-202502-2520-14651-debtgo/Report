@@ -880,11 +880,11 @@ Resumen:
 
 ![image](assets/Chapter-2/)
 
-[Entrevista 3 - video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202211108_upc_edu_pe/EYsHot_bR4FLtZs1tok9abIBf1ZfOJsBVIy0KEwKFc6AEA?e=bER0c8&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifSwicGxheWJhY2tPcHRpb25zIjp7InN0YXJ0VGltZUluU2Vjb25kcyI6Mi40OH19](https://upcedupe-my.sharepoint.com/personal/u202118264_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202118264%5Fupc%5Fedu%5Fpe%2FDocuments%2FEntrevista%20consultores%20financieros%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Eea5089e2%2D9f76%2D48a9%2D97f4%2D880c95a88826&isDarkMode=false): https://shorturl.at/M76Qv
+[Entrevista 3 - video](https://upcedupe-my.sharepoint.com/personal/u202118264_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202118264%5Fupc%5Fedu%5Fpe%2FDocuments%2FEntrevista%20consultores%20financieros%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Eea5089e2%2D9f76%2D48a9%2D97f4%2D880c95a88826&isDarkMode=false): https://shorturl.at/M76Qv
 
 Resumen: 
 
-
+La entrevistada, consultora financiera junior de 23 años, define la educación financiera como herramientas para tomar mejores decisiones con el dinero. Usa principalmente su laptop y se informa por LinkedIn y Twitter. Ha visto anuncios de apps financieras en Instagram, aunque muchos le parecen generales. Asesora a emprendedores en la organización de sus finanzas y considera clave usar INFOCORP para evaluar historiales crediticios. Cree que muchas personas no entienden sus deudas ni controlan sus gastos, por lo que recomienda apps como Fintonic. Opina que la educación financiera debe enfocarse en explicar intereses y deudas, y que una app como DebtGo puede ser útil si brinda seguimiento claro y personalizado.
 
 **Segmento Objetivo: Gestores de Deudas y Emprendedores**
 
