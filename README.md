@@ -481,7 +481,7 @@ A manera de escalabilidad, proponemos introducir a futuro el uso de inteligencia
   </tr>
      <tr>
     <th>
-      <img src="assets/Chapter-1/foto.jpeg"  width="800px">
+      <img src="assets/Chapter-1/foto-.png"  width="800px">
     </th>
     <td valign="top">
       <p><b>Burga Loarte, Anaely Zarely</b></p>
@@ -873,14 +873,14 @@ Resumen:
 
 
 **Entrevista #3**
-- Nombre: 
--
-- Distrito: 
-- Duración:
+- Nombre: Yacori Lucero 
+- Edad: 23
+- Distrito: Surco
+- Duración: 3:53
 
 ![image](assets/Chapter-2/)
 
-[Entrevista 3 - video]()
+[Entrevista 3 - video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202211108_upc_edu_pe/EYsHot_bR4FLtZs1tok9abIBf1ZfOJsBVIy0KEwKFc6AEA?e=bER0c8&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifSwicGxheWJhY2tPcHRpb25zIjp7InN0YXJ0VGltZUluU2Vjb25kcyI6Mi40OH19](https://upcedupe-my.sharepoint.com/personal/u202118264_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202118264%5Fupc%5Fedu%5Fpe%2FDocuments%2FEntrevista%20consultores%20financieros%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Eea5089e2%2D9f76%2D48a9%2D97f4%2D880c95a88826&isDarkMode=false): https://shorturl.at/M76Qv
 
 Resumen: 
 
