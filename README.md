@@ -486,7 +486,7 @@ A manera de escalabilidad, proponemos introducir a futuro el uso de inteligencia
     <td valign="top">
       <p><b>Burga Loarte, Anaely Zarely</b></p>
       <p>
-      
+      Estoy estudiando Ingeniería y me considero una persona comprometida y responsable. Me interesa mucho todo lo relacionado al desarrollo de soluciones tecnológicas que puedan generar un cambio positivo en la sociedad. En mis tiempos libres me gusta escuchar música, ver películas, pasar tiempo con mi familia o amigos.
       </p>
     </td>
   </tr>
