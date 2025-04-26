@@ -878,7 +878,7 @@ Resumen:
 - Distrito: Surco
 - Duración: 3:53
 
-![image](assets/Chapter-2/)
+![image](assets/Chapter-1/entrevista.png)
 
 [Entrevista 3 - video](https://upcedupe-my.sharepoint.com/personal/u202118264_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202118264%5Fupc%5Fedu%5Fpe%2FDocuments%2FEntrevista%20consultores%20financieros%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Eea5089e2%2D9f76%2D48a9%2D97f4%2D880c95a88826&isDarkMode=false): https://shorturl.at/M76Qv
 
