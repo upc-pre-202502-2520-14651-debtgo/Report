@@ -1410,6 +1410,67 @@ Envío de recordatorios (usa Email System).
 ![image](assets/Chapter-4/bounded-context-canvases.JPG) <br>
 *Imagen (N°17). Elaboración propia. Realizado en Miro*
 
+**4.1.2. Context Mapping**
+![image](assets/Chapter-4/diagram_context.png) <br>
+*Imagen (N°18). Elaboración propia. Realizado en Structurizr.*
+
+***Sistema Principal:*** DebtGo (plataforma de educación y asesoría financiera)
+
+**Interacciones clave:**
+
+**- Asesores Financieros:** Profesionales que brindan consultoría
+**- Emprendedores:** Usuarios que buscan asesoría
+**- Sistemas Externos:**
+  - Visa/MasterCard (procesamiento de pagos)
+  - Email System (envío de notificaciones)
+
+**Relaciones:**
+
+- Los emprendedores usan DebtGo para acceder a asesoría y herramientas.
+- Los asesores usan la plataforma para ofrecer servicios.
+- El sistema interactúa con pasarelas de pago y servicio de correos.
+
+**4.1.3. Software Architecture**
+***4.1.3.1. Software Architecture Context Level Diagrams*** 
+![image](assets/Chapter-4/diagram_context.png) <br>
+*Imagen (N°19). Elaboración propia. Realizado en Structurizr.*
+
+**Actores principales:** Asesores y Emprendedores.
+**Sistemas de apoyo:** Email, Visa, MasterCard.
+**Core:** Plataforma DebtGo.
+
+**4.1.3.2. Software Architecture Container Level Diagrams**
+
+![image](assets/Chapter-4/container-diagram.png) <br>
+*Imagen (N°20). Elaboración propia. Realizado en Structurizr.* <br>
+
+![image](assets/Chapter-4/consulting-bc.png) <br>
+*Imagen (N°21). Elaboración propia. Realizado en Structurizr.* <br>
+
+![image](assets/Chapter-4/education-bc.png) <br>
+*Imagen (N°22). Elaboración propia. Realizado en Structurizr.* <br>
+
+![image](assets/Chapter-4/notification-bc.png) <br>
+*Imagen (N°23). Elaboración propia. Realizado en Structurizr.* <br>
+
+![image](assets/Chapter-4/payment-bc.png) <br>
+*Imagen (N°24). Elaboración propia. Realizado en Structurizr.* <br>
+
+![image](assets/Chapter-4/subscription-bc.png) <br>
+*Imagen (N°25). Elaboración propia. Realizado en Structurizr.* <br>
+
+![image](assets/Chapter-4/user-bc.png) <br>
+*Imagen (N°26). Elaboración propia. Realizado en Structurizr.* <br>
+
+**Contenedores principales:**
+***Aplicación Web:*** Interfaz para usuarios (login, servicios).
+***API REST (C#):*** Conecta frontend con backend.
+***Base de Datos (MySQL):*** Almacena datos de la plataforma.
+***Sistemas externos:*** Visa/MasterCard, Email System.
+
+**Flujo:**
+Web App → API REST → Database ↔ Sistemas externos.
+
 # Conclusiones
 ## Conclusiones y recomendaciones
 
