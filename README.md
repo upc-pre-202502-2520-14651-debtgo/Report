@@ -1387,7 +1387,7 @@ Conexión usuario-asesor, agendamiento (usa Appointment Scheduler y Rating Syste
 Envío de recordatorios (usa Email System).
   
 **Relaciones iniciales:** <br>
-![image](assets/Chapter-4/Relaciones-Iniciales.JPG) <br>
+![image](assets/Chapter-4/relations.JPG) <br>
 *Imagen (N°15). Elaboración propia. Realizado en Miro*
 
 ### 4.1.1.2 Domain Message Flows Modeling
@@ -1407,7 +1407,7 @@ Envío de recordatorios (usa Email System).
 *Imagen (N°16). Elaboración propia. Realizado en Miro*
 
 ### 4.1.1.3. Bounded Context Canvases
-![image](assets/Chapter-4/BCC-LoanManagement.JPG) <br>
+![image](assets/Chapter-4/bounded-context-canvases.JPG) <br>
 *Imagen (N°17). Elaboración propia. Realizado en Miro*
 
 # Conclusiones
