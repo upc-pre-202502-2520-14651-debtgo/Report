@@ -1368,17 +1368,23 @@ En esta sección, se presenta el Impact Mapping elaborado para DebtGo, que busca
 
 ### 4.1.1.1. Candidate Context Discovery
 
+![image](assets/Chapter-4/diagram_context.png)
+*Imagen (N°15). Elaboración propia. Realizado en Structurizr*
+
 **Técnica aplicada:** Start-with-value **(enfoque en el core: gestión de deudas)**.
 **Bounded Contexts identificados:**
 
-1. **LoanManagement (Core):**  
-   - Responsable: Solicitud, aprobación, cálculo de intereses.  
-2. **PaymentTracking (Supporting):**  
-   - Registro de pagos, alertas de mora.  
-3. **FinancialEducation (Generic):**  
-   - Cursos, artículos, recomendaciones.  
-4. **ConsultantNetwork (Supporting):**  
-   - Conexión usuario-consultor, agenda.
+**Subscription (Core):**
+***Responsable:*** Gestión de suscripciones premium (aprobación, renovación, acceso a features).
+
+**Payment (Supporting):**
+Registro de transacciones, alertas de pago (integra con Visa/MasterCard).
+
+**Consulting (Core):**
+Conexión usuario-asesor, agendamiento (usa Appointment Scheduler y Rating System).
+
+**Notification (Supporting):**
+Envío de recordatorios (usa Email System).
   
 **Relaciones iniciales:** <br>
 ![image](assets/Chapter-4/Relaciones-Iniciales.JPG) <br>
@@ -1390,11 +1396,11 @@ En esta sección, se presenta el Impact Mapping elaborado para DebtGo, que busca
 
 **Flujo de mensajes (ejemplo):**
 
-**1. Usuario (LoanManagement):** "Solicitar préstamo de $10,000"  
-**2. LoanManagement → PaymentTracking:** "Validar capacidad de pago"  
-**3. PaymentTracking → LoanManagement:** "Límite aprobado: $8,000"  
-**4. LoanManagement → Usuario:** "Oferta: $8,000 a 12 meses"  
-**5. Usuario → ConsultantNetwork:** "Agendar consulta con experto"  
+**Usuario (Subscription):** "Solicitar suscripción premium".
+**Subscription → Payment:** "Validar método de pago (Visa/MasterCard)".
+**Payment → Subscription:** "Pago aprobado".
+**Subscription → Notification:** "Enviar confirmación vía email".
+**Usuario → Consulting:** "Agendar cita con asesor".
 
 **Diagrama textual:** <br>
 ![image](assets/Chapter-4/Diagrama-Textual.JPG) <br>
