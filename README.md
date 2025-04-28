@@ -1403,7 +1403,7 @@ Envío de recordatorios (usa Email System).
 **Usuario → Consulting:** "Agendar cita con asesor".
 
 **Diagrama textual:** <br>
-![image](assets/Chapter-4/Diagrama-Textual.JPG) <br>
+![image](assets/Chapter-4/textual_diagram.JPG) <br>
 *Imagen (N°16). Elaboración propia. Realizado en Miro*
 
 ### 4.1.1.3. Bounded Context Canvases
