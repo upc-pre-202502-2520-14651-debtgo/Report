@@ -1396,44 +1396,44 @@ Envío de recordatorios (usa Email System).
 
 **Flujo de mensajes (ejemplo):**
 
-**Usuario (Subscription):** "Solicitar suscripción premium".
-**Subscription → Payment:** "Validar método de pago (Visa/MasterCard)".
-**Payment → Subscription:** "Pago aprobado".
-**Subscription → Notification:** "Enviar confirmación vía email".
-**Usuario → Consulting:** "Agendar cita con asesor".
+**Usuario (Subscription):** "Solicitar suscripción premium". <br>
+**Subscription → Payment:** "Validar método de pago (Visa/MasterCard)". <br>
+**Payment → Subscription:** "Pago aprobado". <br>
+**Subscription → Notification:** "Enviar confirmación vía email". <br>
+**Usuario → Consulting:** "Agendar cita con asesor". <br>
 
 **Diagrama textual:** <br>
 ![image](assets/Chapter-4/textual_diagram.JPG) <br>
-*Imagen (N°16). Elaboración propia. Realizado en Miro*
+*Imagen (N°16). Elaboración propia. Realizado en Miro* <br>
 
 ### 4.1.1.3. Bounded Context Canvases
 ![image](assets/Chapter-4/bounded-context-canvases.JPG) <br>
-*Imagen (N°17). Elaboración propia. Realizado en Miro*
+*Imagen (N°17). Elaboración propia. Realizado en Miro* <br>
 
 **4.1.2. Context Mapping**
 ![image](assets/Chapter-4/diagram_context.png) <br>
-*Imagen (N°18). Elaboración propia. Realizado en Structurizr.*
+*Imagen (N°18). Elaboración propia. Realizado en Structurizr.* <br>
 
 ***Sistema Principal:*** DebtGo (plataforma de educación y asesoría financiera)
 
 **Interacciones clave:**
 
-**- Asesores Financieros:** Profesionales que brindan consultoría
-**- Emprendedores:** Usuarios que buscan asesoría
+**- Asesores Financieros:** Profesionales que brindan consultoría <br>
+**- Emprendedores:** Usuarios que buscan asesoría <br>
 **- Sistemas Externos:**
   - Visa/MasterCard (procesamiento de pagos)
-  - Email System (envío de notificaciones)
+  - Email System (envío de notificaciones) <br>
 
 **Relaciones:**
 
-- Los emprendedores usan DebtGo para acceder a asesoría y herramientas.
-- Los asesores usan la plataforma para ofrecer servicios.
-- El sistema interactúa con pasarelas de pago y servicio de correos.
+- Los emprendedores usan DebtGo para acceder a asesoría y herramientas. <br>
+- Los asesores usan la plataforma para ofrecer servicios. <br>
+- El sistema interactúa con pasarelas de pago y servicio de correos. <br>
 
 **4.1.3. Software Architecture**
-***4.1.3.1. Software Architecture Context Level Diagrams*** 
+***4.1.3.1. Software Architecture Context Level Diagrams*** <br>
 ![image](assets/Chapter-4/diagram_context.png) <br>
-*Imagen (N°19). Elaboración propia. Realizado en Structurizr.*
+*Imagen (N°19). Elaboración propia. Realizado en Structurizr.* <br>
 
 **Actores principales:** Asesores y Emprendedores.
 **Sistemas de apoyo:** Email, Visa, MasterCard.
@@ -1463,10 +1463,10 @@ Envío de recordatorios (usa Email System).
 *Imagen (N°26). Elaboración propia. Realizado en Structurizr.* <br>
 
 **Contenedores principales:**
-***Aplicación Web:*** Interfaz para usuarios (login, servicios).
-***API REST (C#):*** Conecta frontend con backend.
-***Base de Datos (MySQL):*** Almacena datos de la plataforma.
-***Sistemas externos:*** Visa/MasterCard, Email System.
+***Aplicación Web:*** Interfaz para usuarios (login, servicios). <br>
+***API REST (C#):*** Conecta frontend con backend. <br>
+***Base de Datos (MySQL):*** Almacena datos de la plataforma. <br>
+***Sistemas externos:*** Visa/MasterCard, Email System. <br>
 
 **Flujo:**
 Web App → API REST → Database ↔ Sistemas externos.
