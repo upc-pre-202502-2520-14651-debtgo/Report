@@ -514,12 +514,12 @@ A manera de escalabilidad, proponemos introducir a futuro el uso de inteligencia
   </tr>
   <tr>
     <th>
-      <img src="" width="800px">
+      <img src="assets/Chapter-1/janiel.jpg" width="800px">
     </th>
     <td valign="top">
       <p><b>Escalante Baygorrea, Janiel Franz</b></p>
       <p>
-       Soy estudiante
+       Soy estudiante de Ing. De Software, tengo experiencia en el desarrollo de software haciendo uso de lenguajes como JavaScript, Typescript, C# y Java. Me gusta aprender nuevas tecnologías y mejorar mis habilidades como Ing. de Software. Me considero una persona responsable, creativa y con capacidad para trabajar en equipo. Mis hobbies son la musica y practicar deportes.
       </p>
     </td>
   </tr>
