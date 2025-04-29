@@ -1488,8 +1488,10 @@ En la capa de infraestructura, utilizaremos el patrón **Repository** para inter
 ![image](assets/Chapter-4/subscription-bc.png) <br>
 *Imagen (N°25). Subscription BC Component Level Diagram* <br>
 ### 4.2.1.6.  Bounded Context Software Architecture Code Level Diagrams
-### 	4.2.1.6.1.  Bounded Context Domain Layer Class Diagrams
-### 	4.2.1.6.2.  Bounded Context Database Design Diagram
+### 	4.2.1.6.1.  Bounded Context Domain Layer Class Diagrams <br>
+![image](assets/Chapter-4/class-diagram.png) <br>
+### 	4.2.1.6.2.  Bounded Context Database Design Diagram <br>
+![image](assets/Chapter-4/database-diagram.png) <br>
 
 # Conclusiones
 ## Conclusiones y recomendaciones
