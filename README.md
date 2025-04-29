@@ -519,7 +519,7 @@ A manera de escalabilidad, proponemos introducir a futuro el uso de inteligencia
     <td valign="top">
       <p><b>Escalante Baygorrea, Janiel Franz</b></p>
       <p>
-       
+       Soy estudiante
       </p>
     </td>
   </tr>
