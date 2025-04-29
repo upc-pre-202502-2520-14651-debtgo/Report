@@ -470,7 +470,7 @@ A manera de escalabilidad, proponemos introducir a futuro el uso de inteligencia
   </tr>
    <tr>
     <th>
-      <img src="assets/Chapter-1/fabiola1.jpeg" width="800px">
+      <img src="assets/Chapter-1/fabiola1.png" width="800px">
     </th>
     <td valign="top">
       <p><b>Becerra Llempen, Fabiola Dayane</b></p>
@@ -862,16 +862,21 @@ En la entrevista realizada a George Garcia Durand , graduado en finanzas de 20 a
 
 
 **Entrevista #2**
-- Nombre: 
-- Edad:  
-- Distrito: 
-- Duración: 
+- Nombre: Andrea Rodriguez
+- Edad:  25
+- Distrito: Lima Metropolitana
+- Duración: 4:16
 
-![image](assets/Chapter-2/)
+![image](assets/Chapter-2/entrevista2.png)
 
-[Entrevista 2 - video]()
+[Entrevista 2 - video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20171a518_upc_edu_pe/EU1lsdp9xb1LhrNE8agEurYBKbswyKpiqfpP9_WjLU-68w?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=eU3MGz)
 
 Resumen: 
+Andrea Rodriguez, consultora financiera con 4 años de experiencia, reside en Lima y trabaja activamente asesorando a emprendedores y particulares en temas económicos. Tiene un fuerte conocimiento del concepto de educación financiera, que aplica como herramienta clave para tomar decisiones económicas informadas.
+
+En su práctica diaria, utiliza principalmente dispositivos móviles por su practicidad, y se mantiene actualizada en temas financieros a través de redes sociales como LinkedIn y X. Ha notado la presencia de promociones de apps de gestión financiera, considerándolas útiles para el control de gastos.
+
+Andrea usa bases de datos como INFOCORP para evaluar historiales crediticios y ha recomendado aplicaciones como YNAB y Mint por sus funciones prácticas. Identifica como principal desafío financiero la falta de planificación, y cree que una app como DebtGo podría cubrir necesidades actuales mediante recordatorios y seguimiento personalizado. Considera que una aplicación de este tipo sí puede mejorar significativamente las finanzas personales si se utiliza correctamente.
 
 
 **Entrevista #3**
@@ -937,27 +942,27 @@ Resumen:
 
 *Perfil Profesional y Uso de Herramientas:*
 
-
+Utilizan laptops y dispositivos móviles para gestionar finanzas y asesorar a clientes, priorizando herramientas digitales prácticas.
 
 *Educación Financiera y Retos:*
 
-
+Consideran la educación financiera esencial y destacan como retos la falta de cultura de ahorro y planificación financiera en Perú.
 
 *Percepción de Aplicaciones Financieras:*
 
-
+Valoran apps como Monefy, Fintonic, YNAB y Mint por su utilidad, aunque piden más funciones de inversión y personalización.
 
 *Uso de Infocorp y Control Crediticio:*
 
-
+INFOCORP es clave en sus evaluaciones crediticias para asesorar con mayor precisión a clientes y emprendedores.
 
 *Tecnología y Redes Sociales:*
 
-
+Usan LinkedIn, YouTube y X para estar actualizados en temas económicos y detectar tendencias útiles para su práctica profesional.
 
 *Potencial de DebtGo:*
 
-
+Creen que DebtGo puede ser efectiva si combina asesoría personalizada, control de deudas y educación financiera continua.
 
 **Segmento Objetivo: Gestores de Deudas y Emprendedores**
 
