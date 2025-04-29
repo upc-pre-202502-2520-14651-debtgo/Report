@@ -286,9 +286,12 @@ Criterio: La capacidad de adquirir y aplicar nuevos conocimientos según sea nec
     </thead>
   <tbody>
     <tr>
-      <td><b>Trabaja en equipo para
-proporcionar liderazgo en
-forma conjunta</b></td>
+      <td><b>Actualiza conceptos y
+conocimientos necesarios
+para su desarrollo
+profesional y en especial
+para su proyecto en
+soluciones de software.</b></td>
       <td>
         <p><b>Chávarri Zarzosa, Daniel Jhared</b></p>
         <p><b>TB1:</b></p>
@@ -336,7 +339,7 @@ forma conjunta</b></td>
         <p><b>TF:</b></p>
         <p>.</p>
         <p><b>Escalante Baygorrea, Janiel Franz</b></p>
-       <p><b>TB1:</b></p>
+       <p><b>TB1: Actualice los conceptos de las tacticas DDD de acuerdo a los conceptos previos que aprendi</b></p>
         <p></p>
         <p><b>TP1:</b></p>
         <p></p>
@@ -357,10 +360,12 @@ forma conjunta</b></td>
       </td>
     </tr>
     <tr>
-      <td>Crea un entorno colaborativo e
-inclusivo, establece metas,
-planifica tareas y cumple
-objetivos</td>
+      <td>Reconoce la necesidad del
+aprendizaje permanente
+para el desempeño
+profesional y el desarrollo
+de proyectos en soluciones
+de software</td>
       <td>
         <p><b>Chávarri Zarzosa, Daniel Jhared</b></p>
         <p><b>TB1:</b></p>
@@ -416,7 +421,7 @@ objetivos</td>
         <p><b>TF:</b></p>
         <p></p>
         <p><b>Escalante Baygorrea, Janiel Franz</b></p>
-       <p><b>TB1:</b></p>
+       <p><b>TB1:Investigue definiciones de DDD de las que no habia escuchado antes para poder cumplir con el desarrollo del Capitulo IV</b></p>
         <p></p>
         <p><b>TP1:</b></p>
         <p>.</p>
