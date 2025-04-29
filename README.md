@@ -1490,6 +1490,113 @@ En la capa de infraestructura, utilizaremos el patrón **Repository** para inter
 ### 4.2.1.6.  Bounded Context Software Architecture Code Level Diagrams
 ### 	4.2.1.6.1.  Bounded Context Domain Layer Class Diagrams <br>
 ![image](assets/Chapter-4/class-diagram.png) <br>
+
+**Class Dictionary**
+**Class User**
+
+| Attribute       | Type          | Description                  |
+|-----------------|---------------|------------------------------|
+| id              | int           | Unique identifier for the user |
+| name            | string        | Name of the user             |
+| email           | string        | Email address of the user    |
+| password        | string        | Password for user authentication |
+| role            | RoleType      | Role of the user |
+| subscriptionId  | int           | Identifier for the subscription |
+| paymentCard     | PaymentCard   | Details of the payment card used |
+
+
+**Class Entrepreneur**
+
+| Attribute       | Type          | Description                                      |
+|-----------------|---------------|--------------------------------------------------|
+| businessName    | string        | The name of the business                        |
+| industry        | string        | The industry in which the business operates     |
+| financialGoals  | string[]      | A list of financial goals for the business       |
+| viewedCourses   | int[]         | A list of IDs for the courses that have been viewed |
+
+**Class Advisor**
+
+| Attribute       | Type          | Description                                      |
+|-----------------|---------------|--------------------------------------------------|
+| expertise       | string[]      | A list of areas of expertise of the advisor     |
+| experienceYears | int           | Number of years of experience the advisor has   |
+| reviews         | Review[]      | An array of reviews given to the advisor        |
+
+**Class Course**
+
+| Attribute      | Type           | Description                                    |
+|----------------|----------------|------------------------------------------------|
+| id             | int            | Unique identifier for the course               |
+| title          | string         | Title of the course                            |
+| description    | string         | Description of the course                      |
+| duration       | int            | Duration of the course in hours                |
+| level          | CourseLevelType| Difficulty level of the course                 |
+| comments       | Comment[]      | Array of comments related to the course        |
+
+**Class Comment**
+
+| Attribute       | Type          | Description                              |
+|-----------------|---------------|------------------------------------------|
+| id              | int           | Unique identifier for the comment        |
+| entrepreneurId  | int           | Identifier of the entrepreneur who made the comment |
+| comment         | string        | The content of the comment               |
+
+**Class AdviceSession**
+
+| Attribute       | Type                    | Description                                     |
+|-----------------|-------------------------|-------------------------------------------------|
+| id              | int                     | Unique identifier for the advice session       |
+| entrepreneurId  | int                     | Identifier of the entrepreneur participating in the session |
+| advisorId       | int                     | Identifier of the advisor conducting the session |
+| scheduledDate   | string                  | Date and time when the session is scheduled    |
+| status          | AdviceSessionStatusType | Current status of the advice session           |
+
+**Class Review**
+
+| Attribute       | Type          | Description                                      |
+|-----------------|---------------|--------------------------------------------------|
+| id              | int           | Unique identifier for the review                |
+| entrepreneurId  | int           | Identifier of the entrepreneur who received the review |
+| comment         | string        | The content of the review                       |
+| score           | int           | Score given in the review |
+
+
+**Class PaymentCard**
+
+| Attribute       | Type          | Description                                      |
+|-----------------|---------------|--------------------------------------------------|
+| id              | int           | Unique identifier for the payment card          |
+| cardNumber      | int           | Credit or debit card number                     |
+| expirationDate  | string        | Expiration date of the payment card             |
+| securityCode    | int           | Security code (CVV) of the payment card         |
+
+**Class Subscription**
+
+| Attribute    | Type                    | Description                                    |
+|--------------|-------------------------|------------------------------------------------|
+| id           | int                     | Unique identifier for the subscription         |
+| userId       | int                     | Identifier of the user associated with the subscription |
+| planId       | int                     | Identifier of the subscription plan            |
+| status       | SubscriptionStatusType | Current status of the subscription             |
+
+**Class Plan**
+
+| Attribute    | Type   | Description                          |
+|--------------|--------|--------------------------------------|
+| id           | int    | Unique identifier for the plan       |
+| name         | string | Name of the plan                     |
+| description  | string | Description of the plan              |
+| price        | float  | Price of the plan                    |
+
+**Class Payment**
+
+| Attribute       | Type   | Description                                 |
+|-----------------|--------|---------------------------------------------|
+| id              | int    | Unique identifier for the payment           |
+| subscriptionId  | int    | Identifier of the associated subscription   |
+| paymentCardId   | int    | Identifier of the payment card used         |
+| paymentDate     | string | Date of the payment                         |
+
 ### 	4.2.1.6.2.  Bounded Context Database Design Diagram <br>
 ![image](assets/Chapter-4/database-diagram.png) <br>
 
