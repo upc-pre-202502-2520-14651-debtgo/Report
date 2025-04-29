@@ -295,7 +295,7 @@ soluciones de software.</b></td>
       <td>
         <p><b>Chávarri Zarzosa, Daniel Jhared</b></p>
         <p><b>TB1:</b></p>
-        <p></p>
+        <p>Hice el Capítulo I, Capítulo II, Capítulo III y Capítulo IV, de igual manera, me aseguré de que todo vaya de acorde a los puntos indicados para la tb1.</p>
         <p><b>TP1:</b></p>
         <p></p>
         <p><b>TB2:</b></p>
@@ -369,7 +369,7 @@ de software</td>
       <td>
         <p><b>Chávarri Zarzosa, Daniel Jhared</b></p>
         <p><b>TB1:</b></p>
-        <p></p>
+        <p>Hice el Capítulo I, Capítulo II, Capítulo III y Capítulo IV, de igual manera, me aseguré de que todo vaya de acorde a los puntos indicados para la tb1.</p>
         <p><b>TP1:</b></p>
         <p></p>
         <p><b>TB2:</b></p>
