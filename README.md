@@ -470,7 +470,7 @@ A manera de escalabilidad, proponemos introducir a futuro el uso de inteligencia
   </tr>
    <tr>
     <th>
-      <img src="" width="800px">
+      <img src="assets/Chapter-1/fabiola1.jpeg" width="800px">
     </th>
     <td valign="top">
       <p><b>Becerra Llempen, Fabiola Dayane</b></p>
