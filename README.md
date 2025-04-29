@@ -38,7 +38,7 @@
             <td>U202118264</td>
         </tr>
         <tr>
-            <td>Rivera Ticllacuriv, Omar Harold</td>
+            <td>Rivera Ticllacuri, Omar Harold</td>
             <td>U202214214</td>
         </tr>
         <tr>
@@ -320,8 +320,8 @@ soluciones de software.</b></td>
         <p></p>
         <p><b>TF:</b></p>
         <p></p>
-        <p><b>Rivera Ticllacuriv, Omar Harold</b></p>
-       <p><b>TB1:</b></p>
+        <p><b>Rivera Ticllacuri, Omar Harold</b></p>
+       <p><b>TB1: Comprendí cada uno de los elementos mencionados en el Capítulo II y cómo aplicarlos en el contexto del proyecto, reforzando mis habilidades en el análisis de requerimientos.</b></p>
         <p></p>
         <p><b>TP1:</b></p>
         <p></p>
@@ -402,8 +402,8 @@ de software</td>
         <p></p>
         <p><b>TF:</b></p>
         <p></p>
-        <p><b>Rivera Ticllacuriv, Omar Harold</b></p>
-       <p><b>TB1:</b></p>
+        <p><b>Rivera Ticllacuri, Omar Harold</b></p>
+       <p><b>TB1:Busqué información adicional para entender correctamente los apartados</b></p>
         <p></p>
         <p><b>TP1:</b></p>
         <p>.</p>
@@ -500,7 +500,7 @@ A manera de escalabilidad, proponemos introducir a futuro el uso de inteligencia
       <img src="assets/Chapter-1/Omar.jpeg" width="800px">
     </th>
     <td valign="top">
-      <p><b>Rivera Ticllacuriv, Omar Harold</b></p>
+      <p><b>Rivera Ticllacuri, Omar Harold</b></p>
       <p>
       Soy estudiante de Ingeniería de Software, tengo 20 años. Me considero una persona disciplinada y responsable, con experiencia en el desarrollo de software de entretenimiento. Estoy comprometido a aportar al grupo para cumplir con éxito los objetivos del proyecto.	Apasionado por el desarrollo de software de entretenimiento usando C#, SQL Serve.
       </p>
