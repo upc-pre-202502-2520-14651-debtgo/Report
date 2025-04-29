@@ -1483,20 +1483,19 @@ La capa de interfaz expondrá una **API REST** a través de un controlador, perm
 ### 4.2.1.3.  Application Layer
 La capa de aplicación estará compuesta por servicios que implementan los comandos y consultas relacionados con el agregado **Suscripción**. Estos servicios serán responsables de garantizar que toda la lógica de negocio y las reglas se apliquen antes de interactuar con la capa de dominio. Los servicios también manejarán la orquestación de los diferentes eventos de dominio, asegurando que el sistema se comporte de manera consistente y predecible.
 ### 4.2.1.4.  Infrastructure Layer
-En la capa de infraestructura, utilizaremos el patrón **Repository** para interactuar con la base de datos a través de **Entity Framework**, una herramienta ORM (Mapeo Objeto-Relacional). Este patrón abstrae la lógica de acceso a datos y proporciona una manera de persistir los datos de suscripción sin exponer la estructura subyacente de la base de datos. También nos aseguraremos de que el repositorio se integre limpiamente con la capa de aplicación para proporcionar funcionalidades relacionadas con la persistencia.
-### 4.2.1.5.  Bounded Context Software Architecture Component Level Diagrams
-![image](assets/Chapter-4/subscription-bc.png) <br>
-*Imagen (N°25). Subscription BC Component Level Diagram* <br>
+En la capa de infraestructura, utilizaremos el patrón **Repository** para interactuar con la base de datos a través de **Entity Framework**, una herramienta ORM (Mapeo Objeto-Relacional). Este patrón abstrae la lógica de acceso a datos y proporciona una manera de persistir los datos de suscripción sin exponer la estructura subyacente de la base de datos. También nos aseguraremos de que el repositorio se integre limpiamente con la capa de aplicación para proporcionar funcionalidades relacionadas con la persistencia. <br>
 
-### 4.3.1. Bounded Context: User BC
-### 4.3.1.1. Bounded Context: User
-### 4.3.2.2. Domain Layer
+![image](assets/Chapter-4/subscription-bc.png) <br>
+*Imagen (N°27). Subscription BC Component* <br>
+
+### 4.2.2. Bounded Context: User BC
+### 4.2.2.1. Domain Layer
 Gestiona el agregado Usuario, incluyendo entidades relacionadas como Perfil, PreferenciasFinancieras, y HistorialDeUso. Este agregado se encarga de definir las reglas de autenticación, autorización y validación de información del usuario.
 
-### 4.3.2.3. Interface Layer
+### 4.2.2.2. Interface Layer
 Expondrá una API REST para gestionar el registro, inicio de sesión, actualización de datos personales y configuración de preferencias del usuario. Usará el patrón Facade para mantener una interfaz limpia hacia otros BCs como Payments o Consulting.
 
-### 4.3.2.4. Application Layer
+### 4.2.2.3. Application Layer
 Orquesta servicios como:
 
 - Registro de usuario <br>
@@ -1506,8 +1505,86 @@ Orquesta servicios como:
 
 También valida la identidad del usuario para permitir acceso a otras funcionalidades de DebtGo.
 
+![image](assets/Chapter-4/user-bc.png) <br>
+*Imagen (N°28). User BC Component* <br>
+
 ### 4.2.2.4. Infrastructure Layer
 Usará Entity Framework o similar para manejar la persistencia del usuario. Implementará repositorios para acceder y modificar perfiles y credenciales. <br>
+
+### 4.2.3. Bounded Context: Consulting BC
+### 4.2.3.1. Domain Layer
+Modela entidades como SesiónConsultoría, Consultor, Cliente y Agenda, con reglas como disponibilidad, validación de horarios y límites de sesiones.
+
+### 4.2.3.2. Interface Layer
+Expondrá una API REST para:
+
+- Reservar sesiones de consultoría
+- Consultar historial de asesorías
+- Evaluar consultores
+
+Usará el patrón Facade para facilitar la integración con User BC y Notification BC (por ejemplo, para enviar recordatorios).
+
+### 4.2.3.3. Application Layer
+Servicios para:
+
+- Asignación de consultores según necesidades
+- Programación y cancelación de sesiones
+- Seguimiento del progreso financiero del usuario
+
+### 4.2.3.4. Infrastructure Layer
+Repositorios que se conectan con la base de datos y permiten consultar disponibilidad, almacenar sesiones y asignar consultores. Podría incluir integración futura con herramientas de videoconferencia o IA.
+
+![image](assets/Chapter-4/consulting-bc.png) <br>
+*Imagen (N°29). Consulting BC Component* <br>
+
+### 4.2.4. Bounded Context: Payments BC
+### 4.2.4.1. Domain Layer
+Agregado Transacción con entidades como MétodoPago, Factura, PagoRecurrente. Se encargará de validar estados de transacción, reintentos y fallos.
+
+### 4.2.4.2. Interface Layer
+API REST para gestionar:
+
+- Procesamiento de pagos únicos y recurrentes
+- Verificación del estado de la transacción
+- Consulta de historial de pagos
+- Patrón Facade para integrarse con servicios externos como Visa y MasterCard.
+
+### 4.2.4.3. Application Layer
+Servicios para:
+
+- Autorización de pagos
+- Notificación de fallos o confirmaciones
+- Validación y seguridad en la transacción
+
+### 4.2.4.4. Infrastructure Layer
+- Conexión con gateways de pago (Visa, MasterCard)
+- Manejo seguro de tokens de tarjeta
+- Repositorios de pagos y facturas
+
+![image](assets/Chapter-4/payment-bc.png) <br>
+*Imagen (N°30). Payments BC Component* <br>
+
+### 4.2.6. Bounded Context: Notification BC
+### 4.2.6.1. Domain Layer
+Modela Notificación, PreferenciasDeNotificación, Canal, con reglas sobre cuándo, cómo y a quién enviar mensajes.
+
+### 4.2.6.2. Interface Layer
+API REST que permite a otros BCs solicitar notificaciones (recordatorios de pago, sesiones agendadas, progreso educativo, etc.).
+
+### 4.2.6.3. Application Layer
+Servicios para:
+
+- Envío de notificaciones por email (y SMS o push en el futuro)
+- Gestión de plantillas y personalización
+- Monitoreo de entregabilidad
+
+### 4.2.6.4. Infrastructure Layer
+- Integración con el sistema de Email
+- Repositorio de logs de notificaciones
+- Configuración de canales y reglas
+
+![image](assets/Chapter-4/notification-bc.png) <br>
+*Imagen (N°31). Notification BC Component* <br>
 
 ### 4.2.1.6.  Bounded Context Software Architecture Code Level Diagrams
 ### 	4.2.1.6.1.  Bounded Context Domain Layer Class Diagrams <br>
