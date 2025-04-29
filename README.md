@@ -1457,14 +1457,10 @@ Envío de recordatorios (usa Email System).
 ![image](assets/Chapter-4/education-bc.png) <br>
 *Imagen (N°22). Elaboración propia. Realizado en Structurizr.* <br>
 
-![image](assets/Chapter-4/notification-bc.png) <br>
-*Imagen (N°23). Elaboración propia. Realizado en Structurizr.* <br>
-
 ![image](assets/Chapter-4/payment-bc.png) <br>
 *Imagen (N°24). Elaboración propia. Realizado en Structurizr.* <br>
 
-![image](assets/Chapter-4/subscription-bc.png) <br>
-*Imagen (N°25). Elaboración propia. Realizado en Structurizr.* <br>
+
 
 ![image](assets/Chapter-4/user-bc.png) <br>
 *Imagen (N°26). Elaboración propia. Realizado en Structurizr.* <br>
@@ -1477,6 +1473,51 @@ Envío de recordatorios (usa Email System).
 
 **Flujo:**
 Web App → API REST → Database ↔ Sistemas externos.
+
+## 4.2.  Tactical-Level Domain-Driven Design
+### 4.2.1.  Bounded Context: Subscription
+### 4.2.1.1.  Domain Layer
+Además, implementaremos el patrón **CQRS** (Separación de Responsabilidades de Comandos y Consultas) para separar las operaciones de lectura y escritura, mejorando la escalabilidad y mantenibilidad. Las operaciones de escritura interactuarán con la base de datos a través de comandos, mientras que las operaciones de lectura utilizarán modelos de consulta especializados.
+### 4.2.1.2.  Interface Layer
+La capa de interfaz expondrá una **API REST** a través de un controlador, permitiendo que otros sistemas y Contextos Acotados (BCs) interactúen con el BC de Suscripción. Usaremos el patrón **Facade** aquí para simplificar la interfaz y asegurar que la comunicación entre BCs se mantenga eficiente y desacoplada. Esta capa servirá como el punto de entrada para todas las interacciones externas con el BC de Suscripción.
+### 4.2.1.3.  Application Layer
+La capa de aplicación estará compuesta por servicios que implementan los comandos y consultas relacionados con el agregado **Suscripción**. Estos servicios serán responsables de garantizar que toda la lógica de negocio y las reglas se apliquen antes de interactuar con la capa de dominio. Los servicios también manejarán la orquestación de los diferentes eventos de dominio, asegurando que el sistema se comporte de manera consistente y predecible.
+### 4.2.1.4.  Infrastructure Layer
+En la capa de infraestructura, utilizaremos el patrón **Repository** para interactuar con la base de datos a través de **Entity Framework**, una herramienta ORM (Mapeo Objeto-Relacional). Este patrón abstrae la lógica de acceso a datos y proporciona una manera de persistir los datos de suscripción sin exponer la estructura subyacente de la base de datos. También nos aseguraremos de que el repositorio se integre limpiamente con la capa de aplicación para proporcionar funcionalidades relacionadas con la persistencia.
+### 4.2.1.5.  Bounded Context Software Architecture Component Level Diagrams
+![image](assets/Chapter-4/subscription-bc.png) <br>
+*Imagen (N°25). Subscription BC Component Level Diagram* <br>
+### 4.2.1.6.  Bounded Context Software Architecture Code Level Diagrams
+### 	4.2.1.6.1.  Bounded Context Domain Layer Class Diagrams
+### 	4.2.1.6.2.  Bounded Context Database Design Diagram
+### 4.2.2.  Bounded Context: Notification
+### 4.2.2.1.  Domain Layer
+El BC de **Notificación** definirá un agregado llamado **Notificación**, responsable de encapsular la información relacionada con las notificaciones (por ejemplo, tipo, mensaje, destinatario). Usará **objetos de valor** para representar los diferentes elementos de una notificación, como la marca temporal, el método de entrega y el contenido. Se dispararán eventos de dominio cada vez que se cree o actualice una notificación, lo que garantizará el seguimiento adecuado del ciclo de vida de la notificación.
+### 4.2.2.2.  Interface Layer
+La capa de interfaz expondrá una **API REST** para crear y enviar notificaciones. Esto permitirá que otros BCs o sistemas externos desencadenen notificaciones en el sistema. La comunicación con otros BCs será facilitada mediante el patrón **Facade** para asegurar que las interacciones sean simples y consistentes.
+### 4.2.2.3.  Application Layer
+La capa de aplicación contará con servicios para gestionar la creación, el envío y el seguimiento de notificaciones. Manejará la orquestación de comandos y consultas relacionados con las notificaciones y se comunicará con la capa de dominio para hacer cumplir la lógica de negocio.
+### 4.2.2.4.  Infrastructure Layer
+En la capa de infraestructura, utilizaremos el patrón **Repository** para persistir los datos de notificación, posiblemente integrándonos con servicios de terceros (por ejemplo, pasarelas de correo electrónico o SMS) para la entrega de notificaciones. El repositorio garantizará que las notificaciones se almacenen en una base de datos y puedan ser recuperadas o actualizadas de manera eficiente.
+### 4.2.2.5.  Bounded Context Software Architecture Component Level Diagrams
+![image](assets/Chapter-4/notification-bc.png) <br>
+*Imagen (N°23). Elaboración propia. Realizado en Structurizr.* <br>
+### 4.2.2.6.  Bounded Context Software Architecture Code Level Diagrams
+### 4.2.2.6.1.  Bounded Context Domain Layer Class Diagrams
+### 4.6.1.6.2.  Bounded Context Database Design Diagram
+### 4.2.3.  Bounded Context: IAM
+### 4.2.3.1.  Domain Layer
+En la capa de dominio, definiremos **Usuario** como un agregado, gestionando los datos y comportamientos relacionados con el usuario. Esto incluirá los perfiles de usuario, permisos y roles. El agregado manejará eventos de dominio cada vez que se cree, actualice o elimine un usuario.
+### 4.2.3.2.  Interface Layer
+La capa de interfaz expondrá una **API REST** para gestionar la autenticación y autorización de usuarios. Proporcionará puntos de entrada para el registro de usuarios, inicio de sesión, asignación de roles y gestión de permisos. Esta capa interactuará con otros BCs para proporcionar los datos de usuario necesarios y el control de acceso.
+### 4.2.3.3.  Application Layer
+La capa de aplicación contará con servicios para gestionar la autenticación de usuarios, el cifrado de contraseñas y la generación de tokens. Esta capa también gestionará el control de acceso basado en roles (RBAC) para garantizar que los usuarios solo accedan a los recursos a los que están autorizados. Los servicios interactuarán con servicios externos para la emisión de tokens y el cifrado.
+### 4.2.3.4.  Infrastructure Layer
+La capa de infraestructura incluirá el servicio de **tokens** para generar y validar los tokens de usuario. También manejará la persistencia de los datos de usuario mediante el patrón **Repository**, utilizando una base de datos relacional para almacenar la información de usuario de manera segura.
+### 4.2.3.5.  Bounded Context Software Architecture Component Level Diagrams
+### 4.2.3.6.  Bounded Context Software Architecture Code Level Diagrams
+### 4.2.3.6.1.  Bounded Context Domain Layer Class Diagrams
+### 4.2.3.6.2.  Bounded Context Database Design Diagram
 
 # Conclusiones
 ## Conclusiones y recomendaciones
