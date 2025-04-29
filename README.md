@@ -1505,11 +1505,11 @@ Orquesta servicios como:
 
 También valida la identidad del usuario para permitir acceso a otras funcionalidades de DebtGo.
 
-![image](assets/Chapter-4/user-bc.png) <br>
-*Imagen (N°28). User BC Component* <br>
-
 ### 4.2.2.4. Infrastructure Layer
 Usará Entity Framework o similar para manejar la persistencia del usuario. Implementará repositorios para acceder y modificar perfiles y credenciales. <br>
+
+![image](assets/Chapter-4/user-bc.png) <br>
+*Imagen (N°28). User BC Component* <br>
 
 ### 4.2.3. Bounded Context: Consulting BC
 ### 4.2.3.1. Domain Layer
