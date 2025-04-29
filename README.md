@@ -395,7 +395,7 @@ de software</td>
         <p></p>
         <p><b>Burga Loarte, Anaely Zarely</b></p>
        <p><b>TB1:</b></p>
-        <p>Para una mejor identifición de requisitos, además de asegurarse de la consistencia de las preguntas, siempre es bueno un análisis que se vaya actualizando con las demás entrevistas cómo hicieron mis compañeros para abarcar todos los puntos de vistas posibles.</p>
+        <p></p>
         <p><b>TP1:</b></p>
         <p></p>
         <p><b>TB2:</b></p>
@@ -413,7 +413,7 @@ de software</td>
         <p></p>
         <p><b>Góngora Sánchez, Marco Antonio</b></p>
        <p><b>TB1:</b></p>
-        <p></p>
+        <p>Para una mejor identifición de requisitos, además de asegurarse de la consistencia de las preguntas, siempre es bueno un análisis que se vaya actualizando con las demás entrevistas cómo hicieron mis compañeros para abarcar todos los puntos de vistas posibles.</p>
         <p><b>TP1:</b></p>
         <p>.</p>
         <p><b>TB2:</b></p>
