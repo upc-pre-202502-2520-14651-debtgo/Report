@@ -492,12 +492,12 @@ A manera de escalabilidad, proponemos introducir a futuro el uso de inteligencia
   </tr>
      <tr>
     <th>
-      <img src="" width="800px">
+      <img src="assets/Chapter-1/Omar.jpeg" width="800px">
     </th>
     <td valign="top">
       <p><b>Rivera Ticllacuriv, Omar Harold</b></p>
       <p>
-      
+      Soy estudiante de Ingeniería de Software, tengo 20 años. Me considero una persona disciplinada y responsable, con experiencia en el desarrollo de software de entretenimiento. Estoy comprometido a aportar al grupo para cumplir con éxito los objetivos del proyecto.	Apasionado por el desarrollo de software de entretenimiento usando C#, SQL Serve.
       </p>
     </td>
   </tr>
