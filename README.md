@@ -1487,6 +1487,28 @@ En la capa de infraestructura, utilizaremos el patrón **Repository** para inter
 ### 4.2.1.5.  Bounded Context Software Architecture Component Level Diagrams
 ![image](assets/Chapter-4/subscription-bc.png) <br>
 *Imagen (N°25). Subscription BC Component Level Diagram* <br>
+
+### 4.3.1. Bounded Context: User BC
+### 4.3.1.1. Bounded Context: User
+### 4.3.2.2. Domain Layer
+Gestiona el agregado Usuario, incluyendo entidades relacionadas como Perfil, PreferenciasFinancieras, y HistorialDeUso. Este agregado se encarga de definir las reglas de autenticación, autorización y validación de información del usuario.
+
+### 4.3.2.3. Interface Layer
+Expondrá una API REST para gestionar el registro, inicio de sesión, actualización de datos personales y configuración de preferencias del usuario. Usará el patrón Facade para mantener una interfaz limpia hacia otros BCs como Payments o Consulting.
+
+### 4.3.2.4. Application Layer
+Orquesta servicios como:
+
+- Registro de usuario <br>
+- Inicio de sesión (con JWT) <br>
+- Actualización de perfil <br>
+- Gestión de roles <br>
+
+También valida la identidad del usuario para permitir acceso a otras funcionalidades de DebtGo.
+
+### 4.2.2.4. Infrastructure Layer
+Usará Entity Framework o similar para manejar la persistencia del usuario. Implementará repositorios para acceder y modificar perfiles y credenciales. <br>
+
 ### 4.2.1.6.  Bounded Context Software Architecture Code Level Diagrams
 ### 	4.2.1.6.1.  Bounded Context Domain Layer Class Diagrams <br>
 ![image](assets/Chapter-4/class-diagram.png) <br>
