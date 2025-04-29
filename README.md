@@ -846,16 +846,18 @@ Estas estrategias y tácticas nos ayudarán a posicionar a DebtGo de manera efec
 
 **Entrevista #1**
 
-- Nombre: 
-- Edad: 
-- Distrito:
-- Duración: 
+- Nombre: George Garcia Durand
+- Edad: 20 años
+- Distrito: Rimac
+- Duración: 4:57
 
-![image](assets/Chapter-2/Entrevista1_seg1.png)
+![image](assets/Chapter-2/George.png)
 
-[Entrevista 1 - video]()
+[Entrevista 1 - video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202214214_upc_edu_pe/EQ77TmeMzZxLv83IOvsXFtMBa3PM7kygfpVsY93jZnukZg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=ReJpXc)
 
 Resumen:
+En la entrevista realizada a George Garcia Durand , graduado en finanzas de 20 años y residente en Rímac, se abordaron temas relacionados a la gestión financiera personal y empresarial. George destacó la importancia de la educación financiera para tomar decisiones informadas sobre el manejo del dinero y señaló que su herramienta principal de trabajo es la laptop, aunque también utiliza su celular. Se actualiza en temas financieros a través de LinkedIn, Twitter y YouTube. Comentó que, aunque es escéptico respecto a muchas aplicaciones de finanzas debido a la publicidad engañosa, ha utilizado y recomendado Monefy y Fintonic, valorando su utilidad para el control de gastos e ingresos, aunque considera que deberían ofrecer más opciones de planificación de inversiones. Señaló como principal desafío financiero la falta de cultura de ahorro y planificación en el Perú, y considera que DatGo podría ser una solución efectiva si proporciona asesoría personalizada, seguimiento de deudas y educación financiera, ayudando a mejorar significativamente la gestión financiera de los usuarios.
+
 
 
 
