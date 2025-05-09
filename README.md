@@ -1945,6 +1945,91 @@ En la versión mobile el navbar se reemplaza por un menu desplegable.
 ## 5.1.4. Mobile Applications UX/UI Design
 ### 5.1.4.1 Mobile Applications Wireframes
 
+## Capítulo VI: Product Implementation, Validations & Deployment
+### 6.1. Software Configuration Management
+
+Este apartado se detalla las decisiones, herramientas y convenciones adoptadas por el equipo para garantizar consistencia en el desarrollo, las pruebas y en el despliegue de la aplicación.
+
+### 6.1.1. Software Development Environment Configuration
+
+| Producto de Software        | Propósito en el Proyecto                                       | Tipo de Software |
+|----------------------------|----------------------------------------------------------------|------------------|
+| Visual Studio 2022         | Desarrollo de Web Services en .NET (C#)                        | IDE              |
+| Android Studio Giraffe     | Desarrollo de app móvil en Kotlin (Jetpack Compose)            | IDE              |
+| GitHub                     | Control de versiones y repositorios                            | SaaS             |                                   
+| Figma                      | Diseño de interfaces UI/UX                                     | SaaS             |                                   
+| Miro                       | EventStorming, Context Mapping, User Flows                     | SaaS             |                                   
+| UXPressia                  | User Personas, Journey Mapping, Impact Mapping                 | SaaS             |
+| Postman                    | Pruebas de APIs RESTful                                        | Desktop          |
+
+---
+
+### 6.1.2. Source Code Management
+
+**Repositorios Oficiales**:
+- [Landing Page (Frontend Web)](https://github.com/...)
+- [Web Services (Backend API .NET)](https://github.com/...)
+- [Aplicación Móvil (Android Kotlin)](https://github.com/...)
+
+**Workflow Adoptado GitFlow**
+- Ramas principales:
+    - `main`: rama de producción
+    - `develop`: rama de integración
+- Ramas auxiliares:
+    - `feature/<nombre>` (ej. `feature/payment-tracking`)
+    - `release/<version>` (ej. `release/1.1.0`)
+    - `hotfix/<nombre>` (ej. `hotfix/login-error`)
+
+**Versionado Semántico (Semantic Versioning 2.0.0)**:
+- Formato: `MAJOR.MINOR.PATCH` (ej. `v1.2.0`)
+
+**Convenciones de Commits (Conventional Commits)**:
+    - `feat`: nueva funcionalidad
+    - `fix`: corrección de errores
+    - `docs`: documentación
+    - `style`: formato (espacios, punto y coma, etc.)
+    - `refactor`: reestructuración sin cambio funcional
+
+---
+
+### 6.1.3. Source Code Style Guide & COding Conventions
+
+**C# / ASP.NET Core (Backend)**:
+- Guía: [Microsoft C# Coding Conventions](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/coding-style/coding-conventions)
+- PascalCase para clases y métodos, camelCase para variables.
+
+**Kotlin / Jetpack Compose (App Móvil)**:
+- Guía: [Kotlin Coding Conventions](https://kotlinlang.org/docs/coding-conventions.html)
+- CamelCase para nombres.
+
+**HTML/CSS (Landing Page)**:
+- Guía: [Google HTML/CSS Style Guide](https://google.github.io/styleguide/htmlcssguide.html)
+- Convención BEM para CSS.
+
+**Gherkin (.feature files)**:
+- Guía: [Gherkin Style Guide](https://cucumber.io/docs/gherkin/reference/)
+- Escenarios en inglés, legibles y estructurados.
+
+---
+
+### 6.1.4. Software Deployment Configuration
+
+#### Productos y configuración de despliegue:
+
+**Landing Page**:
+- Hosting: GitHub Pages
+- CI/CD: GitHub Actions, despliegue automático al hacer push a `main`.
+
+**Aplicación Móvil (Android)**:
+
+**Web Services (API .NET)**:
+
+
+#### Diagrama de Despliegue (C4 Model):
+
+![Deployment Diagram - DebtGo](deploeyment-diagram.png)
+
+---
 
 # Conclusiones
 ## Conclusiones y recomendaciones
