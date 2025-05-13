@@ -1943,7 +1943,11 @@ En la versión mobile el navbar se reemplaza por un menu desplegable.
 </div>
 
 ## 5.1.4. Mobile Applications UX/UI Design
-### 5.1.4.1 Mobile Applications Wireframes
+### 5.1.4.1. Mobile Applications Wireframes
+### 5.1.4.2. Mobile Applications Wireflow Diagrams
+### 5.1.4.3. Mobile Applications Mock-ups
+### 5.1.4.4. Mobile Applications Prototyping
+
 
 ## Capítulo VI: Product Implementation, Validations & Deployment
 ### 6.1. Software Configuration Management
