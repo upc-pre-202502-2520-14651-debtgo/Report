@@ -323,7 +323,7 @@ soluciones de software.</b></td>
         <p><b>Rivera Ticllacuri, Omar Harold</b></p>
        <p><b>TB1: Comprendí cada uno de los elementos mencionados en el Capítulo II y cómo aplicarlos en el contexto del proyecto, reforzando mis habilidades en el análisis de requerimientos.</b></p>
         <p></p>
-        <p><b>TP1:</b></p>
+        <p><b>TP1:Comprendí cada uno de los elementos desarrollados en Solution UI/UX Design Sprint 1, especialmente en Sprint Planning y Sprint Backlog, lo que reforzó mis habilidades en la planificación de tareas y diseño de soluciones centradas en el usuario.</b></p>
         <p></p>
         <p><b>TB2:</b></p>
         <p></p>
@@ -414,7 +414,7 @@ de software</td>
         <p><b>Góngora Sánchez, Marco Antonio</b></p>
        <p><b>TB1:</b></p>
         <p>Para una mejor identifición de requisitos, además de asegurarse de la consistencia de las preguntas, siempre es bueno un análisis que se vaya actualizando con las demás entrevistas cómo hicieron mis compañeros para abarcar todos los puntos de vistas posibles.</p>
-        <p><b>TP1:</b></p>
+        <p><b>TP1:  Participé en Solution UI/UX Design Sprint 1, enfocándome en Sprint Planning y Sprint Backlog. Esta experiencia me permitió consolidar mis conocimientos en metodologías ágiles, fortalecer la planificación de tareas y aplicar principios de diseño centrado en el usuario dentro del proyecto.</b></p>
         <p>.</p>
         <p><b>TB2:</b></p>
         <p>.</p>
