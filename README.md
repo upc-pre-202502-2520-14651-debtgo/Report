@@ -313,9 +313,9 @@ soluciones de software.</b></td>
         <p></p>
         <p><b>Burga Loarte, Anaely Zarely</b></p>
         <p><b>TB1:</b></p>
-        <p></p>
+        <p>Realice los capitulos I, II, III y IV, tambien ayudé a formular y comprendí el proyecto/p>
         <p><b>TP1:</b></p>
-        <p></p>
+        <p>Aporte con la maquitación en figma y desarrollo de los puntos para el parcial</p>
         <p><b>TB2:</b></p>
         <p></p>
         <p><b>TF:</b></p>
