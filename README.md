@@ -2035,6 +2035,32 @@ Este apartado se detalla las decisiones, herramientas y convenciones adoptadas p
 
 ---
 
+### 6.2. Landing Page, Services & Applications Implementation.
+
+### 6.2.1. Sprint 1
+Para este Sprint nos enfocaremos en los task para la elaboración de la landing page. Nos dividiremos entre nosotros cada una de las tareas identificadas para el sprint.
+#### 6.2.1.1. Sprint Planning 1
+| Sprint # | Sprint 1 |
+| -------- | -------- |
+|**Sprint Planning Background**|
+| Date | 2025-05-15|
+| Time | 08:00 PM |
+| Location | Discord Virtual Meeting |
+| Prepared By | Daniel Chávarri, Janiel Franz |
+|Attendees (to planning meeting) | Fabiola Becerra, Anaely Burga, Daniel Chávarri, Rivera Omar, Góngora Marco, Janiel Escalante
+| Sprint n – 1 Review Summary | No hubo sprint anterior |
+| Sprint n – 1 Retrospective Summary | No hubo sprint anterior |
+| **Sprint Goal & User Stories** | 
+| Sprint 1 Goal | Realizar la Landing Page, Backend y Mobile Applications |
+| Sprint 1 Velocity | 20 |
+| Sum of Story Points | 20 | 
+
+#### 6.2.1.2. Sprint Backlog 1
+<img src="assets/Chapter-5/trello.png">
+
+[Link Trello:](https://trello.com/b/61cBtKBy/sprint-1) https://trello.com/b/61cBtKBy/sprint-1
+
+
 # Conclusiones
 ## Conclusiones y recomendaciones
 
