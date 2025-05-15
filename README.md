@@ -1944,8 +1944,22 @@ En la versión mobile el navbar se reemplaza por un menu desplegable.
 
 ## 5.1.4. Mobile Applications UX/UI Design
 ### 5.1.4.1. Mobile Applications Wireframes
+#### Payment BC
+![image](assets/Chapter-4/PaymentWireflow.png)
+#### Notification BC
+![image](assets/Chapter-4/NotificationWireframe.png)
 ### 5.1.4.2. Mobile Applications Wireflow Diagrams
+#### Payment BC
+**User Goal**: El usuario quiere registrar una nueva deuda para poder visualizarla, hacer seguimiento y gestionarla desde la aplicación.
+![image](assets/Chapter-4/PaymentWireflow1.png)
+**User Goal**: El usuario desea configurar cómo pagará sus deudas (tarjeta, monto, frecuencia) y poder modificar esta configuración si es necesario.
+![image](assets/Chapter-4/PaymentWireflow2.png)
 ### 5.1.4.3. Mobile Applications Mock-ups
+#### Payment BC
+![image](assets/Chapter-4/Payment%20Mockup.png)
+#### Notification BC
+![image](assets/Chapter-4/NotificationMockup.png)
+
 ### 5.1.4.4. Mobile Applications Prototyping
 
 
