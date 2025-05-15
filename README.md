@@ -313,9 +313,9 @@ soluciones de software.</b></td>
         <p></p>
         <p><b>Burga Loarte, Anaely Zarely</b></p>
         <p><b>TB1:</b></p>
-        <p></p>
+        <p>Realice los capitulos I, II, III y IV, tambien ayudé a formular y comprendí el proyecto/p>
         <p><b>TP1:</b></p>
-        <p></p>
+        <p>Aporte con la maquitación en figma y desarrollo de los puntos para el parcial</p>
         <p><b>TB2:</b></p>
         <p></p>
         <p><b>TF:</b></p>
@@ -1948,30 +1948,12 @@ En la versión mobile el navbar se reemplaza por un menu desplegable.
 ![image](assets/Chapter-4/PaymentWireflow.png)
 #### Notification BC
 ![image](assets/Chapter-4/NotificationWireframe.png)
-#### IAM - USER BC
-![image](assets/Chapter-4/USER-IAM-BC.JPG)
-![image](assets/Chapter-4/USER-IAM-BC-2.JPG)
-![image](assets/Chapter-4/USER-IAM-BC-3.JPG)
-#### IAM - CONSULTING BC
-![image](assets/Chapter-4/CONSULTING-BC-WFM.JPG)
-#### IAM - FINANCE EDUCATION BC
-![image](assets/Chapter-4/FINANCE-EDUC-BC.JPG)
-
 ### 5.1.4.2. Mobile Applications Wireflow Diagrams
 #### Payment BC
 **User Goal**: El usuario quiere registrar una nueva deuda para poder visualizarla, hacer seguimiento y gestionarla desde la aplicación.
 ![image](assets/Chapter-4/PaymentWireflow1.png)
 **User Goal**: El usuario desea configurar cómo pagará sus deudas (tarjeta, monto, frecuencia) y poder modificar esta configuración si es necesario.
 ![image](assets/Chapter-4/PaymentWireflow2.png)
-#### IAM - USER BC
-![image](assets/Chapter-4/USER-IAM-BC-WFL.JPG)
-![image](assets/Chapter-4/USER-IAM-BC-WFL2.JPG)
-![image](assets/Chapter-4/USER-IAM-BC-WFL3.JPG)
-#### IAM - CONSULTING BC
-![image](assets/Chapter-4/CONSULTING-BC-WFL.JPG)
-#### IAM - FINANCE EDUCATION BC
-![image](assets/Chapter-4/FINANCE-EDUC-BC-WFL.JPG)
-
 ### 5.1.4.3. Mobile Applications Mock-ups
 #### Payment BC
 ![image](assets/Chapter-4/Payment%20Mockup.png)
