@@ -2070,7 +2070,7 @@ Para este Sprint nos enfocaremos en los task para la elaboración de la landing 
 | Sum of Story Points | 20 | 
 
 #### 6.2.1.2. Sprint Backlog 1
-<img src="assets/Chapter-5/trello.png">
+<img src="assets/Chapter-4/ProductBackLog.png">
 
 [Link Trello:](https://trello.com/b/61cBtKBy/sprint-1) https://trello.com/b/61cBtKBy/sprint-1
 
