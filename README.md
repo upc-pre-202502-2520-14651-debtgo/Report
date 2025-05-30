@@ -1989,7 +1989,7 @@ Una vez que haya finalizado el registro o inicio de sesión le mostrará la secc
 
 Después de haber hecho estos pasos entrará a la pantalla principal de la app, con botones de acceso rápido a las funciones clave, entre otras cosas más.
 
-### Notifications (Notificationes)
+### Notifications (Notificaciones)
 ![image](assets/Chapter-5/notificaciones.png)
 
 Dentro de la app hay una sección de notificaciones, puedes entrar ya sea en el ícono de notificación o en "View All". Dentro del centro de notificaciones, el usuario puede ver alertas, recordatorios y mensajes, puedes editar a tu gusto personal también.
@@ -2073,7 +2073,7 @@ En esta sección verás cómo se puede editar los servicios que ofrece DebtGo, p
 ### Post New Service (Publicar Nuevo Servicio)
 ![image](assets/Chapter-5/publicar-nuevo-servicio.png)
 
-En esta sección verás como puedes publicar un nuevo servicio aparte de lo que te brinda DebtGo, puede ser como otras consultorías, características de algo en específico, etc.
+En esta sección verás cómo puedes publicar un nuevo servicio aparte de lo que te brinda DebtGo, puede ser como otras consultorías, características de algo en específico, etc.
 
 ## Capítulo VI: Product Implementation, Validations & Deployment
 ### 6.1. Software Configuration Management
