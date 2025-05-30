@@ -1974,6 +1974,106 @@ En la versión mobile el navbar se reemplaza por un menu desplegable.
 
 ### 5.1.4.4. Mobile Applications Prototyping
 
+### Registration And Login (Registro e Inicio de Sesión)
+![image](assets/Chapter-5/registro-sesion.png)
+
+En esta sección se muestra la pantalla de registro o inicio de sesión para acceder a la app.
+
+### Payment Plans (Planes de Pago)
+![image](assets/Chapter-5-planes-pago.png)
+
+Una vez que haya finalizado el registro o inicio de sesión le mostrará la sección de planes de pago, en el cuál podrá visualizar y elegir entre los dos planes de pago (Básico o Premium).
+
+### Home (Inicio de la App)
+![image](assets/Chapter-5/inicio-app.png)
+
+Después de haber hecho estos pasos entrará a la pantalla principal de la app, con botones de acceso rápido a las funciones clave, entre otras cosas más.
+
+### Notifications (Notificationes)
+![image](assets/Chapter-5/notificationes.png)
+
+Dentro de la app hay una sección de notificaciones, puedes entrar ya sea en el ícono de notificación o en "View All". Dentro del centro de notificaciones, el usuario puede ver alertas, recordatorios y mensajes, puedes editar a tu gusto personal también.
+
+### Payment Management (Gestión de Pagos)
+![image](assets/Chapter-5/gestion-pagos.png)
+
+Otra herramienta que cuenta Debtgo es la gestión de pagos, allí podrás ver los pagos realizados, los pagos pendientes e inclusive programar nuevos pagos.
+
+### Add New Debt (Añadir Nueva Deuda)
+![image](assets/Chapter-5/nueva-deuda.png)
+
+Al igual que contamos con la gestión de pagos, también contamos exclusivamente lo que es añadir una nueva deuda, podrás registrar una nueva deuda, ingresando detalles como el monto, la fecha y las condiciones que creas pertinente.
+
+### Financial Education (Educación Financiera)
+![image](assets/Chapter-5/educacion-financiera.png)
+
+Dentro de la app contamos también en un apartado de "Educación Financiera", en el cuál podrás inscribirte a los cursos que contamos, ver videos, les lecciones que hay en cada curso, así podrás aprender aún más a gestionar correctamente tus finanzas de una manera segura y eficiente.
+
+### Course 1: Master Your Finances (Domina Tus Finanzas)
+![image](assets/Chapter-5/domina-tus-finanzas.png)
+![image](assets/Chapter-5/lecciones-curso1.png)
+![image](assets/Chapter-5/lecciones-parte2-curso1.png)
+
+Pasamos al primer curso que se llama **"Master Your Finances"** o en español **"Domina Tus Finanzas"**, cuenta con 6 lecciones, aprenderás a poder controlar, gestionar, adquirir conocimientos suficientes sobre las finanzas y su importancia. Al terminar las 6 lecciones te aparecerá un mensaje de que has terminado el curso satisfactoriamente y te mandará a la sección principal de Educación Financiera.
+
+### Course 2: Make Your Money Grow (Haz Crecer Tu Dinero)
+![image](assets/Chapter-5/haz-crecer-tu-dinero.png)
+![image](assets/Chapter-5/lecciones-curso2.png)
+![image](assets/Chapter-5/lecciones-parte2-curso2.png)
+
+Seguidamente tenemos al segundo curso llamado **"Make Your Money Grow"** o en español **"Haz Crecer Tu Dinero"**, cuenta también con 6 lecciones, este curso está enfocada en las inversiones, ahorros y estrategias para aumentar el dinero.
+
+### Course 3: Smart Financial Planning (Planificación Financiera Inteligente)
+![image](assets/Chapter-5/planificacion-financiera-inteligente.png)
+![image](assets/Chapter-5/lecciones-curso3.png)
+![image](assets/Chapter-5/lecciones-parte2-curso3.png)
+
+Finalmente tenemos al 3er y último curso llamado **"Smart Financial Planning"** o en español **"Planificación Financiera Inteligente"**, cuenta con 6 lecciones al igual que los 2 cursos anteriores, este curso está enfocado en ayudar a las personas a poder organizar metas y recursos.
+
+### Additional Course 1: Personal Budget Mentory (Asesoría Presupuestaria Personalizada)
+![image](assets/Chapter-5/asesoria-presupuestaria-personalizada.png)
+
+También tenemos 3 cursos adicionales por si quieres adquirir más conocimientos de lo que ya tienes, el primer curso se llama **"Personal Budget Mentory"** o en español **"Asesoría Presupuestaria Personalizada"**, es un aporte más con respecto a mejorar su presupuesto. Te registras mediante un formulario y te llegará una notificación de que tu solicitud ha sido aceptada.
+
+### Additional Course 2: Advanced Investment Workshop (Taller De Inversión Avanzada)
+![image](assets/Chapter-5/taller-inversion-avanzada.png)
+
+Este segundo curso adicional llamado **"Advanced Investment Workshop"** o en español **"Taller De Inversión Avanzada"**, son más que todo talleres, dirigido a estudiantes con mayor experiencia, que tengan una noción más específica. Te registras mediante un formulario y te llegará una notificación de que tu solicitud ha sido aceptada.
+
+### Additional Course 3: Creating Financial Content (Creación De Contenido Financiero)
+![image](assets/Chapter-5-contenido-financiero.png)
+
+Este último curso adicional llamado **"Creating Financial Content"** o en español **"Creación De Contenido Financiero"** es de entorno educativo e informativo relacionado a las finanzas y su importancia. Te registras mediante un formulario y te llegará una notificación de que tu solicitud ha sido aceptada.
+
+### Financial Consultant Exam (Examen de Consultor Financiero)
+![image](assets/Chapter-5/consultor-certificado.png)
+
+En esta parte ya es para aquellas personas que se sientan preparadas para tomar el examen del Consultor Financiero, donde demostrarás todo lo que has aprendido a lo largo de los 3 cursos que tenemos y los 3 cursos adicionales que te hemos proporcionado. Te registras mediante un formulario y te llegará una notificación de que tu solicitud ha sido aceptada y así podrás tomar el examen.
+
+### Profile (Perfil)
+![image](assets/Chapter-5/perfil.png)
+
+En en inicio de la app también hay una sección de **"Profile"** o en español **"Perfil"** donde se visualiza la información personal, preferencias y opciones de configuración del usuario.
+
+### My Workspace (Mi Centro De Trabajo)
+![image](assets/Chapter-5/centro-trabajo.png)
+
+Al darle click a **"My Workspace"**, entrarás a este apartado donde verás la información del ususario registrado o mediante el inicio de sesión, también verás 2 botones, uno de **"Reviews"** y el otro de **"Messages"**, más abajo verás otros dos botones, uno de **"Edit Service"** y el otro de **"Post New Service"**, más adelante se explicará cada botón y para qué sirve.
+
+### Reviews (Reseñas) y Messages (Mensajes)
+![image](assets/Chapter-5/reseña-mensajes.png)
+
+En estas secciones se visualizan las reseñas y los mensajes donde te puedes comunicar con otros usuarios o con los consultores financieros de la app, en reseñas son comentarios de nuestros usuarios hacia DebtGo y en mensajes son preguntas que te hacen los usuarios o los consultores financieros acerca de la gestión de finanzas, les puedes responder e inmediatamente te responderán.
+
+### Edit Service (Editar Servicio)
+![image](assets/Chapter-5-editar-servicio.png)
+
+En esta sección verás cómo se puede editar los servicios que ofrece DebtGo, puedes cambiar el precio, la descripción o los detalles de cada servicio.
+
+### Post New Service (Publicar Nuevo Servicio)
+![image](assets/Chapter-5-publicar-nuevo-servicio.png)
+
+En esta sección verás como puedes publicar un nuevo servicio aparte de lo que te brinda DebtGo, puede ser como otras consultorías, características de algo en específico, etc.
 
 ## Capítulo VI: Product Implementation, Validations & Deployment
 ### 6.1. Software Configuration Management
