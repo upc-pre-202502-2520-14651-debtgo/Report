@@ -1322,7 +1322,7 @@ En esta sección, se presenta el Impact Mapping elaborado para DebtGo, que busca
 
 ## 3.4. Product Backlog
 
-| # Orden | User Story ID | Título                                         | Descripción                                                                                                                                                                              | Story Points |
+| # Orden | User Story ID | Título                                         | Descripción                                                                                                                                                                              | Story Points (1 / 2 / 3 / 5 / 8) |
 | ------- | ------------- | ---------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ |
 | 01      | US01          | Demostración de la aplicación                  | **Como** visitante, **deseo** ver una demostración de la aplicación **para** entender rápidamente lo que ofrece                                                                          | 2            |
 | 02      | US02          | Reseñas de la aplicación                       | **Como** visitante, **deseo** visualizar reseñas de la aplicación **para** decidir si quiero utilizarla                                                                                  | 3            |
