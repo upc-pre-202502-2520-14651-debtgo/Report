@@ -1980,7 +1980,7 @@ En la versión mobile el navbar se reemplaza por un menu desplegable.
 En esta sección se muestra la pantalla de registro o inicio de sesión para acceder a la app.
 
 ### Payment Plans (Planes de Pago)
-![image](assets/Chapter-5-planes-pago.png)
+![image](assets/Chapter-5/planes-pago.png)
 
 Una vez que haya finalizado el registro o inicio de sesión le mostrará la sección de planes de pago, en el cuál podrá visualizar y elegir entre los dos planes de pago (Básico o Premium).
 
@@ -2041,7 +2041,7 @@ También tenemos 3 cursos adicionales por si quieres adquirir más conocimientos
 Este segundo curso adicional llamado **"Advanced Investment Workshop"** o en español **"Taller De Inversión Avanzada"**, son más que todo talleres, dirigido a estudiantes con mayor experiencia, que tengan una noción más específica. Te registras mediante un formulario y te llegará una notificación de que tu solicitud ha sido aceptada.
 
 ### Additional Course 3: Creating Financial Content (Creación De Contenido Financiero)
-![image](assets/Chapter-5-contenido-financiero.png)
+![image](assets/Chapter-5/contenido-financiero.png)
 
 Este último curso adicional llamado **"Creating Financial Content"** o en español **"Creación De Contenido Financiero"** es de entorno educativo e informativo relacionado a las finanzas y su importancia. Te registras mediante un formulario y te llegará una notificación de que tu solicitud ha sido aceptada.
 
@@ -2066,12 +2066,12 @@ Al darle click a **"My Workspace"**, entrarás a este apartado donde verás la i
 En estas secciones se visualizan las reseñas y los mensajes donde te puedes comunicar con otros usuarios o con los consultores financieros de la app, en reseñas son comentarios de nuestros usuarios hacia DebtGo y en mensajes son preguntas que te hacen los usuarios o los consultores financieros acerca de la gestión de finanzas, les puedes responder e inmediatamente te responderán.
 
 ### Edit Service (Editar Servicio)
-![image](assets/Chapter-5-editar-servicio.png)
+![image](assets/Chapter-5/editar-servicio.png)
 
 En esta sección verás cómo se puede editar los servicios que ofrece DebtGo, puedes cambiar el precio, la descripción o los detalles de cada servicio.
 
 ### Post New Service (Publicar Nuevo Servicio)
-![image](assets/Chapter-5-publicar-nuevo-servicio.png)
+![image](assets/Chapter-5/publicar-nuevo-servicio.png)
 
 En esta sección verás como puedes publicar un nuevo servicio aparte de lo que te brinda DebtGo, puede ser como otras consultorías, características de algo en específico, etc.
 
