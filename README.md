@@ -2021,14 +2021,14 @@ Pasamos al primer curso que se llama **"Master Your Finances"** o en español **
 ![image](assets/Chapter-5/lecciones-curso2.png)
 ![image](assets/Chapter-5/lecciones-parte2-curso2.png)
 
-Seguidamente tenemos al segundo curso llamado **"Make Your Money Grow"** o en español **"Haz Crecer Tu Dinero"**, cuenta también con 6 lecciones, este curso está enfocada en las inversiones, ahorros y estrategias para aumentar el dinero.
+Seguidamente tenemos al segundo curso llamado **"Make Your Money Grow"** o en español **"Haz Crecer Tu Dinero"**, cuenta también con 6 lecciones, este curso está enfocado en las inversiones, ahorros y estrategias para aumentar el dinero.  Al terminar las 6 lecciones te aparecerá un mensaje de que has terminado el curso satisfactoriamente y te mandará a la sección principal de Educación Financiera.
 
 ### Course 3: Smart Financial Planning (Planificación Financiera Inteligente)
 ![image](assets/Chapter-5/planificacion-financiera-inteligente.png)
 ![image](assets/Chapter-5/lecciones-curso3.png)
 ![image](assets/Chapter-5/lecciones-parte2-curso3.png)
 
-Finalmente tenemos al 3er y último curso llamado **"Smart Financial Planning"** o en español **"Planificación Financiera Inteligente"**, cuenta con 6 lecciones al igual que los 2 cursos anteriores, este curso está enfocado en ayudar a las personas a poder organizar metas y recursos.
+Finalmente tenemos al 3er y último curso llamado **"Smart Financial Planning"** o en español **"Planificación Financiera Inteligente"**, cuenta con 6 lecciones al igual que los 2 cursos anteriores, este curso está enfocado en ayudar a las personas a poder organizar metas y recursos. Al terminar las 6 lecciones te aparecerá un mensaje de que has terminado el curso satisfactoriamente y te mandará a la sección principal de Educación Financiera.
 
 ### Additional Course 1: Personal Budget Mentory (Asesoría Presupuestaria Personalizada)
 ![image](assets/Chapter-5/asesoria-presupuestaria-personalizada.png)
@@ -2058,7 +2058,7 @@ En en inicio de la app también hay una sección de **"Profile"** o en español 
 ### My Workspace (Mi Centro De Trabajo)
 ![image](assets/Chapter-5/centro-trabajo.png)
 
-Al darle click a **"My Workspace"**, entrarás a este apartado donde verás la información del ususario registrado o mediante el inicio de sesión, también verás 2 botones, uno de **"Reviews"** y el otro de **"Messages"**, más abajo verás otros dos botones, uno de **"Edit Service"** y el otro de **"Post New Service"**, más adelante se explicará cada botón y para qué sirve.
+Al darle click a **"My Workspace"**, entrarás a este apartado donde verás la información del usuario registrado o mediante el inicio de sesión, también verás 2 botones, uno de **"Reviews"** y el otro de **"Messages"**, más abajo verás otros dos botones, uno de **"Edit Service"** y el otro de **"Post New Service"**, más adelante se explicará cada botón y para qué sirve.
 
 ### Reviews (Reseñas) y Messages (Mensajes)
 ![image](assets/Chapter-5/reseña-mensajes.png)
