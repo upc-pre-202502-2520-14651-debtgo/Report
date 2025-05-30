@@ -2164,7 +2164,8 @@ Este apartado se detalla las decisiones, herramientas y convenciones adoptadas p
 ### 6.2. Landing Page, Services & Applications Implementation.
 
 ### 6.2.1. Sprint 1
-Para este Sprint nos enfocaremos en los task para la elaboración de la landing page. Nos dividiremos entre nosotros cada una de las tareas identificadas para el sprint.
+![Evidence 1](assets/Chapter-6/sprint-1.png)
+
 #### 6.2.1.1. Sprint Planning 1
 | Sprint # | Sprint 1 |
 | -------- | -------- |
@@ -2173,18 +2174,117 @@ Para este Sprint nos enfocaremos en los task para la elaboración de la landing 
 | Time | 08:00 PM |
 | Location | Discord Virtual Meeting |
 | Prepared By | Daniel Chávarri, Janiel Franz |
-|Attendees (to planning meeting) | Fabiola Becerra, Anaely Burga, Daniel Chávarri, Rivera Omar, Góngora Marco, Janiel Escalante
-| Sprint n – 1 Review Summary | No hubo sprint anterior |
-| Sprint n – 1 Retrospective Summary | No hubo sprint anterior |
+|Attendees (to planning meeting) | Anaely Burga, Daniel Chávarri, Rivera Omar, Góngora Marco, Janiel Escalante
+| Sprint Review Summary | En esta entrega, no hay un Sprint anterior, por lo tanto, no hay resúmen del Sprint. |
+| Sprint Retrospective Summary | En esta entrega, no hay un Sprint anterior, por lo tanto, no hay resúmen del Sprint. |
 | **Sprint Goal & User Stories** | 
-| Sprint 1 Goal | Realizar la Landing Page, Backend y Mobile Applications |
-| Sprint 1 Velocity | 20 |
-| Sum of Story Points | 20 | 
+| Sprint 1 Goal | En este sprint se tiene cómo objetivo la preparación - actualización y despliegue del landing page, backend y el desarrollo de la primera entrega de la aplicación móvil. |
+| Sprint 1 Velocity | 23 |
+| Sum of Story Points | 23 | 
 
-#### 6.2.1.2. Sprint Backlog 1
-<img src="assets/Chapter-4/ProductBackLog.png">
+#### 6.2.1.2. Sprint Backlog 1  
+| **User Story**                           | **Work-item/Task**            | **Descripción**                                                                          | **Estimación (Horas)** | **Assigned To**  | **Status** |
+| ---------------------------------------- | ----------------------------- | ---------------------------------------------------------------------------------------- | ---------------------- | ---------------- | ---------- |
+| E1-US01 Demostración de la aplicación    | W01 Integrate demo playback    | Integrar un video de demostración o prototipo interactivo en la página de inicio         | 4                      | Anaely Burga     | Done       |
+| E1-US02 Reseñas de la aplicación         | W02 Display user reviews       | Construir un carrusel/componente de reseñas con datos reales                             | 6                      | Daniel Chávarri  | Done       |
+| E1-US03 Planes de la aplicación          | W03 Show subscription plans    | Crear la sección de planes con detalles de precios                                       | 5                      | Omar Rivera      | Done       |
+| E1-US04 Soporte de la aplicación         | W04 Implement support form     | Desarrollar el formulario de contacto y la lógica de backend para solicitudes de soporte | 4                      | Marco Góngora    | Done       |
+| E1-US05 Información de servicios         | W05 Services info section      | Añadir descripciones detalladas de los servicios ofrecidos por consultores               | 3                      | Janiel Escalante | Done       |
+| E2-US06 Normas de privacidad             | W06 Privacy policy page        | Redactar e integrar el contenido de la política de privacidad                            | 2                      | Anaely Burga     | Done       |
+| E2-US07 Pago por servicios               | W07 Explain payment process    | Desarrollar una guía paso a paso del proceso de pago en la interfaz                      | 5                      | Daniel Chávarri  | Done       |
+| E2-US08 Registro en aplicación           | W08 Build registration form    | Crear el formulario de registro con validación y confirmación por correo electrónico     | 8                      | Omar Rivera      | Done       |
+| E3-US09 Creación de perfil - Consultor   | W09 Consultant profile form    | Implementar formulario para ingresar experiencia e información del consultor             | 6                      | Janiel Escalante | Done       |
+| E3-US10 Creación de perfil - Emprendedor | W10 Entrepreneur profile form | Crear formulario para registrar datos del emprendimiento y necesidades                   | 6                      | Marco Góngora    | Done       |
+| E3-US11 Elección y actualización de plan | W11 Plan selection component  | Desarrollar componente para elegir y modificar planes de suscripción                     | 4                      | Anaely Burga     | Done       |
+| E3-US12 Elección de pagos por servicios  | W12 Payment method input      | Implementar interfaz para ingresar y validar método de pago                              | 5                      | Daniel Chávarri  | Done       |
+| E4-US15 Publicación de servicios         | W13 Publish services module   | Desarrollar módulo para publicar servicios y fijar precios                               | 5                      | Omar Rivera      | Done       |
+| E4-US16 Establecimiento de horario       | W14 Set availability hours    | Crear funcionalidad para definir y guardar horario de trabajo                            | 3                      | Janiel Escalante | Done       |
+| E5-US20 Sistema de mensajes y casos      | W15 Messaging system backend  | Implementar backend de mensajería entre consultor y cliente                              | 8                      | Marco Góngora    | Done       |
+| E5-US21 Historial de casos               | W16 Case history view         | Desarrollar vista para mostrar historial completo de conversaciones                      | 4                      | Anaely Burga     | Done       |
+| E5-US22 Envío de documentos adjuntos     | W17 Document upload feature   | Implementar carga y gestión de archivos en chat y casos                                  | 4                      | Daniel Chávarri  | Done       |
+| E7-US30 Artículos financieros            | W18 Articles section          | Crear sección para mostrar artículos financieros con filtro y búsqueda                   | 3                      | Omar Rivera      | Done       |
+| E7-US32 Talleres gratuitos               | W19 Free workshops module     | Desarrollar módulo para inscripción y gestión de talleres gratuitos                      | 5                      | Janiel Escalante | Done       |
 
-[Link Trello:](https://trello.com/b/61cBtKBy/sprint-1) https://trello.com/b/61cBtKBy/sprint-1
+
+
+
+#### 6.2.1.3. Development Evidence for Sprint Review 
+
+| **Repository** | **Branch** | **Commit Id**                              | **Commit Message**                                         | **Committed on (Date)** |
+|----------------|------------|--------------------------------------------|--------------------------------------------------------------------------------------|-------------------------|
+|Landing-Page| main    | 5c4d8955c1297df852581b860d774f754f70bd68   | Create index.html                                                                        | 09/05/2025               |
+|Landing-Page| main    | 33c106af8edc5442e6a3a9ab9fb2129c7f00d860   | Create script.js                                                                        | 09/05/2025               |
+|Landing-Page| main    | a97cd06ed94f6c3f16a6fe5e58343fd08666b419   | Delete assets/img/img1                                                                        | 09/05/2025               |
+|Landing-Page| main    | fc2e0ee6c76adf6c86d8b051923211e84a36d487   | Add files via upload                                                                        | 09/05/2025               |
+|Landing-Page| main    | 29a3a09c92f3a2d13a2ba223d288df382b69a22c   | Create img1                                                                        | 09/05/2025               |
+|Landing-Page| main    | e8e79e7a674094b32964f04795a17c7b97d1c31d   | Create testimonios.css                                                                        | 09/05/2025               |
+|Landing-Page| main    | d383ee9ce12f80c829bc0d191060f970fb1e065d   | Create segmento2.css                                                                        | 09/05/2025               |
+|Landing-Page| main    | 1cbff8c4636812de897f09105523ef29f733e5c5   | Create segmento1.css                                                                        | 09/05/2025               |
+|Landing-Page| main    | 773512658c215cb1926c5b408703c69461f3d123  | Create hero.css                                                                        | 09/05/2025               |
+|Landing-Page| main    | 7a497c3313c63ff2784a1bb7df696fff36d7afe5  | Create header.css                                                                        | 09/05/2025               |
+|Landing-Page| main    | 7ab24fe7abdc20f23178b5dbcf4cbc28d86d25db  | Create global.css                                                                        | 09/05/2025               |
+|Landing-Page| main    | 6cbd1a091f813b2ee9715f023136d254975db200  | Create footer.css                                                                        | 09/05/2025               |
+|Landing-Page| main    | e7af259bc889bb3f2b0e71f7e5d821b26bb234ae  | Create contacto.css                                                                        | 09/05/2025               |
+|Web-Services| main    | 0a44c464b4b5679bd97a7ef4fed075e2aec38f7f  | chore: initial commit                                                                        | 15/05/2025               |
+|App-Mobile-DebtGo| master    | 01df8ef4e5b9ccd12c1e1729b582784dbb0e0605  | Initial commit                                                                        | 28/05/2025               |
+|App-Mobile-DebtGo| master    | edfcbc6546973441fd665f99029d1bf7c474611b  | feat(chore): update HomeScreen.kt                                                                        | 28/05/2025               |
+|App-Mobile-DebtGo| master    | 9715adaa54059fb55e49a95b1c7c640c48618e74  | feat(chore): update AppNavigation.kt                                                                        | 28/05/2025               |
+|App-Mobile-DebtGo| master    | d4816cce45e9db3795d4915a4fb5ee62ed252c02  | feat(chore): Update AppNavigation.kt                                                                       | 28/05/2025               |
+
+#### 6.2.1.4. Execution Evidence for Sprint Review  
+
+Durante este sprint se completó con éxito la construcción y publicación de la landing page (integrando el video de demostración, el carrusel de reseñas, la sección de planes y el formulario de contacto) así como la redacción e integración de la política de privacidad y el proceso de registro. Además, se desplegó el backend en producción y se avanzó con la primera entrega de la aplicación móvil, garantizando una experiencia fluida y coherente para el usuario.
+
+Enlace a la landing page desplegada: [DebtGo Landing Page](https://landing-page-beta-tawny-87.vercel.app/)
+
+Enlace al backend desplegado: [DebtGo Backend]()
+
+![Evidence 1](assets/Chapter-6/img-evidence-1.png)
+
+![Evidence 2](assets/Chapter-6/img-evidence-2.png)
+
+![Evidence 3](assets/Chapter-6/img-evidence-3.png)
+
+![Evidence 4](assets/Chapter-6/img-evidence-4.png)
+
+![Evidence 4](assets/Chapter-6/img-evidence-5.png)
+  
+#### 6.2.1.5. Services Documentation Evidence for Sprint Review  
+
+(mostrar endpoints del servicio)
+  
+#### 6.2.1.6. Software Deployment Evidence for Sprint Review  
+En este sprint se puso en marcha la infraestructura de despliegue continuo tanto para landing page como para backend, garantizando que cada cambio en main se refleje inmediatamente en producción:
+
+- Git & GitFlow: Control de versiones y flujo de trabajo por ramas de características y releases, con Pull Requests revisados por pares.
+- GitHub: Almacenamiento de código y gestión de issues, PRs y revisiones.
+- Vercel: Despliegue automático de la landing page al hacer merge en main, con previews en cada PR.
+- (explicar el lugar donde se desplegó el backend)
+
+#### 6.2.1.7. Team Collaboration Insights for Sprint Review  
+
+Durante el Sprint 1, todo el equipo participó activamente en la implementación de la Landing Page, los Web Services y la primera entrega de la aplicación móvil, trabajando en ramas de feature individuales, revisando pull requests en pares y registrando contribuciones constantes en GitHub; a continuación se muestran los principales analíticos de colaboración, seguidos de nuestra interpretación de cómo estos reflejan el reparto de trabajo y la eficacia en la coordinación del equipo.
+
+**Landing Page**
+Network graph:
+![Network Graph](assets/Chapter-6/img-network-github-landing-page.png)
+
+Code frecuency:
+![Code Frecuency](assets/Chapter-6/img-code-frecuency-landing-page.png)
+
+**Backend**
+Network graph:
+![Network Graph](assets/Chapter-6/img-network-github-backend.png)
+
+Code frecuency:
+![Code Frecuency](assets/Chapter-6/img-code-frecuency-backend.png)
+
+**App Mobile**
+Network graph:
+![Network Graph](assets/Chapter-6/img-network-github-app-mobile.png)
+
+Code frecuency:
+![Code Frecuency](assets/Chapter-6/img-code-frecuency-app-mobile.png)
 
 
 # Conclusiones
