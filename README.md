@@ -1975,7 +1975,7 @@ En la versión mobile el navbar se reemplaza por un menu desplegable.
 ### 5.1.4.4. Mobile Applications Prototyping
 
 ### Registration And Login (Registro e Inicio de Sesión)
-![image](assets/Chapter-5/registro-sesion.png)
+![image](assets/Chapter-5/registro-inicio-sesion.png)
 
 En esta sección se muestra la pantalla de registro o inicio de sesión para acceder a la app.
 
@@ -1990,7 +1990,7 @@ Una vez que haya finalizado el registro o inicio de sesión le mostrará la secc
 Después de haber hecho estos pasos entrará a la pantalla principal de la app, con botones de acceso rápido a las funciones clave, entre otras cosas más.
 
 ### Notifications (Notificationes)
-![image](assets/Chapter-5/notificationes.png)
+![image](assets/Chapter-5/notificaciones.png)
 
 Dentro de la app hay una sección de notificaciones, puedes entrar ya sea en el ícono de notificación o en "View All". Dentro del centro de notificaciones, el usuario puede ver alertas, recordatorios y mensajes, puedes editar a tu gusto personal también.
 
