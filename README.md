@@ -1465,7 +1465,7 @@ Envío de recordatorios (usa Email System).
 
 **4.1.3.2. Software Architecture Container Level Diagrams**
 
-![image](assets/Chapter-4/container-diagram.png) <br>
+![image](assets/Chapter-4/container-diagram2.png) <br>
 *Imagen (N°20). Elaboración propia. Realizado en Structurizr.* <br>
 
 ![image](assets/Chapter-4/consulting-bc.png) <br>
