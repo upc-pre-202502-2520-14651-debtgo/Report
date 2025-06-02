@@ -2164,7 +2164,7 @@ Este apartado se detalla las decisiones, herramientas y convenciones adoptadas p
 ### 6.2. Landing Page, Services & Applications Implementation.
 
 ### 6.2.1. Sprint 1
-![Evidence 1](assets/Chapter-6/sprint-1.png)
+![Sprint 1](assets/Chapter-6/sprint1.png)
 
 #### 6.2.1.1. Sprint Planning 1
 | Sprint # | Sprint 1 |
