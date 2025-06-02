@@ -2237,7 +2237,7 @@ Durante este sprint se completó con éxito la construcción y publicación de l
 
 Enlace a la landing page desplegada: [DebtGo Landing Page](https://landing-page-beta-tawny-87.vercel.app/)
 
-Enlace al backend desplegado: [DebtGo Backend]()
+Enlace al backend desplegado: [DebtGo Backend](http://debt2go.runasp.net/swagger/index.html)
 
 ![Evidence 1](assets/Chapter-6/img-evidence-1.png)
 
@@ -2247,11 +2247,20 @@ Enlace al backend desplegado: [DebtGo Backend]()
 
 ![Evidence 4](assets/Chapter-6/img-evidence-4.png)
 
-![Evidence 4](assets/Chapter-6/img-evidence-5.png)
+![Evidence 5](assets/Chapter-6/img-evidence-5.png)
+
+![Evidence 6](assets/Chapter-6/img-evidence-6.png)
+
   
 #### 6.2.1.5. Services Documentation Evidence for Sprint Review  
 
-(mostrar endpoints del servicio)
+En esta sección presentamos los endpoints preparados durante el sprint. Se adjuntan capturas de la UI de swagger con OpenAPI.
+
+| **Controller** | **Swagger** |
+|----------------|-------------|
+| Authentication |![Authentication Swagger](assets/Chapter-6/img-authentication-swagger.png)|
+| Notification |![Notification Swagger](assets/Chapter-6/img-notification-swagger.png)|
+| Subscription |![Subscription Swagger](assets/Chapter-6/img-subscription-swagger.png)|
   
 #### 6.2.1.6. Software Deployment Evidence for Sprint Review  
 En este sprint se puso en marcha la infraestructura de despliegue continuo tanto para landing page como para backend, garantizando que cada cambio en main se refleje inmediatamente en producción:
@@ -2259,7 +2268,7 @@ En este sprint se puso en marcha la infraestructura de despliegue continuo tanto
 - Git & GitFlow: Control de versiones y flujo de trabajo por ramas de características y releases, con Pull Requests revisados por pares.
 - GitHub: Almacenamiento de código y gestión de issues, PRs y revisiones.
 - Vercel: Despliegue automático de la landing page al hacer merge en main, con previews en cada PR.
-- (explicar el lugar donde se desplegó el backend)
+- MonsterASP.NET: Proveedor de hosting en Windows especializado en aplicaciones ASP.NET/.NET.
 
 #### 6.2.1.7. Team Collaboration Insights for Sprint Review  
 
