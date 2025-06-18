@@ -2308,9 +2308,7 @@ Code frecuency:
 | Sprint Review Summary | Durante el Sprint 1 se logró el desarrollo y despliegue de la landing page con sus componentes clave (video de demostración, sección de planes, testimonios y formulario de contacto). Además, se desplegó el backend funcional y se implementaron componentes iniciales de la aplicación móvil, incluyendo navegación, autenticación y pantallas base. |
 | Sprint Retrospective Summary | El equipo identificó como fortaleza la buena distribución de tareas y el compromiso individual. Como oportunidad de mejora, se sugirió definir desde el inicio criterios de aceptación más claros por User Story y mantener comunicación más constante durante el avance de desarrollo móvil. |
 | **Sprint Goal & User Stories** | 
-| Sprint 2 Goal | Nos centramos en completar la implementación del registro de usuarios, los perfiles de consultor/emprendedor y las funciones principales de reserva.
-Creemos que ofrece una experiencia funcional e interactiva que permite a los usuarios registrarse, configurar su perfil y programar servicios de consultoría.
-Esto se confirmará cuando los usuarios puedan completar los procesos de registro y reserva a través de la aplicación móvil y los datos se procesen y almacenen correctamente en el backend. |
+| Sprint 2 Goal | Nos centramos en completar la implementación del registro de usuarios, los perfiles de consultor/emprendedor y las funciones principales de reserva. Creemos que ofrece una experiencia funcional e interactiva que permite a los usuarios registrarse, configurar su perfil y programar servicios de consultoría. Esto se confirmará cuando los usuarios puedan completar los procesos de registro y reserva a través de la aplicación móvil y los datos se procesen y almacenen correctamente en el backend. |
 | Sprint 2 Velocity | 26 |
 | Sum of Story Points | 26 | 
 
@@ -2318,16 +2316,15 @@ Esto se confirmará cuando los usuarios puedan completar los procesos de registr
 **Introducción**
 Durante el Sprint 2 del proyecto DebtGo, el equipo se centró en consolidar las funcionalidades clave de la aplicación móvil y backend, orientadas a brindar una experiencia completa de registro, configuración de perfiles, interacción mediante mensajería, y planificación de servicios. El objetivo principal fue asegurar que los usuarios puedan completar sus flujos de registro, gestionar sus servicios y comunicarse eficazmente dentro de la plataforma.
 
-| **User Story**                           | **Work-item/Task**                  | **Descripción**                                                                    | **Estimación (Horas)** | **Assigned To**  | **Status** |
-| ---------------------------------------- | ----------------------------------- | --------------------------------------------------------------------------------   | ---------------------- | ---------------- | ---------- |
-| E5-US23 Notificaciones                   | W20 Implement notifications module  | Desarrollar backend y lógica de visualización de notificaciones para usuarios       | 5                      | Anaely Burga     | In Progress |
-| E5-US24 Calendario de sesiones           | W21 Session calendar integration    | Integrar vista de calendario con sesiones agendadad por consultores y usuarios      | 6                      | Omar Rivera      | To Do       |
-| E5-US25 Reprogramación de sesiones       | W22 Reschedule sessions feature     | Implementar lógica para reprogramar sesiones desde la app                           | 5                      | Daniel Chávarri   | To Do        |
-| E5-US26 Evaluación de servicio           | W23 Service rating system           | Crear componente de calificación y retroalimentación al finalizar sesiones          | 4                      | Janiel Escalante  | To Do       |
-| E5-US27 Edición de perfil                | W24 Edit profile functionality      | Permitir a los usuarios editar sus datos personales y de perfil desde la app        | 4                      | Marco Góngora    | In Progress       |
-| E5-US28 Recuperación de contraseña       | W25 Password recovery process       | Implementar flujo para recuperación de contraseña vía correo electrónico            | 4                      | Anaely Burga     | In Progress       |
-| E5-US29 Módulo de analíticas             | W26 Basic analytics dashboard       | Crear panel con estadísticas básicas para consultores                               | 6                      | Daniel Chávarri 
-| To Do       |
+| **User Story**                           | **Work-item/Task**                  | **Descripción**                                                                    | **Estimación (Horas)** | **Assigned To**          | **Status**  |
+| ---------------------------------------- | ----------------------------------- | --------------------------------------------------------------------------------   | ---------------------- | ------------------------ | ----------  |
+| E5-US23 Notificaciones                   | W20 Implement notifications module  | Desarrollar backend y lógica de visualización de notificaciones para usuarios      |         5              | Anaely Burga             | In Progress |
+| E5-US24 Calendario de sesiones           | W21 Session calendar integration    | Integrar vista de calendario con sesiones agendadad por consultores y usuarios     |         6              | Omar Rivera              | To Do       |
+| E5-US25 Reprogramación de sesiones       | W22 Reschedule sessions feature     | Implementar lógica para reprogramar sesiones desde la app                          |         5              | Daniel Chávarri          | To Do       |
+| E5-US26 Evaluación de servicio           | W23 Service rating system           | Crear componente de calificación y retroalimentación al finalizar sesiones         |         4              | Janiel Escalante         | To Do       |
+| E5-US27 Edición de perfil                | W24 Edit profile functionality      | Permitir a los usuarios editar sus datos personales y de perfil desde la app       |         4              | Marco Góngora            | In Progress |
+| E5-US28 Recuperación de contraseña       | W25 Password recovery process       | Implementar flujo para recuperación de contraseña vía correo electrónico           |         4              | Anaely Burga             | In Progress |
+| E5-US29 Módulo de analíticas             | W26 Basic analytics dashboard       | Crear panel con estadísticas básicas para consultores                              |         6              | Daniel Chávarri          | To Do       |
 
 Este Sprint 2 fue planificado con un total de 36 horas estimadas, y la distribución de tareas está alineada con el Sprint Goal propuesto para esta iteración.
 
