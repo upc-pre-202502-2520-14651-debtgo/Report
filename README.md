@@ -1322,41 +1322,41 @@ En esta sección, se presenta el Impact Mapping elaborado para DebtGo, que busca
 
 ## 3.4. Product Backlog
 
-| Sprint | ID   | Título                                   | Descripción                                                                                                          | Story Points (5-6-7-8-9 |
-|--------|------|------------------------------------------|----------------------------------------------------------------------------------------------------------------------|-------------------------|
-| 1      | US08 | Registrarse en la aplicación             | Como visitante, deseo registrarme en la aplicación para utilizar las funcionalidades ofrecidas.                      | 5                       |
-| 1      | US10 | Registrar perfil como emprendedor        | Como emprendedor, deseo registrar mi emprendimiento y mis necesidades para empezar a utilizar la aplicación.         | 5                       |
-| 1      | US09 | Registrar perfil como consultor financiero| Como consultor financiero, deseo ingresar mi experiencia e información relevante para atraer posibles clientes.     | 5                       |
-| 1      | US12 | Registrar método de pago por servicios   | Como consultor financiero, deseo ingresar el método de pago de servicios para recibir el pago de los mismos.         | 5                       |
-| 1      | US16 | Establecer horario de atención           | Como consultor financiero, deseo establecer mis horas de trabajo para no recibir notificaciones fuera de mi horario. | 3                       |
-| 1      | US20 | Comunicarse mediante mensajes y casos    | Como consultor financiero, deseo comunicarme directamente con los clientes para ofrecer asesoramiento adecuado.      | 8                       |
-| 1      | US22 | Enviar documentos adjuntos               | Como consultor financiero, deseo poder enviar documentos a través de la aplicación para apoyar al cliente.           | 3                       |
-| 1      | US17 | Iniciar un caso de asesoría              | Como emprendedor, deseo tener acceso a asesoramiento personalizado para poder acceder a préstamos adecuados.         | 5                       |
-| 1      | US18 | Aceptar un caso de asesoría              | Como consultor financiero, deseo hablar con el emprendedor antes de aceptar el caso.                                 | 3                       |
-| 1      | US01 | Ver una demostración de la aplicación    | Como visitante, deseo ver una demostración de la aplicación para entender rápidamente lo que ofrece.                 | 2                       |
-| 1      | US02 | Visualizar reseñas de la aplicación      | Como visitante, deseo visualizar reseñas de la aplicación para decidir si quiero utilizarla.                         | 3                       |
-| 1      | US03 | Consultar planes de la aplicación        | Como visitante, deseo visualizar los planes de suscripción para decidir el más adecuado.                             | 3                       |
-| 1      | US06 | Conocer normas de privacidad             | Como visitante, deseo conocer las normas de privacidad para asegurar que mis datos serán protegidos.                 | 2                       |
-| 2      | US11 | Elegir o actualizar plan de suscripción  | Como emprendedor, deseo registrar o modificar mi plan de suscripción.                                                | 5                       |
-| 2      | US07 | Visualizar proceso de pago por servicios | Como consultor, deseo visualizar el sistema de pago para entenderlo antes de ofrecer mis servicios.                  | 2                       |
-| 2      | US05 | Ofrecer servicios como consultor financiero| Como consultor financiero, deseo ofrecer mis servicios para tener una fuente adicional de ingresos.                | 3                       |
-| 2      | US15 | Publicar servicios y precios             | Como consultor financiero, deseo publicar distintos servicios y sus precios.                                         | 5                       |
-| 2      | US13 | Buscar consultores según necesidades     | Como emprendedor, deseo encontrar un consultor con experiencia en mi rubro.                                          | 5                       |
-| 2      | US14 | Comparar servicios guardados             | Como emprendedor, deseo comparar servicios para elegir el más adecuado.                                              | 3                       |
-| 2      | US04 | Contactar con soporte de la aplicación   | Como visitante, deseo contactarme con soporte para resolver dudas.                                                   | 3                       |
-| 2      | US21 | Consultar historial de casos             | Como consultor financiero, deseo ver el historial de mensajes para seguimiento.                                      | 3                       |
-| 2      | US23 | Recibir actualizaciones de solicitudes   | Como emprendedor, deseo recibir actualizaciones del estado de mis solicitudes.                                       | 5                       |
-| 2      | US24 | Recibir alertas de fechas importantes    | Como emprendedor, deseo recibir alertas sobre fechas importantes.                                                    | 5                       |
-| 2      | US25 | Solicitar reseñas de servicios           | Como consultor financiero, deseo recibir reseñas de mis servicios.                                                   | 3                       |
-| 2      | US26 | Calificar servicios recibidos            | Como emprendedor, deseo calificar a los consultores que me atendieron.                                               | 3                       |
-| 2      | US27 | Visualizar métricas de desempeño         | Como consultor financiero, deseo visualizar métricas sobre mis servicios.                                            | 8                       |
-| 2      | US28 | Terminar contrato como consultor financiero| Como consultor financiero, deseo terminar un contrato para no afectar mis métricas.                                | 3                       |
-| 2      | US29 | Cancelar contrato como emprendedor       | Como emprendedor, deseo cancelar un contrato si el consultor no cumple.                                              | 3                       |
-| 2      | US30 | Leer artículos financieros               | Como emprendedor, deseo acceder a artículos financieros educativos.                                                  | 2                       |
-| 2      | US31 | Usar herramientas de simulación          | Como emprendedor, deseo usar simuladores para estimar pagos.                                                         | 8                       |
-| 2      | US32 | Ofrecer talleres financieros gratuitos   | Como consultor financiero, deseo ofrecer talleres gratuitos para atraer clientes.                                    | 5                       |
-| 2      | US33 | Hacer seguimientos de ingresos y gastos  | Como emprendedor, deseo rastrear mis ingresos y gastos.                                                              | 8                       |
-| 2      | US34 | Crear presupuestos personalizados        | Como emprendedor, deseo crear presupuestos personalizados según mis ingresos y gastos.                               | 5                       |
+| Sprint | ID   | Título                                   | Descripción                                                                                                          | Story Points (1 / 2 / 3 / 5 / 8) |
+|--------|------|------------------------------------------|----------------------------------------------------------------------------------------------------------------------|----------------------------------|
+| 1      | US08 | Registrarse en la aplicación             | Como visitante, deseo registrarme en la aplicación para utilizar las funcionalidades ofrecidas.                      | 5                                |
+| 1      | US10 | Registrar perfil como emprendedor        | Como emprendedor, deseo registrar mi emprendimiento y mis necesidades para empezar a utilizar la aplicación.         | 5                                |
+| 1      | US12 | Registrar método de pago por servicios   | Como consultor financiero, deseo ingresar el método de pago de servicios para recibir el pago de los mismos.         | 5                                |
+| 1      | US09 | Registrar perfil como consultor financiero| Como consultor financiero, deseo ingresar mi experiencia e información relevante para atraer posibles clientes.     | 5                                |
+| 1      | US16 | Establecer horario de atención           | Como consultor financiero, deseo establecer mis horas de trabajo para no recibir notificaciones fuera de mi horario. | 3                                |
+| 1      | US20 | Comunicarse mediante mensajes y casos    | Como consultor financiero, deseo comunicarme directamente con los clientes para ofrecer asesoramiento adecuado.      | 8                                |
+| 1      | US22 | Enviar documentos adjuntos               | Como consultor financiero, deseo poder enviar documentos a través de la aplicación para apoyar al cliente.           | 3                                |
+| 1      | US17 | Iniciar un caso de asesoría              | Como emprendedor, deseo tener acceso a asesoramiento personalizado para poder acceder a préstamos adecuados.         | 5                                |
+| 1      | US18 | Aceptar un caso de asesoría              | Como consultor financiero, deseo hablar con el emprendedor antes de aceptar el caso.                                 | 3                                |
+| 1      | US01 | Ver una demostración de la aplicación    | Como visitante, deseo ver una demostración de la aplicación para entender rápidamente lo que ofrece.                 | 2                                | 
+| 1      | US02 | Visualizar reseñas de la aplicación      | Como visitante, deseo visualizar reseñas de la aplicación para decidir si quiero utilizarla.                         | 3                                |
+| 1      | US03 | Consultar planes de la aplicación        | Como visitante, deseo visualizar los planes de suscripción para decidir el más adecuado.                             | 3                                |
+| 1      | US06 | Conocer normas de privacidad             | Como visitante, deseo conocer las normas de privacidad para asegurar que mis datos serán protegidos.                 | 2                                |
+| 2      | US11 | Elegir o actualizar plan de suscripción  | Como emprendedor, deseo registrar o modificar mi plan de suscripción.                                                | 5                                |
+| 2      | US07 | Visualizar proceso de pago por servicios | Como consultor, deseo visualizar el sistema de pago para entenderlo antes de ofrecer mis servicios.                  | 2                                |
+| 2      | US05 | Ofrecer servicios como consultor financiero| Como consultor financiero, deseo ofrecer mis servicios para tener una fuente adicional de ingresos.                | 3                                |
+| 2      | US15 | Publicar servicios y precios             | Como consultor financiero, deseo publicar distintos servicios y sus precios.                                         | 5                                |
+| 2      | US13 | Buscar consultores según necesidades     | Como emprendedor, deseo encontrar un consultor con experiencia en mi rubro.                                          | 5                                |
+| 2      | US14 | Comparar servicios guardados             | Como emprendedor, deseo comparar servicios para elegir el más adecuado.                                              | 3                                |
+| 2      | US04 | Contactar con soporte de la aplicación   | Como visitante, deseo contactarme con soporte para resolver dudas.                                                   | 3                                |
+| 2      | US21 | Consultar historial de casos             | Como consultor financiero, deseo ver el historial de mensajes para seguimiento.                                      | 3                                |
+| 2      | US23 | Recibir actualizaciones de solicitudes   | Como emprendedor, deseo recibir actualizaciones del estado de mis solicitudes.                                       | 5                                |
+| 2      | US24 | Recibir alertas de fechas importantes    | Como emprendedor, deseo recibir alertas sobre fechas importantes.                                                    | 5                                |
+| 2      | US25 | Solicitar reseñas de servicios           | Como consultor financiero, deseo recibir reseñas de mis servicios.                                                   | 3                                |
+| 2      | US26 | Calificar servicios recibidos            | Como emprendedor, deseo calificar a los consultores que me atendieron.                                               | 3                                |
+| 2      | US27 | Visualizar métricas de desempeño         | Como consultor financiero, deseo visualizar métricas sobre mis servicios.                                            | 8                                |
+| 2      | US28 | Terminar contrato como consultor financiero| Como consultor financiero, deseo terminar un contrato para no afectar mis métricas.                                | 3                                |
+| 2      | US29 | Cancelar contrato como emprendedor       | Como emprendedor, deseo cancelar un contrato si el consultor no cumple.                                              | 3                                |
+| 2      | US30 | Leer artículos financieros               | Como emprendedor, deseo acceder a artículos financieros educativos.                                                  | 2                                |
+| 2      | US31 | Usar herramientas de simulación          | Como emprendedor, deseo usar simuladores para estimar pagos.                                                         | 8                                |
+| 2      | US32 | Ofrecer talleres financieros gratuitos   | Como consultor financiero, deseo ofrecer talleres gratuitos para atraer clientes.                                    | 5                                |
+| 2      | US33 | Hacer seguimientos de ingresos y gastos  | Como emprendedor, deseo rastrear mis ingresos y gastos.                                                              | 8                                |
+| 2      | US34 | Crear presupuestos personalizados        | Como emprendedor, deseo crear presupuestos personalizados según mis ingresos y gastos.                               | 5                                |
 
 
 # Capítulo IV: Solution Software Design
