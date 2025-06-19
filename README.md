@@ -2327,6 +2327,24 @@ Durante el Sprint 2 del proyecto DebtGo, el equipo se centró en consolidar las 
 
 Este Sprint 2 fue planificado con un total de 36 horas estimadas, y la distribución de tareas está alineada con el Sprint Goal propuesto para esta iteración.
 
+#### 6.2.2.3. Development Evidence for Sprint Review
+
+| **Repository** | **Branch** | **Commit Id**                              | **Commit Message**                                         | **Committed on (Date)** |
+|----------------|------------|--------------------------------------------|--------------------------------------------------------------------------------------|-------------------------|
+|(...)| (...)    | (...)   | (...)                                                                        | (...)               |
+
+#### 6.2.2.4. Execution Evidence for Sprint Review
+
+Durante este sprint se completaron con éxito las funcionalidades de registro de usuarios, gestión de perfiles (consultor y emprendedor) y la experiencia de reserva de servicios. En concreto:
+
+- Registro de usuarios: Se validó el flujo completo de alta, confirmación de correo y persistencia de datos en el backend.
+- Perfiles: Cada usuario puede elegir su rol (consultor o emprendedor), rellenar su información de perfil y subir foto de avatar.
+- Reserva de servicios: Desde la app móvil, el usuario emprendedor puede listar consultores disponibles, seleccionar fecha y hora, confirmar la reserva y visualizar el estado de la misma. La lógica de negocio en el backend procesa correctamente la creación y consulta de reservas.
+
+Enlace a la versión móvil de prueba: (...)
+
+Enlace al backend desplegado: (...)
+
 ## 6.4 Video About-the-Product
 [Link](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202211108_upc_edu_pe/EWTv9b_CulxJjdwTSq3upFEBnz2RD8X1LcOhCr5Oeyywjg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=TnPOCK) 
 https://upcedupe-my.sharepoint.com/:v:/g/personal/u202211108_upc_edu_pe/EWTv9b_CulxJjdwTSq3upFEBnz2RD8X1LcOhCr5Oeyywjg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=TnPOCK
