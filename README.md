@@ -2345,6 +2345,38 @@ Enlace a la versión móvil de prueba: (...)
 
 Enlace al backend desplegado: (...)
 
+#### 6.3 Validation Interviewa
+
+Aplicación del Proceso de "Validation Interviews" (Análisis de Validaciones)
+Como parte integral de la fase de Needfinding dentro de la metodología Lean UX de DebtGo, la implementación de entrevistas de validación es un paso crítico para asegurar que el desarrollo de nuestra solución se alinee con las necesidades y expectativas reales de nuestros usuarios. Específicamente para este Sprint 2, hemos aplicado un riguroso proceso de validación cruzada utilizando la información ya documentada en nuestro proyecto, obtenida de las entrevistas realizadas.
+
+Objetivo de este análisis para el Sprint 2: Confirmar o refutar nuestras suposiciones e hipótesis iniciales sobre el problema, el público objetivo y la solución propuesta (DebtGo), basándonos en la evidencia directa obtenida de los consultores financieros y los gestores de deudas/emprendedores a través de las entrevistas ya realizadas en etapas previas.
+
+Metodología de Análisis Aplicada:
+
+Identificación de Premisas Clave: Extraer sistemáticamente las declaraciones fundamentales de nuestras "Lean UX Assumptions" y "Lean UX Hypothesis Statements".
+
+Mapeo de Evidencia: Analizar detalladamente los resúmenes de las entrevistas y el análisis cualitativo documentado para buscar comentarios, frustraciones, necesidades explícitas o comportamientos que respalden o contradigan directamente cada premisa.
+
+Determinación del Estado de Validación: Clasificar cada suposición/hipótesis como "Validada", "Parcialmente Validada", o "No Validada", proporcionando la evidencia textual de soporte y la inferencia resultante.
+
+Validación de Suposiciones (Lean UX Assumptions) - Resultados del Análisis
+
+| Nro. | Suposición Clave | Estado de Validación | Evidencia y Justificación del Análisis de Entrevistas |
+|------|-------------------|-----------------------|--------------------------------------------------------|
+| 1. | **Hipótesis:** "Creemos que al implementar más herramientas de notificaciones en la aplicación DebtGo, brindaremos a los usuarios alertas más eficaces sobre sus pagos pendientes. **Éxito:** Sabremos que hemos tenido éxito cuando el 80% de las llamadas registradas no presenten deudas pendientes." | VALIDADA | **Evidencia:** El "Análisis de entrevistas" para emprendedores destaca explícitamente "la carencia de recordatorios efectivos o herramientas que faciliten la gestión de sus obligaciones financieras puede hacer que las personas pierdan de vista las fechas de vencimiento". Andrea también refuerza esta necesidad al creer que DebtGo podría cubrir estas carencias con "recordatorios y seguimiento personalizado". Esto valida la premisa de la hipótesis desde la perspectiva del usuario. |
+| 2. | **Hipótesis:** "Creemos que al añadir un mecanismo de categorización que permita a los usuarios seleccionar si son empresas o particulares, y que ajuste las funcionalidades de la aplicación según esa selección, mejoraremos la experiencia del usuario. **Éxito:** Sabremos que hemos tenido éxito cuando el 100% de los usuarios y empresas estén registrados formalmente en la plataforma." | VALIDADA | **Evidencia:** Emprendedores: Emilio Chávarri (54 años) busca emprender en comunicaciones, y Anderson Gonza (22 años) en el rubro de cafetería, ambos interesados en préstamos empresariales y sus complejidades. El "Análisis de entrevistas" para emprendedores subraya la "importancia de tener asesores financieros con experiencia en el rubro específico de sus negocios". Esta diversidad y la necesidad de asesoramiento especializado valida la utilidad de un mecanismo de categorización para adaptar las funcionalidades y mejorar la experiencia. |
+| 3. | **Hipótesis:** "Creemos que al ofrecer recompensas a los usuarios que paguen sus deudas de forma anticipada y sin retrasos, incentivaremos un comportamiento de pago puntual. **Éxito:** Sabremos que hemos tenido éxito cuando el porcentaje de deudas hacia la empresa disminuya en un 35%." | NO VALIDADA | **Evidencia:** Las entrevistas realizadas no abordaron específicamente el tema de "recompensas" o "incentivos" por pagos anticipados. Los usuarios expresaron preocupaciones sobre intereses y condiciones de préstamos, y necesidades de gestión y educación, pero no se recogió evidencia directa que valide el impacto de un sistema de recompensas en su comportamiento de pago. |
+| 4. | **Hipótesis:** "Creemos que al registrar de manera precisa a los usuarios que pagan y a los que no, reduciremos las llamadas innecesarias y optimizaremos el uso del tiempo. **Éxito:** Sabremos que hemos tenido éxito cuando el registro de usuarios de las empresas aumente en un 65%." | NO VALIDADA | **Evidencia:** Esta hipótesis se centra en una mejora de la eficiencia operativa interna y en una métrica de negocio (aumento de registro de usuarios de empresas), más que en una necesidad o percepción directa del usuario final. Las entrevistas no proporcionaron datos para validar esta premisa o su impacto en la reducción de llamadas. |
+| 5. | **Hipótesis (Fracaso):** "Creemos que la falta de actualizaciones o implementaciones de software tempranas en la aplicación afectará negativamente la gestión de deudas. **Fracaso:** Sabremos que hemos fracasado cuando las deudas de las empresas aumenten en un 25%." | NO VALIDADA | **Evidencia:** Esta hipótesis es una declaración sobre el impacto del proceso de desarrollo de software y la gestión de la aplicación, no una suposición que se pueda validar directamente con la retroalimentación de los usuarios en entrevistas sobre sus necesidades o experiencias. |
+| 6. | **Hipótesis (Fracaso):** "Creemos que al no contar con un sistema de seguridad actualizado y moderno en nuestra aplicación, seremos vulnerables a ataques cibernéticos o intentos de hackeo. **Fracaso:** Sabremos que hemos fracasado cuando los ataques cibernéticos al sistema DebtGo aumenten en un 48%." | VALIDADA | **Evidencia:** Emprendedores: Emilio Chávarri destaca la mejora continua de seguridad en la banca móvil, pero expresa "cierta desconfianza hacia plataformas nuevas o no tradicionales". Anderson Gonza (22 años) indica que confiaría en la aplicación si es "segura, regulada, transparente y cuente con buenas reseñas". El "Análisis de entrevistas" para emprendedores refuerza que es "importante ofrecer un nivel de transparencia y garantías de seguridad adicional". Esto valida que la seguridad es una preocupación fundamental y que su ausencia sería un factor crítico de fracaso para la adopción y confianza. |
+
+
+#### 6.3. 1 Registro de entrevistas
+
+
+#### 6.2.2.4. Execution Evidence for Sprint Review
+
 ## 6.4 Video About-the-Product
 [Link](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202211108_upc_edu_pe/EWTv9b_CulxJjdwTSq3upFEBnz2RD8X1LcOhCr5Oeyywjg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=TnPOCK) 
 https://upcedupe-my.sharepoint.com/:v:/g/personal/u202211108_upc_edu_pe/EWTv9b_CulxJjdwTSq3upFEBnz2RD8X1LcOhCr5Oeyywjg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=TnPOCK
