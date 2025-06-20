@@ -2372,8 +2372,84 @@ Validación de Suposiciones (Lean UX Assumptions) - Resultados del Análisis
 | 6. | **Hipótesis (Fracaso):** "Creemos que al no contar con un sistema de seguridad actualizado y moderno en nuestra aplicación, seremos vulnerables a ataques cibernéticos o intentos de hackeo. **Fracaso:** Sabremos que hemos fracasado cuando los ataques cibernéticos al sistema DebtGo aumenten en un 48%." | VALIDADA | **Evidencia:** Emprendedores: Emilio Chávarri destaca la mejora continua de seguridad en la banca móvil, pero expresa "cierta desconfianza hacia plataformas nuevas o no tradicionales". Anderson Gonza (22 años) indica que confiaría en la aplicación si es "segura, regulada, transparente y cuente con buenas reseñas". El "Análisis de entrevistas" para emprendedores refuerza que es "importante ofrecer un nivel de transparencia y garantías de seguridad adicional". Esto valida que la seguridad es una preocupación fundamental y que su ausencia sería un factor crítico de fracaso para la adopción y confianza. |
 
 
-#### 6.3. 1 Registro de entrevistas
+#### 6.3. 1 Diseño de entrevistas
 
+Objetivo de las Entrevistas:
+Recopilar retroalimentación cualitativa detallada de usuarios actuales y potenciales de la aplicación DebtGo, específicamente de los segmentos de "Consultores financieros" y "Emprendedores", para evaluar la usabilidad, funcionalidad, valor percibido y áreas de mejora tras la implementación de las características de los Sprints 1 y 2.
+
+Segmento Objetivo: Consultores Financieros
+Introducción al Entrevistado:
+"Hola [Nombre del entrevistado], gracias por tomarte el tiempo para conversar con nosotros hoy. Como sabes, somos el equipo detrás de DebtGo, una aplicación diseñada para ayudar en la gestión de deudas y la educación financiera. Nos gustaría mucho conocer tu experiencia con la aplicación desde la perspectiva de un consultor financiero. Tu feedback es crucial para nosotros, ya que nos ayudará a mejorar DebtGo. Te agradeceríamos si pudieras ser lo más honesto y detallado posible. ¿Estás de acuerdo con que grabemos esta conversación para fines internos y de análisis?"
+
+Preguntas Clave:
+
+1. Primera Impresión y Onboarding
+¿Cuál fue tu primera impresión al empezar a usar DebtGo como consultor financiero?
+¿El proceso de registro y configuración de tu perfil como consultor fue claro e intuitivo? ¿Hubo algo que te resultó confuso o te tomó más tiempo de lo esperado?
+2. Funcionalidad y Usabilidad (Relacionado con Sprints 1 y 2)
+Gestión de Casos y Comunicación (US17, US18, US20, US21, US22):
+¿Cómo describirías tu experiencia al recibir y aceptar (o rechazar) los casos de emprendedores? ¿El flujo es eficiente?
+¿Qué tan fácil te resulta comunicarte con los emprendedores a través del sistema de mensajes de la aplicación? ¿Consideras que la función de adjuntar documentos es útil?
+¿El historial de casos te permite hacer un seguimiento efectivo de tus asesorías? ¿Hay alguna información adicional que te gustaría ver?
+Gestión de Servicios y Horarios (US15, US16, US19):
+¿La interfaz para publicar y editar tus servicios es sencilla de usar?
+¿Fue fácil establecer y modificar tus horarios de trabajo en la aplicación? ¿Esta funcionalidad te ayuda a gestionar mejor tu disponibilidad?
+¿Has utilizado la función para ver los servicios de otros consultores? Si es así, ¿qué tan útil la encuentras para comparar tus ofertas?
+Métricas de Desempeño (US27):
+¿Has explorado la sección de métricas de desempeño en tu perfil? Si es así, ¿la información que se presenta es relevante para ti? ¿Te ayuda a identificar áreas de mejora en tus servicios?
+¿Hay alguna métrica específica que te gustaría que DebtGo ofreciera para evaluar tu rendimiento?
+Terminación de Contrato (US28):
+¿Qué opinas del proceso para terminar un contrato en caso de incumplimiento por parte del cliente? ¿Te parece justo y claro?
+3. Valor Percibido y Beneficios
+¿De qué manera DebtGo te ha facilitado la gestión de tus asesorías o la captación de nuevos clientes en comparación con tus métodos anteriores?
+¿Consideras que la aplicación te ayuda a mantener un mejor control sobre tu disponibilidad y la organización de tus casos?
+¿Sientes que DebtGo te ofrece una plataforma sólida para mostrar tu experiencia y atraer a emprendedores?
+4. Oportunidades de Mejora y Sugerencias
+Si pudieras añadir o cambiar una característica en DebtGo para mejorar tu experiencia como consultor, ¿cuál sería?
+¿Hay alguna funcionalidad que te gustaría que la aplicación integrara para simplificar tu trabajo o mejorar la interacción con los emprendedores?
+¿Qué tan satisfecho estás con el nivel de seguridad y privacidad de tus datos profesionales dentro de la aplicación?
+En general, ¿qué recomendarías a otros consultores financieros sobre el uso de DebtGo?
+Cierre de la Entrevista:
+"Muchas gracias por tu tiempo y por compartir tus valiosas perspectivas. Tu feedback es increíblemente útil para nosotros. Si tienes alguna otra idea o sugerencia en el futuro, no dudes en contactarnos."
+
+Segmento Objetivo: Gestores de Deudas y Emprendedores
+Introducción al Entrevistado:
+"Hola [Nombre del entrevistado], agradecemos mucho tu participación en esta entrevista. Como sabes, somos el equipo detrás de DebtGo, una aplicación diseñada para ayudarte en la gestión de tus deudas y tu educación financiera. Nos interesa mucho conocer tu experiencia con la aplicación, especialmente desde tu rol como emprendedor. Tu opinión es fundamental para nosotros para seguir mejorando DebtGo. ¿Estás de acuerdo con que grabemos esta conversación para fines internos y de análisis?"
+
+Preguntas Clave:
+
+1. Primera Impresión y Onboarding
+¿Cuál fue tu primera impresión al empezar a usar DebtGo como emprendedor?
+¿El proceso de registro y configuración de tu perfil (incluyendo la elección del plan y el método de pago) fue claro y fácil de seguir? ¿Tuviste alguna dificultad?
+2. Funcionalidad y Usabilidad (Relacionado con Sprints 1 y 2)
+Búsqueda y Comparación de Consultores/Servicios (US13, US14, US17, US18):
+¿Qué tan fácil te resultó encontrar consultores con experiencia en tu rubro o que se adapten a tus necesidades? ¿Los filtros fueron útiles?
+¿La función de guardar servicios te ayudó a comparar y elegir mejor?
+¿El proceso para iniciar un caso de asesoría con un consultor fue intuitivo?
+¿Cómo fue tu experiencia con la aceptación o rechazo inicial de tu caso por parte del consultor?
+Comunicación y Seguimiento (US20, US21, US23, US24):
+¿Qué tan efectiva ha sido la comunicación con tu consultor a través del sistema de mensajes de DebtGo?
+¿Las notificaciones sobre actualizaciones de tus solicitudes y las alertas de fechas importantes te resultan útiles para mantenerte al tanto de tus obligaciones?
+¿Te sientes informado sobre el progreso de tus casos y si necesitas enviar documentos?
+Evaluación y Finalización de Servicio (US25, US26, US29):
+¿Te pareció fácil calificar a los consultores y dejar una reseña sobre los servicios recibidos? ¿Consideras importante esta funcionalidad?
+¿Qué opinas del proceso para cancelar un contrato si el consultor no cumple con las expectativas o plazos? ¿Te parece un proceso claro?
+Herramientas Adicionales y Educación Financiera (US30, US31, US33, US34):
+¿Has explorado la sección de artículos financieros? ¿El contenido te parece relevante y útil para tu negocio o finanzas personales?
+Si tienes una suscripción premium, ¿has utilizado los simuladores de pagos y cuotas? ¿Te ayudan a estimar tus deudas?
+¿La herramienta de seguimiento de ingresos y gastos te permite tener una visión clara de tu situación financiera? ¿La utilizas regularmente?
+¿Consideras que los presupuestos personalizados (disponibles con suscripción premium) son efectivos para administrar tu dinero?
+3. Valor Percibido y Beneficios
+¿De qué manera DebtGo te ha ayudado a entender o gestionar mejor tus deudas y finanzas empresariales o personales?
+¿Sientes que la aplicación te empodera con mayor conocimiento financiero?
+¿Cuál es el principal beneficio que has obtenido al usar DebtGo hasta ahora?
+4. Oportunidades de Mejora y Sugerencias
+Si pudieras añadir o cambiar una característica en DebtGo para mejorar tu experiencia como emprendedor, ¿cuál sería?
+¿Hay algo que te resulte frustrante o difícil de usar en la aplicación?
+¿Qué tan satisfecho estás con el nivel de seguridad y privacidad de tus datos financieros dentro de la aplicación?
+En general, ¿qué recomendarías a otros emprendedores o personas con deudas sobre el uso de DebtGo?
+Cierre de la Entrevista:
+"Agradecemos enormemente tu tiempo y la honestidad de tus respuestas. Tu feedback es invaluable para nosotros y nos ayudará a seguir mejorando DebtGo para ti y para todos nuestros usuarios. Si te surge alguna otra idea, no dudes en compartirla con nosotros."
 
 #### 6.2.2.4. Execution Evidence for Sprint Review
 
