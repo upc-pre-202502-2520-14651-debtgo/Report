@@ -323,9 +323,9 @@ soluciones de software.</b></td>
         <p><b>Rivera Ticllacuri, Omar Harold</b></p>
        <p><b>TB1: Comprendí cada uno de los elementos mencionados en el Capítulo II y cómo aplicarlos en el contexto del proyecto, reforzando mis habilidades en el análisis de requerimientos.</b></p>
         <p></p>
-        <p><b>TP1:Comprendí cada uno de los elementos desarrollados en Solution UI/UX Design Sprint 1, especialmente en Sprint Planning y Sprint Backlog, lo que reforzó mis habilidades en la planificación de tareas y diseño de soluciones centradas en el usuario.</b></p>
+        <p><b>TP1:Comprendí cada uno de los elementos desarrollados en Solution UI/UX Design Sprint 1, especialmente en Sprint Planning y Sprint Backlog, en la planificación de tareas y diseño de soluciones centradas en el usuario.</b></p>
         <p></p>
-        <p><b>TB2:</b></p>
+        <p><b>TB2:Comprendí cada uno de los elementos desarrollados y arreglados en el Software Architecture Container Level Diagrams, ademas de la Sofware Deployment Evidence, Services and Documentation and Team Collaboration. Lo cual me permitió participar activamente en la organización del trabajo y en la definición de soluciones alineadas a las necesidades del proyecto durante el Sprint. </b></p>
         <p></p>
         <p><b>TF:</b></p>
         <p></p>
@@ -404,10 +404,10 @@ de software</td>
         <p></p>
         <p><b>Rivera Ticllacuri, Omar Harold</b></p>
        <p><b>TB1:Busqué información adicional para entender correctamente los apartados</b></p>
-        <p></p>
-        <p><b>TP1:</b></p>
-        <p>.</p>
-        <p><b>TB2:</b></p>
+ <p></p>
+<p><b>TP1: Reconocí la importancia de mantener una actitud de aprendizaje constante durante el Solution UI/UX Design Sprint 1, lo cual fue fundamental para comprender a profundidad la planificación en Sprint Planning y Sprint Backlog, así como para proponer soluciones enfocadas en el usuario y adaptadas a los requerimientos del proyecto.</b></p>
+<p></p>
+<p><b>TB2: A lo largo del desarrollo y mejora del Software Architecture Container Level Diagrams, así como en la elaboración de la Software Deployment Evidence, Services and Documentation y Team Collaboration, reafirmé la necesidad de seguir aprendiendo de forma continua para aportar de manera efectiva en la organización del trabajo y en la construcción de soluciones técnicas que respondan a las exigencias del proyecto.</b></p>
         <p>.</p>
         <p><b>TF:</b></p>
         <p></p>
