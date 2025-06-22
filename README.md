@@ -2345,6 +2345,41 @@ Enlace a la versión móvil de prueba: (...)
 
 Enlace al backend desplegado: (...)
 
+
+
+
+#### 6.2.2.6. Services Documentation Evidence for Sprint Review
+
+#### 6.2.2.7. Software Deployment Evidence for Sprint Review
+
+#### 6.2.2.8. Team Collaboration Insights during Sprint.
+Durante el Sprint 2, todo el equipo participó activamente en la implementación de la Landing Page, los Web Services y la segunda entrega de la aplicación móvil, trabajando en ramas de feature individuales, revisando pull requests en pares y registrando contribuciones constantes en GitHub; a continuación se muestran los principales analíticos de colaboración, seguidos de nuestra interpretación de cómo estos reflejan el reparto de trabajo y la eficacia en la coordinación del equipo.
+
+**Landing Page**
+
+Network graph:
+![Network Graph](assets/Chapter-6/Landing.png)
+
+Code frecuency:
+![Code Frecuency](assets/Chapter-6/Landing_2.png)
+
+
+**Backend**
+Network graph:
+![Network Graph](assets/Chapter-6/img-network-github-backend.png)
+
+Code frecuency:
+![Code Frecuency](assets/Chapter-6/Back.png)
+
+**App Mobile**
+Network graph:
+![Network Graph](assets/Chapter-6/Mobile.png)
+
+Code frecuency:
+Code frecuency:
+![Code Frecuency](assets/Chapter-6/Mobile2.png)
+
+
 #### 6.3 Validation Interviewa
 
 Aplicación del Proceso de "Validation Interviews" (Análisis de Validaciones)
