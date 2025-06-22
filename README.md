@@ -2351,6 +2351,12 @@ Enlace al backend desplegado: (...)
 #### 6.2.2.6. Services Documentation Evidence for Sprint Review
 
 #### 6.2.2.7. Software Deployment Evidence for Sprint Review
+En este sprint se puso en marcha la infraestructura de despliegue continuo tanto para landing page como para backend, garantizando que cada cambio en main se refleje inmediatamente en producción:
+
+- Git & GitFlow: Control de versiones y flujo de trabajo por ramas de características y releases, con Pull Requests revisados por pares.
+- GitHub: Almacenamiento de código y gestión de issues, PRs y revisiones.
+- Vercel: Despliegue automático de la landing page al hacer merge en main, con previews en cada PR.
+- MonsterASP.NET: Proveedor de hosting en Windows especializado en aplicaciones ASP.NET/.NET.
 
 #### 6.2.2.8. Team Collaboration Insights during Sprint.
 Durante el Sprint 2, todo el equipo participó activamente en la implementación de la Landing Page, los Web Services y la segunda entrega de la aplicación móvil, trabajando en ramas de feature individuales, revisando pull requests en pares y registrando contribuciones constantes en GitHub; a continuación se muestran los principales analíticos de colaboración, seguidos de nuestra interpretación de cómo estos reflejan el reparto de trabajo y la eficacia en la coordinación del equipo.
