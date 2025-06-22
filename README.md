@@ -2349,7 +2349,13 @@ Enlace al backend desplegado: (...)
 
 
 #### 6.2.2.6. Services Documentation Evidence for Sprint Review
+En esta sección presentamos los endpoints preparados durante el sprint. Se adjuntan capturas de la UI de swagger con OpenAPI.
 
+| **Controller** | **Swagger** |
+|----------------|-------------|
+| Authentication |![Authentication Swagger](assets/Chapter-6/img-authentication-swagger.png)|
+| Notification |![Notification Swagger](assets/Chapter-6/img-notification-swagger.png)|
+| Subscription |![Subscription Swagger](assets/Chapter-6/img-subscription-swagger.png)|
 #### 6.2.2.7. Software Deployment Evidence for Sprint Review
 En este sprint se puso en marcha la infraestructura de despliegue continuo tanto para landing page como para backend, garantizando que cada cambio en main se refleje inmediatamente en producción:
 
