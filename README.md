@@ -2546,6 +2546,8 @@ Cierre de la Entrevista:
 
 ### 6.3.3 Evaluaciones según heurísticas
 
+---
+
 **CARRERA** : Ingeniería de Software
 
 **CURSO** : Aplicaciones para Dispositivos Moviles**
@@ -2558,10 +2560,13 @@ Cierre de la Entrevista:
 
 **CLIENTE(S)** : HelpTechTeam
 
+---
 
 **SITE o APP A EVALUAR** :
 
 HelpTech
+
+---
 
 **TAREAS A EVALUAR** :
 1. Visualización de información en el landing page
@@ -2569,6 +2574,8 @@ HelpTech
 3. Reporte estadisticos
 4. Membresia
 5. Atenciones
+
+---
 
 **ESCALA DE SEVERIDAD** :
 
@@ -2581,6 +2588,8 @@ Los errores serán puntuados tomando en cuenta la siguiente escala de severidad
 | 3 | Problema mayor: ocurre frecuentemente o los usuarios no son capaces de resolverlos. Es importante que sean corregidos y se les debe asignar una prioridad alta. |
 | 4 | Problema muy grave: un error de gran impacto que impide al usuario continuar con el uso de la herramienta. Es imperativo que sea corregido antes del lanzamiento. |
 
+---
+
 **TABLA DE RESUMEN**
 
 | # | Problema | Escala de severidad | Heurística/Principio violada(o) |
@@ -2588,6 +2597,8 @@ Los errores serán puntuados tomando en cuenta la siguiente escala de severidad
 | 1 | Dificultad en visualizar el texto de "About Us" en el landing page | 1 | Inclusive Design: Considera la situación del usuario |
 | 2 | Falta de más información en los reportes estadisticos | 3 | Information Architecture: Is it learnable? |
 | 3 | Botón "Membresia" que no redirige a un contenido | 4 | Information Architecture: Is it usable? |
+
+---
 
 **DESCRIPCIÓN DE PROBLEMAS** :
 
@@ -2603,6 +2614,8 @@ Al momento de leer el contenido de "About Us" resulta un poco díficil leer el t
 **Recomendación:** <br>
 Lo recomendable seria poner el contenido de "About Us" dentro de un cuadro que tenga un color sólido que permita leer claramente el texto.
 
+---
+
 **PROBLEMA #2: Falta de más información en los reportes estadisticos**
 
 **Severidad:** 3
@@ -2614,6 +2627,8 @@ Los reportes estadisticos tienen escasez de información detallada que ayude a c
 
 **Recomendación:** <br>
 Lo recomendable seria que los reportes estadisticos tengan cuadros de texto que expliquen detalladamente el reporte, además de un botón de ayuda que explique como funciona el gráfico del reporte.
+
+---
 
 **PROBLEMA #3: Botón "Membresia" que no redirige a un contenido**
 
