@@ -2331,7 +2331,11 @@ Este Sprint 2 fue planificado con un total de 36 horas estimadas, y la distribuc
 
 | **Repository** | **Branch** | **Commit Id**                              | **Commit Message**                                         | **Committed on (Date)** |
 |----------------|------------|--------------------------------------------|--------------------------------------------------------------------------------------|-------------------------|
-|(...)| (...)    | (...)   | (...)                                                                        | (...)               |
+|Web-Services| main    | 0a44c464b4b5679bd97a7ef4fed075e2aec38f7f  | chore: initial commit                                                                        | 15/05/2025               |
+|App-Mobile-DebtGo| master    | 01df8ef4e5b9ccd12c1e1729b582784dbb0e0605  | Initial commit                                                                        | 28/05/2025               |
+|App-Mobile-DebtGo| master    | edfcbc6546973441fd665f99029d1bf7c474611b  | feat(chore): update HomeScreen.kt                                                                        | 28/05/2025               |
+|App-Mobile-DebtGo| master    | 9715adaa54059fb55e49a95b1c7c640c48618e74  | feat(chore): update AppNavigation.kt                                                                        | 28/05/2025               |
+|App-Mobile-DebtGo| master    | d4816cce45e9db3795d4915a4fb5ee62ed252c02  | feat(chore): Update AppNavigation.kt                                                                       | 28/05/2025               |
 
 #### 6.2.2.4. Execution Evidence for Sprint Review
 
@@ -2343,7 +2347,7 @@ Durante este sprint se completaron con éxito las funcionalidades de registro de
 
 Enlace a la versión móvil de prueba: (...)
 
-Enlace al backend desplegado: (...)
+Enlace al backend desplegado: [DebtGo Backend](http://debt2go.runasp.net/swagger/index.html)
 
 
 
