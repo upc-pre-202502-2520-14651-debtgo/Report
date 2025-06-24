@@ -2364,7 +2364,7 @@ En esta sección es donde por primera vez ingresas a DebtGo, tienes que completa
 Una vez que te has registrado o haber iniciado sesión, entras a la app DebtGo donde tienes varias opciones para ver, como añadir una deuda, gestionar deuda, la sección de Emprendedores, etc.
 
 ![image](assets/Chapter-6/emprendedores.png)
-![image](assets/Chapter-6/agendar-consulta.png)
+![image](assets/Chapter-6/agendar-consultoria.png)
 ![image](assets/Chapter-6/talleres-virtuales.png)
 ![image](assets/Chapter-6/casos-exito.png)
 La sección de emprendedores donde podrás recibir ayuda mediante los asesores financieros, podrás tener talleres virtuales y ver los casos de éxito que tuvieron nuestros usuarios anteriores que pasaron por nuestra aplicación DebtGo.
