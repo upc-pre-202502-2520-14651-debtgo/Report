@@ -2543,6 +2543,26 @@ Si pudieras añadir o cambiar una característica en DebtGo para mejorar tu expe
 En general, ¿qué recomendarías a otros emprendedores o personas con deudas sobre el uso de DebtGo?
 Cierre de la Entrevista:
 "Agradecemos enormemente tu tiempo y la honestidad de tus respuestas. Tu feedback es invaluable para nosotros y nos ayudará a seguir mejorando DebtGo para ti y para todos nuestros usuarios. Si te surge alguna otra idea, no dudes en compartirla con nosotros."
+### 6.3.2 Registro de Entrevistas
+
+
+**Segmento Objetivo: Consultores financieros:**
+
+**Entrevista #1**
+
+- Nombre: George Garcia Durand
+- Edad: 20 años
+- Distrito: Rimac
+- Duración: 4:56
+
+![image](assets/Chapter-6/George2.png)
+
+[Entrevista 1 - video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202214214_upc_edu_pe/ET-aAY2zy4VOlj3Q1hoRVrABebCmZUYVwZF7QZ93X_NSBQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=yg0v82)
+
+Resumen:
+En la entrevista, George García Durand, consultor financiero de 20 años, compartió su experiencia positiva con la aplicación DebtGo. Destacó su interfaz intuitiva, el proceso de registro claro y la facilidad para gestionar casos, servicios y horarios. Valoró especialmente la función de adjuntar documentos y la utilidad del historial de casos, aunque sugirió añadir filtros. Mencionó que las métricas le ayudan a mejorar su desempeño y considera justo el proceso para finalizar contratos. No propone nuevas funciones, ya que la plataforma cubre sus necesidades. Recomendó DebtGo por su utilidad, dinamismo y seguridad.
+Además, resaltó que la plataforma facilita una comunicación cercana con los emprendedores y mejora la organización de su trabajo diario. Señaló que, a diferencia de otras herramientas, DebtGo realmente se adapta a las necesidades del consultor.
+
 
 ### 6.3.3 Evaluaciones según heurísticas
 
@@ -2556,9 +2576,9 @@ Cierre de la Entrevista:
 
 **PROFESORES** : Todos
 
-**AUDITOR** : DebtGoTeam
+**AUDITOR** : 
 
-**CLIENTE(S)** : HelpTechTeam
+**CLIENTE(S)** : 
 
 ---
 
@@ -2569,11 +2589,11 @@ HelpTech
 ---
 
 **TAREAS A EVALUAR** :
-1. Visualización de información en el landing page
-2. Agendar una cita
-3. Reporte estadisticos
-4. Membresia
-5. Atenciones
+1. 
+2.  
+3. 
+4. 
+5. 
 
 ---
 
@@ -2583,10 +2603,10 @@ Los errores serán puntuados tomando en cuenta la siguiente escala de severidad
 
 | Nivel | Descripción |
 |-------|-------------|
-| 1 | Problema superficial: puede ser fácilmente superador por el usuario ó ocurre con muy poco frecuencia. No necesita ser arreglado a no ser que exista disponibilidad de tiempo. |
-| 2 | Problema menor: puede ocurrir un poco más frecuentemente o es un poco más difícil de superar para el usuario. Se le debería asignar una prioridad baja resolverlo de cara al siguiente reléase |
-| 3 | Problema mayor: ocurre frecuentemente o los usuarios no son capaces de resolverlos. Es importante que sean corregidos y se les debe asignar una prioridad alta. |
-| 4 | Problema muy grave: un error de gran impacto que impide al usuario continuar con el uso de la herramienta. Es imperativo que sea corregido antes del lanzamiento. |
+| 1 | Problema superficial: |
+| 2 | Problema menor:  |
+| 3 | Problema mayor: |
+| 4 | Problema muy grave:|
 
 ---
 
@@ -2594,53 +2614,49 @@ Los errores serán puntuados tomando en cuenta la siguiente escala de severidad
 
 | # | Problema | Escala de severidad | Heurística/Principio violada(o) |
 |:-:|:--------:|:-------------------:|:-------------------------------:|
-| 1 | Dificultad en visualizar el texto de "About Us" en el landing page | 1 | Inclusive Design: Considera la situación del usuario |
-| 2 | Falta de más información en los reportes estadisticos | 3 | Information Architecture: Is it learnable? |
-| 3 | Botón "Membresia" que no redirige a un contenido | 4 | Information Architecture: Is it usable? |
+| 1 |  |  | |
+| 2 |  |  | |
+| 3 |  |  | |
 
 ---
 
 **DESCRIPCIÓN DE PROBLEMAS** :
 
-**PROBLEMA #1: Dificultad en visualizar el texto de "About Us" en el landing page**
+**PROBLEMA #1:**
 
-**Severidad:** 1
+**Severidad:** 
 
-**Heurística violada:** Inclusive Design: Considera la situación del usuario
+**Heurística violada:** 
 
 **Problema:** <br>
-Al momento de leer el contenido de "About Us" resulta un poco díficil leer el texto. Esto ocasiona que el usuario no pueda entender el contenido.
+
 
 **Recomendación:** <br>
-Lo recomendable seria poner el contenido de "About Us" dentro de un cuadro que tenga un color sólido que permita leer claramente el texto.
+
 
 ---
 
-**PROBLEMA #2: Falta de más información en los reportes estadisticos**
+**PROBLEMA #2:**
 
-**Severidad:** 3
+**Severidad:** 
 
-**Heurística violada:** Information Architecture: Is it learnable?
+**Heurística violada:** 
 
 **Problema:** <br>
-Los reportes estadisticos tienen escasez de información detallada que ayude a comprender el reporte seleccionado. Por lo tanto, ocasiona que el usuario tenga dificultad en comprender los reportes estadisticos.
 
 **Recomendación:** <br>
-Lo recomendable seria que los reportes estadisticos tengan cuadros de texto que expliquen detalladamente el reporte, además de un botón de ayuda que explique como funciona el gráfico del reporte.
 
 ---
 
 **PROBLEMA #3: Botón "Membresia" que no redirige a un contenido**
 
-**Severidad:** 4
+**Severidad:** 
 
-**Heurística violada:** Information Architecture: Is it usable?
+**Heurística violada:** 
 
 **Problema:** <br>
-Al seleccionar el botón "Membresia", esta no muestra algun contenido, es decir no pasa nada al seleccionar el botón. Por lo cual, podría causar confusión al usuario.
 
 **Recomendación:** <br>
-Lo recomendable seria que al seleccionar el botón "Membresia", esta muestre un contenido para que el usuario pueda tener una mejor experiencia.
 
 ## 6.4 Video About-the-Product
 [Link](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202211108_upc_edu_pe/EWTv9b_CulxJjdwTSq3upFEBnz2RD8X1LcOhCr5Oeyywjg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=TnPOCK) 
