@@ -2337,6 +2337,18 @@ Este Sprint 2 fue planificado con un total de 36 horas estimadas, y la distribuc
 |App-Mobile-DebtGo| master    | 9715adaa54059fb55e49a95b1c7c640c48618e74  | feat(chore): update AppNavigation.kt                                                                        | 28/05/2025               |
 |App-Mobile-DebtGo| master    | d4816cce45e9db3795d4915a4fb5ee62ed252c02  | feat(chore): Update AppNavigation.kt                                                                       | 28/05/2025               |
 
+#### 6.2.2.4. Testing Suite Evidence for Sprint Review
+
+| **Repository** | **Branch** | **Commit Id**                              | **Commit Message**                                         | **Committed on (Date)** |
+|----------------|------------|--------------------------------------------|--------------------------------------------------------------------------------------|-------------------------|
+|Acceptnace-Test-Debtgo| main    | d7e6f887096b5a10582afd89a684c36ee227a761   | feat: add acceptance tests for epic 01                                                                     | 25/06/2025               |
+|Acceptnace-Test-Debtgo| main    | d95edf553d8a7ce2b3e0f3d1a0ff35c4cc379ad1   | feat: add acceptance tests for epic 02                                                                       | 25/06/2025               |
+|Acceptnace-Test-Debtgo| main    | a4a4d9f502aec3d088aebf4c1ebd6c1d8b8f5bb4   | feat: add acceptance tests for epic 03                                                                       | 25/06/20254               |
+|Acceptnace-Test-Debtgo| main    | a775d3420b21dedd0bbeeee866ccc9f913779cdb   | feat: add acceptance tests for epic 04                                                                      | 25/06/2025               |
+|Acceptnace-Test-Debtgo| main    | 86e327d86674453e4e5daaad3a227a1b559dcdd5   | feat: add acceptance tests for epic 05                                                                        | 25/06/2025               |
+|Acceptnace-Test-Debtgo| main    | 763142044740a0e0bce521f35344081a488bcaec   | feat: add acceptance tests for epic 06                                                                       | 25/06/2025               |
+|Acceptnace-Test-Debtgo| main    | 9dc140eaf27a197d3cf6723431bf98760beec3d2   | feat: add acceptance tests for epic 07                                                                       | 25/06/2025               |
+
 #### 6.2.2.5. Execution Evidence for Sprint Review
 
 Durante este sprint se completaron con éxito las funcionalidades de registro de usuarios, gestión de perfiles (consultor y emprendedor) y la experiencia de reserva de servicios. En concreto:
