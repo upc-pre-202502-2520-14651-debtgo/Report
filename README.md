@@ -2517,7 +2517,7 @@ En general, ¿qué recomendarías a otros consultores financieros sobre el uso d
 Cierre de la Entrevista:
 "Muchas gracias por tu tiempo y por compartir tus valiosas perspectivas. Tu feedback es increíblemente útil para nosotros. Si tienes alguna otra idea o sugerencia en el futuro, no dudes en contactarnos."
 
-Segmento Objetivo: Gestores de Deudas y Emprendedores
+Segmento Objetivo: Emprendedores
 Introducción al Entrevistado:
 "Hola [Nombre del entrevistado], agradecemos mucho tu participación en esta entrevista. Como sabes, somos el equipo detrás de DebtGo, una aplicación diseñada para ayudarte en la gestión de tus deudas y tu educación financiera. Nos interesa mucho conocer tu experiencia con la aplicación, especialmente desde tu rol como emprendedor. Tu opinión es fundamental para nosotros para seguir mejorando DebtGo. ¿Estás de acuerdo con que grabemos esta conversación para fines internos y de análisis?"
 
@@ -2574,6 +2574,21 @@ Cierre de la Entrevista:
 Resumen:
 En la entrevista, George García Durand, consultor financiero de 20 años, compartió su experiencia positiva con la aplicación DebtGo. Destacó su interfaz intuitiva, el proceso de registro claro y la facilidad para gestionar casos, servicios y horarios. Valoró especialmente la función de adjuntar documentos y la utilidad del historial de casos, aunque sugirió añadir filtros. Mencionó que las métricas le ayudan a mejorar su desempeño y considera justo el proceso para finalizar contratos. No propone nuevas funciones, ya que la plataforma cubre sus necesidades. Recomendó DebtGo por su utilidad, dinamismo y seguridad.
 Además, resaltó que la plataforma facilita una comunicación cercana con los emprendedores y mejora la organización de su trabajo diario. Señaló que, a diferencia de otras herramientas, DebtGo realmente se adapta a las necesidades del consultor.
+
+**Segmento Objetivo: Emprendedores**
+
+**Entrevista #1**
+
+- Nombre: Emilio Chávarri
+- Edad: 55 años
+- Distrito: San Juan de Lurigancho
+- Duración: 8:50
+
+- ![image](assets/Chapter-6/)
+
+  [Entrevista 1 - video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202211108_upc_edu_pe/EcXf7YWyjZBIoN_HpWkwxv0BpldE5bTo6hcjXWH_HHWt-g?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=tEPX0X)
+
+  Resúmen: En la entrevista, el señor Emilio Chávarri nos dió valiosas respuestas luego de las preguntas dadas, nos comenta que no tuvo problemas con la aplicación, le pareció excelente la app, le resultó sencillo usar la aplicación, en el caso de los servicios le sirvió mucho en varios aspectos de su rubro. También nos comenta que DebtGo le ha ayudado a poder gestionar sus deudas en finanzas empresariales y que le ha permitido administrar de manera segura y eficiente su dinero para futuros usos de su perferencia. Finalmente nos comenta que recomienda el uso de DebtGo porque es una aplicación fácil de usar, útil para aprender nuevos temas de finanzas, mediante cursos con certificación, cursos adicionales, etc.
 
 
 ### 6.3.3 Evaluaciones según heurísticas
