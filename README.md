@@ -2584,7 +2584,7 @@ Además, resaltó que la plataforma facilita una comunicación cercana con los e
 - Distrito: San Juan de Lurigancho
 - Duración: 8:50
 
-- ![image](assets/Chapter-6/)
+- ![image](assets/Chapter-6/img-emprendedor.JPG)
 
   [Entrevista 1 - video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202211108_upc_edu_pe/EcXf7YWyjZBIoN_HpWkwxv0BpldE5bTo6hcjXWH_HHWt-g?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=tEPX0X)
 
