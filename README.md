@@ -2234,7 +2234,7 @@ Este apartado se detalla las decisiones, herramientas y convenciones adoptadas p
 
 Durante este sprint se completó con éxito la construcción y publicación de la landing page (integrando el video de demostración, el carrusel de reseñas, la sección de planes y el formulario de contacto) así como la redacción e integración de la política de privacidad y el proceso de registro. Además, se desplegó el backend en producción y se avanzó con la primera entrega de la aplicación móvil, garantizando una experiencia fluida y coherente para el usuario.
 
-Enlace a la landing page desplegada: [DebtGo Landing Page]([https://landing-page-beta-tawny-87.vercel.app/](https://upc-pre-202501-cc238-365-debtgo.github.io/Landing-Page/))
+Enlace a la landing page desplegada: [DebtGo Landing Page]([https://landing-page-beta-tawny-87.vercel.app/](https://upc-pre-202501-cc238-365-debtgo.github.io/Landing-Page/](https://upc-pre-202501-cc238-365-debtgo.github.io/Landing-Page/))
 
 Enlace al backend desplegado: [DebtGo Backend](http://debt2go.runasp.net/swagger/index.html)
 
