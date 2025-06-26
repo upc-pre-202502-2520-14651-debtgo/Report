@@ -2317,13 +2317,13 @@ Durante el Sprint 2 del proyecto DebtGo, el equipo se centró en consolidar las 
 
 | **User Story**                           | **Work-item/Task**                  | **Descripción**                                                                    | **Estimación (Horas)** | **Assigned To**          | **Status**  |
 | ---------------------------------------- | ----------------------------------- | --------------------------------------------------------------------------------   | ---------------------- | ------------------------ | ----------  |
-| E5-US23 Notificaciones                   | W20 Implement notifications module  | Desarrollar backend y lógica de visualización de notificaciones para usuarios      |         5              | Anaely Burga             | In Progress |
-| E5-US24 Calendario de sesiones           | W21 Session calendar integration    | Integrar vista de calendario con sesiones agendadad por consultores y usuarios     |         6              | Omar Rivera              | To Do       |
-| E5-US25 Reprogramación de sesiones       | W22 Reschedule sessions feature     | Implementar lógica para reprogramar sesiones desde la app                          |         5              | Daniel Chávarri          | To Do       |
-| E5-US26 Evaluación de servicio           | W23 Service rating system           | Crear componente de calificación y retroalimentación al finalizar sesiones         |         4              | Janiel Escalante         | To Do       |
-| E5-US27 Edición de perfil                | W24 Edit profile functionality      | Permitir a los usuarios editar sus datos personales y de perfil desde la app       |         4              | Marco Góngora            | In Progress |
-| E5-US28 Recuperación de contraseña       | W25 Password recovery process       | Implementar flujo para recuperación de contraseña vía correo electrónico           |         4              | Anaely Burga             | In Progress |
-| E5-US29 Módulo de analíticas             | W26 Basic analytics dashboard       | Crear panel con estadísticas básicas para consultores                              |         6              | Daniel Chávarri          | To Do       |
+| E5-US23 Notificaciones                   | W20 Implement notifications module  | Desarrollar backend y lógica de visualización de notificaciones para usuarios      |         5              | Anaely Burga             | Done        |
+| E5-US24 Calendario de sesiones           | W21 Session calendar integration    | Integrar vista de calendario con sesiones agendadad por consultores y usuarios     |         6              | Omar Rivera              | Done        |
+| E5-US25 Reprogramación de sesiones       | W22 Reschedule sessions feature     | Implementar lógica para reprogramar sesiones desde la app                          |         5              | Daniel Chávarri          | Done        |
+| E5-US26 Evaluación de servicio           | W23 Service rating system           | Crear componente de calificación y retroalimentación al finalizar sesiones         |         4              | Janiel Escalante         | Done        |
+| E5-US27 Edición de perfil                | W24 Edit profile functionality      | Permitir a los usuarios editar sus datos personales y de perfil desde la app       |         4              | Marco Góngora            | Done        |
+| E5-US28 Recuperación de contraseña       | W25 Password recovery process       | Implementar flujo para recuperación de contraseña vía correo electrónico           |         4              | Anaely Burga             | Done        |
+| E5-US29 Módulo de analíticas             | W26 Basic analytics dashboard       | Crear panel con estadísticas básicas para consultores                              |         6              | Daniel Chávarri          | Done        |
 
 Este Sprint 2 fue planificado con un total de 36 horas estimadas, y la distribución de tareas está alineada con el Sprint Goal propuesto para esta iteración.
 
