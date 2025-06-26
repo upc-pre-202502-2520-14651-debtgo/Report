@@ -2295,6 +2295,9 @@ Code frecuency:
 ![Code Frecuency](assets/Chapter-6/img-code-frecuency-app-mobile.png)
 
 ### 6.2.2. Sprint 2
+
+![Sprint 2](assets/Chapter-6/sprint2.png)
+
 #### 6.2.2.1. Sprint Planning 2
 | Sprint # | Sprint 2 |
 | -------- | -------- |
