@@ -2318,17 +2318,19 @@ Code frecuency:
 **Introducción**
 Durante el Sprint 2 del proyecto DebtGo, el equipo se centró en consolidar las funcionalidades clave de la aplicación móvil y backend, orientadas a brindar una experiencia completa de registro, configuración de perfiles, interacción mediante mensajería, y planificación de servicios. El objetivo principal fue asegurar que los usuarios puedan completar sus flujos de registro, gestionar sus servicios y comunicarse eficazmente dentro de la plataforma.
 
-| **User Story**                           | **Work-item/Task**                  | **Descripción**                                                                    | **Estimación (Horas)** | **Assigned To**          | **Status**  |
-| ---------------------------------------- | ----------------------------------- | --------------------------------------------------------------------------------   | ---------------------- | ------------------------ | ----------  |
-| E5-US23 Notificaciones                   | W20 Implement notifications module  | Desarrollar backend y lógica de visualización de notificaciones para usuarios      |         5              | Anaely Burga             | Done        |
-| E5-US24 Calendario de sesiones           | W21 Session calendar integration    | Integrar vista de calendario con sesiones agendadad por consultores y usuarios     |         6              | Omar Rivera              | Done        |
-| E5-US25 Reprogramación de sesiones       | W22 Reschedule sessions feature     | Implementar lógica para reprogramar sesiones desde la app                          |         5              | Daniel Chávarri          | Done        |
-| E5-US26 Evaluación de servicio           | W23 Service rating system           | Crear componente de calificación y retroalimentación al finalizar sesiones         |         4              | Janiel Escalante         | Done        |
-| E5-US27 Edición de perfil                | W24 Edit profile functionality      | Permitir a los usuarios editar sus datos personales y de perfil desde la app       |         4              | Marco Góngora            | Done        |
-| E5-US28 Recuperación de contraseña       | W25 Password recovery process       | Implementar flujo para recuperación de contraseña vía correo electrónico           |         4              | Anaely Burga             | Done        |
-| E5-US29 Módulo de analíticas             | W26 Basic analytics dashboard       | Crear panel con estadísticas básicas para consultores                              |         6              | Daniel Chávarri          | Done        |
+| **User Story**                                 | **Work-item/Task**                     | **Descripción**                                                                   | **Estimación (Horas)**  | **Assigned To**  | **Status**  |
+| ----------------------------------------       | -----------------------------------    | --------------------------------------------------------------------------------  | ----------------------  | ---------------  | ----------  |
+| E6-US13 Buscar consultores según necesidades   | W20 Consultant search tool             | Implementar búsqueda de consultores según experiencia en el rubro del emprendedor |	          5	            | Daniel Chávarri  | Done        |
+| E6-US14 Comparar servicios guardados           | W21 Service comparison module          | Crear componente para comparar servicios guardados y elegir el más adecuado	      |           5             | Anaely Burga     | Done        |
+| E6-US23 Recibir actualizaciones de solicitudes | W22 Request status notifications       | Implementar notificaciones sobre actualizaciones del estado de las solicitudes	  |           5	            | Omar Rivera	   | Done        |
+| E6-US24 Recibir alertas de fechas importantes  | W23 Alerts for important deadlines	  |	Enviar alertas al emprendedor sobre fechas importantes (reuniones, pagos, vencimientos) |	  4	            | Janiel Escalante | Done        |  
+| E6-US26 Calificar servicios recibidos          | W24 Rate received services	          |	Permitir que el emprendedor califique los servicios de los consultores al finalizar la asesoría | 3         | Marco Góngora	   | Done        |
+| E6-US29 Cancelar contrato como emprendedor     | W25 Cancel contract as entrepreneur	  | Habilitar la opción de cancelar el contrato si el consultor no cumple con lo esperado |	       3	        | Daniel Chávarri  | Done        |
+| E6-US31 Usar herramientas de simulación        | W26 Payment simulation tool		      | Crear herramienta para simular pagos, cuotas o préstamos en base a distintos escenarios	|      8	        | Anaely Burga     | Done        |
+| E6-US33 Hacer seguimiento de ingresos y gastos | W27 Income & expense tracking          | Desarrollar módulo para registrar y visualizar ingresos y gastos del emprendedor   |		   6	        | Janiel Escalante | Done        |
+| E6-US34 Crear presupuestos personalizados      | W28 Budget planning module	          | Crear componente para planificación de presupuestos según ingresos, gastos y metas del usuario | 6	        | Marco Góngora	   | Done        |
 
-Este Sprint 2 fue planificado con un total de 36 horas estimadas, y la distribución de tareas está alineada con el Sprint Goal propuesto para esta iteración.
+Este Sprint 2 fue planificado con un total de 45 horas estimadas, y la distribución de tareas está alineada con el Sprint Goal propuesto para esta iteración.
 
 #### 6.2.2.3. Development Evidence for Sprint Review
 
