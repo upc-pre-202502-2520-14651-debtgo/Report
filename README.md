@@ -2454,6 +2454,17 @@ Code frecuency:
 Code frecuency:
 ![Code Frecuency](assets/Chapter-6/Mobile2.png)
 
+### 6.2.3 Sprint 3
+Durante el Sprint 3 del proyecto DebtGo, el equipo se enfocó en completar las funcionalidades restantes del Product Backlog, asegurando una experiencia completa de interacción entre consultores y emprendedores. Se trabajó en los módulos pendientes relacionados con la gestión de asesorías, visualización de métricas, comparación de servicios y recolección de retroalimentación. El objetivo principal fue cerrar el ciclo de asesoría financiera, permitiendo a los usuarios iniciar y finalizar casos, acceder a métricas clave, y brindar herramientas para mejorar continuamente la calidad del servicio ofrecido por los consultores.
+
+| **User Story**                                 | **Work-item/Task**                     | **Descripción**                                                                   | **Estimación (Horas)**  | **Assigned To**  | **Status**  |
+| ----------------------------------------       | -----------------------------------    | --------------------------------------------------------------------------------  | ----------------------  | ---------------  | ----------  |
+| E6-US17 Iniciar caso de asesoría               | W31 Start case request                 | Crear interfaz para que el emprendedor inicie una solicitud de asesoría           |	          4	            | Anaely Burga     | Done        |
+| E6-US18 Aceptar caso de asesoría               | W32 Accept case logic                  | Implementar la lógica para que el consultor acepte casos	                      |           4             | Marco Góngora    | Done        |
+| E6-US19 Visualización de servicios             | W33 View other consultants             | Permitir a los consultores visualizar servicios de otros consultores para comparación   |           3	            | Janiel Escalante	   | Done        |
+| E6-US25 Solicitar reseñas                      | W34 Request reviews	                  |	Habilitar funcionalidad para que el consultor solicite reseñas a los clientes     |	           3	        | Daniel Chávarri  | Done        |  
+| E6-US27 Visualizar métricas                    | W35 Performance dashboard	          |	Crear panel para mostrar métricas de rendimiento de los consultores               |            8            | Omar Rivera	   | Done        |
+| E6-US28 Terminar contrato                      | W36 Edn contract option	              | Añadir opción para terminar un contrato desde el módulo de casos                  |	           3	        | Marco Góngora    | Done        |
 
 #### 6.3 Validation Interviewa
 
