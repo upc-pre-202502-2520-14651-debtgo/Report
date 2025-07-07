@@ -2574,7 +2574,7 @@ Cierre de la Entrevista:
 
 ![image](assets/Chapter-6/George2.png)
 
-[Entrevista 1 - video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202214214_upc_edu_pe/ET-aAY2zy4VOlj3Q1hoRVrABebCmZUYVwZF7QZ93X_NSBQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=yg0v82)
+[Entrevista 1 - video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202214214_upc_edu_pe/EYxoj_PKLbpMgN_UBON7NTUB9sMArnlR-K-z1hjkDDU-sw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=g9Z2I2)
 
 Resumen:
 En la entrevista, George García Durand, consultor financiero de 20 años, compartió su experiencia positiva con la aplicación DebtGo. Destacó su interfaz intuitiva, el proceso de registro claro y la facilidad para gestionar casos, servicios y horarios. Valoró especialmente la función de adjuntar documentos y la utilidad del historial de casos, aunque sugirió añadir filtros. Mencionó que las métricas le ayudan a mejorar su desempeño y considera justo el proceso para finalizar contratos. No propone nuevas funciones, ya que la plataforma cubre sus necesidades. Recomendó DebtGo por su utilidad, dinamismo y seguridad.
