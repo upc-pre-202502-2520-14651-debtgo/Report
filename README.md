@@ -2452,11 +2452,27 @@ Durante el Sprint 3 del proyecto DebtGo, el equipo se enfocó en completar las f
 | E6-US19 Visualización de servicios             | W33 View other consultants             | Permitir a los consultores visualizar servicios de otros consultores para comparación   |           3	    | Janiel Escalante | Done        |
 | E6-US25 Solicitar reseñas                      | W34 Request reviews	                  |	Habilitar funcionalidad para que el emprendedor solicite reseñas a los clientes   |	           3	        | Daniel Chávarri  | Done        |  
 | E6-US27 Visualizar métricas                    | W35 Performance dashboard	          |	Crear panel para mostrar métricas de rendimiento de los emprendedores             |            8            | Omar Rivera	   | Done        |
-| E6-US28 Terminar contrato de los asesores      | W36 End contract option	              | Añadir opción para terminar un contrato desde el módulo de asesoramiento          |	           3	        | Marco Góngora    | Done        |
 
-Este Sprint 3 fue planificado con un total de 25 horas estimadas, y la distribución de tareas está alineada con el Sprint Goal propuesto para esta iteración.
+Este Sprint 3 fue planificado con un total de 22 horas estimadas, y la distribución de tareas está alineada con el Sprint Goal propuesto para esta iteración.
 
-#### 6.3 Validation Interviewa
+Evidencia en DebtGo Flutter:
+
+![image](assets/Chapter-6/solicitud-asesoria.JPG)
+
+
+![image](assets/Chapter-6/solicitud-asesores.JPG)
+
+
+![image](assets/Chapter-6/servicios-asesores.JPG)
+
+
+![image](assets/Chapter-6/solicitar-reseñas.JPG)
+
+
+![image](assets/Chapter-6/metrica-desempeño.JPG)
+
+
+#### 6.3 Validation Interviews
 
 Aplicación del Proceso de "Validation Interviews" (Análisis de Validaciones)
 Como parte integral de la fase de Needfinding dentro de la metodología Lean UX de DebtGo, la implementación de entrevistas de validación es un paso crítico para asegurar que el desarrollo de nuestra solución se alinee con las necesidades y expectativas reales de nuestros usuarios. Específicamente para este Sprint 2, hemos aplicado un riguroso proceso de validación cruzada utilizando la información ya documentada en nuestro proyecto, obtenida de las entrevistas realizadas.
