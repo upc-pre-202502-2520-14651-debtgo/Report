@@ -2362,7 +2362,7 @@ Durante este sprint se completaron con éxito las funcionalidades de registro de
 - Perfiles: Cada usuario puede elegir su rol (consultor o emprendedor), rellenar su información de perfil y subir foto de avatar.
 - Reserva de servicios: Desde la app móvil, el usuario emprendedor puede listar consultores disponibles, seleccionar fecha y hora, confirmar la reserva y visualizar el estado de la misma. La lógica de negocio en el backend procesa correctamente la creación y consulta de reservas.
 
-Enlace a la versión móvil de prueba: (...)
+Enlace a la versión móvil de prueba: [Prueba-Final-DebtGo](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202211108_upc_edu_pe/Ea8gW4LZhERInneOSI8r5psBuHhK49qR94IdRyxEFMFfiw?e=wqS6W6&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
 
 Enlace al backend desplegado: [DebtGo Backend](http://debt2go.runasp.net/swagger/index.html)
 
