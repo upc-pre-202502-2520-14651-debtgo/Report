@@ -2369,7 +2369,7 @@ Enlace al backend desplegado: [DebtGo Backend](http://debt2go.runasp.net/swagger
 
 Evidencia de la app DebtGo en Flutter
 
-![image](assets/Chapter-6/buscar-emprendedores.JPG)
+ ![image](assets/Chapter-6/buscar-emprendedores.JPG)
 
 
 ![image](assets/Chapter-6/comparar-servicios.JPG)
@@ -2378,7 +2378,7 @@ Evidencia de la app DebtGo en Flutter
 ![image](assets/Chapter-6/notificaciones.JPG)
 
 
-![image](assets/Chapter-6/alertas.JPG)
+![image](assets/Chapter-6/alertas-fechas.JPG)
 
 
 ![image](assets/Chapter-6/calificar-servicio.JPG)
