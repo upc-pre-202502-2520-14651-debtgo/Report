@@ -2456,7 +2456,7 @@ Code frecuency:
 
 ### 6.2.3 Sprint 3
 
-![Sprint 3](assets/Chapter-6/sprint-3.jpg)
+![Sprint 3](assets/Chapter-6/sprint-3.JPG)
 
 Durante el Sprint 3 del proyecto DebtGo, el equipo se enfocó en completar las funcionalidades restantes del Product Backlog, asegurando una experiencia completa de interacción entre consultores y emprendedores. Se trabajó en los módulos pendientes relacionados con la gestión de asesorías, visualización de métricas, comparación de servicios y recolección de retroalimentación. El objetivo principal fue cerrar el ciclo de asesoría financiera, permitiendo a los usuarios iniciar y finalizar casos, acceder a métricas clave, y brindar herramientas para mejorar continuamente la calidad del servicio ofrecido por los consultores.
 
