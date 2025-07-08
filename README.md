@@ -2320,12 +2320,12 @@ Durante el Sprint 2 del proyecto DebtGo, el equipo se centró en consolidar las 
 
 | **User Story**                                 | **Work-item/Task**                     | **Descripción**                                                                   | **Estimación (Horas)**  | **Assigned To**  | **Status**  |
 | ----------------------------------------       | -----------------------------------    | --------------------------------------------------------------------------------  | ----------------------  | ---------------  | ----------  |
-| E6-US13 Buscar consultores según necesidades   | W20 Consultant search tool             | Implementar búsqueda de consultores según experiencia en el rubro del emprendedor |	          5	            | Daniel Chávarri  | Done        |
+| E6-US13 Buscar emprendedores según necesidades   | W20 Entrepreneurs search tool             | Implementar búsqueda de emprendedores según experiencia en el rubro del emprendedor |	          5	            | Daniel Chávarri  | Done        |
 | E6-US14 Comparar servicios guardados           | W21 Service comparison module          | Crear componente para comparar servicios guardados y elegir el más adecuado	      |           5             | Anaely Burga     | Done        |
 | E6-US23 Recibir actualizaciones de solicitudes | W22 Request status notifications       | Implementar notificaciones sobre actualizaciones del estado de las solicitudes	  |           5	            | Omar Rivera	   | Done        |
 | E6-US24 Recibir alertas de fechas importantes  | W23 Alerts for important deadlines	  |	Enviar alertas al emprendedor sobre fechas importantes (reuniones, pagos, vencimientos) |	  4	            | Janiel Escalante | Done        |  
-| E6-US26 Calificar servicios recibidos          | W24 Rate received services	          |	Permitir que el emprendedor califique los servicios de los consultores al finalizar la asesoría | 3         | Marco Góngora	   | Done        |
-| E6-US29 Cancelar contrato como emprendedor     | W25 Cancel contract as entrepreneur	  | Habilitar la opción de cancelar el contrato si el consultor no cumple con lo esperado |	       3	        | Daniel Chávarri  | Done        |
+| E6-US26 Calificar servicios recibidos          | W24 Rate received services	          |	Permitir que el emprendedor califique los servicios de los asesores al finalizar la asesoría | 3         | Marco Góngora	   | Done        |
+| E6-US29 Cancelar contrato como asesor     | W25 Cancel contract as entrepreneur	      | Habilitar la opción de cancelar el contrato si el asesor no cumple con lo esperado |	       3	        | Daniel Chávarri  | Done        |
 | E6-US31 Usar herramientas de simulación        | W26 Payment simulation tool		      | Crear herramienta para simular pagos, cuotas o préstamos en base a distintos escenarios	|      8	        | Anaely Burga     | Done        |
 | E6-US33 Hacer seguimiento de ingresos y gastos | W27 Income & expense tracking          | Desarrollar módulo para registrar y visualizar ingresos y gastos del emprendedor   |		   6	        | Janiel Escalante | Done        |
 | E6-US34 Crear presupuestos personalizados      | W28 Budget planning module	          | Crear componente para planificación de presupuestos según ingresos, gastos y metas del usuario | 6	        | Marco Góngora	   | Done        |
@@ -2459,12 +2459,12 @@ Durante el Sprint 3 del proyecto DebtGo, el equipo se enfocó en completar las f
 
 | **User Story**                                 | **Work-item/Task**                     | **Descripción**                                                                   | **Estimación (Horas)**  | **Assigned To**  | **Status**  |
 | ----------------------------------------       | -----------------------------------    | --------------------------------------------------------------------------------  | ----------------------  | ---------------  | ----------  |
-| E6-US17 Iniciar caso de asesoría               | W31 Start case request                 | Crear interfaz para que el emprendedor inicie una solicitud de asesoría           |	          4	            | Anaely Burga     | Done        |
-| E6-US18 Aceptar caso de asesoría               | W32 Accept case logic                  | Implementar la lógica para que el consultor acepte casos	                      |           4             | Marco Góngora    | Done        |
-| E6-US19 Visualización de servicios             | W33 View other consultants             | Permitir a los consultores visualizar servicios de otros consultores para comparación   |           3	            | Janiel Escalante	   | Done        |
-| E6-US25 Solicitar reseñas                      | W34 Request reviews	                  |	Habilitar funcionalidad para que el consultor solicite reseñas a los clientes     |	           3	        | Daniel Chávarri  | Done        |  
-| E6-US27 Visualizar métricas                    | W35 Performance dashboard	          |	Crear panel para mostrar métricas de rendimiento de los consultores               |            8            | Omar Rivera	   | Done        |
-| E6-US28 Terminar contrato                      | W36 Edn contract option	              | Añadir opción para terminar un contrato desde el módulo de casos                  |	           3	        | Marco Góngora    | Done        |
+| E6-US17 Iniciar solicitud de asesoría          | W31 Start request adviser              | Crear interfaz para que el emprendedor inicie una solicitud de asesoría           |	          4	            | Anaely Burga     | Done        |
+| E6-US18 Aceptar solicitud de asesoría          | W32 Accept request adviser             | Implementar la lógica para que el emprendedor acepte las asesorias	              |           4             | Marco Góngora    | Done        |
+| E6-US19 Visualización de servicios             | W33 View other consultants             | Permitir a los consultores visualizar servicios de otros consultores para comparación   |           3	    | Janiel Escalante | Done        |
+| E6-US25 Solicitar reseñas                      | W34 Request reviews	                  |	Habilitar funcionalidad para que el emprendedor solicite reseñas a los clientes   |	           3	        | Daniel Chávarri  | Done        |  
+| E6-US27 Visualizar métricas                    | W35 Performance dashboard	          |	Crear panel para mostrar métricas de rendimiento de los emprendedores             |            8            | Omar Rivera	   | Done        |
+| E6-US28 Terminar contrato de los asesores      | W36 End contract option	              | Añadir opción para terminar un contrato desde el módulo de asesoramiento          |	           3	        | Marco Góngora    | Done        |
 
 #### 6.3 Validation Interviewa
 
