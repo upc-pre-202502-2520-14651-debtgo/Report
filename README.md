@@ -327,7 +327,7 @@ soluciones de software.</b></td>
         <p></p>
         <p><b>TB2:Comprendí cada uno de los elementos desarrollados y arreglados en el Software Architecture Container Level Diagrams, ademas de la Sofware Deployment Evidence, Services and Documentation and Team Collaboration. Lo cual me permitió participar activamente en la organización del trabajo y en la definición de soluciones alineadas a las necesidades del proyecto durante el Sprint. </b></p>
         <p></p>
-        <p><b>TF:</b></p>
+        <p><b>TF:La auditoría al equipo MegaPet reforzó mis conocimientos en usabilidad y accesibilidad, permitiéndome identificar mejoras en interfaces móviles y aplicar estas buenas prácticas en PsyMed para asegurar una experiencia de usuario más intuitiva y eficiente.</b></p>
         <p></p>
         <p><b>Góngora Sánchez, Marco Antonio</b></p>
        <p><b>TB1:</b></p>
@@ -409,7 +409,7 @@ de software</td>
 <p></p>
 <p><b>TB2: A lo largo del desarrollo y mejora del Software Architecture Container Level Diagrams, así como en la elaboración de la Software Deployment Evidence, Services and Documentation y Team Collaboration, reafirmé la necesidad de seguir aprendiendo de forma continua para aportar de manera efectiva en la organización del trabajo y en la construcción de soluciones técnicas que respondan a las exigencias del proyecto.</b></p>
         <p>.</p>
-        <p><b>TF:</b></p>
+        <p><b>TF: La auditoría a MegaPet me permitió reconocer la importancia del aprendizaje continuo en usabilidad y accesibilidad para mejorar mi desempeño profesional. Esta experiencia fortaleció mi capacidad para identificar y aplicar buenas prácticas en el desarrollo de soluciones de software como PsyMed, asegurando interfaces más inclusivas y eficientes.</b></p>
         <p></p>
         <p><b>Góngora Sánchez, Marco Antonio</b></p>
        <p><b>TB1:</b></p>
@@ -2619,24 +2619,25 @@ Además, resaltó que la plataforma facilita una comunicación cercana con los e
 
 **PROFESORES** : Todos
 
-**AUDITOR** : 
+**AUDITOR** : DebtGo Team
 
-**CLIENTE(S)** : 
+**CLIENTE(S)** : MovileSource Team
 
 ---
 
 **SITE o APP A EVALUAR** :
 
-HelpTech
+Aplicacion del grupo PsyMed
 
 ---
 
 **TAREAS A EVALUAR** :
-1. 
-2.  
-3. 
-4. 
-5. 
+1. Registro y visualización de estado de ánimo
+2. Registro de funciones biológicas
+3. Actualización de datos personales y de acceso
+4. Visualización de información clínica y medicamentos
+5. Interacción con botones y formularios dentro de la app
+
 
 ---
 
@@ -2646,60 +2647,56 @@ Los errores serán puntuados tomando en cuenta la siguiente escala de severidad
 
 | Nivel | Descripción |
 |-------|-------------|
-| 1 | Problema superficial: |
-| 2 | Problema menor:  |
-| 3 | Problema mayor: |
-| 4 | Problema muy grave:|
-
----
-
-**TABLA DE RESUMEN**
-
-| # | Problema | Escala de severidad | Heurística/Principio violada(o) |
-|:-:|:--------:|:-------------------:|:-------------------------------:|
-| 1 |  |  | |
-| 2 |  |  | |
-| 3 |  |  | |
+| 1 | Problema superficial: puede ser fácilmente superado por el usuario o ocurre con muy poca frecuencia. No necesita ser arreglado a no ser que exista disponibilidad de tiempo. |
+| 2 | Problema menor: puede ocurrir un poco más frecuentemente o es un poco más difícil de superar para el usuario. Se le debería asignar una prioridad baja para resolverlo. |
+| 3 | Problema mayor: ocurre frecuentemente o los usuarios no son capaces de resolverlo. Es importante corregirlo pronto. |
+| 4 |	Problema muy grave: impide al usuario continuar. Requiere corrección inmediata.|
 
 ---
 
 **DESCRIPCIÓN DE PROBLEMAS** :
 
-**PROBLEMA #1:**
+**PROBLEMA #1: Tipografía ligera en pantallas de registro y seguimiento**
 
-**Severidad:** 
+**Severidad:** 2
 
-**Heurística violada:** 
+**Heurística violada:** Inclusive Design – Accesibilidad y legibilidad
 
 **Problema:** <br>
-
+La aplicación móvil utiliza una tipografía muy delgada (light) en secciones importantes como el registro de información personal, visualización del historial y seguimiento de tratamientos. Esto complica la lectura en pantallas pequeñas o en condiciones de poca luz, afectando la experiencia de usuarios con visión reducida.
 
 **Recomendación:** <br>
-
+Cambiar la tipografía a un peso Regular o Semi-Bold en estas áreas clave para mejorar la legibilidad y garantizar un mejor cumplimiento con las pautas de accesibilidad.
 
 ---
 
-**PROBLEMA #2:**
+**PROBLEMA #2: Campos de registro de estado de ánimo poco intuitivos**
 
-**Severidad:** 
+**Severidad:** 2
 
-**Heurística violada:** 
+**Heurística violada:** Usability – Prevención de errores
 
 **Problema:** <br>
+En la sección de registro de estado de ánimo, los campos no presentan etiquetas ni ejemplos claros sobre cómo deben completarse. Esto puede confundir a los usuarios y provocar registros incorrectos o incompletos.
 
 **Recomendación:** <br>
+Agregar texto de ayuda o placeholders descriptivos en los campos, e incluir íconos de información (tooltips) que expliquen el uso y los datos esperados.
 
 ---
 
-**PROBLEMA #3: Botón "Membresia" que no redirige a un contenido**
+**PROBLEMA #3: Contraste bajo en botones de funciones biológicas**
 
-**Severidad:** 
+**Severidad:** 2
 
-**Heurística violada:** 
+**Heurística violada:** Inclusive Design – Contraste adecuado
 
 **Problema:** <br>
+Los botones dentro de la sección de funciones biológicas tienen colores de texto y fondo muy similares, lo que dificulta su visibilidad, especialmente para usuarios con baja visión o en condiciones de poca iluminación.
 
 **Recomendación:** <br>
+Ajustar la paleta de colores para garantizar un contraste mínimo de 4.5:1 según las pautas WCAG, utilizando tonos más oscuros para el texto o más claros para los fondos.
+
+---
 
 ## 6.4 Video About-the-Product
 [Link](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202211108_upc_edu_pe/EWTv9b_CulxJjdwTSq3upFEBnz2RD8X1LcOhCr5Oeyywjg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=TnPOCK) 
