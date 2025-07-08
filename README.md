@@ -2378,7 +2378,7 @@ Evidencia de la app DebtGo en Flutter
 ![image](assets/Chapter-6/notificaciones.JPG)
 
 
-![image](assets/Chapter-6/alertas-fechas.JPG)
+![image](assets/Chapter-6/alerta-fechas.JPG)
 
 
 ![image](assets/Chapter-6/calificar-servicio.JPG)
