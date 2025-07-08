@@ -2606,6 +2606,18 @@ Además, resaltó que la plataforma facilita una comunicación cercana con los e
 
   Resúmen: En la entrevista, el señor Emilio Chávarri nos dió valiosas respuestas luego de las preguntas dadas, nos comenta que no tuvo problemas con la aplicación, le pareció excelente la app, le resultó sencillo usar la aplicación, en el caso de los servicios le sirvió mucho en varios aspectos de su rubro. También nos comenta que DebtGo le ha ayudado a poder gestionar sus deudas en finanzas empresariales y que le ha permitido administrar de manera segura y eficiente su dinero para futuros usos de su perferencia. Finalmente nos comenta que recomienda el uso de DebtGo porque es una aplicación fácil de usar, útil para aprender nuevos temas de finanzas, mediante cursos con certificación, cursos adicionales, etc.
 
+**Entrevista #2**
+
+- Nombre: Anderson Gonza
+- Edad: 22 años
+- Distrito: Villa El Salvador
+- Duración: 18:41
+
+- ![image](assets/Chapter-6/img-emprendedor.png)
+
+  [Entrevista 2 - video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211a085_upc_edu_pe/EbssViwSyRpKl29PDsH5_FwB_vHIzuyQ7bnoUp0ZpNtnaA?e=prNfwT&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
+
+  Resumen: En la entrevista, Anderson Gonza, calificó su experiencia con DebtGo como buena y sin complicaciones. Destacó la sencillez de la interfaz y la rapidez en el registro y, sobre el flujo, menciona que en inicios de uso, no era muy intuitivo pero, con el tiempo, supo navegarse fluidamente por la aplición. Comentó que, hasta ahora, la plataforma cubre todas sus necesidades y le resulta muy intuitiva. Como propuesta de mejora, sugirió integrar asistentes de inteligencia artificial que ofrezcan soporte en situaciones puntuales (por ejemplo, recomendaciones de pasos o análisis rápidos cómo chat dentro de la sección de mensajería) y ampliar las capacidades del chat, añadiendo funcionalidades como llamadas de voz o videollamadas dentro de la misma aplicación. En su opinión, estas opciones reforzarían la comunicación con los emprendedores y agilizarían la resolución de dudas.
 
 ### 6.3.3 Evaluaciones según heurísticas
 
