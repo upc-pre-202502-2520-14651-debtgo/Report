@@ -316,9 +316,9 @@ soluciones de software.</b></td>
         <p>Realice los capitulos I, II, III y IV, tambien ayudé a formular y comprendí el proyecto/p>
         <p><b>TP1:</b></p>
         <p>Aporte con la maquitación en figma y desarrollo de los puntos para el parcial</p>
-        <p><b>TB2:</b></p>
+        <p><b>TB2:</b>Colaboré en el análisis de los datos recolectados durante el estudio de usuarios, ayudando a interpretar los hallazgos y aportar mejoras al diseño en base a los resultados obtenidos.</p>
         <p></p>
-        <p><b>TF:</b></p>
+        <p><b>TF:</b>Participé activamente en la realización del estudio de usuarios final, incluyendo la planificación de las pruebas, recolección de feedback y ajustes finales en el prototipo según las necesidades detectadas.</p>
         <p></p>
         <p><b>Rivera Ticllacuri, Omar Harold</b></p>
        <p><b>TB1: Comprendí cada uno de los elementos mencionados en el Capítulo II y cómo aplicarlos en el contexto del proyecto, reforzando mis habilidades en el análisis de requerimientos.</b></p>
