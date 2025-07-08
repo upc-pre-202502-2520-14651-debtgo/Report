@@ -2469,6 +2469,8 @@ Durante el Sprint 3 del proyecto DebtGo, el equipo se enfocó en completar las f
 | E6-US27 Visualizar métricas                    | W35 Performance dashboard	          |	Crear panel para mostrar métricas de rendimiento de los emprendedores             |            8            | Omar Rivera	   | Done        |
 | E6-US28 Terminar contrato de los asesores      | W36 End contract option	              | Añadir opción para terminar un contrato desde el módulo de asesoramiento          |	           3	        | Marco Góngora    | Done        |
 
+Este Sprint 3 fue planificado con un total de 25 horas estimadas, y la distribución de tareas está alineada con el Sprint Goal propuesto para esta iteración.
+
 #### 6.3 Validation Interviewa
 
 Aplicación del Proceso de "Validation Interviews" (Análisis de Validaciones)
