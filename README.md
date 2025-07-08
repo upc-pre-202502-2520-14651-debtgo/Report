@@ -2368,48 +2368,15 @@ Enlace al backend desplegado: [DebtGo Backend](http://debt2go.runasp.net/swagger
 
 
 Evidencia de la app DebtGo en Flutter
-![image](assets/Chapter-6/pantalla-principal.png)
-Este es la pantalla principal de DebtGo, donde tienes dos opciones, iniciar sesión o registrarte.
-
-![image](assets/Chapter-6/inicio-sesion.png)
-Esta es la sección de inicio de sesión donde solo tienes que ingresar tu email y contraseña para poder entrar a DebtGo.
-
-![image](assets/Chapter-6/registro.png)
-En esta sección es donde por primera vez ingresas a DebtGo, tienes que completar tres campos, tu nombre completo, tu email y tu contraseña.
-
-![image](assets/Chapter-6/home.png)
-Una vez que te has registrado o haber iniciado sesión, entras a la app DebtGo donde tienes varias opciones para ver, como añadir una deuda, gestionar deuda, la sección de Emprendedores, etc.
-
-![image](assets/Chapter-6/emprendedores.png)
-![image](assets/Chapter-6/agendar-consultoria.png)
-![image](assets/Chapter-6/talleres-virtuales.png)
-![image](assets/Chapter-6/casos-exito.png)
-La sección de emprendedores donde podrás recibir ayuda mediante los asesores financieros, podrás tener talleres virtuales y ver los casos de éxito que tuvieron nuestros usuarios anteriores que pasaron por nuestra aplicación DebtGo.
-
-![image](assets/Chapter-6/gestion-deudas.png)
-Esta sección podrás ver los préstamos de negocio y la tarjeta de crédito que has hecho si en caso hayas sido un usuario antiguo.
-
-![image](assets/Chapter-6/perfil.png)
-![image](assets/Chapter-6/editar-perfil.png)
-En esta sección se describe el perfil del usuario, puedes también editarlo y cerrar sesión.
-Puedes cambiar de nombre, el correo electrónico y el número de teléfono.
-
-![image](assets/Chapter-6/reseñas-usuarios.png)
-En esta sección puedes ver los comentarios de los usuarios que hemos tenido antes sobre DebtGo.
-
-![image](assets/Chapter-6/mensajes.png)
-![image](assets/Chapter-6/asesor-juan.png)
-En esta sección tenemos los mensajes, uno del asesor Juan, la asesora Carla y el asesor Luis, podrás decirle cualquier cosa respecto a cómo gestionar tus finanzas de forma segura y eficiente.
-
-![image](assets/Chapter-6/planes.png)
-![image](assets/Chapter-6/pago.png)
-En esta sección puedes elegir entre dos planes, Básico o Premium, cada uno de ellos con sus detalles de cada plan.
-
-![image](assets/Chapter-6/nueva-deuda.png)
-En esta sección puedes añadir una nueva deuda que puedas tener para que DebtGo días antes te notifique que debes pagar esa deuda pendiente.
-
-![image](assets/Chapter-6/historial-pagos.png)
-En esta última sección puede ver tu historial de pagos que has hecho en DebtGo, los que están pendientes de pagar y los que aún no lo has hecho.
+![image](assets/Chapter-6/buscar-emprendedores.JPG)
+![image](assets/Chapter-6/comparar-servicios.JPG)
+![image](assets/Chapter-6/notificaciones.JPG)
+![image](assets/Chapter-6/alertas.JPG)
+![image](assets/Chapter-6/calificar-servicio.JPG)
+![image](assets/Chapter-6/cancelar-contrato.JPG)
+![image](assets/Chapter-6/simulador-pago.JPG)
+![image](assets/Chapter-6/ingresos-gastos.JPG).
+![image](assets/Chapter-6/presupuesto.JPG)
 
 #### 6.2.2.6. Services Documentation Evidence for Sprint Review
 En esta sección presentamos los endpoints preparados durante el sprint. Se adjuntan capturas de la UI de swagger con OpenAPI.
