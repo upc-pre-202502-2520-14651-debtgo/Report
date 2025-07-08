@@ -2368,15 +2368,33 @@ Enlace al backend desplegado: [DebtGo Backend](http://debt2go.runasp.net/swagger
 
 
 Evidencia de la app DebtGo en Flutter
+
 ![image](assets/Chapter-6/buscar-emprendedores.JPG)
+
+
 ![image](assets/Chapter-6/comparar-servicios.JPG)
+
+
 ![image](assets/Chapter-6/notificaciones.JPG)
+
+
 ![image](assets/Chapter-6/alertas.JPG)
+
+
 ![image](assets/Chapter-6/calificar-servicio.JPG)
+
+
 ![image](assets/Chapter-6/cancelar-contrato.JPG)
+
+
 ![image](assets/Chapter-6/simulador-pago.JPG)
+
+
 ![image](assets/Chapter-6/ingresos-gastos.JPG).
+
+
 ![image](assets/Chapter-6/presupuesto.JPG)
+
 
 #### 6.2.2.6. Services Documentation Evidence for Sprint Review
 En esta sección presentamos los endpoints preparados durante el sprint. Se adjuntan capturas de la UI de swagger con OpenAPI.
