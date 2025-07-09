@@ -2720,6 +2720,10 @@ Ajustar la paleta de colores para garantizar un contraste mínimo de 4.5:1 segú
 [Link](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202211108_upc_edu_pe/EWTv9b_CulxJjdwTSq3upFEBnz2RD8X1LcOhCr5Oeyywjg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=TnPOCK) 
 https://upcedupe-my.sharepoint.com/:v:/g/personal/u202211108_upc_edu_pe/EWTv9b_CulxJjdwTSq3upFEBnz2RD8X1LcOhCr5Oeyywjg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=TnPOCK
 
+## 6.5 Video About-the-Team
+[Link](https://upcedupe-my.sharepoint.com/personal/u202211108_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202211108%5Fupc%5Fedu%5Fpe%2FDocuments%2FVideo%2DFinal%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E63db800f%2Dcf6f%2D4e9d%2Dad1a%2Da29933b29f0f&isDarkMode=true)
+https://upcedupe-my.sharepoint.com/personal/u202211108_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202211108%5Fupc%5Fedu%5Fpe%2FDocuments%2FVideo%2DFinal%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E63db800f%2Dcf6f%2D4e9d%2Dad1a%2Da29933b29f0f&isDarkMode=true
+
 # Conclusiones
 ## Conclusiones y recomendaciones
 
