@@ -229,7 +229,7 @@ Criterio: La capacidad de reconocer responsabilidades éticas y profesionales en
         <p>...</p>
         <p><b>Ramos Fuentes Rivera, Adriana Nicole</b></p>
         <p><b>TB1:</b></p>
-        <p>.../p>
+        <p>...</p>
         <p><b>Gamarra Vega, Anderson José William</b></p>
        <p><b>TB1:</b></p>
         <p>...</p>
@@ -1098,24 +1098,6 @@ En esta sección, explicaremos en detalle los user journey mapping para dos tipo
 |TS33|Implementación de herramienta de seguimiento de ingresos y gastos|**Como** Developer **deseo** crear una herramienta dentro de la aplicación que permita a los emprendedores rastrear sus ingresos y gastos de manera eficiente **para** que puedan gestionar sus finanzas.|**Escenario:** Rastreo de ingresos y gastos <br>**Dado que** el emprendedor accede a la sección Herramienta **y** selecciona la opción Tracker **cuando** el emprendedor ingresa una nueva entrada o salida de dinero **entonces** el sistema almacena la información financiera **y** el emprendedor puede visualizar un resumen de sus ingresos y gastos.|EP07|
 |TS34|Creación de herramienta para generar presupuestos personalizados|**Como** Developer **deseo** implementar una herramienta que permita a los emprendedores con suscripción premium crear presupuestos personalizados basados en sus ingresos y gastos **para** ayudarlos a administrar su dinero de manera efectiva.|**Escenario:** Crear presupuesto personalizado <br> **Dado que** el emprendedor tiene una suscripción premium **y** ha utilizado la aplicación por más de un mes **cuando** accede a la herramienta de presupuestos **entonces** el sistema genera planes de presupuesto basados en los datos de ingresos y gastos del emprendedor **y** el emprendedor puede ajustar los presupuestos según sus necesidades.|EP07|
 
-## 3.3. Impact Mapping
-
-En esta sección, se presenta el Impact Mapping elaborado para DebtGo, que busca alcanzar el objetivo de aumentar la base de usuarios activos a 10,000 en los próximos 12 meses, con al menos un 30% suscritos a la tarifa mensual premium. El Impact Mapping se ha desglosado en función de dos segmentos de usuarios clave: Consultores Financieros y Gestores de Deudas y Emprendedores. Para cada segmento, se han identificado impactos específicos que contribuyen al logro del objetivo, junto con entregables necesarios para provocar dichos impactos. Además, se han definido historias de usuario que guiarán el desarrollo de las características y funcionalidades requeridas. Este enfoque asegura que DebtGo pueda proporcionar valor y cumplir con las expectativas de sus diversos usuarios, facilitando su crecimiento y sostenibilidad en el mercado. Esta sección se llevó a cabo utilizando la plataforma UXPressia.
-
-**Segmento Objetivo: Consultores financieros:**
-
-#### Impact Mapping 1: 
-
-![image](assets/Chapter-3/Impact%20map%201.png)
-*Imagen (N°12). Elaboración propia. Realizado en UXPRESSIA*
-
-**Segmento Objetivo: Gestores de Deudas y Emprendedores**
-
-#### Impact Mapping 2: 
-
-![image](assets/Chapter-3/Impact%20map%202.png)
-*Imagen (N°13). Elaboración propia. Realizado en UXPRESSIA*
-
 
 ## 3.4. Product Backlog
 
@@ -1155,112 +1137,406 @@ En esta sección, se presenta el Impact Mapping elaborado para DebtGo, que busca
 | 2      | US33 | Hacer seguimientos de ingresos y gastos  | Como emprendedor, deseo rastrear mis ingresos y gastos.                                                              | 8                                |
 | 2      | US34 | Crear presupuestos personalizados        | Como emprendedor, deseo crear presupuestos personalizados según mis ingresos y gastos.                               | 5                                |
 
+## 3.3. Impact Mapping
 
-# Capítulo IV: Solution Software Design
-## 4.1. Strategic-Level Domain-Driven Design
-### 4.1.1. EventStorming
+En esta sección, se presenta el Impact Mapping elaborado para DebtGo, que busca alcanzar el objetivo de aumentar la base de usuarios activos a 10,000 en los próximos 12 meses, con al menos un 30% suscritos a la tarifa mensual premium. El Impact Mapping se ha desglosado en función de dos segmentos de usuarios clave: Consultores Financieros y Gestores de Deudas y Emprendedores. Para cada segmento, se han identificado impactos específicos que contribuyen al logro del objetivo, junto con entregables necesarios para provocar dichos impactos. Además, se han definido historias de usuario que guiarán el desarrollo de las características y funcionalidades requeridas. Este enfoque asegura que DebtGo pueda proporcionar valor y cumplir con las expectativas de sus diversos usuarios, facilitando su crecimiento y sostenibilidad en el mercado. Esta sección se llevó a cabo utilizando la plataforma UXPressia.
 
-**Sesión realizada:** 2 horas con equipo técnico y expertos de dominio. <br>
-**Herramienta:** Miro.
+**Segmento Objetivo: Consultores financieros:**
 
-**Eventos identificados (flujo principal):**
-[Usuario solicita préstamo] → [Sistema valida historial crediticio]  
-→ [Préstamo aprobado/rechazado] → [Contrato generado]  
-→ [Usuario registra pago] → [Sistema actualiza saldo]  
-→ [Notificación enviada] → [Consultor asigna plan de pagos]
+#### Impact Mapping 1: 
 
-**Procesos agrupados:** <br>
-**1. Gestión de Préstamos:**
-   - Solicitud → Validación → Aprobación <br> <br>
-**2. Seguimiento de Pagos:** 
-   - Registro → Actualización → Notificación <br> <br>
-**3. Educación Financiera:**  
-   - Recomendación de contenido → Recordatorios
-  
-**Actores clave:**
-- Usuario **(emprendedor/consultor)**  
-- Sistema de validación crediticia  
-- Servicio de notificaciones
+![image](assets/Chapter-3/Impact%20map%201.png)
+*Imagen (N°12). Elaboración propia. Realizado en UXPRESSIA*
 
-**Representación visual (simplificada):**
-![image](assets/Chapter-4/EventStorming.jpg)
-*Imagen (N°14). Elaboración propia. Realizado en Miro*
+**Segmento Objetivo: Gestores de Deudas y Emprendedores**
 
-### 4.1.1.1. Candidate Context Discovery
+#### Impact Mapping 2: 
 
-![image](assets/Chapter-4/diagram_context.png)
-*Imagen (N°15). Elaboración propia. Realizado en Structurizr*
+![image](assets/Chapter-3/Impact%20map%202.png)
+*Imagen (N°13). Elaboración propia. Realizado en UXPRESSIA*
 
-**Técnica aplicada:** Start-with-value **(enfoque en el core: gestión de deudas)**.
-**Bounded Contexts identificados:**
+# Capítulo IV: Product Design
 
-**Subscription (Core):**
-***Responsable:*** Gestión de suscripciones premium (aprobación, renovación, acceso a features).
+### 4.1. Style Guidelines
 
-**Payment (Supporting):**
-Registro de transacciones, alertas de pago (integra con Visa/MasterCard).
+Un Style Guidelines, o Guía de Estilo, es un documento que proporciona directrices claras y coherentes sobre la apariencia visual, la comunicación y la identidad de una marca o producto. Esta guía asegura que todos los elementos relacionados con la marca, como tipografía, colores, logotipos y tono de voz, se mantengan uniformes en todas las aplicaciones y plataformas, lo que ayuda a reforzar la identidad de la marca y garantiza una experiencia de usuario consistente y reconocible.
 
-**Consulting (Core):**
-Conexión usuario-asesor, agendamiento (usa Appointment Scheduler y Rating System).
+### 4.1.1. General Style Guidelines
 
-**Notification (Supporting):**
-Envío de recordatorios (usa Email System).
-  
-**Relaciones iniciales:** <br>
-![image](assets/Chapter-4/relations.JPG) <br>
-*Imagen (N°15). Elaboración propia. Realizado en Miro*
+**Branding:** 
 
-### 4.1.1.2 Domain Message Flows Modeling
+La identidad visual de una marca, que incluye su logotipo, colores, tipografía y otros elementos visuales.La identidad de marca de DebtGo se basa en la misión de proporcionar educación financiera y ayudar a las personas a manejar sus deudas de manera efectiva. Valores clave incluyen la transparencia, la confianza y la accesibilidad. DebtGo debe proyectar una personalidad amigable, confiable y educativa, para que los usuarios sientan que están recibiendo orientación de un amigo de confianza.
 
-**Técnica:** Domain Storytelling.
+**Logo**
 
-**Flujo de mensajes (ejemplo):**
+El logo principal de DebtGo debe ser limpio y moderno, con un énfasis en la simplicidad y la claridad. Puede incorporar elementos que evocan finanzas, como gráficos de barras estilizados o un gráfico de línea ascendente para simbolizar el crecimiento financiero. Se pueden crear variaciones del logotipo para adaptarse a diferentes tamaños y plataformas, pero la esencia y los colores deben mantenerse coherentes.
 
-**Usuario (Subscription):** "Solicitar suscripción premium". <br>
-**Subscription → Payment:** "Validar método de pago (Visa/MasterCard)". <br>
-**Payment → Subscription:** "Pago aprobado". <br>
-**Subscription → Notification:** "Enviar confirmación vía email". <br>
-**Usuario → Consulting:** "Agendar cita con asesor". <br>
+<center> <img src="assets/Chapter-5/Logo.png" style="width: 200px;"/> </center>
+<br>
 
-**Diagrama textual:** <br>
-![image](assets/Chapter-4/textual_diagram.JPG) <br>
-*Imagen (N°16). Elaboración propia. Realizado en Miro* <br>
+**Tipografía:**
 
-### 4.1.1.3. Bounded Context Canvases
-![image](assets/Chapter-4/bounded-context-canvases.JPG) <br>
-*Imagen (N°17). Elaboración propia. Realizado en Miro* <br>
+La elección tipográfica para DebtGo es un componente esencial que complementa la identidad visual de la marca. Se han seleccionado tres familias tipográficas para la marca: Urbanist, Merriweather Sans y Sora. Siendo la principal **Urbanist**.
 
-**4.1.2. Context Mapping**
-![image](assets/Chapter-4/diagram_context.png) <br>
-*Imagen (N°18). Elaboración propia. Realizado en Structurizr.* <br>
+<center> <img src="assets/Chapter-5/Urbanist.webp" style="width: 350px;"/> </center>
+<br>
 
-***Sistema Principal:*** DebtGo (plataforma de educación y asesoría financiera)
+**Colores:** 
 
-**Interacciones clave:**
+La paleta de colores de DebtGo ha sido cuidadosamente seleccionada para transmitir profesionalismo, confianza y accesibilidad. Cada color tiene un propósito específico y se utilizará de manera consistente en toda la identidad visual de la marca.
 
-**- Asesores Financieros:** Profesionales que brindan consultoría <br>
-**- Emprendedores:** Usuarios que buscan asesoría <br>
-**- Sistemas Externos:**
-  - Visa/MasterCard (procesamiento de pagos)
-  - Email System (envío de notificaciones) <br>
+<center> <img src="assets/Chapter-5/paleta.png" style="width: 500px;"/> </center>
+<br>
 
-**Relaciones:**
+- #998EF7 (Lavanda suave): Este color se utilizará como el tono principal, predominando en el logotipo, encabezados y elementos clave de la interfaz como las llamadas a la acción (CTA), botones y elementos interactivos.
 
-- Los emprendedores usan DebtGo para acceder a asesoría y herramientas. <br>
-- Los asesores usan la plataforma para ofrecer servicios. <br>
-- El sistema interactúa con pasarelas de pago y servicio de correos. <br>
+- #9B6CF0 (Lavanda): Se utilizará para fondos oscuros permitiendo resaltar los elementos claves con el tono principal.
 
-**4.1.3. Software Architecture**
-***4.1.3.1. Software Architecture Context Level Diagrams*** <br>
+- #7960F2 (Lavanda profunda): Este tono servirá para complementar al contraste de los elementos principales.
+
+- #000000 (Negro): Utilizado para títulos en fondos claros.
+
+- #FFFFFF (Blanco): Utilizado para títulos en fondos con las tonalidades principales.
+
+- #F3F3FF (Gris suave): Para subtítulos en fondos con las tonalidades principales.
+
+- #939393 (Gris medio): Se utilizará para cuerpo y textos de menor jerarquía.
+
+- #3D3D3D (Gris oscuro): Este color será empleado en subtítulos con fondos claros.
+
+**Tono de comunicación y lenguaje aplicado:**
+
+ El estilo de comunicación que se utiliza en el diseño, que puede ser divertido/serio, formal/casual, respetuoso/irreverente o entusiasta/sereno.
+
+ - Memorable y reconocible: La identidad de marca debe ser única y fácilmente identificable. Esto ayudará a que la empresa se destaque de la competencia y sea recordada por los clientes.
+- Confiable y profesional: La identidad de marca debe transmitir la idea de que la empresa es confiable y profesional. Esto ayudará a que los clientes se sientan seguros de confiar en la empresa con sus finanzas.
+- Atractiva y llamativa: La identidad de marca debe ser atractiva y llamativa. Esto ayudará a captar la atención de los clientes y a atraerlos a la empresa.
+
+**Lenguaje aplicado:**
+
+ El lenguaje que se utiliza en el diseño, que debe ser claro, conciso y fácil de entender.
+
+**Marca** 
+
+El nombre de la empresa, "DebtGo", es un juego de palabras con la palabra "Debt" (deuda en inglés). El uso de la letra "g" en lugar de la "d" crea un sonido similar, pero también sugiere una acción, como "go" (ir). Esto transmite la idea de que la empresa puede ayudarte a eliminar tus deudas.
+
+**Spacing** 
+
+El espaciado entre los elementos del logotipo es uniforme y equilibrado. Esto crea una sensación de orden y armonía. El espaciado entre las letras del nombre de la empresa es lo suficientemente amplio para que sean legibles, pero no tanto como para que se vean demasiado separadas.
+
+### 4.1.2. Web Style Guidelines
+
+### 4.1.3. Mobile Style Guidelines
+
+#### 4.1.3.1. iOS Mobile Style Guidelines
+
+## 4.2. Information Architecture
+La Arquitectura de la Información (AI, por sus siglas en inglés) es una disciplina y una práctica de diseño que se ocupa de optimizar la forma en que se organiza, estructura, etiqueta y conecta la información en entornos digitales. Esta arquitectura es esencialmente una especie de ‘mapa’ que se usa para ayudar a los usuarios a comprender dónde se encuentran en un entorno digital, cómo llegaron allí y cómo pueden continuar hacia otras secciones relacionadas o importantes.
+
+El objetivo clave de la Arquitectura de la Información es lograr un equilibrio entre las necesidades y las capacidades del usuario y los objetivos del negocio. Facilita la navegación eficiente y efectiva a través de la complejidad de la información que encontramos en las aplicaciones de software, sitios web, intranets, plataformas en línea, etc. Por tanto, su propósito principal es diseñar una estructura de información coherente, comprensible y utilizable, que permita a los usuarios alcanzar sus objetivos de manera fácil y rápida.
+
+Además, la Arquitectura de la Información también es relevante para hacer que la información sea más entendible y utilizable. Esto se logra simplificando su estructura y su contenido, lo que ayuda a los usuarios a interpretar la información presentada, a tomar decisiones informadas y finalmente a interactuar con el sistema de una manera más efectiva e intuitiva.
+
+Por lo tanto, una buena Arquitectura de la Información puede mejorar significativamente la experiencia del usuario, y puede jugar un papel vital en el éxito de cualquier producto o servicio digital.
+
+### 4.2.1. Organization Systems
+
+Los sistemas de organización se encargan de la estructura y los procesos que se implementan en una empresa u organización para mejorar la eficiencia y la productividad.
+
+El objetivo principal del sistema de organización es establecer métodos y procedimientos claros para gestionar los recursos disponibles, tanto humanos como materiales, de manera eficiente. Esto implica organizar tareas, establecer responsabilidades, distribuir recursos y coordinar actividades para lograr los objetivos de la organización de manera efectiva.
+
+**Algunos de los beneficios de implementar un sistema de organización incluyen:**
+
+- Eficiencia: Un sistema de organización ayuda a optimizar el uso de los recursos disponibles, lo que se traduce en una mayor eficiencia en el trabajo realizado. Al establecer tareas y roles claros, se evita la duplicación de esfuerzos y se minimizan los errores.
+- Productividad: Al contar con un sistema de organización efectivo, se establecen rutinas y procesos que permiten esfuerzos más enfocados y una mayor productividad en el cumplimiento de metas y objetivos.
+- Coordinación: Un sistema de organización facilita la coordinación entre diferentes miembros de la organización. Al establecer una estructura clara de comunicación y responsabilidades, se asegura una sincronización adecuada de las actividades en equipo.
+- Planificación estratégica: Los sistemas de organización ayudan a establecer metas y objetivos claros, y permiten una planificación estratégica efectiva. Esto implica definir la visión y los valores de la organización, así como establecer planes y acciones específicas para alcanzar esos objetivos.
+- Control: Los sistemas de organización facilitan el seguimiento y control de las actividades y el rendimiento de la organización. Esto permite identificar áreas de mejora, corregir desviaciones y asegurar la conformidad con los estándares establecidos.
+
+Los sistemas de organización son fundamentales para establecer procesos eficientes y coordinados en una organización, lo que resulta en una mayor productividad y logro de objetivos. Ayudan a definir roles y responsabilidades, optimizar el uso de recursos, establecer una estructura de comunicación clara y permiten una planificación estratégica efectiva.
+
+### 4.2.2. Labelling Systems
+
+Un Labelling System o sistema de etiquetado, se enfoca en un conjunto de técnicas y herramientas utilizadas para identificar y clasificar datos o elementos. El objetivo principal de un Labelling System es asignar etiquetas descriptivas a los datos, lo que facilita su organización búsqueda y procesamiento posterior.
+
+Los Labelling Systems son comúnmente utilizados en diferentes industrias y aplicaciones, como la clasificación de productos, el etiquetado de información en bases de datos, el marcado de imágenes o el análisis de texto. Algunas de las áreas en las que se utilizan con frecuencia son:
+
+- Aprendizaje automático (Machine Learning): En el campo del aprendizaje automático, los Labelling Systems son utilizados para etiquetar conjuntos de datos que serán utilizados para entrenar modelos de machine learning. Esto implica asignar etiquetas a los datos de entrenamiento para que el sistema pueda aprender a reconocer patrones y realizar predicciones precisas.
+
+- Clasificación de productos: En el comercio electrónico y la logística, los Labelling Systems se utilizan para etiquetar productos con información como códigos de barras, números de lote, fechas de caducidad, etc. Esto facilita su identificación y seguimiento a lo largo de la cadena de suministro.
+
+- Organización de archivos y documentos: Los Labelling Systems también son útiles para etiquetar archivos y documentos electrónicos, facilitando su organización y búsqueda rápida. Las etiquetas pueden incluir información como el tema, la fecha, el remitente, entre otros.
+
+- Anotación de imágenes y videos: En el campo de la visión por computadora, los Labelling Systems se utilizan para etiquetar y anotar imágenes y videos para tareas como reconocimiento de objetos, segmentación de imágenes, detección de rostros, entre otros. Estas etiquetas proporcionan información descriptiva sobre los elementos presentes en las imágenes y facilitan el entrenamiento y la evaluación de algoritmos.
+
+Los Labelling Systems son sistemas o técnicas de etiquetado utilizadas para clasificar y organizar datos, productos o elementos. Su objetivo principal es asignar etiquetas descriptivas que faciliten la organización, búsqueda y procesamiento posterior.
+
+### 4.2.3. SEO Tags and Meta Tags
+
+**SEO Tags**
+
+SEO (Search Engine Optimization) Tags son elementos de HTML que ayudan a los motores de búsqueda a entender el contenido y la estructura de una página web. Estos tags influyen en cómo los motores de búsqueda indexan y clasifican tu sitio en los resultados de búsqueda. 
+
+**Algunos ejemplos importantes de SEO Tags incluyen:**
+
+**Title Tag:**
+
+Es el título de la página web que aparece en la pestaña del navegador y como el título del enlace en los resultados de búsqueda. Importancia: Es crucial porque es uno de los factores más influyentes en el ranking de la página. Debe ser relevante, contener palabras clave, y tener una longitud de entre 50 y 60 caracteres. 
+
+*Ejemplo:* 
+``` html
+<title>Compra Ropa de Moda Online - Tienda XYZ</title>
+``` 
+
+
+**Header Tags (H1, H2, H3, etc.):** 
+
+Son etiquetas utilizadas para definir los encabezados y subencabezados dentro del contenido de la página. El H1 es el encabezado principal y es el más importante en términos de SEO. Importancia: Ayudan a organizar el contenido y permiten a los motores de búsqueda comprender la jerarquía y el tema principal de la página. 
+
+*Ejemplo:*
+```html
+<h1>Las Mejores Ofertas en Ropa de Moda</h1>
+```
+
+**Alt Tags:**
+
+Son atributos utilizados en imágenes para describir su contenido. Aunque los usuarios no pueden ver este texto directamente, los motores de búsqueda lo utilizan para entender el contenido de la imagen. Importancia: Mejoran la accesibilidad y también son importantes para el SEO, especialmente en la búsqueda de imágenes.
+
+**Meta Tags**
+
+Los Meta Tags son fragmentos de texto que describen el contenido de la página; no aparecen en la página misma, pero se encuentran en el código HTML de la página. Los motores de búsqueda y los navegadores utilizan estos tags para obtener información adicional sobre la página. Algunos de los Meta Tags más relevantes para SEO son:
+
+**Meta Description Tag:**
+
+Proporciona un resumen breve del contenido de la página. Aunque no afecta directamente al ranking de búsqueda, es importante porque aparece en los resultados de búsqueda bajo el título de la página. Importancia: Una meta descripción atractiva puede aumentar la tasa de clics (CTR) desde los motores de búsqueda. 
+
+Originalmente, se utilizaba para listar palabras clave relevantes para la página. Sin embargo, hoy en día, la mayoría de los motores de búsqueda ya no utilizan este tag para el ranking. Importancia: Es menos relevante en la actualidad, pero puede ser utilizado por algunos motores de búsqueda secundarios. 
+
+**Meta Robots Tag:**
+
+Indica a los motores de búsqueda cómo deben indexar o seguir los enlaces en la página. Importancia: Se utiliza para controlar la indexación de la página. Por ejemplo, si no quieres que una página específica sea indexada, puedes usar este tag. 
+
+*Ejemplo:*
+```
+ Viewport Tag
+```
+ Especifica cómo se ajustará la página a la pantalla del dispositivo (especialmente importante para dispositivos móviles). 
+ 
+ Importancia: Crucial para la optimización móvil, ya que garantiza que el sitio web se visualice correctamente en dispositivos de diferentes tamaños.
+
+ ### 4.2.4. Searching Systems
+
+ Un Searching Systems, también conocido como sistema de búsqueda o motor de búsqueda, es una aplicación automática diseñada para buscar y recuperar información almacenada en una base de datos o en internet. Su principal objetivo es encontrar y mostrar resultados relevantes que coincidan con las palabras clave o términos de búsqueda ingresados por el usuario.
+
+El funcionamiento básico de un Searching System consiste en rastrear y analizar grandes cantidades de contenido o información estructurada, como páginas web, documentos, imágenes, videos, etc. Luego, utilizando algoritmos y técnicas de indexación, organiza esta información de manera que pueda ser rápida y fácilmente accesible cuando un usuario realiza una consulta de búsqueda.
+
+El objetivo principal de un Searching System es brindar respuestas relevantes y precisas a las consultas de los usuarios. Para lograr esto, utilizan algoritmos de ranking que evalúan la relevancia y la calidad de los resultados en función de varios factores, como la coincidencia de palabras clave, la autoridad de la fuente, la popularidad del contenido, entre otros.
+
+Los Searching Systems, se utilizan en una amplia variedad de aplicaciones y servicios en línea, como motores de búsqueda web (como Google, Bing, Yahoo), motores de búsqueda de sitios web internos, directorios de archivos locales, sistemas de recuperación de información, entre otros. También se utilizan en diferentes industrias, como el comercio electrónico, la investigación académica, la búsqueda y recuperación de documentos legales, la búsqueda de imágenes, entre muchos otros casos de uso.
+
+Uns Searching System es una herramienta informática que permite buscar y recuperar información relevante almacenada en una base de datos o en internet. Su objetivo es proporcionar respuestas precisas y relevantes a las consultas de los usuarios.
+
+### 4.2.5. Navigation Systems
+
+Un sistema de navegación, también conocido como sistema de posicionamiento y navegación, es una tecnología utilizada para determinar la ubicación, la dirección y la ruta más adecuada para llegar a un destino específico. Su objetivo principal es ayudar a las personas a navegar de manera eficiente y precisa, ya sea en vehículos, aviones, barcos u otros medios de transporte.
+El sistema de navegación utiliza una variedad de tecnologías como el GPS (Sistema de Posicionamiento Global), sensores inerciales y otros sistemas de comunicación para obtener información sobre la posición del vehículo en tiempo real. Estos datos se utilizan para calcular la ruta óptima hacia el sistema solicitado.
+
+Además de proporcionar indicaciones de manejo paso a paso, los sistemas de navegación también pueden ofrecer información adicional, como el estado del tráfico, el tiempo estimado de llegada, la presencia de puntos de interés cercanos y la información actualizada del mapa.
+
+El objetivo principal de un sistema de navegación es facilitar la navegación y mejorar la experiencia del usuario al proporcionar una guía precisa y confiable en el proceso de desplazarse de un lugar a otro. Esto ayuda a ahorrar tiempo, evitar posibles desvíos o atascos de tráfico, y proporcionar una sensación de seguridad al conocer la ruta y la ubicación en todo momento.
+
+Un sistema de navegación es una herramienta tecnológica que utiliza varios sistemas para proporcionar información y guía para llegar a un destino específico de la manera más eficiente posible. Su objetivo es mejorar la experiencia de navegación al ofrecer indicaciones precisas y actualizadas, así como otros datos útiles relacionados con la ruta.
+
+## 4.3. Landing Page UI Design
+### 4.3.1. Landing Page Wireframe
+
+El prototipado de la landing page cuenta diversas secciones:
+- Header: Incluye botones para facilitar la navegación
+- Hero: Con 2 CTA, uno para cada segmento objetivo, un título y una imagen de fondo.
+- Segmentos y beneficios: Para cada segmento se tiene un título, una breve descripción, un CTA y una imagen. Debajo de cada sección se detallan los beneficios que se ofrecen.
+- Testimonios: Consta de un título y subtítulo, así como de unos testimonios de usuarios de cada segmento, lo que aumenta la confianza en los potenciales clientes.
+- Contacto: Tiene un título y subtítulo, un pequeño input para la introducción de un email y un botón para el envio del correo.
+- Footer: Sección que da fin a la landing page, cuenta con las redes sociales de la plataforma.
+
+**Wireframe Destkop**
+
+<img src="assets/Chapter-5/Wireframe-Desktop.png">
+
+*Imagen(N°14). Elaboración propia. Realizado en figma*
+
+**Wireframe Mobile** <br>
+En la versión mobile el navbar se reemplaza por un menu desplegable.
+
+<div align="center">
+<img src="assets/Chapter-5/Wireframe-Mobile.png">
+
+*Imagen(N°15). Elaboración propia. Realizado en figma*
+</div>
+
+### 4.3.2 Landing Page Mock-up
+
+Siguiendo los wireframes de la landing page se realizaron los mockups:
+- Header y Segmentos: Se utilizan los colores primarios de la plataforma especificados.
+- Hero: Cuenta con una imagen relacionada a la plataforma, además se tiene dos CTA en versiones alternativas para la diferenciación.
+- Beneficios: Incluye iconos relacionados con los beneficios ofrecidos y con el color principal, además el fondo es claro alternando con la sección de Segmentos para una mejor separación.
+- Testimonios: Con un fondo de color principal para constrastar con las tarjetas de cada testimonio.
+- Contacto: Se tiene un CTA en color primario, siendo notorio al estar en un fondo claro.
+- Footer: Al igual que el header, utiliza los colores primarios de la plataforma para dar un fin estético a la página.
+
+**Mock-up Destkop**
+
+<img src="assets/Chapter-5/Mockup-Desktop.png">
+
+*Imagen(N°16). Elaboración propia. Realizado en figma*
+
+**Mock-up Mobile** <br>
+En la versión mobile el navbar se reemplaza por un menu desplegable.
+
+<div align="center">
+<img src="assets/Chapter-5/Mockup-Mobile.png">
+
+*Imagen(N°17). Elaboración propia. Realizado en figma*
+</div>
+
+## 4.4. Mobile Applications UX/UI Design
+### 4.4.1. Mobile Applications Wireframes
+#### Payment BC
+![image](assets/Chapter-4/PaymentWireflow.png)
+#### Notification BC
+![image](assets/Chapter-4/NotificationWireframe.png)
+### 4.4.2. Mobile Applications Wireflow Diagrams
+#### Payment BC
+**User Goal**: El usuario quiere registrar una nueva deuda para poder visualizarla, hacer seguimiento y gestionarla desde la aplicación.
+![image](assets/Chapter-4/PaymentWireflow1.png)
+**User Goal**: El usuario desea configurar cómo pagará sus deudas (tarjeta, monto, frecuencia) y poder modificar esta configuración si es necesario.
+![image](assets/Chapter-4/PaymentWireflow2.png)
+### 4.4.3. Mobile Applications Mock-ups
+#### Payment BC
+![image](assets/Chapter-4/Payment%20Mockup.png)
+#### Notification BC
+![image](assets/Chapter-4/NotificationMockup.png)
+
+### 4.4.4. Mobile Applications Prototyping
+
+### Registration And Login (Registro e Inicio de Sesión)
+![image](assets/Chapter-5/registro-inicio-sesion.png)
+
+En esta sección se muestra la pantalla de registro o inicio de sesión para acceder a la app.
+
+### Payment Plans (Planes de Pago)
+![image](assets/Chapter-5/planes-pago.png)
+
+Una vez que haya finalizado el registro o inicio de sesión le mostrará la sección de planes de pago, en el cuál podrá visualizar y elegir entre los dos planes de pago (Básico o Premium).
+
+### Home (Inicio de la App)
+![image](assets/Chapter-5/inicio-app.png)
+
+Después de haber hecho estos pasos entrará a la pantalla principal de la app, con botones de acceso rápido a las funciones clave, entre otras cosas más.
+
+### Notifications (Notificaciones)
+![image](assets/Chapter-5/notificaciones.png)
+
+Dentro de la app hay una sección de notificaciones, puedes entrar ya sea en el ícono de notificación o en "View All". Dentro del centro de notificaciones, el usuario puede ver alertas, recordatorios y mensajes, puedes editar a tu gusto personal también.
+
+### Payment Management (Gestión de Pagos)
+![image](assets/Chapter-5/gestion-pagos.png)
+
+Otra herramienta que cuenta Debtgo es la gestión de pagos, allí podrás ver los pagos realizados, los pagos pendientes e inclusive programar nuevos pagos.
+
+### Add New Debt (Añadir Nueva Deuda)
+![image](assets/Chapter-5/nueva-deuda.png)
+
+Al igual que contamos con la gestión de pagos, también contamos exclusivamente lo que es añadir una nueva deuda, podrás registrar una nueva deuda, ingresando detalles como el monto, la fecha y las condiciones que creas pertinente.
+
+### Financial Education (Educación Financiera)
+![image](assets/Chapter-5/educacion-financiera.png)
+
+Dentro de la app contamos también en un apartado de "Educación Financiera", en el cuál podrás inscribirte a los cursos que contamos, ver videos, les lecciones que hay en cada curso, así podrás aprender aún más a gestionar correctamente tus finanzas de una manera segura y eficiente.
+
+### Course 1: Master Your Finances (Domina Tus Finanzas)
+![image](assets/Chapter-5/domina-tus-finanzas.png)
+![image](assets/Chapter-5/lecciones-curso1.png)
+![image](assets/Chapter-5/lecciones-parte2-curso1.png)
+
+Pasamos al primer curso que se llama **"Master Your Finances"** o en español **"Domina Tus Finanzas"**, cuenta con 6 lecciones, aprenderás a poder controlar, gestionar, adquirir conocimientos suficientes sobre las finanzas y su importancia. Al terminar las 6 lecciones te aparecerá un mensaje de que has terminado el curso satisfactoriamente y te mandará a la sección principal de Educación Financiera.
+
+### Course 2: Make Your Money Grow (Haz Crecer Tu Dinero)
+![image](assets/Chapter-5/haz-crecer-tu-dinero.png)
+![image](assets/Chapter-5/lecciones-curso2.png)
+![image](assets/Chapter-5/lecciones-parte2-curso2.png)
+
+Seguidamente tenemos al segundo curso llamado **"Make Your Money Grow"** o en español **"Haz Crecer Tu Dinero"**, cuenta también con 6 lecciones, este curso está enfocado en las inversiones, ahorros y estrategias para aumentar el dinero.  Al terminar las 6 lecciones te aparecerá un mensaje de que has terminado el curso satisfactoriamente y te mandará a la sección principal de Educación Financiera.
+
+### Course 3: Smart Financial Planning (Planificación Financiera Inteligente)
+![image](assets/Chapter-5/planificacion-financiera-inteligente.png)
+![image](assets/Chapter-5/lecciones-curso3.png)
+![image](assets/Chapter-5/lecciones-parte2-curso3.png)
+
+Finalmente tenemos al 3er y último curso llamado **"Smart Financial Planning"** o en español **"Planificación Financiera Inteligente"**, cuenta con 6 lecciones al igual que los 2 cursos anteriores, este curso está enfocado en ayudar a las personas a poder organizar metas y recursos. Al terminar las 6 lecciones te aparecerá un mensaje de que has terminado el curso satisfactoriamente y te mandará a la sección principal de Educación Financiera.
+
+### Additional Course 1: Personal Budget Mentory (Asesoría Presupuestaria Personalizada)
+![image](assets/Chapter-5/asesoria-presupuestaria-personalizada.png)
+
+También tenemos 3 cursos adicionales por si quieres adquirir más conocimientos de lo que ya tienes, el primer curso se llama **"Personal Budget Mentory"** o en español **"Asesoría Presupuestaria Personalizada"**, es un aporte más con respecto a mejorar su presupuesto. Te registras mediante un formulario y te llegará una notificación de que tu solicitud ha sido aceptada.
+
+### Additional Course 2: Advanced Investment Workshop (Taller De Inversión Avanzada)
+![image](assets/Chapter-5/taller-inversion-avanzada.png)
+
+Este segundo curso adicional llamado **"Advanced Investment Workshop"** o en español **"Taller De Inversión Avanzada"**, son más que todo talleres, dirigido a estudiantes con mayor experiencia, que tengan una noción más específica. Te registras mediante un formulario y te llegará una notificación de que tu solicitud ha sido aceptada.
+
+### Additional Course 3: Creating Financial Content (Creación De Contenido Financiero)
+![image](assets/Chapter-5/contenido-financiero.png)
+
+Este último curso adicional llamado **"Creating Financial Content"** o en español **"Creación De Contenido Financiero"** es de entorno educativo e informativo relacionado a las finanzas y su importancia. Te registras mediante un formulario y te llegará una notificación de que tu solicitud ha sido aceptada.
+
+### Financial Consultant Exam (Examen de Consultor Financiero)
+![image](assets/Chapter-5/consultor-certificado.png)
+
+En esta parte ya es para aquellas personas que se sientan preparadas para tomar el examen del Consultor Financiero, donde demostrarás todo lo que has aprendido a lo largo de los 3 cursos que tenemos y los 3 cursos adicionales que te hemos proporcionado. Te registras mediante un formulario y te llegará una notificación de que tu solicitud ha sido aceptada y así podrás tomar el examen.
+
+### Profile (Perfil)
+![image](assets/Chapter-5/perfil.png)
+
+En en inicio de la app también hay una sección de **"Profile"** o en español **"Perfil"** donde se visualiza la información personal, preferencias y opciones de configuración del usuario.
+
+### My Workspace (Mi Centro De Trabajo)
+![image](assets/Chapter-5/centro-trabajo.png)
+
+Al darle click a **"My Workspace"**, entrarás a este apartado donde verás la información del usuario registrado o mediante el inicio de sesión, también verás 2 botones, uno de **"Reviews"** y el otro de **"Messages"**, más abajo verás otros dos botones, uno de **"Edit Service"** y el otro de **"Post New Service"**, más adelante se explicará cada botón y para qué sirve.
+
+### Reviews (Reseñas) y Messages (Mensajes)
+![image](assets/Chapter-5/reseña-mensajes.png)
+
+En estas secciones se visualizan las reseñas y los mensajes donde te puedes comunicar con otros usuarios o con los consultores financieros de la app, en reseñas son comentarios de nuestros usuarios hacia DebtGo y en mensajes son preguntas que te hacen los usuarios o los consultores financieros acerca de la gestión de finanzas, les puedes responder e inmediatamente te responderán.
+
+### Edit Service (Editar Servicio)
+![image](assets/Chapter-5/editar-servicio.png)
+
+En esta sección verás cómo se puede editar los servicios que ofrece DebtGo, puedes cambiar el precio, la descripción o los detalles de cada servicio.
+
+### Post New Service (Publicar Nuevo Servicio)
+![image](assets/Chapter-5/publicar-nuevo-servicio.png)
+
+En esta sección verás cómo puedes publicar un nuevo servicio aparte de lo que te brinda DebtGo, puede ser como otras consultorías, características de algo en específico, etc.
+
+## 4.5. Mobile Applications Prototyping
+### 4.5.1. Android Mobile Applications Prototyping
+### 4.5.2. iOS Mobile Applications Prototyping
+
+## 4.6. Web Applications UX/UI Design
+### 4.6.1. Web Application Wireframes
+### 4.6.2. Web Applications Wireflow Diagrams
+### 4.6.3. Web Applications Mock-ups
+### 4.6.4. Web Applications User Flow Diagrams
+
+## 4.7. Web Applications Prototyping
+
+## 4.8. Domain-Driven Software Architecture
+### 4.8.1. Software Architecture Context Diagram
 ![image](assets/Chapter-4/diagram_context.png) <br>
 *Imagen (N°19). Elaboración propia. Realizado en Structurizr.* <br>
 
-**Actores principales:** Asesores y Emprendedores.
-**Sistemas de apoyo:** Email, Visa, MasterCard.
-**Core:** Plataforma DebtGo.
-
-**4.1.3.2. Software Architecture Container Level Diagrams**
-
+### 4.8.2. Software Architecture Container Diagrams
 ![image](assets/Chapter-4/container-diagram2.png) <br>
 *Imagen (N°20). Elaboración propia. Realizado en Structurizr.* <br>
 
@@ -1287,123 +1563,27 @@ Envío de recordatorios (usa Email System).
 **Flujo:**
 Web App → API REST → Database ↔ Sistemas externos.
 
-## 4.2.  Tactical-Level Domain-Driven Design
-### 4.2.1.  Bounded Context: Subscription
-### 4.2.1.1.  Domain Layer
-Además, implementaremos el patrón **CQRS** (Separación de Responsabilidades de Comandos y Consultas) para separar las operaciones de lectura y escritura, mejorando la escalabilidad y mantenibilidad. Las operaciones de escritura interactuarán con la base de datos a través de comandos, mientras que las operaciones de lectura utilizarán modelos de consulta especializados.
-### 4.2.1.2.  Interface Layer
-La capa de interfaz expondrá una **API REST** a través de un controlador, permitiendo que otros sistemas y Contextos Acotados (BCs) interactúen con el BC de Suscripción. Usaremos el patrón **Facade** aquí para simplificar la interfaz y asegurar que la comunicación entre BCs se mantenga eficiente y desacoplada. Esta capa servirá como el punto de entrada para todas las interacciones externas con el BC de Suscripción.
-### 4.2.1.3.  Application Layer
-La capa de aplicación estará compuesta por servicios que implementan los comandos y consultas relacionados con el agregado **Suscripción**. Estos servicios serán responsables de garantizar que toda la lógica de negocio y las reglas se apliquen antes de interactuar con la capa de dominio. Los servicios también manejarán la orquestación de los diferentes eventos de dominio, asegurando que el sistema se comporte de manera consistente y predecible.
-### 4.2.1.4.  Infrastructure Layer
-En la capa de infraestructura, utilizaremos el patrón **Repository** para interactuar con la base de datos a través de **Entity Framework**, una herramienta ORM (Mapeo Objeto-Relacional). Este patrón abstrae la lógica de acceso a datos y proporciona una manera de persistir los datos de suscripción sin exponer la estructura subyacente de la base de datos. También nos aseguraremos de que el repositorio se integre limpiamente con la capa de aplicación para proporcionar funcionalidades relacionadas con la persistencia. <br>
-
+### 4.8.3. Software Architecture Components Diagrams
 ![image](assets/Chapter-4/subscription-bc.png) <br>
 *Imagen (N°27). Subscription BC Component* <br>
-
-### 4.2.2. Bounded Context: User BC
-### 4.2.2.1. Domain Layer
-Gestiona el agregado Usuario, incluyendo entidades relacionadas como Perfil, PreferenciasFinancieras, y HistorialDeUso. Este agregado se encarga de definir las reglas de autenticación, autorización y validación de información del usuario.
-
-### 4.2.2.2. Interface Layer
-Expondrá una API REST para gestionar el registro, inicio de sesión, actualización de datos personales y configuración de preferencias del usuario. Usará el patrón Facade para mantener una interfaz limpia hacia otros BCs como Payments o Consulting.
-
-### 4.2.2.3. Application Layer
-Orquesta servicios como:
-
-- Registro de usuario <br>
-- Inicio de sesión (con JWT) <br>
-- Actualización de perfil <br>
-- Gestión de roles <br>
-
-También valida la identidad del usuario para permitir acceso a otras funcionalidades de DebtGo.
-
-### 4.2.2.4. Infrastructure Layer
-Usará Entity Framework o similar para manejar la persistencia del usuario. Implementará repositorios para acceder y modificar perfiles y credenciales. <br>
 
 ![image](assets/Chapter-4/user-bc.png) <br>
 *Imagen (N°28). User BC Component* <br>
 
-### 4.2.3. Bounded Context: Consulting BC
-### 4.2.3.1. Domain Layer
-Modela entidades como SesiónConsultoría, Consultor, Cliente y Agenda, con reglas como disponibilidad, validación de horarios y límites de sesiones.
-
-### 4.2.3.2. Interface Layer
-Expondrá una API REST para:
-
-- Reservar sesiones de consultoría
-- Consultar historial de asesorías
-- Evaluar consultores
-
-Usará el patrón Facade para facilitar la integración con User BC y Notification BC (por ejemplo, para enviar recordatorios).
-
-### 4.2.3.3. Application Layer
-Servicios para:
-
-- Asignación de consultores según necesidades
-- Programación y cancelación de sesiones
-- Seguimiento del progreso financiero del usuario
-
-### 4.2.3.4. Infrastructure Layer
-Repositorios que se conectan con la base de datos y permiten consultar disponibilidad, almacenar sesiones y asignar consultores. Podría incluir integración futura con herramientas de videoconferencia o IA.
-
 ![image](assets/Chapter-4/consulting-bc.png) <br>
 *Imagen (N°29). Consulting BC Component* <br>
-
-### 4.2.4. Bounded Context: Payments BC
-### 4.2.4.1. Domain Layer
-Agregado Transacción con entidades como MétodoPago, Factura, PagoRecurrente. Se encargará de validar estados de transacción, reintentos y fallos.
-
-### 4.2.4.2. Interface Layer
-API REST para gestionar:
-
-- Procesamiento de pagos únicos y recurrentes
-- Verificación del estado de la transacción
-- Consulta de historial de pagos
-- Patrón Facade para integrarse con servicios externos como Visa y MasterCard.
-
-### 4.2.4.3. Application Layer
-Servicios para:
-
-- Autorización de pagos
-- Notificación de fallos o confirmaciones
-- Validación y seguridad en la transacción
-
-### 4.2.4.4. Infrastructure Layer
-- Conexión con gateways de pago (Visa, MasterCard)
-- Manejo seguro de tokens de tarjeta
-- Repositorios de pagos y facturas
 
 ![image](assets/Chapter-4/payment-bc.png) <br>
 *Imagen (N°30). Payments BC Component* <br>
 
-### 4.2.6. Bounded Context: Notification BC
-### 4.2.6.1. Domain Layer
-Modela Notificación, PreferenciasDeNotificación, Canal, con reglas sobre cuándo, cómo y a quién enviar mensajes.
-
-### 4.2.6.2. Interface Layer
-API REST que permite a otros BCs solicitar notificaciones (recordatorios de pago, sesiones agendadas, progreso educativo, etc.).
-
-### 4.2.6.3. Application Layer
-Servicios para:
-
-- Envío de notificaciones por email (y SMS o push en el futuro)
-- Gestión de plantillas y personalización
-- Monitoreo de entregabilidad
-
-### 4.2.6.4. Infrastructure Layer
-- Integración con el sistema de Email
-- Repositorio de logs de notificaciones
-- Configuración de canales y reglas
-
 ![image](assets/Chapter-4/notification-bc.png) <br>
 *Imagen (N°31). Notification BC Component* <br>
 
-### 4.2.1.6.  Bounded Context Software Architecture Code Level Diagrams
-### 	4.2.1.6.1.  Bounded Context Domain Layer Class Diagrams <br>
-![image](assets/Chapter-4/class-diagram.png) <br>
+## 4.9. Software Object-Oriented Design
+### 4.9.1. Class Diagrams
+<img src="assets/Chapter-4/class-diagram.png">
 
-**Class Dictionary**
+### 4.9.2. Class Dictionary
 **Class User**
 
 | Attribute       | Type          | Description                  |
@@ -1509,374 +1689,16 @@ Servicios para:
 | paymentCardId   | int    | Identifier of the payment card used         |
 | paymentDate     | string | Date of the payment                         |
 
-### 	4.2.1.6.2.  Bounded Context Database Design Diagram <br>
-![image](assets/Chapter-4/database-diagram.png) <br>
-
-## Capítulo V: Solution UI/UX Design 
-### 5.1. Product Design
-### 5.1.1. Style Guidelines
-
-Un Style Guidelines, o Guía de Estilo, es un documento que proporciona directrices claras y coherentes sobre la apariencia visual, la comunicación y la identidad de una marca o producto. Esta guía asegura que todos los elementos relacionados con la marca, como tipografía, colores, logotipos y tono de voz, se mantengan uniformes en todas las aplicaciones y plataformas, lo que ayuda a reforzar la identidad de la marca y garantiza una experiencia de usuario consistente y reconocible.
-
-### 5.1.1.1. General Style Guidelines
-
-**Branding:** 
-
-La identidad visual de una marca, que incluye su logotipo, colores, tipografía y otros elementos visuales.La identidad de marca de DebtGo se basa en la misión de proporcionar educación financiera y ayudar a las personas a manejar sus deudas de manera efectiva. Valores clave incluyen la transparencia, la confianza y la accesibilidad. DebtGo debe proyectar una personalidad amigable, confiable y educativa, para que los usuarios sientan que están recibiendo orientación de un amigo de confianza.
-
-**Logo**
-
-El logo principal de DebtGo debe ser limpio y moderno, con un énfasis en la simplicidad y la claridad. Puede incorporar elementos que evocan finanzas, como gráficos de barras estilizados o un gráfico de línea ascendente para simbolizar el crecimiento financiero. Se pueden crear variaciones del logotipo para adaptarse a diferentes tamaños y plataformas, pero la esencia y los colores deben mantenerse coherentes.
-
-<center> <img src="assets/Chapter-5/Logo.png" style="width: 200px;"/> </center>
-<br>
-
-**Tipografía:**
-
-La elección tipográfica para DebtGo es un componente esencial que complementa la identidad visual de la marca. Se han seleccionado tres familias tipográficas para la marca: Urbanist, Merriweather Sans y Sora. Siendo la principal **Urbanist**.
-
-<center> <img src="assets/Chapter-5/Urbanist.webp" style="width: 350px;"/> </center>
-<br>
-
-**Colores:** 
-
-La paleta de colores de DebtGo ha sido cuidadosamente seleccionada para transmitir profesionalismo, confianza y accesibilidad. Cada color tiene un propósito específico y se utilizará de manera consistente en toda la identidad visual de la marca.
-
-<center> <img src="assets/Chapter-5/paleta.png" style="width: 500px;"/> </center>
-<br>
-
-- #998EF7 (Lavanda suave): Este color se utilizará como el tono principal, predominando en el logotipo, encabezados y elementos clave de la interfaz como las llamadas a la acción (CTA), botones y elementos interactivos.
-
-- #9B6CF0 (Lavanda): Se utilizará para fondos oscuros permitiendo resaltar los elementos claves con el tono principal.
-
-- #7960F2 (Lavanda profunda): Este tono servirá para complementar al contraste de los elementos principales.
-
-- #000000 (Negro): Utilizado para títulos en fondos claros.
-
-- #FFFFFF (Blanco): Utilizado para títulos en fondos con las tonalidades principales.
-
-- #F3F3FF (Gris suave): Para subtítulos en fondos con las tonalidades principales.
-
-- #939393 (Gris medio): Se utilizará para cuerpo y textos de menor jerarquía.
-
-- #3D3D3D (Gris oscuro): Este color será empleado en subtítulos con fondos claros.
-
-**Tono de comunicación y lenguaje aplicado:**
-
- El estilo de comunicación que se utiliza en el diseño, que puede ser divertido/serio, formal/casual, respetuoso/irreverente o entusiasta/sereno.
-
- - Memorable y reconocible: La identidad de marca debe ser única y fácilmente identificable. Esto ayudará a que la empresa se destaque de la competencia y sea recordada por los clientes.
-- Confiable y profesional: La identidad de marca debe transmitir la idea de que la empresa es confiable y profesional. Esto ayudará a que los clientes se sientan seguros de confiar en la empresa con sus finanzas.
-- Atractiva y llamativa: La identidad de marca debe ser atractiva y llamativa. Esto ayudará a captar la atención de los clientes y a atraerlos a la empresa.
-
-**Lenguaje aplicado:**
-
- El lenguaje que se utiliza en el diseño, que debe ser claro, conciso y fácil de entender.
-
-**Marca** 
-
-El nombre de la empresa, "DebtGo", es un juego de palabras con la palabra "Debt" (deuda en inglés). El uso de la letra "g" en lugar de la "d" crea un sonido similar, pero también sugiere una acción, como "go" (ir). Esto transmite la idea de que la empresa puede ayudarte a eliminar tus deudas.
-
-**Spacing** 
-
-El espaciado entre los elementos del logotipo es uniforme y equilibrado. Esto crea una sensación de orden y armonía. El espaciado entre las letras del nombre de la empresa es lo suficientemente amplio para que sean legibles, pero no tanto como para que se vean demasiado separadas.
-
-## 5.1.2. Information Architecture
-
-La Arquitectura de la Información (AI, por sus siglas en inglés) es una disciplina y una práctica de diseño que se ocupa de optimizar la forma en que se organiza, estructura, etiqueta y conecta la información en entornos digitales. Esta arquitectura es esencialmente una especie de ‘mapa’ que se usa para ayudar a los usuarios a comprender dónde se encuentran en un entorno digital, cómo llegaron allí y cómo pueden continuar hacia otras secciones relacionadas o importantes.
-
-El objetivo clave de la Arquitectura de la Información es lograr un equilibrio entre las necesidades y las capacidades del usuario y los objetivos del negocio. Facilita la navegación eficiente y efectiva a través de la complejidad de la información que encontramos en las aplicaciones de software, sitios web, intranets, plataformas en línea, etc. Por tanto, su propósito principal es diseñar una estructura de información coherente, comprensible y utilizable, que permita a los usuarios alcanzar sus objetivos de manera fácil y rápida.
-
-Además, la Arquitectura de la Información también es relevante para hacer que la información sea más entendible y utilizable. Esto se logra simplificando su estructura y su contenido, lo que ayuda a los usuarios a interpretar la información presentada, a tomar decisiones informadas y finalmente a interactuar con el sistema de una manera más efectiva e intuitiva.
-
-Por lo tanto, una buena Arquitectura de la Información puede mejorar significativamente la experiencia del usuario, y puede jugar un papel vital en el éxito de cualquier producto o servicio digital.
-
-### 5.1.2.1. Organization Systems
-
-Los sistemas de organización se encargan de la estructura y los procesos que se implementan en una empresa u organización para mejorar la eficiencia y la productividad.
-
-El objetivo principal del sistema de organización es establecer métodos y procedimientos claros para gestionar los recursos disponibles, tanto humanos como materiales, de manera eficiente. Esto implica organizar tareas, establecer responsabilidades, distribuir recursos y coordinar actividades para lograr los objetivos de la organización de manera efectiva.
-
-**Algunos de los beneficios de implementar un sistema de organización incluyen:**
-
-- Eficiencia: Un sistema de organización ayuda a optimizar el uso de los recursos disponibles, lo que se traduce en una mayor eficiencia en el trabajo realizado. Al establecer tareas y roles claros, se evita la duplicación de esfuerzos y se minimizan los errores.
-- Productividad: Al contar con un sistema de organización efectivo, se establecen rutinas y procesos que permiten esfuerzos más enfocados y una mayor productividad en el cumplimiento de metas y objetivos.
-- Coordinación: Un sistema de organización facilita la coordinación entre diferentes miembros de la organización. Al establecer una estructura clara de comunicación y responsabilidades, se asegura una sincronización adecuada de las actividades en equipo.
-- Planificación estratégica: Los sistemas de organización ayudan a establecer metas y objetivos claros, y permiten una planificación estratégica efectiva. Esto implica definir la visión y los valores de la organización, así como establecer planes y acciones específicas para alcanzar esos objetivos.
-- Control: Los sistemas de organización facilitan el seguimiento y control de las actividades y el rendimiento de la organización. Esto permite identificar áreas de mejora, corregir desviaciones y asegurar la conformidad con los estándares establecidos.
-
-Los sistemas de organización son fundamentales para establecer procesos eficientes y coordinados en una organización, lo que resulta en una mayor productividad y logro de objetivos. Ayudan a definir roles y responsabilidades, optimizar el uso de recursos, establecer una estructura de comunicación clara y permiten una planificación estratégica efectiva.
-
-### 5.1.2.2. Labelling Systems
-
-Un Labelling System o sistema de etiquetado, se enfoca en un conjunto de técnicas y herramientas utilizadas para identificar y clasificar datos o elementos. El objetivo principal de un Labelling System es asignar etiquetas descriptivas a los datos, lo que facilita su organización búsqueda y procesamiento posterior.
-
-Los Labelling Systems son comúnmente utilizados en diferentes industrias y aplicaciones, como la clasificación de productos, el etiquetado de información en bases de datos, el marcado de imágenes o el análisis de texto. Algunas de las áreas en las que se utilizan con frecuencia son:
-
-- Aprendizaje automático (Machine Learning): En el campo del aprendizaje automático, los Labelling Systems son utilizados para etiquetar conjuntos de datos que serán utilizados para entrenar modelos de machine learning. Esto implica asignar etiquetas a los datos de entrenamiento para que el sistema pueda aprender a reconocer patrones y realizar predicciones precisas.
-
-- Clasificación de productos: En el comercio electrónico y la logística, los Labelling Systems se utilizan para etiquetar productos con información como códigos de barras, números de lote, fechas de caducidad, etc. Esto facilita su identificación y seguimiento a lo largo de la cadena de suministro.
-
-- Organización de archivos y documentos: Los Labelling Systems también son útiles para etiquetar archivos y documentos electrónicos, facilitando su organización y búsqueda rápida. Las etiquetas pueden incluir información como el tema, la fecha, el remitente, entre otros.
-
-- Anotación de imágenes y videos: En el campo de la visión por computadora, los Labelling Systems se utilizan para etiquetar y anotar imágenes y videos para tareas como reconocimiento de objetos, segmentación de imágenes, detección de rostros, entre otros. Estas etiquetas proporcionan información descriptiva sobre los elementos presentes en las imágenes y facilitan el entrenamiento y la evaluación de algoritmos.
-
-Los Labelling Systems son sistemas o técnicas de etiquetado utilizadas para clasificar y organizar datos, productos o elementos. Su objetivo principal es asignar etiquetas descriptivas que faciliten la organización, búsqueda y procesamiento posterior.
-
-### 5.1.2.3. SEO Tags and Meta Tags
-
-**SEO Tags**
-
-SEO (Search Engine Optimization) Tags son elementos de HTML que ayudan a los motores de búsqueda a entender el contenido y la estructura de una página web. Estos tags influyen en cómo los motores de búsqueda indexan y clasifican tu sitio en los resultados de búsqueda. 
-
-**Algunos ejemplos importantes de SEO Tags incluyen:**
-
-**Title Tag:**
-
-Es el título de la página web que aparece en la pestaña del navegador y como el título del enlace en los resultados de búsqueda. Importancia: Es crucial porque es uno de los factores más influyentes en el ranking de la página. Debe ser relevante, contener palabras clave, y tener una longitud de entre 50 y 60 caracteres. 
-
-*Ejemplo:* 
-``` html
-<title>Compra Ropa de Moda Online - Tienda XYZ</title>
-``` 
-
-
-**Header Tags (H1, H2, H3, etc.):** 
-
-Son etiquetas utilizadas para definir los encabezados y subencabezados dentro del contenido de la página. El H1 es el encabezado principal y es el más importante en términos de SEO. Importancia: Ayudan a organizar el contenido y permiten a los motores de búsqueda comprender la jerarquía y el tema principal de la página. 
-
-*Ejemplo:*
-```html
-<h1>Las Mejores Ofertas en Ropa de Moda</h1>
-```
-
-**Alt Tags:**
-
-Son atributos utilizados en imágenes para describir su contenido. Aunque los usuarios no pueden ver este texto directamente, los motores de búsqueda lo utilizan para entender el contenido de la imagen. Importancia: Mejoran la accesibilidad y también son importantes para el SEO, especialmente en la búsqueda de imágenes.
-
-**Meta Tags**
-
-Los Meta Tags son fragmentos de texto que describen el contenido de la página; no aparecen en la página misma, pero se encuentran en el código HTML de la página. Los motores de búsqueda y los navegadores utilizan estos tags para obtener información adicional sobre la página. Algunos de los Meta Tags más relevantes para SEO son:
-
-**Meta Description Tag:**
-
-Proporciona un resumen breve del contenido de la página. Aunque no afecta directamente al ranking de búsqueda, es importante porque aparece en los resultados de búsqueda bajo el título de la página. Importancia: Una meta descripción atractiva puede aumentar la tasa de clics (CTR) desde los motores de búsqueda. 
-
-Originalmente, se utilizaba para listar palabras clave relevantes para la página. Sin embargo, hoy en día, la mayoría de los motores de búsqueda ya no utilizan este tag para el ranking. Importancia: Es menos relevante en la actualidad, pero puede ser utilizado por algunos motores de búsqueda secundarios. 
-
-**Meta Robots Tag:**
-
-Indica a los motores de búsqueda cómo deben indexar o seguir los enlaces en la página. Importancia: Se utiliza para controlar la indexación de la página. Por ejemplo, si no quieres que una página específica sea indexada, puedes usar este tag. 
-
-*Ejemplo:*
-```
- Viewport Tag
-```
- Especifica cómo se ajustará la página a la pantalla del dispositivo (especialmente importante para dispositivos móviles). 
- 
- Importancia: Crucial para la optimización móvil, ya que garantiza que el sitio web se visualice correctamente en dispositivos de diferentes tamaños.
-
- ### 5.1.2.4. Searching Systems
-
- Un Searching Systems, también conocido como sistema de búsqueda o motor de búsqueda, es una aplicación automática diseñada para buscar y recuperar información almacenada en una base de datos o en internet. Su principal objetivo es encontrar y mostrar resultados relevantes que coincidan con las palabras clave o términos de búsqueda ingresados por el usuario.
-
-El funcionamiento básico de un Searching System consiste en rastrear y analizar grandes cantidades de contenido o información estructurada, como páginas web, documentos, imágenes, videos, etc. Luego, utilizando algoritmos y técnicas de indexación, organiza esta información de manera que pueda ser rápida y fácilmente accesible cuando un usuario realiza una consulta de búsqueda.
-
-El objetivo principal de un Searching System es brindar respuestas relevantes y precisas a las consultas de los usuarios. Para lograr esto, utilizan algoritmos de ranking que evalúan la relevancia y la calidad de los resultados en función de varios factores, como la coincidencia de palabras clave, la autoridad de la fuente, la popularidad del contenido, entre otros.
-
-Los Searching Systems, se utilizan en una amplia variedad de aplicaciones y servicios en línea, como motores de búsqueda web (como Google, Bing, Yahoo), motores de búsqueda de sitios web internos, directorios de archivos locales, sistemas de recuperación de información, entre otros. También se utilizan en diferentes industrias, como el comercio electrónico, la investigación académica, la búsqueda y recuperación de documentos legales, la búsqueda de imágenes, entre muchos otros casos de uso.
-
-Uns Searching System es una herramienta informática que permite buscar y recuperar información relevante almacenada en una base de datos o en internet. Su objetivo es proporcionar respuestas precisas y relevantes a las consultas de los usuarios.
-
-### 5.1.2.5. Navigation Systems
-
-Un sistema de navegación, también conocido como sistema de posicionamiento y navegación, es una tecnología utilizada para determinar la ubicación, la dirección y la ruta más adecuada para llegar a un destino específico. Su objetivo principal es ayudar a las personas a navegar de manera eficiente y precisa, ya sea en vehículos, aviones, barcos u otros medios de transporte.
-El sistema de navegación utiliza una variedad de tecnologías como el GPS (Sistema de Posicionamiento Global), sensores inerciales y otros sistemas de comunicación para obtener información sobre la posición del vehículo en tiempo real. Estos datos se utilizan para calcular la ruta óptima hacia el sistema solicitado.
-
-Además de proporcionar indicaciones de manejo paso a paso, los sistemas de navegación también pueden ofrecer información adicional, como el estado del tráfico, el tiempo estimado de llegada, la presencia de puntos de interés cercanos y la información actualizada del mapa.
-
-El objetivo principal de un sistema de navegación es facilitar la navegación y mejorar la experiencia del usuario al proporcionar una guía precisa y confiable en el proceso de desplazarse de un lugar a otro. Esto ayuda a ahorrar tiempo, evitar posibles desvíos o atascos de tráfico, y proporcionar una sensación de seguridad al conocer la ruta y la ubicación en todo momento.
-
-Un sistema de navegación es una herramienta tecnológica que utiliza varios sistemas para proporcionar información y guía para llegar a un destino específico de la manera más eficiente posible. Su objetivo es mejorar la experiencia de navegación al ofrecer indicaciones precisas y actualizadas, así como otros datos útiles relacionados con la ruta.
-
-## 5.1.3. Landing Page UI Design
-### 5.1.3.1. Landing Page Wireframe
-
-El prototipado de la landing page cuenta diversas secciones:
-- Header: Incluye botones para facilitar la navegación
-- Hero: Con 2 CTA, uno para cada segmento objetivo, un título y una imagen de fondo.
-- Segmentos y beneficios: Para cada segmento se tiene un título, una breve descripción, un CTA y una imagen. Debajo de cada sección se detallan los beneficios que se ofrecen.
-- Testimonios: Consta de un título y subtítulo, así como de unos testimonios de usuarios de cada segmento, lo que aumenta la confianza en los potenciales clientes.
-- Contacto: Tiene un título y subtítulo, un pequeño input para la introducción de un email y un botón para el envio del correo.
-- Footer: Sección que da fin a la landing page, cuenta con las redes sociales de la plataforma.
-
-**Wireframe Destkop**
-
-<img src="assets/Chapter-5/Wireframe-Desktop.png">
-
-*Imagen(N°14). Elaboración propia. Realizado en figma*
-
-**Wireframe Mobile** <br>
-En la versión mobile el navbar se reemplaza por un menu desplegable.
-
-<div align="center">
-<img src="assets/Chapter-5/Wireframe-Mobile.png">
-
-*Imagen(N°15). Elaboración propia. Realizado en figma*
-</div>
-
-### 5.1.3.2. Landing Page Mock-up
-
-Siguiendo los wireframes de la landing page se realizaron los mockups:
-- Header y Segmentos: Se utilizan los colores primarios de la plataforma especificados.
-- Hero: Cuenta con una imagen relacionada a la plataforma, además se tiene dos CTA en versiones alternativas para la diferenciación.
-- Beneficios: Incluye iconos relacionados con los beneficios ofrecidos y con el color principal, además el fondo es claro alternando con la sección de Segmentos para una mejor separación.
-- Testimonios: Con un fondo de color principal para constrastar con las tarjetas de cada testimonio.
-- Contacto: Se tiene un CTA en color primario, siendo notorio al estar en un fondo claro.
-- Footer: Al igual que el header, utiliza los colores primarios de la plataforma para dar un fin estético a la página.
-
-**Mock-up Destkop**
-
-<img src="assets/Chapter-5/Mockup-Desktop.png">
-
-*Imagen(N°16). Elaboración propia. Realizado en figma*
-
-**Mock-up Mobile** <br>
-En la versión mobile el navbar se reemplaza por un menu desplegable.
-
-<div align="center">
-<img src="assets/Chapter-5/Mockup-Mobile.png">
-
-*Imagen(N°17). Elaboración propia. Realizado en figma*
-</div>
-
-## 5.1.4. Mobile Applications UX/UI Design
-### 5.1.4.1. Mobile Applications Wireframes
-#### Payment BC
-![image](assets/Chapter-4/PaymentWireflow.png)
-#### Notification BC
-![image](assets/Chapter-4/NotificationWireframe.png)
-### 5.1.4.2. Mobile Applications Wireflow Diagrams
-#### Payment BC
-**User Goal**: El usuario quiere registrar una nueva deuda para poder visualizarla, hacer seguimiento y gestionarla desde la aplicación.
-![image](assets/Chapter-4/PaymentWireflow1.png)
-**User Goal**: El usuario desea configurar cómo pagará sus deudas (tarjeta, monto, frecuencia) y poder modificar esta configuración si es necesario.
-![image](assets/Chapter-4/PaymentWireflow2.png)
-### 5.1.4.3. Mobile Applications Mock-ups
-#### Payment BC
-![image](assets/Chapter-4/Payment%20Mockup.png)
-#### Notification BC
-![image](assets/Chapter-4/NotificationMockup.png)
-
-### 5.1.4.4. Mobile Applications Prototyping
-
-### Registration And Login (Registro e Inicio de Sesión)
-![image](assets/Chapter-5/registro-inicio-sesion.png)
-
-En esta sección se muestra la pantalla de registro o inicio de sesión para acceder a la app.
-
-### Payment Plans (Planes de Pago)
-![image](assets/Chapter-5/planes-pago.png)
-
-Una vez que haya finalizado el registro o inicio de sesión le mostrará la sección de planes de pago, en el cuál podrá visualizar y elegir entre los dos planes de pago (Básico o Premium).
-
-### Home (Inicio de la App)
-![image](assets/Chapter-5/inicio-app.png)
-
-Después de haber hecho estos pasos entrará a la pantalla principal de la app, con botones de acceso rápido a las funciones clave, entre otras cosas más.
-
-### Notifications (Notificaciones)
-![image](assets/Chapter-5/notificaciones.png)
-
-Dentro de la app hay una sección de notificaciones, puedes entrar ya sea en el ícono de notificación o en "View All". Dentro del centro de notificaciones, el usuario puede ver alertas, recordatorios y mensajes, puedes editar a tu gusto personal también.
-
-### Payment Management (Gestión de Pagos)
-![image](assets/Chapter-5/gestion-pagos.png)
-
-Otra herramienta que cuenta Debtgo es la gestión de pagos, allí podrás ver los pagos realizados, los pagos pendientes e inclusive programar nuevos pagos.
-
-### Add New Debt (Añadir Nueva Deuda)
-![image](assets/Chapter-5/nueva-deuda.png)
-
-Al igual que contamos con la gestión de pagos, también contamos exclusivamente lo que es añadir una nueva deuda, podrás registrar una nueva deuda, ingresando detalles como el monto, la fecha y las condiciones que creas pertinente.
-
-### Financial Education (Educación Financiera)
-![image](assets/Chapter-5/educacion-financiera.png)
-
-Dentro de la app contamos también en un apartado de "Educación Financiera", en el cuál podrás inscribirte a los cursos que contamos, ver videos, les lecciones que hay en cada curso, así podrás aprender aún más a gestionar correctamente tus finanzas de una manera segura y eficiente.
-
-### Course 1: Master Your Finances (Domina Tus Finanzas)
-![image](assets/Chapter-5/domina-tus-finanzas.png)
-![image](assets/Chapter-5/lecciones-curso1.png)
-![image](assets/Chapter-5/lecciones-parte2-curso1.png)
-
-Pasamos al primer curso que se llama **"Master Your Finances"** o en español **"Domina Tus Finanzas"**, cuenta con 6 lecciones, aprenderás a poder controlar, gestionar, adquirir conocimientos suficientes sobre las finanzas y su importancia. Al terminar las 6 lecciones te aparecerá un mensaje de que has terminado el curso satisfactoriamente y te mandará a la sección principal de Educación Financiera.
-
-### Course 2: Make Your Money Grow (Haz Crecer Tu Dinero)
-![image](assets/Chapter-5/haz-crecer-tu-dinero.png)
-![image](assets/Chapter-5/lecciones-curso2.png)
-![image](assets/Chapter-5/lecciones-parte2-curso2.png)
-
-Seguidamente tenemos al segundo curso llamado **"Make Your Money Grow"** o en español **"Haz Crecer Tu Dinero"**, cuenta también con 6 lecciones, este curso está enfocado en las inversiones, ahorros y estrategias para aumentar el dinero.  Al terminar las 6 lecciones te aparecerá un mensaje de que has terminado el curso satisfactoriamente y te mandará a la sección principal de Educación Financiera.
-
-### Course 3: Smart Financial Planning (Planificación Financiera Inteligente)
-![image](assets/Chapter-5/planificacion-financiera-inteligente.png)
-![image](assets/Chapter-5/lecciones-curso3.png)
-![image](assets/Chapter-5/lecciones-parte2-curso3.png)
-
-Finalmente tenemos al 3er y último curso llamado **"Smart Financial Planning"** o en español **"Planificación Financiera Inteligente"**, cuenta con 6 lecciones al igual que los 2 cursos anteriores, este curso está enfocado en ayudar a las personas a poder organizar metas y recursos. Al terminar las 6 lecciones te aparecerá un mensaje de que has terminado el curso satisfactoriamente y te mandará a la sección principal de Educación Financiera.
-
-### Additional Course 1: Personal Budget Mentory (Asesoría Presupuestaria Personalizada)
-![image](assets/Chapter-5/asesoria-presupuestaria-personalizada.png)
-
-También tenemos 3 cursos adicionales por si quieres adquirir más conocimientos de lo que ya tienes, el primer curso se llama **"Personal Budget Mentory"** o en español **"Asesoría Presupuestaria Personalizada"**, es un aporte más con respecto a mejorar su presupuesto. Te registras mediante un formulario y te llegará una notificación de que tu solicitud ha sido aceptada.
-
-### Additional Course 2: Advanced Investment Workshop (Taller De Inversión Avanzada)
-![image](assets/Chapter-5/taller-inversion-avanzada.png)
-
-Este segundo curso adicional llamado **"Advanced Investment Workshop"** o en español **"Taller De Inversión Avanzada"**, son más que todo talleres, dirigido a estudiantes con mayor experiencia, que tengan una noción más específica. Te registras mediante un formulario y te llegará una notificación de que tu solicitud ha sido aceptada.
-
-### Additional Course 3: Creating Financial Content (Creación De Contenido Financiero)
-![image](assets/Chapter-5/contenido-financiero.png)
-
-Este último curso adicional llamado **"Creating Financial Content"** o en español **"Creación De Contenido Financiero"** es de entorno educativo e informativo relacionado a las finanzas y su importancia. Te registras mediante un formulario y te llegará una notificación de que tu solicitud ha sido aceptada.
-
-### Financial Consultant Exam (Examen de Consultor Financiero)
-![image](assets/Chapter-5/consultor-certificado.png)
-
-En esta parte ya es para aquellas personas que se sientan preparadas para tomar el examen del Consultor Financiero, donde demostrarás todo lo que has aprendido a lo largo de los 3 cursos que tenemos y los 3 cursos adicionales que te hemos proporcionado. Te registras mediante un formulario y te llegará una notificación de que tu solicitud ha sido aceptada y así podrás tomar el examen.
-
-### Profile (Perfil)
-![image](assets/Chapter-5/perfil.png)
-
-En en inicio de la app también hay una sección de **"Profile"** o en español **"Perfil"** donde se visualiza la información personal, preferencias y opciones de configuración del usuario.
-
-### My Workspace (Mi Centro De Trabajo)
-![image](assets/Chapter-5/centro-trabajo.png)
-
-Al darle click a **"My Workspace"**, entrarás a este apartado donde verás la información del usuario registrado o mediante el inicio de sesión, también verás 2 botones, uno de **"Reviews"** y el otro de **"Messages"**, más abajo verás otros dos botones, uno de **"Edit Service"** y el otro de **"Post New Service"**, más adelante se explicará cada botón y para qué sirve.
-
-### Reviews (Reseñas) y Messages (Mensajes)
-![image](assets/Chapter-5/reseña-mensajes.png)
-
-En estas secciones se visualizan las reseñas y los mensajes donde te puedes comunicar con otros usuarios o con los consultores financieros de la app, en reseñas son comentarios de nuestros usuarios hacia DebtGo y en mensajes son preguntas que te hacen los usuarios o los consultores financieros acerca de la gestión de finanzas, les puedes responder e inmediatamente te responderán.
-
-### Edit Service (Editar Servicio)
-![image](assets/Chapter-5/editar-servicio.png)
-
-En esta sección verás cómo se puede editar los servicios que ofrece DebtGo, puedes cambiar el precio, la descripción o los detalles de cada servicio.
-
-### Post New Service (Publicar Nuevo Servicio)
-![image](assets/Chapter-5/publicar-nuevo-servicio.png)
-
-En esta sección verás cómo puedes publicar un nuevo servicio aparte de lo que te brinda DebtGo, puede ser como otras consultorías, características de algo en específico, etc.
-
-## Capítulo VI: Product Implementation, Validations & Deployment
-### 6.1. Software Configuration Management
+## 4.10. Database Design
+### 4.10.1. Relational/Non-Relational Database Diagram
+<img src="assets/Chapter-4/database-diagram.png">
+
+## Capítulo V: Product Implementation 
+### 5.1. Software Configuration Management
 
 Este apartado se detalla las decisiones, herramientas y convenciones adoptadas por el equipo para garantizar consistencia en el desarrollo, las pruebas y en el despliegue de la aplicación.
 
-### 6.1.1. Software Development Environment Configuration
+### 5.1.1. Software Development Environment Configuration
 
 | Producto de Software        | Propósito en el Proyecto                                       | Tipo de Software |
 |----------------------------|----------------------------------------------------------------|------------------|
@@ -1890,7 +1712,7 @@ Este apartado se detalla las decisiones, herramientas y convenciones adoptadas p
 
 ---
 
-### 6.1.2. Source Code Management
+### 5.1.2. Source Code Management
 
 **Repositorios Oficiales**:
 - [Landing Page (Frontend Web)](https://github.com/...)
@@ -1918,7 +1740,7 @@ Este apartado se detalla las decisiones, herramientas y convenciones adoptadas p
 
 ---
 
-### 6.1.3. Source Code Style Guide & COding Conventions
+### 5.1.3. Source Code Style Guide & Coding Conventions
 
 **C# / ASP.NET Core (Backend)**:
 - Guía: [Microsoft C# Coding Conventions](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/coding-style/coding-conventions)
@@ -1938,7 +1760,7 @@ Este apartado se detalla las decisiones, herramientas y convenciones adoptadas p
 
 ---
 
-### 6.1.4. Software Deployment Configuration
+### 5.1.4. Software Deployment Configuration
 
 #### Productos y configuración de despliegue:
 
@@ -1955,29 +1777,8 @@ Este apartado se detalla las decisiones, herramientas y convenciones adoptadas p
 
 ![Deployment Diagram - DebtGo](deploeyment-diagram.png)
 
----
-
-### 6.2. Landing Page, Services & Applications Implementation.
-
-### 6.2.1. Sprint 1
-![Sprint 1](assets/Chapter-6/sprint1.png)
-
-#### 6.2.1.1. Sprint Planning 1
-| Sprint # | Sprint 1 |
-| -------- | -------- |
-|**Sprint Planning Background**|
-| Date | 2025-05-15|
-| Time | 08:00 PM |
-| Location | Discord Virtual Meeting |
-| Prepared By | Daniel Chávarri, Janiel Franz |
-|Attendees (to planning meeting) | Anaely Burga, Daniel Chávarri, Rivera Omar, Góngora Marco, Janiel Escalante
-| Sprint Review Summary | En esta entrega, no hay un Sprint anterior, por lo tanto, no hay resúmen del Sprint. |
-| Sprint Retrospective Summary | En esta entrega, no hay un Sprint anterior, por lo tanto, no hay resúmen del Sprint. |
-| **Sprint Goal & User Stories** | 
-| Sprint 1 Goal | En este sprint se tiene cómo objetivo la preparación - actualización y despliegue del landing page, backend y el desarrollo de la primera entrega de la aplicación móvil. |
-| Sprint 1 Velocity | 23 |
-| Sum of Story Points | 23 | 
-
+## 5.2. Product Implementation & Deployment
+### 5.2.1. Sprint Backlogs
 #### 6.2.1.2. Sprint Backlog 1  
 | **User Story**                           | **Work-item/Task**            | **Descripción**                                                                          | **Estimación (Horas)** | **Assigned To**  | **Status** |
 | ---------------------------------------- | ----------------------------- | ---------------------------------------------------------------------------------------- | ---------------------- | ---------------- | ---------- |
@@ -2001,33 +1802,7 @@ Este apartado se detalla las decisiones, herramientas y convenciones adoptadas p
 | E7-US30 Artículos financieros            | W18 Articles section          | Crear sección para mostrar artículos financieros con filtro y búsqueda                   | 3                      | Omar Rivera      | Done       |
 | E7-US32 Talleres gratuitos               | W19 Free workshops module     | Desarrollar módulo para inscripción y gestión de talleres gratuitos                      | 5                      | Janiel Escalante | Done       |
 
-
-
-
-#### 6.2.1.3. Development Evidence for Sprint Review 
-
-| **Repository** | **Branch** | **Commit Id**                              | **Commit Message**                                         | **Committed on (Date)** |
-|----------------|------------|--------------------------------------------|--------------------------------------------------------------------------------------|-------------------------|
-|Landing-Page| main    | 5c4d8955c1297df852581b860d774f754f70bd68   | Create index.html                                                                        | 09/05/2025               |
-|Landing-Page| main    | 33c106af8edc5442e6a3a9ab9fb2129c7f00d860   | Create script.js                                                                        | 09/05/2025               |
-|Landing-Page| main    | a97cd06ed94f6c3f16a6fe5e58343fd08666b419   | Delete assets/img/img1                                                                        | 09/05/2025               |
-|Landing-Page| main    | fc2e0ee6c76adf6c86d8b051923211e84a36d487   | Add files via upload                                                                        | 09/05/2025               |
-|Landing-Page| main    | 29a3a09c92f3a2d13a2ba223d288df382b69a22c   | Create img1                                                                        | 09/05/2025               |
-|Landing-Page| main    | e8e79e7a674094b32964f04795a17c7b97d1c31d   | Create testimonios.css                                                                        | 09/05/2025               |
-|Landing-Page| main    | d383ee9ce12f80c829bc0d191060f970fb1e065d   | Create segmento2.css                                                                        | 09/05/2025               |
-|Landing-Page| main    | 1cbff8c4636812de897f09105523ef29f733e5c5   | Create segmento1.css                                                                        | 09/05/2025               |
-|Landing-Page| main    | 773512658c215cb1926c5b408703c69461f3d123  | Create hero.css                                                                        | 09/05/2025               |
-|Landing-Page| main    | 7a497c3313c63ff2784a1bb7df696fff36d7afe5  | Create header.css                                                                        | 09/05/2025               |
-|Landing-Page| main    | 7ab24fe7abdc20f23178b5dbcf4cbc28d86d25db  | Create global.css                                                                        | 09/05/2025               |
-|Landing-Page| main    | 6cbd1a091f813b2ee9715f023136d254975db200  | Create footer.css                                                                        | 09/05/2025               |
-|Landing-Page| main    | e7af259bc889bb3f2b0e71f7e5d821b26bb234ae  | Create contacto.css                                                                        | 09/05/2025               |
-|Web-Services| main    | 0a44c464b4b5679bd97a7ef4fed075e2aec38f7f  | chore: initial commit                                                                        | 15/05/2025               |
-|App-Mobile-DebtGo| master    | 01df8ef4e5b9ccd12c1e1729b582784dbb0e0605  | Initial commit                                                                        | 28/05/2025               |
-|App-Mobile-DebtGo| master    | edfcbc6546973441fd665f99029d1bf7c474611b  | feat(chore): update HomeScreen.kt                                                                        | 28/05/2025               |
-|App-Mobile-DebtGo| master    | 9715adaa54059fb55e49a95b1c7c640c48618e74  | feat(chore): update AppNavigation.kt                                                                        | 28/05/2025               |
-|App-Mobile-DebtGo| master    | d4816cce45e9db3795d4915a4fb5ee62ed252c02  | feat(chore): Update AppNavigation.kt                                                                       | 28/05/2025               |
-
-#### 6.2.1.4. Execution Evidence for Sprint Review  
+<br>
 
 Durante este sprint se completó con éxito la construcción y publicación de la landing page (integrando el video de demostración, el carrusel de reseñas, la sección de planes y el formulario de contacto) así como la redacción e integración de la política de privacidad y el proceso de registro. Además, se desplegó el backend en producción y se avanzó con la primera entrega de la aplicación móvil, garantizando una experiencia fluida y coherente para el usuario.
 
@@ -2047,9 +1822,6 @@ Enlace al backend desplegado: [DebtGo Backend](http://debt2go.runasp.net/swagger
 
 ![Evidence 6](assets/Chapter-6/img-evidence-6.png)
 
-  
-#### 6.2.1.5. Services Documentation Evidence for Sprint Review  
-
 En esta sección presentamos los endpoints preparados durante el sprint. Se adjuntan capturas de la UI de swagger con OpenAPI.
 
 | **Controller** | **Swagger** |
@@ -2057,8 +1829,7 @@ En esta sección presentamos los endpoints preparados durante el sprint. Se adju
 | Authentication |![Authentication Swagger](assets/Chapter-6/img-authentication-swagger.png)|
 | Notification |![Notification Swagger](assets/Chapter-6/img-notification-swagger.png)|
 | Subscription |![Subscription Swagger](assets/Chapter-6/img-subscription-swagger.png)|
-  
-#### 6.2.1.6. Software Deployment Evidence for Sprint Review  
+
 En este sprint se puso en marcha la infraestructura de despliegue continuo tanto para landing page como para backend, garantizando que cada cambio en main se refleje inmediatamente en producción:
 
 - Git & GitFlow: Control de versiones y flujo de trabajo por ramas de características y releases, con Pull Requests revisados por pares.
@@ -2066,9 +1837,7 @@ En este sprint se puso en marcha la infraestructura de despliegue continuo tanto
 - Vercel: Despliegue automático de la landing page al hacer merge en main, con previews en cada PR.
 - MonsterASP.NET: Proveedor de hosting en Windows especializado en aplicaciones ASP.NET/.NET.
 
-#### 6.2.1.7. Team Collaboration Insights for Sprint Review  
-
-Durante el Sprint 1, todo el equipo participó activamente en la implementación de la Landing Page, los Web Services y la primera entrega de la aplicación móvil, trabajando en ramas de feature individuales, revisando pull requests en pares y registrando contribuciones constantes en GitHub; a continuación se muestran los principales analíticos de colaboración, seguidos de nuestra interpretación de cómo estos reflejan el reparto de trabajo y la eficacia en la coordinación del equipo.
+- Durante el Sprint 1, todo el equipo participó activamente en la implementación de la Landing Page, los Web Services y la primera entrega de la aplicación móvil, trabajando en ramas de feature individuales, revisando pull requests en pares y registrando contribuciones constantes en GitHub; a continuación se muestran los principales analíticos de colaboración, seguidos de nuestra interpretación de cómo estos reflejan el reparto de trabajo y la eficacia en la coordinación del equipo.
 
 **Landing Page**
 Network graph:
@@ -2091,27 +1860,7 @@ Network graph:
 Code frecuency:
 ![Code Frecuency](assets/Chapter-6/img-code-frecuency-app-mobile.png)
 
-### 6.2.2. Sprint 2
-
-![Sprint 2](assets/Chapter-6/sprint2.png)
-
-#### 6.2.2.1. Sprint Planning 2
-| Sprint # | Sprint 2 |
-| -------- | -------- |
-|**Sprint Planning Background**|
-| Date | 2025-06-17|
-| Time | 08:00 PM |
-| Location | Discord Virtual Meeting |
-| Prepared By | Daniel Chávarri, Janiel Franz |
-|Attendees (to planning meeting) | Anaely Burga, Daniel Chávarri, Rivera Omar, Góngora Marco, Janiel Escalante
-| Sprint Review Summary | Durante el Sprint 1 se logró el desarrollo y despliegue de la landing page con sus componentes clave (video de demostración, sección de planes, testimonios y formulario de contacto). Además, se desplegó el backend funcional y se implementaron componentes iniciales de la aplicación móvil, incluyendo navegación, autenticación y pantallas base. |
-| Sprint Retrospective Summary | El equipo identificó como fortaleza la buena distribución de tareas y el compromiso individual. Como oportunidad de mejora, se sugirió definir desde el inicio criterios de aceptación más claros por User Story y mantener comunicación más constante durante el avance de desarrollo móvil. |
-| **Sprint Goal & User Stories** | 
-| Sprint 2 Goal | Nos centramos en completar la implementación del registro de usuarios, los perfiles de consultor/emprendedor y las funciones principales de reserva. Creemos que ofrece una experiencia funcional e interactiva que permite a los usuarios registrarse, configurar su perfil y programar servicios de consultoría. Esto se confirmará cuando los usuarios puedan completar los procesos de registro y reserva a través de la aplicación móvil y los datos se procesen y almacenen correctamente en el backend. |
-| Sprint 2 Velocity | 26 |
-| Sum of Story Points | 26 | 
-
-#### 6.2.2.2. Sprint Backlog 2
+#### 6.2.2.2.Sprint Backlog 2
 **Introducción**
 Durante el Sprint 2 del proyecto DebtGo, el equipo se centró en consolidar las funcionalidades clave de la aplicación móvil y backend, orientadas a brindar una experiencia completa de registro, configuración de perfiles, interacción mediante mensajería, y planificación de servicios. El objetivo principal fue asegurar que los usuarios puedan completar sus flujos de registro, gestionar sus servicios y comunicarse eficazmente dentro de la plataforma.
 
@@ -2128,30 +1877,6 @@ Durante el Sprint 2 del proyecto DebtGo, el equipo se centró en consolidar las 
 | E6-US34 Crear presupuestos personalizados      | W28 Budget planning module	          | Crear componente para planificación de presupuestos según ingresos, gastos y metas del usuario | 6	        | Marco Góngora	   | Done        |
 
 Este Sprint 2 fue planificado con un total de 45 horas estimadas, y la distribución de tareas está alineada con el Sprint Goal propuesto para esta iteración.
-
-#### 6.2.2.3. Development Evidence for Sprint Review
-
-| **Repository** | **Branch** | **Commit Id**                              | **Commit Message**                                         | **Committed on (Date)** |
-|----------------|------------|--------------------------------------------|--------------------------------------------------------------------------------------|-------------------------|
-|Web-Services| main    | 0a44c464b4b5679bd97a7ef4fed075e2aec38f7f  | chore: initial commit                                                                        | 15/05/2025               |
-|App-Mobile-DebtGo| master    | 01df8ef4e5b9ccd12c1e1729b582784dbb0e0605  | Initial commit                                                                        | 28/05/2025               |
-|App-Mobile-DebtGo| master    | edfcbc6546973441fd665f99029d1bf7c474611b  | feat(chore): update HomeScreen.kt                                                                        | 28/05/2025               |
-|App-Mobile-DebtGo| master    | 9715adaa54059fb55e49a95b1c7c640c48618e74  | feat(chore): update AppNavigation.kt                                                                        | 28/05/2025               |
-|App-Mobile-DebtGo| master    | d4816cce45e9db3795d4915a4fb5ee62ed252c02  | feat(chore): Update AppNavigation.kt                                                                       | 28/05/2025               |
-
-#### 6.2.2.4. Testing Suite Evidence for Sprint Review
-
-| **Repository** | **Branch** | **Commit Id**                              | **Commit Message**                                         | **Committed on (Date)** |
-|----------------|------------|--------------------------------------------|--------------------------------------------------------------------------------------|-------------------------|
-|Acceptnace-Test-Debtgo| main    | d7e6f887096b5a10582afd89a684c36ee227a761   | feat: add acceptance tests for epic 01                                                                     | 25/06/2025               |
-|Acceptnace-Test-Debtgo| main    | d95edf553d8a7ce2b3e0f3d1a0ff35c4cc379ad1   | feat: add acceptance tests for epic 02                                                                       | 25/06/2025               |
-|Acceptnace-Test-Debtgo| main    | a4a4d9f502aec3d088aebf4c1ebd6c1d8b8f5bb4   | feat: add acceptance tests for epic 03                                                                       | 25/06/2025               |
-|Acceptnace-Test-Debtgo| main    | a775d3420b21dedd0bbeeee866ccc9f913779cdb   | feat: add acceptance tests for epic 04                                                                      | 25/06/2025               |
-|Acceptnace-Test-Debtgo| main    | 86e327d86674453e4e5daaad3a227a1b559dcdd5   | feat: add acceptance tests for epic 05                                                                        | 25/06/2025               |
-|Acceptnace-Test-Debtgo| main    | 763142044740a0e0bce521f35344081a488bcaec   | feat: add acceptance tests for epic 06                                                                       | 25/06/2025               |
-|Acceptnace-Test-Debtgo| main    | 9dc140eaf27a197d3cf6723431bf98760beec3d2   | feat: add acceptance tests for epic 07                                                                       | 25/06/2025               |
-
-#### 6.2.2.5. Execution Evidence for Sprint Review
 
 Durante este sprint se completaron con éxito las funcionalidades de registro de usuarios, gestión de perfiles (consultor y emprendedor) y la experiencia de reserva de servicios. En concreto:
 
@@ -2192,8 +1917,6 @@ Evidencia de la app DebtGo en Flutter
 
 ![image](assets/Chapter-6/presupuesto.JPG)
 
-
-#### 6.2.2.6. Services Documentation Evidence for Sprint Review
 En esta sección presentamos los endpoints preparados durante el sprint. Se adjuntan capturas de la UI de swagger con OpenAPI.
 
 | **Controller** | **Swagger** |
@@ -2201,7 +1924,7 @@ En esta sección presentamos los endpoints preparados durante el sprint. Se adju
 | Authentication |![Authentication Swagger](assets/Chapter-6/img-authentication-swagger.png)|
 | Notification |![Notification Swagger](assets/Chapter-6/img-notification-swagger.png)|
 | Subscription |![Subscription Swagger](assets/Chapter-6/img-subscription-swagger.png)|
-#### 6.2.2.7. Software Deployment Evidence for Sprint Review
+
 En este sprint se puso en marcha la infraestructura de despliegue continuo tanto para landing page como para backend, garantizando que cada cambio en main se refleje inmediatamente en producción:
 
 - Git & GitFlow: Control de versiones y flujo de trabajo por ramas de características y releases, con Pull Requests revisados por pares.
@@ -2209,8 +1932,7 @@ En este sprint se puso en marcha la infraestructura de despliegue continuo tanto
 - Vercel: Despliegue automático de la landing page al hacer merge en main, con previews en cada PR.
 - MonsterASP.NET: Proveedor de hosting en Windows especializado en aplicaciones ASP.NET/.NET.
 
-#### 6.2.2.8. Team Collaboration Insights during Sprint.
-Durante el Sprint 2, todo el equipo participó activamente en la implementación de la Landing Page, los Web Services y la segunda entrega de la aplicación móvil, trabajando en ramas de feature individuales, revisando pull requests en pares y registrando contribuciones constantes en GitHub; a continuación se muestran los principales analíticos de colaboración, seguidos de nuestra interpretación de cómo estos reflejan el reparto de trabajo y la eficacia en la coordinación del equipo.
+- Durante el Sprint 2, todo el equipo participó activamente en la implementación de la Landing Page, los Web Services y la segunda entrega de la aplicación móvil, trabajando en ramas de feature individuales, revisando pull requests en pares y registrando contribuciones constantes en GitHub; a continuación se muestran los principales analíticos de colaboración, seguidos de nuestra interpretación de cómo estos reflejan el reparto de trabajo y la eficacia en la coordinación del equipo.
 
 **Landing Page**
 
@@ -2235,8 +1957,6 @@ Network graph:
 Code frecuency:
 Code frecuency:
 ![Code Frecuency](assets/Chapter-6/Mobile2.png)
-
-### 6.2.3 Sprint 3
 
 ![Sprint 3](assets/Chapter-6/sprint-3.JPG)
 
@@ -2268,6 +1988,103 @@ Evidencia en DebtGo Flutter:
 
 ![image](assets/Chapter-6/metrica-desempeño.JPG)
 
+
+## Capítulo VI: Product Implementation, Validations & Deployment
+
+### 6.2. Landing Page, Services & Applications Implementation.
+
+### 6.2.1. Sprint 1
+![Sprint 1](assets/Chapter-6/sprint1.png)
+
+#### 6.2.1.1. Sprint Planning 1
+| Sprint # | Sprint 1 |
+| -------- | -------- |
+|**Sprint Planning Background**|
+| Date | 2025-05-15|
+| Time | 08:00 PM |
+| Location | Discord Virtual Meeting |
+| Prepared By | Daniel Chávarri, Janiel Franz |
+|Attendees (to planning meeting) | Anaely Burga, Daniel Chávarri, Rivera Omar, Góngora Marco, Janiel Escalante
+| Sprint Review Summary | En esta entrega, no hay un Sprint anterior, por lo tanto, no hay resúmen del Sprint. |
+| Sprint Retrospective Summary | En esta entrega, no hay un Sprint anterior, por lo tanto, no hay resúmen del Sprint. |
+| **Sprint Goal & User Stories** | 
+| Sprint 1 Goal | En este sprint se tiene cómo objetivo la preparación - actualización y despliegue del landing page, backend y el desarrollo de la primera entrega de la aplicación móvil. |
+| Sprint 1 Velocity | 23 |
+| Sum of Story Points | 23 | 
+
+
+#### 6.2.1.3. Development Evidence for Sprint Review 
+
+| **Repository** | **Branch** | **Commit Id**                              | **Commit Message**                                         | **Committed on (Date)** |
+|----------------|------------|--------------------------------------------|--------------------------------------------------------------------------------------|-------------------------|
+|Landing-Page| main    | 5c4d8955c1297df852581b860d774f754f70bd68   | Create index.html                                                                        | 09/05/2025               |
+|Landing-Page| main    | 33c106af8edc5442e6a3a9ab9fb2129c7f00d860   | Create script.js                                                                        | 09/05/2025               |
+|Landing-Page| main    | a97cd06ed94f6c3f16a6fe5e58343fd08666b419   | Delete assets/img/img1                                                                        | 09/05/2025               |
+|Landing-Page| main    | fc2e0ee6c76adf6c86d8b051923211e84a36d487   | Add files via upload                                                                        | 09/05/2025               |
+|Landing-Page| main    | 29a3a09c92f3a2d13a2ba223d288df382b69a22c   | Create img1                                                                        | 09/05/2025               |
+|Landing-Page| main    | e8e79e7a674094b32964f04795a17c7b97d1c31d   | Create testimonios.css                                                                        | 09/05/2025               |
+|Landing-Page| main    | d383ee9ce12f80c829bc0d191060f970fb1e065d   | Create segmento2.css                                                                        | 09/05/2025               |
+|Landing-Page| main    | 1cbff8c4636812de897f09105523ef29f733e5c5   | Create segmento1.css                                                                        | 09/05/2025               |
+|Landing-Page| main    | 773512658c215cb1926c5b408703c69461f3d123  | Create hero.css                                                                        | 09/05/2025               |
+|Landing-Page| main    | 7a497c3313c63ff2784a1bb7df696fff36d7afe5  | Create header.css                                                                        | 09/05/2025               |
+|Landing-Page| main    | 7ab24fe7abdc20f23178b5dbcf4cbc28d86d25db  | Create global.css                                                                        | 09/05/2025               |
+|Landing-Page| main    | 6cbd1a091f813b2ee9715f023136d254975db200  | Create footer.css                                                                        | 09/05/2025               |
+|Landing-Page| main    | e7af259bc889bb3f2b0e71f7e5d821b26bb234ae  | Create contacto.css                                                                        | 09/05/2025               |
+|Web-Services| main    | 0a44c464b4b5679bd97a7ef4fed075e2aec38f7f  | chore: initial commit                                                                        | 15/05/2025               |
+|App-Mobile-DebtGo| master    | 01df8ef4e5b9ccd12c1e1729b582784dbb0e0605  | Initial commit                                                                        | 28/05/2025               |
+|App-Mobile-DebtGo| master    | edfcbc6546973441fd665f99029d1bf7c474611b  | feat(chore): update HomeScreen.kt                                                                        | 28/05/2025               |
+|App-Mobile-DebtGo| master    | 9715adaa54059fb55e49a95b1c7c640c48618e74  | feat(chore): update AppNavigation.kt                                                                        | 28/05/2025               |
+|App-Mobile-DebtGo| master    | d4816cce45e9db3795d4915a4fb5ee62ed252c02  | feat(chore): Update AppNavigation.kt                                                                       | 28/05/2025               |
+  
+#### 6.2.1.6. Software Deployment Evidence for Sprint Review  
+
+
+#### 6.2.1.7. Team Collaboration Insights for Sprint Review  
+
+### 6.2.2. Sprint 2
+
+![Sprint 2](assets/Chapter-6/sprint2.png)
+
+#### 6.2.2.1. Sprint Planning 2
+| Sprint # | Sprint 2 |
+| -------- | -------- |
+|**Sprint Planning Background**|
+| Date | 2025-06-17|
+| Time | 08:00 PM |
+| Location | Discord Virtual Meeting |
+| Prepared By | Daniel Chávarri, Janiel Franz |
+|Attendees (to planning meeting) | Anaely Burga, Daniel Chávarri, Rivera Omar, Góngora Marco, Janiel Escalante
+| Sprint Review Summary | Durante el Sprint 1 se logró el desarrollo y despliegue de la landing page con sus componentes clave (video de demostración, sección de planes, testimonios y formulario de contacto). Además, se desplegó el backend funcional y se implementaron componentes iniciales de la aplicación móvil, incluyendo navegación, autenticación y pantallas base. |
+| Sprint Retrospective Summary | El equipo identificó como fortaleza la buena distribución de tareas y el compromiso individual. Como oportunidad de mejora, se sugirió definir desde el inicio criterios de aceptación más claros por User Story y mantener comunicación más constante durante el avance de desarrollo móvil. |
+| **Sprint Goal & User Stories** | 
+| Sprint 2 Goal | Nos centramos en completar la implementación del registro de usuarios, los perfiles de consultor/emprendedor y las funciones principales de reserva. Creemos que ofrece una experiencia funcional e interactiva que permite a los usuarios registrarse, configurar su perfil y programar servicios de consultoría. Esto se confirmará cuando los usuarios puedan completar los procesos de registro y reserva a través de la aplicación móvil y los datos se procesen y almacenen correctamente en el backend. |
+| Sprint 2 Velocity | 26 |
+| Sum of Story Points | 26 | 
+
+
+#### 6.2.2.3. Development Evidence for Sprint Review
+
+| **Repository** | **Branch** | **Commit Id**                              | **Commit Message**                                         | **Committed on (Date)** |
+|----------------|------------|--------------------------------------------|--------------------------------------------------------------------------------------|-------------------------|
+|Web-Services| main    | 0a44c464b4b5679bd97a7ef4fed075e2aec38f7f  | chore: initial commit                                                                        | 15/05/2025               |
+|App-Mobile-DebtGo| master    | 01df8ef4e5b9ccd12c1e1729b582784dbb0e0605  | Initial commit                                                                        | 28/05/2025               |
+|App-Mobile-DebtGo| master    | edfcbc6546973441fd665f99029d1bf7c474611b  | feat(chore): update HomeScreen.kt                                                                        | 28/05/2025               |
+|App-Mobile-DebtGo| master    | 9715adaa54059fb55e49a95b1c7c640c48618e74  | feat(chore): update AppNavigation.kt                                                                        | 28/05/2025               |
+|App-Mobile-DebtGo| master    | d4816cce45e9db3795d4915a4fb5ee62ed252c02  | feat(chore): Update AppNavigation.kt                                                                       | 28/05/2025               |
+
+#### 6.2.2.4. Testing Suite Evidence for Sprint Review
+
+| **Repository** | **Branch** | **Commit Id**                              | **Commit Message**                                         | **Committed on (Date)** |
+|----------------|------------|--------------------------------------------|--------------------------------------------------------------------------------------|-------------------------|
+|Acceptnace-Test-Debtgo| main    | d7e6f887096b5a10582afd89a684c36ee227a761   | feat: add acceptance tests for epic 01                                                                     | 25/06/2025               |
+|Acceptnace-Test-Debtgo| main    | d95edf553d8a7ce2b3e0f3d1a0ff35c4cc379ad1   | feat: add acceptance tests for epic 02                                                                       | 25/06/2025               |
+|Acceptnace-Test-Debtgo| main    | a4a4d9f502aec3d088aebf4c1ebd6c1d8b8f5bb4   | feat: add acceptance tests for epic 03                                                                       | 25/06/2025               |
+|Acceptnace-Test-Debtgo| main    | a775d3420b21dedd0bbeeee866ccc9f913779cdb   | feat: add acceptance tests for epic 04                                                                      | 25/06/2025               |
+|Acceptnace-Test-Debtgo| main    | 86e327d86674453e4e5daaad3a227a1b559dcdd5   | feat: add acceptance tests for epic 05                                                                        | 25/06/2025               |
+|Acceptnace-Test-Debtgo| main    | 763142044740a0e0bce521f35344081a488bcaec   | feat: add acceptance tests for epic 06                                                                       | 25/06/2025               |
+|Acceptnace-Test-Debtgo| main    | 9dc140eaf27a197d3cf6723431bf98760beec3d2   | feat: add acceptance tests for epic 07                                                                       | 25/06/2025               |
+
+#### 6.2.2.8. Team Collaboration Insights during Sprint.
 
 #### 6.3 Validation Interviews
 
