@@ -5,55 +5,47 @@
 <p align="center">
     <strong>Universidad Peruana de Ciencias Aplicadas</strong><br>
     <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png"></img><br>
-    <strong>Ingeniería de Software - 2025-1</strong><br>
-    <strong>Aplicaciones para Dispositivos Móviles - WX53</strong><br>
-    <strong>Profesor: David Gerardo Quevedo Velasco</strong><br>
-    <br>INFORME DE TRABAJO FINAL - TB1
+    <strong>Ingeniería de Software - 7mo Ciclo</strong><br>
+    <strong>Diseño de Experimentos de Ingeniería de Software - 14651</strong><br>
+    <strong>Profesor: Juan Carlos Tinoco Licas</strong><br>
+    <br>INFORME DE TRABAJO FINAL - TF
 </p>
 
 </p>
 
 <p align="center">
-    <strong>Startup: Apple Mobile</strong><br>
-    <strong>Producto: DebtGo</strong>
+    <strong>Startup: DebtGo</strong><br>
+    <strong>Producto: Luxus </strong>
 </p>
 
 <div style="text-align:center;">
-    <h3>Team Members:</h3>
+    <h3>Relación de integrantes:</h3>
     <table align="center">
         <tr>
-            <th style="text-align:center;">Member</th>
-            <th style="text-align:center;">Code</th>
+            <th style="text-align:center;">Integrante</th>
+            <th style="text-align:center;">Código</th>
         </tr>
         <tr>
             <td>Chavarri Zarzosa, Daniel Jhared</td>
             <td>U202211108</td>
         </tr>
         <tr>
-            <td>Becerra Llempen, Fabiola Dayane</td>
-            <td>U20171a518</td>
+            <td>Peña Riofrio, Maria Fernanda</td>
+            <td>U202113279</td>
         </tr>
         <tr>
-            <td>Burga Loarte, Anaely Zarely</td>
-            <td>U202118264</td>
+            <td>Ramos Fuentes Rivera, Adriana Nicole</td>
+            <td>U202018427</td>
         </tr>
         <tr>
-            <td>Rivera Ticllacuri, Omar Harold</td>
-            <td>U202214214</td>
-        </tr>
-        <tr>
-            <td>Góngora Sánchez, Marco Antonio </td>
-            <td>U20211a085</td>
-        </tr>
-        <tr>
-            <td>Escalante Baygorrea, Janiel Franz</td>
-            <td>U201912668</td>
+            <td>Gamarra Vega, Anderson José William</td>
+            <td>U202016154</td>
         </tr>
     </table>
 </div>
 
 <p align="center">
-    <strong>Abril, 2025</strong>
+    <strong>Setiembre, 2025</strong>
 </p>
 <br>
 
@@ -71,91 +63,23 @@
         <tbody>
             <tr>
                 <th>TB1</th>
-                <td>24/04/2025</td>
+                <td>20/09/2025</td>
                 <td>
                     <ul>
           <li>Daniel Chávarri</li>
-          <li>Fabiola Becerra</li>
-          <li>Anaely Burga</li>
-          <li>Omar Rivera</li>
-          <li>Marco Góngora</li>
-          <li>Janiel Escalante</li>
+          <li>Maria Fernanda Peña</li>
+          <li>Adriana Ramos</li>
+          <li>Anderson Gamarra</li>
                     <ul>
            </td>
       <td>            
              <ul>
-          <li>Capítulo I: Presentación</li>
+          <li>Capítulo I: Introducción</li>
           <li>Capítulo II: Requirements Elicitation & Analysis</li>
           <li>Capítulo III: Requirements Specification</li>
-          <li>Capítulo IV: Solution Software Design</li>
+          <li>Capítulo IV: Product Design</li>
+          <li>Capítulo V: Product Implementation</li>
           <li>Avance de Conclusiones, Bibliografía y Anexos</li>
-        </ul>
-      </td>
-  </tr>
-      <tr>
-                <th>TP</th>
-                <td>15/05/2025</td>
-                <td>
-                    <ul>
-          <li>Daniel Chávarri</li>
-          <li>Fabiola Becerra</li>
-          <li>Anaely Burga</li>
-          <li>Omar Rivera</li>
-          <li>Marco Góngora</li>
-          <li>Janiel Escalante</li>
-                    <ul>
-           </td>
-      <td>            
-             <ul>
-          <li>Capítulo V: Solution UI/UX Design</li>
-          <li>Product Implementation, Validation & Deployment</li>
-          <li>Sprint 1</li>
-          <li>Avance de Conclusiones, Bibliografía y Anexos</li>
-        </ul>
-      </td>
-  </tr>
-  <tr>
-                <th>TB2</th>
-                <td>19/06/2025</td>
-                <td>
-                    <ul>
-          <li>Daniel Chávarri</li>
-          <li>Fabiola Becerra</li>
-          <li>Anaely Burga</li>
-          <li>Omar Rivera</li>
-          <li>Marco Góngora</li>
-          <li>Janiel Escalante</li>
-                    <ul>
-           </td>
-      <td>            
-             <ul>
-          <li>Sprint 2</li>
-          <li>Validation Interviews</li>
-          <li>Diseño de Entrevistas</li>
-          <li>Registro de Entrevistas</li>
-          <li>Evaluaciones según heurísticas</li>
-          <li>Video About-the-Product</li>
-          <li>Avance de Conclusiones, Bibliografía y Anexos</li>
-        </ul>
-      </td>
-  </tr>
-  <tr>
-                <th>TF</th>
-                <td>10/06/2025</td>
-                <td>
-                    <ul>
-          <li>Daniel Chávarri</li>
-          <li>Fabiola Becerra</li>
-          <li>Anaely Burga</li>
-          <li>Omar Rivera</li>
-          <li>Marco Góngora</li>
-          <li>Janiel Escalante</li>
-                    <ul>
-           </td>
-      <td>            
-             <ul>
-          <li>Sprint 3</li>
-          <li>Conclusiones, Bibliografía y Anexos</li>
         </ul>
       </td>
   </tr>
@@ -165,7 +89,7 @@
 # Contenido
 [Student Outcome](#student-outcome)
 
-[Capítulo I: Presentación](#capitulo-i-presentación)
+[Capítulo I: Introducción](#capitulo-i-introducción)
 - [1.1. Startup Profile](#11-startup-profile)
   - [1.1.1. Descripción de la Startup](#111-descripción-de-la-startup)
   - [1.1.2. Perfiles de integrantes del equipo](#112-perfiles-de-integrantes-del-equipo)
@@ -197,57 +121,66 @@
 [Capítulo III: Requirements Specification](#capítulo-iii-requirements-specification)
 - [3.1. To-Be Scenario Mapping](#31-to-be-scenario-mapping)
 - [3.2. User Stories](#32-user-stories)
-- [3.3. Impact Mapping](#33-impact-mapping)
-- [3.4. Product Backlog](#34-product-backlog)
+- [3.3. Product Backlog](#33-product-backlog)
+- [3.4. Impact Mapping](#34-impact-mapping)
 
-[Capítulo IV: Solution Software Design](#capítulo-iv-solution-software-design)
-- [4.1. Strategic-Level-Domain-Driven Design](#41-strategic-level-domain-driven-design)
-  - [4.1.1. EventStorming](#411-eventstorming)
-  - [4.1.1.1. Candidate Context Discovery](#4111-candidate-context-discovery)
-  - [4.1.1.2. Domain Message Flows Modeling](#4112-domain-message-flows-modeling)
-  - [4.1.1.3. Bounded Context Canvases](#4113-bounded-context-canvases)
-- [4.1.2 Context Mapping](#412-context-mapping)
-- [4.1.3 Software Architecture](#413-software-architecture)
-  - [4.1.3.1. Software Architecture Context Level Diagramas](#4131-software-architecture-context-level-diagrams)
-  - [4.1.3.2. Software Architecture Container Level Diagrams](#4132-software-architecture-container-level-diagrams)
-  - [4.1.3.3. Software Architecture Deployment Diagrams](#4133-software-architecture-deployment-diagrams)
-- [4.2. Tactical-Level Domain-Driven Design](#42-tactical-level-domain-driven-design)
-  - [4.2.1. Bounded Context: <Bounded Context Name>](#421-bounded-context)
-      - [4.2.1.1. Domain Layer](#4211-domain-layer)
-      - [4.2.1.2. Interface Layer](#4212-interface-layer)
-      - [4.2.1.3. Application Layer](#4213-application-layer)
-      - [4.2.1.4. Infrastructure](#4214-infrastructure-layer)
-      - [4.2.1.5. Bounded Context Software Architecture Component Level Diagrams](#4215-bounded-context-software-architecture-component-level-diagrams)
-      - [4.2.1.6. Bounded Context Software Architecture Code Level Diagrams](#4216-bounded-context-software-architecture-component-level-diagrams)
-      - [4.2.1.6.1. Bounded Context Domain Layer Class Diagrams](#42161-bounded-context-domain-layer-class-diagrams)
-      - [4.2.1.6.2. Bounded Context Database Design Diagram](#42162-bounded-context-database-design-diagram)
+[Capítulo IV: Product Design](#capítulo-iv-product-design)
+- [4.1. Style Guidelines](#41-style-guidelines)
+  - [4.1.1. General Style Guidelines](#411-general-style-guidelines)
+  - [4.1.2. Web Style Guidelines](#412-web-style-guidelines)
+  - [4.1.3. Mobile Style Guidelines](#413-mobile-style-guidelines)
+  - [4.1.3.1. IOS Mobile Style Guidelines](#4131-ios-mobile-style-guidelines)
+  - [4.1.3.2. Android Mobile Style Guidelines](#4132-android-mobile-style-guidelines)
+- [4.2. Information Architecture](#42-information-architecture)
+  - [4.2.1. Organization Systems](#421-organization-systems)
+  - [4.2.2. Labelling Systems](#422-labelling-systems)
+  - [4.2.3. SEO Tags and Meta Tags](#423-seo-tags-and-meta-tags)
+  - [4.2.4. Searching Systems](#424-searching-systems)
+  - [4.2.5. Navigation Systems](#425-navigation-systems)
+- [4.3. Landing Page UI Design](#43-landing-page-ui-design)
+    - [4.3.1. Landing Page Wireframe](#431-landing-page-wireframe)
+    - [4.3.2. Landing Page Mock-up](#432-landing-page-mock-up)
+- [4.4. Mobile Applications UX/UI Design](#44-mobile-applications-ux/ui-design)
+    - [4.4.1. Mobile Applications Wireframes](#441-mobile-applications-wireframes)
+    - [4.4.2. Mobile Applications Wireflow Diagrams](#442-mobile-applications-wireflow-diagrams)
+    - [4.4.3. Mobile Applications Mock-ups](#443-mobile-applications-mock-ups)
+    - [4.4.4. Mobile Applications User Flow Diagrams](#444-mobile-applications-user-flow-diagrams)
+- [4.5. Mobile Applications Prototyping](#45-mobile-applications-prototyping)
+    - [4.5.1 Android Mobile Applications Prototyping](#451-android-mobile-applications-prototyping)
+    - [4.5.2 IOS Mobile Applications Prototyping](#452-ios-mobile-applications-prototyping)
+- [4.6. Web Applications UX/UI Design](#46-web-applications-ux/ui-design)
+  - [4.6.1. Web Applications Wireframes](#461-web-applications-wireframes)
+  - [4.6.2. Web Applications Wireflow Diagrams](#462-web-applications-wireflow-diagrams)
+  - [4.6.3. Web Applications Mock-ups](#463-web-applications-mock-ups)
+  - [4.6.4. Web Applications User Flow Diagrams](#464-web-applications-user-flow-diagrams)
+- [4.7. Web Applications Prototyping](#47-web-applications-prototyping)
+- [4.8. Domain-Driven Software Architecture](#48-domain-driven-software-architecture) 
+  - [4.8.1. Software Architecture Context Level Diagramas](#4131-software-architecture-context-level-diagrams)
+  - [4.8.2. Software Architecture Container Level Diagrams](#4132-software-architecture-container-level-diagrams)
+  - [4.8.3. Software Architecture Components Diagrams](#4133-software-architecture-deployment-diagrams)
+- [4.9. Software Object-Oriented Design](#49-software-object-oriented-design)
+  - [4.9.1. Class Diagrams](#491-class-diagrams)
+  - [4.9.2. Class Dictionary](#492-class-dictionary)
+- [4.10. Database Design](#410-database-design)
+  - [4.10.1. Relational/No-Relational Database Diagram](#4101-relational/no-relational-database-diagram)
 
-[Capítulo V: Solution UI/UX Design](#capítulo-v-solution-ui/ux-design)
-- [5.1. Product Design](#51-product-design)
-  - [5.1.1. Style Guidelines](#511-style-guidelines)
-      - [5.1.1.1. General Style Guidelines](#5111-general-style-guidelines) 
-  - [5.1.2. Information Architecture](#512-information-architecture)
-      - [5.1.2.1. Organization Systems](#5121-organization-systems)
-      - [5.1.2.2 Labelling Systems](#5122-labelling-systems)
-      - [5.1.2.3 SEO Tags and Meta Tags](#5123-seo-tags-and-meta-tags)
-      - [5.1.2.4 Searching Systems](#5124-searching-systems)
-      - [5.1.2.5 Navigation Systems](#5125-navigation-systems)
-  - [5.1.3. Landing Page UI Design](#513-landing-page-ui-design)
-    - [5.1.3.1. Landing Page Wireframe](#5131-landing-page-wireframe)
-    - [5.1.3.2. Landing Page Mock-up](#5132-landing-page-mock-up)
-  - [5.1.4. Mobile Applications UX/UI Design](#514-mobile-applications-ux/ui-design)
-    - [5.1.4.1. Mobile Applications Wireframes](#5141-mobile-applications-wireframes)
-    - [5.1.4.2. Mobile Applications Wireflow Diagrams](#5142-mobile-applications-wireflow-diagrams)
-    - [5.1.4.3. Mobile Applications Mock-ups](#5143-mobile-applications-mock-ups)
-    - [5.1.4.4. Mobile Applications User Flow Diagrams](#5144-mobile-applications-user-flow-diagrams)
-    - [5.1.4.5. Mobile Applications Prototyping](#5145-mobile-applications-prototyping)
-
+[Capítulo V: Product Implementation](#capítulo-v-solution-ui/ux-design)
+- [5.1. Software Configuration Management](#51-software-configuration-management)
+    - [5.1.1. Software Development Environment Configuration](#511-software-development-environment-configuration)
+    - [5.1.2. Source Code Management](#512-source-code-management)
+    - [5.1.3. Source Code Style Guide & Conventions](#513-source-code-guide-&-conventions)
+    - [5.1.4. Software Deployment Configuration](#514-software-deployment-configuration)
+- [5.2. Product Implementation & Deployment](#52-product-implementation-&-deployment)
+    - [5.2.1. Sprint Backlogs](#521-sprint-backlogs)
+    - [5.2.2. Implemented Landing Page Evidence](#522-implemented-landing-page-evidence)
+    - [5.2.3. Implemented Frontend-Web Application Evidence](#523-implemented-frontend-web-application-evidence)
+    - [5.2.4. Implemented Native-Mobile-Application Evidence](#524-implemented-native-mobile-application-evidence)
+    - [5.2.5. Implemented RESTful API and/or Serverless Backend Evidence](#525-implemented-restful-api-and/or-serverless-backend-evidence)
+    - [5.2.6. RESTful API documentation](#526-restful-api-documentation)
+    - [5.2.7. Team Collaboration Insights](#527-team-collaboration-insights)
+ - [5.3. Video About-the-Product](#53-video-about-the-product)
+      
 [Capítulo VI: Product Implementation, Validations & Deployment](#capítulo-vi-product-implementation-validations-&-deployment)
-- [6.1. Software Configuration Management](#61-software-configuration-management)
-    - [6.1.1. Software Development Environment Configuration](#611-software-development-environment-configuration)
-    - [6.1.2. Source Code Management](#612-source-code-management)
-    - [6.1.3. Source Code Style Guide & Conventions](#613-source-code-guide-&-conventions)
-    - [6.1.4. Software Deployment Configuration](#614-software-deployment-configuration)
 - [6.2. Landing Page & Mobile Application Implementation](#62-landing-page-&-mobile-application-implementation)
 - [6.2.1. Sprint n](#621-sprint-n)
     - [6.2.1.1. Sprint Planning n](#6211-sprint-planning-n)
@@ -273,9 +206,9 @@
 [Anexos](#anexos)
 
 # Student Outcome
-ABET – EAC - Student Outcome 7
+ABET – EAC - Student Outcome 4
 
-Criterio: La capacidad de adquirir y aplicar nuevos conocimientos según sea necesario, utilizando estrategias de aprendizaje apropiadas. 
+Criterio: La capacidad de reconocer responsabilidades éticas y profesionales en situaciones de Ingeniería y hacer juicios informados, que deben considerar el impacto de las soluciones de ingeniería en contextos globales, económicos, ambientales y sociales.
 
 <table>
   <tr>
@@ -286,165 +219,51 @@ Criterio: La capacidad de adquirir y aplicar nuevos conocimientos según sea nec
     </thead>
   <tbody>
     <tr>
-      <td><b>Actualiza conceptos y
-conocimientos necesarios
-para su desarrollo
-profesional y en especial
-para su proyecto en
-soluciones de software.</b></td>
+      <td><b>4.c.1 Reconoce responsabilidad ética y profesional en situaciones de ingeniería de software</b></td>
       <td>
         <p><b>Chávarri Zarzosa, Daniel Jhared</b></p>
         <p><b>TB1:</b></p>
         <p>Hice el Capítulo I, Capítulo II, Capítulo III y Capítulo IV, de igual manera, me aseguré de que todo vaya de acorde a los puntos indicados para la tb1.</p>
-        <p><b>TP1:</b></p>
-        <p></p>
-        <p><b>TB2:</b></p>
-        <p</p>
-        <p><b>TF:</b></p>
-        <p></p>
-        <p><b>Becerra Llempen, Fabiola Dayane</b></p>
+        <p><b>Peña Riofrio, Maria Fernanda</b></p>
        <p><b>TB1:</b></p>
-        <p></p>
-        <p><b>TP1:</b></p>
-        <p></p>
-        <p><b>TB2:</b></p>
-        <p></p>
-        <p><b>TF:</b></p>
-        <p></p>
-        <p><b>Burga Loarte, Anaely Zarely</b></p>
+        <p>...</p>
+        <p><b>Ramos Fuentes Rivera, Adriana Nicole</b></p>
         <p><b>TB1:</b></p>
-        <p>Realice los capitulos I, II, III y IV, tambien ayudé a formular y comprendí el proyecto/p>
-        <p><b>TP1:</b></p>
-        <p>Aporte con la maquitación en figma y desarrollo de los puntos para el parcial</p>
-        <p><b>TB2:</b>Colaboré en el análisis de los datos recolectados durante el estudio de usuarios, ayudando a interpretar los hallazgos y aportar mejoras al diseño en base a los resultados obtenidos.</p>
-        <p></p>
-        <p><b>TF:</b>Participé activamente en la realización del estudio de usuarios final, incluyendo la planificación de las pruebas, recolección de feedback y ajustes finales en el prototipo según las necesidades detectadas.</p>
-        <p></p>
-        <p><b>Rivera Ticllacuri, Omar Harold</b></p>
-       <p><b>TB1: Comprendí cada uno de los elementos mencionados en el Capítulo II y cómo aplicarlos en el contexto del proyecto, reforzando mis habilidades en el análisis de requerimientos.</b></p>
-        <p></p>
-        <p><b>TP1:Comprendí cada uno de los elementos desarrollados en Solution UI/UX Design Sprint 1, especialmente en Sprint Planning y Sprint Backlog, en la planificación de tareas y diseño de soluciones centradas en el usuario.</b></p>
-        <p></p>
-        <p><b>TB2:Comprendí cada uno de los elementos desarrollados y arreglados en el Software Architecture Container Level Diagrams, ademas de la Sofware Deployment Evidence, Services and Documentation and Team Collaboration. Lo cual me permitió participar activamente en la organización del trabajo y en la definición de soluciones alineadas a las necesidades del proyecto durante el Sprint. </b></p>
-        <p></p>
-        <p><b>TF:La auditoría al equipo MegaPet reforzó mis conocimientos en usabilidad y accesibilidad, permitiéndome identificar mejoras en interfaces móviles y aplicar estas buenas prácticas en PsyMed para asegurar una experiencia de usuario más intuitiva y eficiente.</b></p>
-        <p></p>
-        <p><b>Góngora Sánchez, Marco Antonio</b></p>
+        <p>.../p>
+        <p><b>Gamarra Vega, Anderson José William</b></p>
        <p><b>TB1:</b></p>
-        <p>Para la realización de la entrevista, tuve que verificar la consistencia de las preguntas para una mejor identificación de requisitos cómo se hizo en anteriores proyectos.</p>
-        <p><b>TP1:</b></p>
-        <p></p>
-        <p><b>TB2:</b></p>
-        <p></p>
-        <p><b>TF:</b></p>
-        <p>.</p>
-        <p><b>Escalante Baygorrea, Janiel Franz</b></p>
-       <p><b>TB1: Actualice los conceptos de las tacticas DDD de acuerdo a los conceptos previos que aprendi</b></p>
-        <p></p>
-        <p><b>TP1:</b></p>
-        <p></p>
-        <p><b>TB2:</b></p>
-        <p></p>
-        <p><b>TF:</b></p>
-        <p>.</p>
+        <p>...</p>
       </td>
       <td>
         <p><strong>TB1:</strong></p>
-        <p></p>
-        <p><strong>TP1:</strong></p>
-        <p></p>
-        <p><strong>TB2:</strong></p>
-        <p></p>
-        <p><strong>TF:</strong></p>
-        <p></p>
+        <p>...</p>
       </td>
     </tr>
     <tr>
-      <td>Reconoce la necesidad del
-aprendizaje permanente
-para el desempeño
-profesional y el desarrollo
-de proyectos en soluciones
-de software</td>
+      <td>4.c.2 Emite juicios informados considerando el impacto de las soluciones de ingeniería de software en contextos globales, económicos, ambientales y sociales</td>
       <td>
         <p><b>Chávarri Zarzosa, Daniel Jhared</b></p>
         <p><b>TB1:</b></p>
         <p>Hice el Capítulo I, Capítulo II, Capítulo III y Capítulo IV, de igual manera, me aseguré de que todo vaya de acorde a los puntos indicados para la tb1.</p>
-        <p><b>TP1:</b></p>
-        <p></p>
-        <p><b>TB2:</b></p>
-        <p></p>
-        <p><b>TF:</b></p>
-        <p></p>
-        <p><b>Becerra Llempen, Fabiola Dayane</b></p>
+        <p><b>Peña Riofrio, Maria Fernanda</b></p>
        <p><b>TB1:</b></p>
-        <p></p>
-        <p><b>TP1:</b></p>
-        <p></p>
-        <p><b>TB2:</b></p>
-        <p></p>
-        <p><b>TF:</b></p>
-        <p></b></p>
-        <p><b>TB1:</b></p>
-        <p></p>
-        <p><b>TP1:</b></p>
-        <p></p>
-        <p><b>TB2:</b></p>
-        <p></p>
-        <p><b>TF:</b></p>
-        <p></p>
-        <p><b>Burga Loarte, Anaely Zarely</b></p>
+        <p>...</p>
+        <p><b>Ramos Fuentes Rivera, Adriana Nicole</b></p>
        <p><b>TB1:</b></p>
-        <p></p>
-        <p><b>TP1:</b></p>
-        <p></p>
-        <p><b>TB2:</b></p>
-        <p></p>
-        <p><b>TF:</b></p>
-        <p></p>
-        <p><b>Rivera Ticllacuri, Omar Harold</b></p>
-       <p><b>TB1:Busqué información adicional para entender correctamente los apartados</b></p>
- <p></p>
-<p><b>TP1: Reconocí la importancia de mantener una actitud de aprendizaje constante durante el Solution UI/UX Design Sprint 1, lo cual fue fundamental para comprender a profundidad la planificación en Sprint Planning y Sprint Backlog, así como para proponer soluciones enfocadas en el usuario y adaptadas a los requerimientos del proyecto.</b></p>
-<p></p>
-<p><b>TB2: A lo largo del desarrollo y mejora del Software Architecture Container Level Diagrams, así como en la elaboración de la Software Deployment Evidence, Services and Documentation y Team Collaboration, reafirmé la necesidad de seguir aprendiendo de forma continua para aportar de manera efectiva en la organización del trabajo y en la construcción de soluciones técnicas que respondan a las exigencias del proyecto.</b></p>
-        <p>.</p>
-        <p><b>TF: La auditoría a MegaPet me permitió reconocer la importancia del aprendizaje continuo en usabilidad y accesibilidad para mejorar mi desempeño profesional. Esta experiencia fortaleció mi capacidad para identificar y aplicar buenas prácticas en el desarrollo de soluciones de software como PsyMed, asegurando interfaces más inclusivas y eficientes.</b></p>
-        <p></p>
-        <p><b>Góngora Sánchez, Marco Antonio</b></p>
+        <p>...</p>
+        <p><b>Gamarra Vega, Anderson José William</b></p>
        <p><b>TB1:</b></p>
-        <p>Para una mejor identifición de requisitos, además de asegurarse de la consistencia de las preguntas, siempre es bueno un análisis que se vaya actualizando con las demás entrevistas cómo hicieron mis compañeros para abarcar todos los puntos de vistas posibles.</p>
-        <p><b>TP1:  Participé en Solution UI/UX Design Sprint 1, enfocándome en Sprint Planning y Sprint Backlog. Esta experiencia me permitió consolidar mis conocimientos en metodologías ágiles, fortalecer la planificación de tareas y aplicar principios de diseño centrado en el usuario dentro del proyecto.</b></p>
-        <p>.</p>
-        <p><b>TB2:</b></p>
-        <p>.</p>
-        <p><b>TF:</b></p>
-        <p></p>
-        <p><b>Escalante Baygorrea, Janiel Franz</b></p>
-       <p><b>TB1:Investigue definiciones de DDD de las que no habia escuchado antes para poder cumplir con el desarrollo del Capitulo IV</b></p>
-        <p></p>
-        <p><b>TP1:</b></p>
-        <p>.</p>
-        <p><b>TB2:</b></p>
-        <p>.</p>
-        <p><b>TF:</b></p>
-        <p></p>
+        <p>...</p>
       </td>
        <td>
         <p><strong>TB1:</strong></p>
-        <p></p>
-        <p><strong>TP1:</strong></p>
-        <p></p>
-        <p><strong>TB2:</strong></p>
-        <p></p>
-        <p><strong>TF:</strong></p>
-        <p></p>
+        <p>...</p>
       </td>
     </tr>
   </tbody>
 </table>
 
-# Capítulo I: Presentación
+# Capítulo I: Introducción
 ## 1.1. Startup Profile
 ### 1.1.1. Descripción de la Startup
 
@@ -475,56 +294,34 @@ A manera de escalabilidad, proponemos introducir a futuro el uso de inteligencia
   </tr>
    <tr>
     <th>
-      <img src="assets/Chapter-1/fabiola1.png" width="800px">
+      <img src="assets/Chapter-1/" width="800px">
     </th>
     <td valign="top">
-      <p><b>Becerra Llempen, Fabiola Dayane</b></p>
+      <p><b>Peña Riofrio, Maria Fernanda</b></p>
       <p>
-        Soy Fabiola Becerra, actualmente estudio la carrera de Ingeniería de Software en la Universidad Peruana de Ciencias Aplicadas (UPC). Soy una apasionada de la tecnología e innovación, utilizando todas las herramientas de software disponibles. Me considero una persona dinámica, responsable y con muchas ganas de enfrentar nuevos retos y experiencias. Mis temas de interés son la inteligencia artificial y la innovación en estos campos. Siempre estoy al tanto de los temas actuales para reforzar mis conocimientos y mejorar mis habilidades blandas. Por último, me siento capacitada para colaborar en equipo y asimilar con rapidez nuevos aprendizajes.
+        ...
       </p>
     </td>
   </tr>
      <tr>
     <th>
-      <img src="assets/Chapter-1/foto-.png"  width="800px">
+      <img src="assets/Chapter-1/"  width="800px">
     </th>
     <td valign="top">
-      <p><b>Burga Loarte, Anaely Zarely</b></p>
+      <p><b>Ramos Fuentes Rivera, Adriana Nicole</b></p>
       <p>
-      Estoy estudiando Ingeniería y me considero una persona comprometida y responsable. Me interesa mucho todo lo relacionado al desarrollo de soluciones tecnológicas que puedan generar un cambio positivo en la sociedad. En mis tiempos libres me gusta escuchar música, ver películas, pasar tiempo con mi familia o amigos.
+      ...
       </p>
     </td>
   </tr>
      <tr>
     <th>
-      <img src="assets/Chapter-1/Omar.jpeg" width="800px">
+      <img src="assets/Chapter-1/" width="800px">
     </th>
     <td valign="top">
-      <p><b>Rivera Ticllacuri, Omar Harold</b></p>
+      <p><b>Gamarra Vega, Anderson José William</b></p>
       <p>
-      Soy estudiante de Ingeniería de Software, tengo 20 años. Me considero una persona disciplinada y responsable, con experiencia en el desarrollo de software de entretenimiento. Estoy comprometido a aportar al grupo para cumplir con éxito los objetivos del proyecto.	Apasionado por el desarrollo de software de entretenimiento usando C#, SQL Serve.
-      </p>
-    </td>
-  </tr>
-  <tr>
-    <th>
-      <img src="assets/Chapter-1/marco.jpg" width="800px">
-    </th>
-    <td valign="top">
-      <p><b>Góngora Sánchez, Marco Antonio</b></p>
-      <p>
-       Soy estudiante de la UPC. Estoy en la carrera de Ingeniería de Software ya que siempre me gustó el desarrollo y la comprensión de esta. Tengo conocimientos básicos en C++, Python, Vue y medio-avanzado en Java, SpringBoot y SQL. Con respecto a mis aptitudes es la cooperación en equipo, responsabilidad y creatividad tanto en diseño/estilos cómo en arquitectura de software.
-      </p>
-    </td>
-  </tr>
-  <tr>
-    <th>
-      <img src="assets/Chapter-1/janiel.jpg" width="800px">
-    </th>
-    <td valign="top">
-      <p><b>Escalante Baygorrea, Janiel Franz</b></p>
-      <p>
-       Soy estudiante de Ing. De Software, tengo experiencia en el desarrollo de software haciendo uso de lenguajes como JavaScript, Typescript, C# y Java. Me gusta aprender nuevas tecnologías y mejorar mis habilidades como Ing. de Software. Me considero una persona responsable, creativa y con capacidad para trabajar en equipo. Mis hobbies son la musica y practicar deportes.
+          ...
       </p>
     </td>
   </tr>
