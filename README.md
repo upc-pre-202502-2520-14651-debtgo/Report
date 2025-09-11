@@ -1422,28 +1422,25 @@ En la versión mobile el navbar se reemplaza por un menu desplegable.
 
 **User Goal:** Registrar una deuda y configurar notificaciones personalizadas para evitar moras.
 
-**Inicio / Login / Bienvenida**
-![image](assets/Chapter-4/home1.png)
+**Inicio / Login / Bienvenida** <br> <br>
+ <img src="assets/Chapter-4/home1.png" width="800px"> <br> <br>
 
-**Resumen de pagos**
-![image](assets/Chapter-4/manage-payments.png)
+**Resumen de pagos** <br> <br>
+ <img src="assets/Chapter-4/manage-payments.png" width="800px"> <br> <br>
 
 **Configuración de pago**
-![image](assets/Chapter-4/add-payment-configuration.png)
-<br>
-![image](assets/Chapter-4/add-new-debt.png)
+<img src="assets/Chapter-4/add-payment-configuration.png" width="800px"> <br> <br>
+<img src="assets/Chapter-4/add-new-debt.png" width="800px"> <br> <br>
 
 **Configuración de notificaciones**
-![image](assets/Chapter-4/notification.png) <br>
-![image](assets/Chapter-4/notification2.png) <br>
+<img src="assets/Chapter-4/notification.png" width="800px"> <br> <br>
+<img src="assets/Chapter-4/notification2.png" width="800px"> <br> <br>
 
 **Confirmación visual**
-![image](assets/Chapter-4/notification3.png)
+<img src="assets/Chapter-4/notification3.png" width="800px"> <br> <br>
 
 **Historial de notificaciones**
-![image](assets/Chapter-4/home1.png) <br> 
-
-![image](assets/Chapter-4/notification2.png) <br>
+<img src="assets/Chapter-4/home1.png" width="800px"> <br> <br>
 
 Este User Flow cubre el objetivo principal del usuario emprendedor de registrar deudas, configurar recordatorios y visualizar el estado de sus pagos. Se incluyen tanto el camino esperado (happy path) como rutas alternativas (unhappy paths) que muestran errores de conexión, advertencias de canales desactivados y confirmaciones exitosas. Las pantallas fueron diseñadas para guiar visualmente al usuario con feedback claro, colores distintivos y navegación intuitiva.
 
