@@ -1416,7 +1416,38 @@ En la versión mobile el navbar se reemplaza por un menu desplegable.
 #### Notification BC
 ![image](assets/Chapter-4/NotificationMockup.png)
 
-### 4.4.4. Mobile Applications Prototyping
+### 4.4.4. Mobile Applications User Flow Diagrams
+
+**User Persona: Emprendedor**
+
+**User Goal:** Registrar una deuda y configurar notificaciones personalizadas para evitar moras.
+
+**Inicio / Login / Bienvenida**
+![image](assets/Chapter-4/home1.png)
+
+**Resumen de pagos**
+![image](assets/Chapter-4/manage-payments.png)
+
+**Configuración de pago**
+![image](assets/Chapter-4/add-payment-configuration.png)
+<br>
+![image](assets/Chapter-4/add-new-debt.png)
+
+**Configuración de notificaciones**
+![image](assets/Chapter-4/notification.png) <br>
+![image](assets/Chapter-4/notification2.png) <br>
+
+**Confirmación visual**
+![image](assets/Chapter-4/notification3.png)
+
+**Historial de notificaciones**
+![image](assets/Chapter-4/home1.png) <br> 
+
+![image](assets/Chapter-4/notification2.png) <br>
+
+Este User Flow cubre el objetivo principal del usuario emprendedor de registrar deudas, configurar recordatorios y visualizar el estado de sus pagos. Se incluyen tanto el camino esperado (happy path) como rutas alternativas (unhappy paths) que muestran errores de conexión, advertencias de canales desactivados y confirmaciones exitosas. Las pantallas fueron diseñadas para guiar visualmente al usuario con feedback claro, colores distintivos y navegación intuitiva.
+
+## 4.5. Mobile Applications Prototyping
 
 ### Registration And Login (Registro e Inicio de Sesión)
 ![image](assets/Chapter-5/registro-inicio-sesion.png)
