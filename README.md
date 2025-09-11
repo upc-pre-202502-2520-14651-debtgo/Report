@@ -1428,18 +1428,18 @@ En la versión mobile el navbar se reemplaza por un menu desplegable.
 **Resumen de pagos** <br> <br>
  <img src="assets/Chapter-4/manage-payments.png" width="800px"> <br> <br>
 
-**Configuración de pago**
+**Configuración de pago** <br> <br>
 <img src="assets/Chapter-4/add-payment-configuration.png" width="800px"> <br> <br>
 <img src="assets/Chapter-4/add-new-debt.png" width="800px"> <br> <br>
 
-**Configuración de notificaciones**
+**Configuración de notificaciones** <br> <br>
 <img src="assets/Chapter-4/notification.png" width="800px"> <br> <br>
 <img src="assets/Chapter-4/notification2.png" width="800px"> <br> <br>
 
-**Confirmación visual**
+**Confirmación visual** <br> <br>
 <img src="assets/Chapter-4/notification3.png" width="800px"> <br> <br>
-
-**Historial de notificaciones**
+ 
+**Historial de notificaciones** <br> <br>
 <img src="assets/Chapter-4/home1.png" width="800px"> <br> <br>
 
 Este User Flow cubre el objetivo principal del usuario emprendedor de registrar deudas, configurar recordatorios y visualizar el estado de sus pagos. Se incluyen tanto el camino esperado (happy path) como rutas alternativas (unhappy paths) que muestran errores de conexión, advertencias de canales desactivados y confirmaciones exitosas. Las pantallas fueron diseñadas para guiar visualmente al usuario con feedback claro, colores distintivos y navegación intuitiva.
