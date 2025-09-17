@@ -1594,13 +1594,105 @@ Además, se incluyen elementos de confianza y seguridad como la visualización d
 
 Los wireframes representan la primera etapa visual del diseño web, mostrando la estructura de los elementos principales sin estilos gráficos. Estas maquetas de baja fidelidad permitieron definir la distribución de componentes como formularios, botones de acción, menús y secciones de perfil antes de avanzar al diseño visual final.
 
+Dentro de los wireframes diseñados se incluyen los siguientes escenarios principales:
+
+- **Registro de usuario:** formulario básico con campos de nombre, correo, contraseña y aceptación de términos y condiciones.
+- **Inicio de sesión:** pantalla simple con email y contraseña, con opción de recordar sesión.
+- **Selección de plan:** presentación de planes disponibles con características y botón de aceptación.
+- **Proceso de pago (checkout):** formulario con campos de tarjeta, fecha de vencimiento, código de seguridad y correo.
+- **Mensajería:** panel con lista de conversaciones y espacio para el chat en tiempo real.
+- **Perfil de usuario:** sección con datos básicos del usuario y su organización.
+- **Organización y servicios:** espacio para mostrar información de la organización, simulaciones y publicación de servicios.
+
+### Registro de Usuario
+![image](assets/Chapter-4/frame1.png) <br><br><br>
+
+### Inicio de Sesión
+![image](assets/Chapter-4/frame2.png) <br><br><br>
+
+### Selección de Plan
+![image](assets/Chapter-4/frame3.png) <br><br><br>
+
+### Proceso de Pago
+![image](assets/Chapter-4/frame4.png) <br><br><br>
+
+### Mensajería 
+![image](assets/Chapter-4/mensajeC.png) <br><br><br>
+
+### Perfil de Usuario
+![image](assets/Chapter-4/perfil2.png) <br><br><br>
+
+### Organización y Servicios
+![image](assets/Chapter-4/servicios1.png) <br><br><br>
+![image](assets/Chapter-4/servicios2.png) <br><br><br>
+
 ### 4.6.2. Web Applications Wireflow Diagrams
 
 Los wireflows explican cómo los usuarios navegan entre pantallas en diferentes escenarios. En esta etapa se visualizaron rutas clave como el registro, inicio de sesión, edición de perfil, eliminación de cuenta y uso del workspace para consultores. Gracias a estos diagramas fue posible validar la lógica de navegación y anticipar posibles puntos de fricción.
 
+En el caso de la aplicación web, los wireflows incluyen los siguientes escenarios principales:
+
+- **Registro e inicio de sesión:** El usuario puede registrarse con sus datos personales y aceptar los términos, o bien iniciar sesión si ya cuenta con una cuenta.
+- **Selección de plan y proceso de pago:** Tras registrarse, el usuario elige entre los planes disponibles (Básico o Premium) y completa el proceso de pago a través del formulario de checkout.
+- **Gestión de perfil, organización, mensajería, comunicación y publicación de servicios:** Una vez logueado, el usuario puede acceder a su perfil, editar su información, visualizar su organización y gestionar los servicios vinculados. Desde la sección de organización, el usuario puede acceder al        panel de mensajes para interactuar con asesores u otros usuarios de la plataforma. Los emprendedores pueden publicar, editar o eliminar servicios a través de formularios específicos, vinculados directamente a su workspace.
+
+Estos wireflows fueron diseñados tanto en baja fidelidad (en blanco y negro) como en alta fidelidad (con estilo visual aplicado), lo que permite contrastar la evolución desde la definición estructural hasta el diseño final.
+
+### Registro e Inicios de Sesión
+![image](assets/Chapter-4/registrar.png) <br><br><br>
+![image](assets/Chapter-4/inicio.png) <br><br><br>
+
+### Selección de Plan y Proceso de Pago
+![image](assets/Chapter-4/diagram1.png) <br><br><br>
+
+### Gestión de Perfil, Organización, Mensajería, COmunicación y Publicación de Servicios
+![image](assets/Chapter-4/diagram2.png) <br><br><br>
+
 ### 4.6.3. Web Applications Mock-ups
 
 Los mockups en alta fidelidad muestran la versión final del diseño de la aplicación web, con colores, tipografía e íconos consistentes con la identidad de DebtGo. Estos mockups reflejan la experiencia visual que tendrá el usuario en producción y fueron creados para evidenciar cómo evolucionan los wireframes iniciales hacia un diseño atractivo y funcional.
+
+Las pantallas principales diseñadas incluyen:
+
+- **Inicio de sesión (Log in):** Pantalla en la que el usuario ingresa sus credenciales de correo electrónico y contraseña, con la opción de recordar la sesión. Se incorpora un fondo degradado en tonos morados que refuerza la identidad visual de la aplicación.
+- **Registro (Register):** Formulario que solicita nombre, correo electrónico, rol y contraseña, con validaciones de seguridad (mínimo un número y al menos 8 caracteres). Incluye la aceptación de términos y condiciones como requisito para crear la cuenta.
+- **Selección de plan (Select a plan):** Sección donde el usuario puede elegir entre dos planes:
+- **Plan Básico (S/ 80 mensual):** Incluye herramientas de gestión de deudas, seguimiento de ingresos y gastos, creación de presupuestos y acceso a materiales de educación financiera estándar.
+- **Plan Premium (S/ 150 mensual):** Incluye todas las funciones del plan básico más consultoría financiera personalizada y soporte prioritario.
+- **Perfil de usuario (My Profile):** Área donde el usuario puede visualizar y editar su información personal (nombre, correo, contraseña, plan contratado). Incluye la opción de eliminar la cuenta y el acceso directo a su espacio de trabajo (Workspace).
+- **Espacio de trabajo (My Workspace):** Sección personalizada para cada usuario o emprendedor, donde se muestran sus servicios publicados, métricas de rendimiento (gráficas), y herramientas de comunicación (enviar mensajes, recibir reseñas).
+- **Publicación de servicio (Post new service):** Formulario emergente donde el usuario puede ingresar título, descripción, precio y adjuntar archivos para publicar un nuevo servicio dentro de su workspace.
+- **Mensajería (Messages):** Módulo de comunicación que permite visualizar contactos, historial de casos y chatear en tiempo real con otros usuarios de la plataforma.
+- **Herramientas financieras (Financial tools):** Acceso a módulos de analítica, presupuestos y cursos de educación financiera, diseñados para apoyar la gestión económica del usuario.
+- **Servicios disponibles (Services):** Sección donde se presentan los servicios publicados en la plataforma, como “Presupuestos personales” y “Ahorro e inversión”, con imágenes representativas para facilitar la navegación.
+
+### Inicio de Sesión
+![image](assets/Chapter-4/mock1.png) <br><br><br>
+
+### Registro
+![image](assets/Chapter-4/mock2.png) <br><br><br>
+
+### Selección de Plan Básico y Plan Premium
+![image](assets/Chapter-4/mock3.png) <br><br><br>
+
+### Perfil de Usuario
+![image](assets/Chapter-4/mock4.png) <br><br><br>
+
+### Espacio de Trabajo
+![image](assets/Chapter-4/mock5.png) <br><br><br>
+
+### Publicación de Servicio
+![image](assets/Chapter-4/mock6.png) <br><br><br>
+
+### Mensajería
+![image](assets/Chapter-4/mock7.png) <br><br><br>
+
+### Herramientas Financieras
+![image](assets/Chapter-4/mock9.png) <br><br><br>
+
+### Servicios Disponibles
+![image](assets/Chapter-4/mock10.png) <br><br><br>
+
 
 ### 4.6.4. Web Applications User Flow Diagrams
 
