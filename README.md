@@ -1446,6 +1446,8 @@ Este User Flow cubre el objetivo principal del usuario emprendedor de registrar 
 
 ## 4.5. Mobile Applications Prototyping
 
+El prototipo desarrollado para Android muestra cómo la aplicación se adapta a las guías de diseño de esta plataforma, respetando principios de usabilidad como botones accesibles, tipografía legible y navegación intuitiva. En Android, se prioriza la simplicidad en el flujo de registro, inicio de sesión y gestión de pagos, lo cual garantiza que los usuarios puedan interactuar fácilmente con la aplicación.
+
 ### Registration And Login (Registro e Inicio de Sesión)
 ![image](assets/Chapter-5/registro-inicio-sesion.png)
 
@@ -1547,17 +1549,67 @@ En esta sección verás cómo se puede editar los servicios que ofrece DebtGo, p
 
 En esta sección verás cómo puedes publicar un nuevo servicio aparte de lo que te brinda DebtGo, puede ser como otras consultorías, características de algo en específico, etc.
 
-## 4.5. Mobile Applications Prototyping
 ### 4.5.1. Android Mobile Applications Prototyping
+
+El prototipo también ha sido diseñado para iOS, específicamente tomando como referencia dispositivos iPhone 13 & 14. Se ha cuidado la estética minimalista, los márgenes seguros, y la coherencia visual con las Human Interface Guidelines. Esto asegura que la experiencia del usuario en iOS sea clara, moderna y con una navegación fluida.
+
+### Registration And Login (Registro e Inicio de Sesión)
+![image](assets/Chapter-5/registro-inicio-sesion.png)
+
 ### 4.5.2. iOS Mobile Applications Prototyping
+
+El prototipo desarrollado para iOS no solo contempla las funciones básicas de registro, inicio de sesión y gestión de pagos, sino que también incorpora las características diseñadas específicamente para el segmento de emprendedores, quienes constituyen un pilar clave en el uso de la aplicación DebtGo.
+
+En esta versión se muestran funcionalidades avanzadas como:
+
+- Búsqueda de emprendedores filtrando por rubro, lo que facilita encontrar asesorías especializadas.
+- Reseñas de usuarios que permiten validar la calidad de los servicios ofrecidos.
+- Comparación de servicios para evaluar distintas opciones disponibles.
+- Alertas de fechas, enfocadas en reuniones, pagos y vencimientos importantes.
+- Calificación de servicios, lo que fomenta la retroalimentación y mejora continua.
+- Cancelación de contratos de asesores, en caso de que los servicios no cumplan con lo esperado.
+
+Además, se incluyen elementos de confianza y seguridad como la visualización de los Términos y Condiciones, garantizando la transparencia en el uso de la aplicación y la protección de los datos de los usuarios.
+
+### Búsqueda de Emprendedores
+![image](assets/Chapter-4/Busca-Emprendedores.png) <br><br><br>
+
+### Reseñas de Usuarios
+![image](assets/Chapter-4/Reseña.png) <br><br><br>
+
+### Comparación de Servicios
+![image](assets/Chapter-4/comparar-servicios.png) <br><br><br>
+
+### Alertas de Fechas
+![image](assets/Chapter-4/alerta-fechas.png) <br><br><br>
+
+### Calificación de Servicios
+![image](assets/Chapter-4/calificar-servicio.png) <br><br><br>
+
+### Cancelación de Contratos
+![image](assets/Chapter-4/cancelar-contrato.png) <br><br><br>
 
 ## 4.6. Web Applications UX/UI Design
 ### 4.6.1. Web Application Wireframes
+
+Los wireframes representan la primera etapa visual del diseño web, mostrando la estructura de los elementos principales sin estilos gráficos. Estas maquetas de baja fidelidad permitieron definir la distribución de componentes como formularios, botones de acción, menús y secciones de perfil antes de avanzar al diseño visual final.
+
 ### 4.6.2. Web Applications Wireflow Diagrams
+
+Los wireflows explican cómo los usuarios navegan entre pantallas en diferentes escenarios. En esta etapa se visualizaron rutas clave como el registro, inicio de sesión, edición de perfil, eliminación de cuenta y uso del workspace para consultores. Gracias a estos diagramas fue posible validar la lógica de navegación y anticipar posibles puntos de fricción.
+
 ### 4.6.3. Web Applications Mock-ups
+
+Los mockups en alta fidelidad muestran la versión final del diseño de la aplicación web, con colores, tipografía e íconos consistentes con la identidad de DebtGo. Estos mockups reflejan la experiencia visual que tendrá el usuario en producción y fueron creados para evidenciar cómo evolucionan los wireframes iniciales hacia un diseño atractivo y funcional.
+
 ### 4.6.4. Web Applications User Flow Diagrams
 
+Los user flows representan de manera simplificada las rutas que los usuarios siguen en la aplicación. A diferencia de los wireflows, que incluyen pantallas completas, los user flows se centran en la lógica de interacción. Esto permitió identificar los flujos principales (happy path) y rutas alternativas (unhappy path) que el usuario puede tomar durante el uso de la aplicación.
+
+
 ## 4.7. Web Applications Prototyping
+
+El prototipo web desarrollado integra todas las pantallas en un flujo navegable mediante Figma, permitiendo simular la interacción real de los usuarios con la aplicación. A través de este prototipo fue posible realizar pruebas de usabilidad y obtener retroalimentación temprana para mejorar la experiencia del usuario.
 
 ## 4.8. Domain-Driven Software Architecture
 ### 4.8.1. Software Architecture Context Diagram
