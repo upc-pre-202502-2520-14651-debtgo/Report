@@ -2176,7 +2176,15 @@ La Landing Page de DebtGo fue implementada utilizando HTML5, CSS3 y JavaScript p
 - Llamados a la acción: Start Advising Today y Get Financial Consulting.
 - Beneficios de la plataforma explicados en secciones separadas.
 
-  ![image](assets/Chapter-5/img-evidence-1.png)
+  ![image](assets/Chapter-5/img-evidence-1.png) <br><br><br>
+  
+  ![image](assets/Chapter-5/img-evidence-2.png) <br><br><br>
+
+  ![image](assets/Chapter-5/landing3.png) <br><br><br>
+
+  ![image](assets/Chapter-5/landing4.png) <br><br><br>
+
+  ![image](assets/Chapter-5/landing5.png) <br><br><br>
 
 #### 5.2.3. Implemented Frontend-Web Application Evidence
 
@@ -2189,7 +2197,9 @@ El frontend de la aplicación web de DebtGo fue construido en Vue.js, permitiend
 - Acceso a asesorías y seguimiento del avance.
 - Mensajería tipo chat con retroalimentación de usuarios.
 
-  ![image](assets/Chapter-5/img-evidence-2.png)
+![image](assets/Chapter-5/Loginyregister.png) <br><br><br>
+
+![image](assets/Chapter-5/Mensaje.png) <br><br><br>
 
 #### 5.2.4. Implemented Native-Mobile Application Evidence
 
@@ -2250,7 +2260,7 @@ El desarrollo del sistema DebtGo se realizó mediante metodologías ágiles (Scr
   
   ![image](assets/Chapter-5/sprint2.png) <br><br><br>
 
-  ![image](assets/Chapter-5/sprint3.JPG) <br><br><br>
+  ![image](assets/Chapter-5/sprint-3.JPG) <br><br><br>
 
 ## 5.3 Video About-the-Product
 [Link](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202211108_upc_edu_pe/EWTv9b_CulxJjdwTSq3upFEBnz2RD8X1LcOhCr5Oeyywjg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=TnPOCK) 
