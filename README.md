@@ -1696,12 +1696,19 @@ Las pantallas principales diseñadas incluyen:
 
 ### 4.6.4. Web Applications User Flow Diagrams
 
-Los user flows representan de manera simplificada las rutas que los usuarios siguen en la aplicación. A diferencia de los wireflows, que incluyen pantallas completas, los user flows se centran en la lógica de interacción. Esto permitió identificar los flujos principales (happy path) y rutas alternativas (unhappy path) que el usuario puede tomar durante el uso de la aplicación.
+Los user flows representan de manera simplificada las rutas que los usuarios siguen en la aplicación. A diferencia de los wireflows, que incluyen pantallas completas, los user flows se centran en la lógica de interacción.
 
+En el caso de DebtGo, este diagrama permitió identificar los flujos principales (happy path), como el registro, selección de plan y acceso al workspace, así como las rutas alternativas (unhappy path), como errores de pago o credenciales incorrectas. Gracias a este análisis se pudieron definir los posibles escenarios que enfrentará un usuario y cómo la aplicación debe responder ante cada caso.
+
+![image](assets/Chapter-4/user-flow-diagram.png) <br><br><br>
 
 ## 4.7. Web Applications Prototyping
 
-El prototipo web desarrollado integra todas las pantallas en un flujo navegable mediante Figma, permitiendo simular la interacción real de los usuarios con la aplicación. A través de este prototipo fue posible realizar pruebas de usabilidad y obtener retroalimentación temprana para mejorar la experiencia del usuario.
+El prototipo web desarrollado integra todas las pantallas en un flujo navegable mediante Figma, permitiendo simular la interacción real de los usuarios con la aplicación. Este prototipo facilitó la validación temprana de la experiencia de usuario, al permitir realizar pruebas de usabilidad y recoger retroalimentación antes de la implementación final.
+
+En este flujo navegable se conectaron pantallas clave como: login, registro, selección de plan, proceso de pago, perfil de usuario, workspace, publicación de servicios, mensajería y gestión de servicios. De esta manera, se logró visualizar la experiencia completa del usuario y asegurar la coherencia en la navegación.
+
+![image](assets/Chapter-4/web-application-prototyping.JPG) <br><br><br>
 
 ## 4.8. Domain-Driven Software Architecture
 ### 4.8.1. Software Architecture Context Diagram
