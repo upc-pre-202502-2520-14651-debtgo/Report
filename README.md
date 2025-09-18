@@ -1098,6 +1098,120 @@ En esta sección, explicaremos en detalle los user journey mapping para dos tipo
 |TS33|Implementación de herramienta de seguimiento de ingresos y gastos|**Como** Developer **deseo** crear una herramienta dentro de la aplicación que permita a los emprendedores rastrear sus ingresos y gastos de manera eficiente **para** que puedan gestionar sus finanzas.|**Escenario:** Rastreo de ingresos y gastos <br>**Dado que** el emprendedor accede a la sección Herramienta **y** selecciona la opción Tracker **cuando** el emprendedor ingresa una nueva entrada o salida de dinero **entonces** el sistema almacena la información financiera **y** el emprendedor puede visualizar un resumen de sus ingresos y gastos.|EP07|
 |TS34|Creación de herramienta para generar presupuestos personalizados|**Como** Developer **deseo** implementar una herramienta que permita a los emprendedores con suscripción premium crear presupuestos personalizados basados en sus ingresos y gastos **para** ayudarlos a administrar su dinero de manera efectiva.|**Escenario:** Crear presupuesto personalizado <br> **Dado que** el emprendedor tiene una suscripción premium **y** ha utilizado la aplicación por más de un mes **cuando** accede a la herramienta de presupuestos **entonces** el sistema genera planes de presupuesto basados en los datos de ingresos y gastos del emprendedor **y** el emprendedor puede ajustar los presupuestos según sus necesidades.|EP07|
 
+### Spike Stories
+
+Las siguientes Spike Stories fueron redactadas para reducir incertidumbre técnica y funcional antes de la implementación de ciertas funcionalidades críticas de DebtGo. Cada Spike incluye un objetivo claro de investigación y criterios de aceptación que indican cuándo se considera completado el análisis.
+
+<table border="1" cellspacing="0" cellpadding="8">
+  <thead>
+    <tr>
+      <th>Story ID</th>
+      <th>User</th>
+      <th>Priority</th>
+      <th>Epic</th>
+      <th>Title</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>SP-01</td>
+      <td>Developer</td>
+      <td>Alta</td>
+      <td>Autenticación</td>
+      <td>Investigar bibliotecas de autenticación OAuth2</td>
+    </tr>
+    <tr>
+      <td>SP-02</td>
+      <td>Frontend Dev</td>
+      <td>Alta</td>
+      <td>Evaluación de servicios</td>
+      <td>Definir mejores prácticas para UI/UX en solicitudes y reseñas</td>
+    </tr>
+    <tr>
+      <td>SP-03</td>
+      <td>Backend Dev</td>
+      <td>Alta</td>
+      <td>Pagos y suscripción</td>
+      <td>Validar integración de pasarelas de pago (Stripe vs PayPal)</td>
+    </tr>
+    <tr>
+      <td>SP-04</td>
+      <td>Product Owner</td>
+      <td>Media</td>
+      <td>Casos y asesorías</td>
+      <td>Analizar flujo óptimo para seguimiento de casos con chat</td>
+    </tr>
+    <tr>
+      <td>SP-05</td>
+      <td>Backend Dev</td>
+      <td>Media</td>
+      <td>Métricas de desempeño</td>
+      <td>Determinar estructura de almacenamiento para métricas</td>
+    </tr>
+  </tbody>
+</table>
+
+### Detalles de Spike Stories
+### SP-01. Investigar bibliotecas de autenticación OAuth2
+
+**Descripción:**
+Como desarrollador quiero investigar bibliotecas de autenticación OAuth2 para determinar cuál es la más adecuada para integrar con la plataforma.
+
+**Criterios de aceptación:**
+
+- Se investiga un mínimo de 3 bibliotecas OAuth2 compatibles con Spring Boot.
+- Se evalúan criterios como compatibilidad, facilidad de integración, documentación y comunidad.
+- Se entrega un documento comparativo con una recomendación final.
+- Se incluye un pequeño prototipo funcional o prueba de concepto.
+
+### SP-02. UI/UX para Evaluación de Servicios
+
+**Descripción:**
+Como desarrollador frontend deseo explorar diseños de UI/UX que maximicen la tasa de respuesta en evaluaciones de servicios y solicitudes de reseñas.
+
+**Criterios de aceptación:**
+
+- Se analizan al menos 5 referencias de apps similares.
+- Se prueba al menos 1 prototipo en Figma con usuarios.
+- Se documentan mejoras sugeridas y decisiones de diseño.
+- Se define el diseño definitivo para la pantalla de evaluación.
+
+### SP-03. Integración de pasarelas de pago
+
+**Descripción:**
+Como backend developer deseo analizar la viabilidad técnica y comercial de integrar Stripe o PayPal para permitir el pago de servicios dentro de DebtGo.
+
+**Criterios de aceptación:**
+
+- Se comparan ambos servicios en cuanto a costos, facilidad de integración, documentación y soporte en Perú.
+- Se realiza una prueba de conexión (sandbox) con ambas pasarelas.
+- Se entrega un reporte técnico con la recomendación.
+- Se define el endpoint para pagos.
+
+### SP-04. Flujo óptimo para seguimiento de casos
+
+**Descripción:**
+Como product owner deseo analizar el flujo óptimo entre cliente y asesor para el seguimiento de un caso a través de mensajería y etapas del proceso.
+
+**Criterios de aceptación:**
+
+- Se definen claramente los estados del caso: creado, en revisión, asesorado, cerrado.
+- Se documenta el flujo de mensajes y acciones posibles en cada estado.
+- Se valida la coherencia con los roles (emprendedor / asesor).
+- Se entrega un diagrama BPMN y descripción funcional.
+
+### SP-05. Estructura de métricas de desempeño
+
+**Descripción:**
+Como backend developer deseo definir cómo almacenar las métricas de desempeño de los asesores financieros para visualizarlas en su perfil.
+
+**Criterios de aceptación:**
+
+- Se identifican las métricas relevantes: casos atendidos, evaluaciones, reseñas.
+- Se elige la estructura de base de datos (tabla relacional o documento).
+- Se presenta el modelo ER o JSON.
+- Se implementa una consulta de prueba para visualización.
+
 
 ## 3.4. Product Backlog
 
