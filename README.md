@@ -1728,8 +1728,6 @@ En este flujo navegable se conectaron pantallas clave como: login, registro, sel
 ![image](assets/Chapter-4/payment-bc.png) <br>
 *Imagen (N°24). Elaboración propia. Realizado en Structurizr.* <br>
 
-
-
 ![image](assets/Chapter-4/user-bc.png) <br>
 *Imagen (N°26). Elaboración propia. Realizado en Structurizr.* <br>
 
@@ -2167,6 +2165,92 @@ Evidencia en DebtGo Flutter:
 
 ![image](assets/Chapter-6/metrica-desempeño.JPG)
 
+#### 5.2.2. Implemented Landing Page Evidence
+
+La Landing Page de DebtGo fue implementada utilizando HTML5, CSS3 y JavaScript puro en Visual Studio Code. Esta página es totalmente responsiva y está diseñada para captar la atención del usuario con una propuesta de valor clara: el control de las finanzas personales mediante una experiencia atractiva e intuitiva.
+
+**Características principales:**
+
+- Encabezado con navegación clara (About, How It Works, Testimonials, Contact).
+- Imágenes de fondo representativas del tema financiero.
+- Llamados a la acción: Start Advising Today y Get Financial Consulting.
+- Beneficios de la plataforma explicados en secciones separadas.
+
+  ![image](assets/Chapter-5/img-evidence-1.png)
+
+#### 5.2.3. Implemented Frontend-Web Application Evidence
+
+El frontend de la aplicación web de DebtGo fue construido en Vue.js, permitiendo una interfaz moderna, modular y altamente reactiva. Se brindó una experiencia de usuario fluida, centrada en la navegación intuitiva y la gestión clara de las funcionalidades.
+
+**Características principales:**
+
+- Registro con validaciones (mínimo de 8 caracteres, número, términos aceptados).
+- Módulo de educación financiera con progreso visual.
+- Acceso a asesorías y seguimiento del avance.
+- Mensajería tipo chat con retroalimentación de usuarios.
+
+  ![image](assets/Chapter-5/img-evidence-2.png)
+
+#### 5.2.4. Implemented Native-Mobile Application Evidence
+
+DebtGo también cuenta con una versión adaptada a dispositivos móviles, desarrollada en Kotlin o adaptando el frontend Vue a formato responsive para dispositivos. Las funcionalidades son consistentes con la versión web, con énfasis en la experiencia móvil.
+
+**Características destacadas:**
+
+- Registro y login optimizado para dispositivos móviles.
+- Visualización de progreso en cursos de educación financiera.
+- Interacción directa con los consultores financieros vía chat.
+
+  ![image](assets/Chapter-5/img-evidence-3.png) <br><br><br>
+  
+  ![image](assets/Chapter-5/img-evidence-4.png) <br><br><br>
+
+  ![image](assets/Chapter-5/img-evidence-5.png) <br><br><br>
+
+#### 5.2.5. Implemented RESTful API and/or Serverless Backend Evidence
+
+El backend fue desarrollado con ASP NET CORE, bajo el enfoque RESTful. La API permite registrar usuarios, autenticarlos, administrar notificaciones y suscripciones, todo siguiendo las mejores prácticas de seguridad y estructura por capas.
+
+**Tecnologías y características:**
+
+- Autenticación con JWT.
+- Uso de Bcrypt para encriptación de contraseñas.
+- Control de acceso y validación en endpoints.
+- Documentación Swagger para facilitar pruebas y exploración.
+
+  ![image](assets/Chapter-5/img-evidence-6.png) <br><br><br>
+
+#### 5.2.6. RESTful API documentation
+
+La API de DebtGo se documentó mediante Swagger UI, ofreciendo una interfaz interactiva y profesional para desarrolladores. Esta documentación permite visualizar, probar y validar los servicios RESTful disponibles.
+
+**Secciones disponibles en Swagger:**
+
+- Autenticación (sign-up, sign-in)
+- Notificaciones (GET, POST, por ID)
+- Suscripciones (GET, POST, por ID)
+
+  ![image](assets/Chapter-5/img-evidence-6.png) <br><br><br>
+
+#### 5.2.7. Team Collaboration Insights
+
+El desarrollo del sistema DebtGo se realizó mediante metodologías ágiles (Scrum), con herramientas colaborativas como:
+
+- **GitHub:** control de versiones y ramas.
+- **Trello:** gestión de tareas y sprints.
+
+**Aspectos destacados:**
+
+- **División clara de roles:** frontend, backend, diseño UI/UX y documentación.
+- Reuniones semanales para revisión de avance.
+- Resolución ágil de conflictos y retroalimentación constante.
+- Trabajo colaborativo con enfoque en pruebas funcionales e iterativas.
+
+  ![image](assets/Chapter-5/sprint1.png) <br><br><br>
+  
+  ![image](assets/Chapter-5/sprint2.png) <br><br><br>
+
+  ![image](assets/Chapter-5/sprint3.JPG) <br><br><br>
 
 ## 5.3 Video About-the-Product
 [Link](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202211108_upc_edu_pe/EWTv9b_CulxJjdwTSq3upFEBnz2RD8X1LcOhCr5Oeyywjg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=TnPOCK) 
