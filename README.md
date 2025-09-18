@@ -1700,7 +1700,7 @@ Los user flows representan de manera simplificada las rutas que los usuarios sig
 
 En el caso de DebtGo, este diagrama permitió identificar los flujos principales (happy path), como el registro, selección de plan y acceso al workspace, así como las rutas alternativas (unhappy path), como errores de pago o credenciales incorrectas. Gracias a este análisis se pudieron definir los posibles escenarios que enfrentará un usuario y cómo la aplicación debe responder ante cada caso.
 
-![image](assets/Chapter-4/user-flow-diagram.png) <br><br><br>
+![image](assets/Chapter-4/user-flow-diagram.jpg) <br><br><br>
 
 ## 4.7. Web Applications Prototyping
 
