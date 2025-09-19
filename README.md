@@ -294,12 +294,12 @@ A manera de escalabilidad, proponemos introducir a futuro el uso de inteligencia
   </tr>
    <tr>
     <th>
-      <img src="assets/Chapter-1/" width="800px">
+      <img src="assets/Chapter-1/Mafer.jpg" width="800px">
     </th>
     <td valign="top">
       <p><b>Peña Riofrio, Maria Fernanda</b></p>
       <p>
-        ...
+        Soy estudiante de la UPC, tengo 21 años. Estudio la carrera de Ingeniería de Software, porque me gusta el desarrollo de web y mobile. Ando cursando el 7mo ciclo de la carrera y tengo conocimiento en en C++ y Pyhton. Ade
       </p>
     </td>
   </tr>
