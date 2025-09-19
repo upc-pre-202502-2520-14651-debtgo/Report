@@ -232,7 +232,7 @@ Criterio: La capacidad de reconocer responsabilidades éticas y profesionales en
         <p>...</p>
         <p><b>Gamarra Vega, Anderson José William</b></p>
        <p><b>TB1:</b></p>
-        <p>...</p>
+        <p>Realicé una entrevista y desarrollé algunos de los puntos establecidos en la TB1, asegurándome de manejar de manera ética la información recopilada.</p>
       </td>
       <td>
         <p><strong>TB1:</strong></p>
@@ -253,7 +253,7 @@ Criterio: La capacidad de reconocer responsabilidades éticas y profesionales en
         <p>...</p>
         <p><b>Gamarra Vega, Anderson José William</b></p>
        <p><b>TB1:</b></p>
-        <p>...</p>
+        <p>Realicé una entrevista y participé en el desarrollo de diferentes puntos de la TB1, considerando el impacto que tendría una futura solución de software en los aspectos sociales y económicos del contexto estudiado.</p>
       </td>
        <td>
         <p><strong>TB1:</strong></p>
