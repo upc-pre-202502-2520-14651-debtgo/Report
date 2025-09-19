@@ -305,7 +305,7 @@ A manera de escalabilidad, proponemos introducir a futuro el uso de inteligencia
   </tr>
      <tr>
     <th>
-      <img src="assets/Chapter-1/"  width="800px">
+      <img src="assets/Chapter-1/adriana.jpg"  width="800px">
     </th>
     <td valign="top">
       <p><b>Ramos Fuentes Rivera, Adriana Nicole</b></p>
