@@ -316,12 +316,12 @@ A manera de escalabilidad, proponemos introducir a futuro el uso de inteligencia
   </tr>
      <tr>
     <th>
-      <img src="assets/Chapter-1/" width="800px">
+      <img src="assets/Chapter-1/anderson.jpg" width="800px">
     </th>
     <td valign="top">
       <p><b>Gamarra Vega, Anderson José William</b></p>
       <p>
-          ...
+          Mi nombre es Anderson Jose Gamarra Vega, tengo 25 años , estudiante de Ingeniería de Software. Desde siempre he sentido una gran pasión por la tecnología, pero me decanto especialmente por el desarrollo de software, pues me fascina aprender nuevos lenguajes de programación, diseñar soluciones digitales y afrontar retos mediante código. Esta inclinación hacia el software fue lo que me motivó a elegir esta carrera, y actualmente estoy profundizando en áreas como backend, arquitectura de software, metodologías agile.
       </p>
     </td>
   </tr>
