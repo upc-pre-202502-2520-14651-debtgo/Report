@@ -2066,7 +2066,7 @@ Este apartado se detalla las decisiones, herramientas y convenciones adoptadas p
 
 #### Diagrama de Despliegue (C4 Model):
 
-<img src="assets/Chapter-4/Deployment Diagram.png">
+<img src="assets/Chapter-5/Deployment Diagram.png">
 
 ## 5.2. Product Implementation & Deployment
 ### 5.2.1. Sprint Backlogs
