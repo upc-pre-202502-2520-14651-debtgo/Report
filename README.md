@@ -226,7 +226,7 @@ Criterio: La capacidad de reconocer responsabilidades éticas y profesionales en
         <p>Hice el Capítulo I, Capítulo II, Capítulo III y Capítulo IV, de igual manera, me aseguré de que todo vaya de acorde a los puntos indicados para la tb1.</p>
         <p><b>Peña Riofrio, Maria Fernanda</b></p>
        <p><b>TB1:</b></p>
-        <p>...</p>
+        <p>Realice una entrevista y desarrolle su respectivo análisis, con esto se reconoció la importancia de manejar la información de la entrevista con responsabilidad.</p>
         <p><b>Ramos Fuentes Rivera, Adriana Nicole</b></p>
         <p><b>TB1:</b></p>
         <p>...</p>
@@ -240,14 +240,14 @@ Criterio: La capacidad de reconocer responsabilidades éticas y profesionales en
       </td>
     </tr>
     <tr>
-      <td>4.c.2 Emite juicios informados considerando el impacto de las soluciones de ingeniería de software en contextos globales, económicos, ambientales y sociales</td>
+      <td><b>4.c.2 Emite juicios informados considerando el impacto de las soluciones de ingeniería de software en contextos globales, económicos, ambientales y sociales</b></td>
       <td>
         <p><b>Chávarri Zarzosa, Daniel Jhared</b></p>
         <p><b>TB1:</b></p>
         <p>Hice el Capítulo I, Capítulo II, Capítulo III y Capítulo IV, de igual manera, me aseguré de que todo vaya de acorde a los puntos indicados para la tb1.</p>
         <p><b>Peña Riofrio, Maria Fernanda</b></p>
        <p><b>TB1:</b></p>
-        <p>...</p>
+        <p>A partir del análisis del video, se refelxionó sobre cómo una solución futura de software respondería a las necesidades del segmento entrevistado.</p>
         <p><b>Ramos Fuentes Rivera, Adriana Nicole</b></p>
        <p><b>TB1:</b></p>
         <p>...</p>
