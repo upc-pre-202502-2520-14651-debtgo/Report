@@ -229,14 +229,14 @@ Criterio: La capacidad de reconocer responsabilidades éticas y profesionales en
         <p>Realice una entrevista y desarrolle su respectivo análisis, con esto se reconoció la importancia de manejar la información de la entrevista con responsabilidad.</p>
         <p><b>Ramos Fuentes Rivera, Adriana Nicole</b></p>
         <p><b>TB1:</b></p>
-        <p>...</p>
+        <p>Para esta primera entrega realicé una corrección general de los aspectos desarrollados. Además, incluí los Spikes Stories reconociendo las dificultades que se deben reducir antes de realizar la implementación de las funcionalidades.</p>
         <p><b>Gamarra Vega, Anderson José William</b></p>
        <p><b>TB1:</b></p>
         <p>Realicé una entrevista y desarrollé algunos de los puntos establecidos en la TB1, asegurándome de manejar de manera ética la información recopilada.</p>
       </td>
       <td>
         <p><strong>TB1:</strong></p>
-        <p>...</p>
+        <p>Para la primera entrega, se realizó la investigación de los respectivos capítulos, manteniendo la responsabilidad ética y profesional en el desarrollo.</p>
       </td>
     </tr>
     <tr>
@@ -247,17 +247,17 @@ Criterio: La capacidad de reconocer responsabilidades éticas y profesionales en
         <p>Hice el Capítulo I, Capítulo II, Capítulo III y Capítulo IV, de igual manera, me aseguré de que todo vaya de acorde a los puntos indicados para la tb1.</p>
         <p><b>Peña Riofrio, Maria Fernanda</b></p>
        <p><b>TB1:</b></p>
-        <p>A partir del análisis del video, se refelxionó sobre cómo una solución futura de software respondería a las necesidades del segmento entrevistado.</p>
+        <p>A partir del análisis del video, se reflexionó sobre cómo una solución futura de software respondería a las necesidades del segmento entrevistado.</p>
         <p><b>Ramos Fuentes Rivera, Adriana Nicole</b></p>
        <p><b>TB1:</b></p>
-        <p>...</p>
+        <p>Al realizar los Spikes Stories, se investigó las dificultades técnicas y funcionales que se presentan en las funcionalidades, lo que nos permite como equipo realizar una toma de decisión de forma informada teniendo en cuenta contextos globales.</p>
         <p><b>Gamarra Vega, Anderson José William</b></p>
        <p><b>TB1:</b></p>
         <p>Realicé una entrevista y participé en el desarrollo de diferentes puntos de la TB1, considerando el impacto que tendría una futura solución de software en los aspectos sociales y económicos del contexto estudiado.</p>
       </td>
        <td>
         <p><strong>TB1:</strong></p>
-        <p>...</p>
+        <p>Para la primera entrega, se realizaron los respectivos capítulos, donde se consideraron contextos globales en la presentación y elaboración de nuestro proyecto como una solución de ingeniería de software.</p>
       </td>
     </tr>
   </tbody>
@@ -310,7 +310,7 @@ A manera de escalabilidad, proponemos introducir a futuro el uso de inteligencia
     <td valign="top">
       <p><b>Ramos Fuentes Rivera, Adriana Nicole</b></p>
       <p>
-      ...
+          Mi nombre es Adriana Nicole Ramos Fuentes Rivera, actualmente soy estudiante de la carrera de Ingeniería de Software en la UPC. Me interesa la tecnología y cómo su aplicación puede agilizar diversos procesos. Considero que mis conocimientos adquiridos a lo largo de la carrera, me ayudarán a aportar de manera activa al desarrollo del presente proyecto.
       </p>
     </td>
   </tr>
