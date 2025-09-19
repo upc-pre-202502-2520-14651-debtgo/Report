@@ -727,16 +727,16 @@ Resumen:
 Anderson Gonza, de 22 años y residente en Villa El Salvador, está interesado en iniciar un negocio de cafetería con enfoque en coworking. Tiene conocimientos básicos de finanzas adquiridos en la universidad y, aunque no ha trabajado con consultores financieros, considera importante que tengan experiencia en su rubro. Solo ha gestionado préstamos personales y está aprendiendo sobre préstamos empresariales, sintiendo confusión principalmente al elegir el tipo adecuado y entender completamente las condiciones. Le preocupan los intereses, las condiciones de los contratos y el riesgo de endeudamiento. Prefiere plataformas reconocidas como BCP e Interbank, y verifica la autenticidad de las ofertas de préstamos buscando reseñas y comprobando su regulación ante la SBS. Utiliza aplicaciones como Yape, Plin y BCP, confiando en ellas pero tomando precauciones adicionales. Estaría dispuesto a compartir información básica como ingresos, gastos y metas financieras, siempre que la aplicación sea segura, regulada, transparente y cuente con buenas reseñas.
 
 **Entrevista #3**
-- Nombre: 
-- Edad:  
-- Distrito: 
-- Duración:  
+- Nombre: Maria Pilares Pocochuanca
+- Edad: 26 años
+- Distrito: Los Olivos
+- Duración: 5:05
 
-![image](assets/Chapter-2/)
+![image](assets/Chapter-2/Entrevista3_Segm2.png)
 
-[Entrevista 3 - video]()
+[Entrevista 3 - video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202113279_upc_edu_pe/Ea0th-UAr9JBrljOSf-yPTIBE_7YfuXWx3s9Yz9cgeTWGQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=humfYy)
 
-Resumen: 
+Resumen: Maria Paula Pilares, emprendedora de 26 años que reside en Los Olivos, busca iniciar un negocio de productos ecológicos. Aunque tiene conocimientos financieros intermedios, reconoce que los procesos de préstamo suelen resultarle confusos, sobre todo en lo relacionado con intereses, comisiones y cláusulas poco claras. Ha tenido experiencias previas con préstamos y consultoría, y considera importante que los asesores financieros comprendan el rubro en el que se desarrolla su negocio. Sus principales preocupaciones al solicitar créditos son las altas tasas de interés, las penalidades por atrasos y la seguridad de las plataformas financieras. A pesar de usar con frecuencia la banca móvil, exige garantías de seguridad y transparencia antes de compartir sus datos. En general, valora soluciones digitales como aplicaciones de gestión de deudas, siempre que ofrezcan respaldo confiable y un manejo claro de la información.
 
 ### 2.2.3. Análisis de entrevistas
 
