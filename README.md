@@ -2441,7 +2441,7 @@ En DebtGo empleamos un conjunto de herramientas y prácticas que sostienen nuest
 |JUnit        | Framework de pruebas unitarias para Java | Verificar, de forma aislada, el comportamiento de componentes como cálculo de montos, validación de fechas de vencimiento y reglas de negocio del módulo de deudas. | ![JUnit](https://upload.wikimedia.org/wikipedia/commons/5/59/JUnit_5_Banner.png)|
 | Mockito | Librería para crear objetos simulados (mocks) en pruebas.  |  Simular servicios externos (por ejemplo, pasarela de pagos o servicio de notificaciones) para probar casos de error y de latencia sin depender de integraciones reales. | ![mck](https://upload.wikimedia.org/wikipedia/commons/2/2c/Mockito_Logo.png) |
 | Cucumber  | Framework BDD (Behavior-Driven Development) para definir pruebas legibles por negocio. |  Escribir escenarios Gherkin que describen flujos como “registrar deuda”, “programar recordatorios” o “marcar como pagado”, asegurando que el sistema cumple lo acordado con el equipo y stakeholders. | ![cucumber](https://cdn.iconscout.com/icon/free/png-256/free-cucumber-icon-svg-download-png-1175199.png)  |
-| Jenkins | Servidor de automatización para CI/CD. | Orquestar pipelines de build, ejecución de pruebas (unitarias/BDD) y despliegues, habilitando entregas frecuentes y confiables de la API, Web App y Mobile | ![Jenkins](https://cdn.freebiesupply.com/logos/thumbs/2x/jenkins-logo.png)  |
+| GitHub | Plataforma CI/CD nativa de GitHub. | Orquestar pipelines de build, pruebas (unitarias/BDD/API) y despliegues. Ejecuta workflows por push/PR, impone checks obligatorios antes del merge y publica artefactos y reportes. | ![GitHub](https://static.wikia.nocookie.net/windows/images/0/01/GitHub_logo_2013.png/revision/latest/thumbnail/width/360/height/450?cb=20231201024220)  |
 
 **Prácticas utilizadas**
 
@@ -2499,6 +2499,7 @@ El pipeline de Integración Continua (CI) de **DebtGo** automatiza la verificaci
 - Build reproducible sin *warnings* críticos.
 - Pruebas de UI (si aplican) exitosas y cobertura reportada.
 
+![CI/CD](assets/Chapter-6/CI-CD.jpg)
 
 ## 7.2. Continuous Delivery
 ### 7.2.1. Tools and Practices.
@@ -2516,22 +2517,23 @@ Se puede obervar los reposiotrios del Front y del Back para el despliegue de est
   ![deploy](assets/Chapter-6/repo_deploys.png)
 
 - **swagger OpenAPI**
-Se puede observar las operaciones de un endpoin
-  ![image](assets/Chapter-5/img-evidence-6.png) <br><br><br>
+Se puede observar el CRUD de los endpoints
+  ![image](assets/Chapter-6/SWAGGER.jpg) <br><br><br>
 
 ### 7.2.2. Stages Deployment Pipeline Components.
 
 | Etapa | Herramientas | Objetivo/Proceso | Imagen de Referencia |
-| ----------- | ----------- | -------------------- |
+| ----------- | ----------- | -------------------- |-----|
 |  **1. Build** |   Gradle/Maven (API), Node+Vite (Web), Android Gradle (Mobile)  | • Compilar código y resolver dependencias.  • Generar artefactos versionados (`.jar/.war`, `dist/`, `.apk`). • Validaciones básicas (lint, formateo, análisis estático). |  ![maven](https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Apache_Maven_logo.svg/1200px-Apache_Maven_logo.svg.png) |
 | **2. Test**  | JUnit + Mockito, Postman/Newman, Cucumber  |  • Pruebas unitarias (≥80% cobertura en módulos críticos). • Pruebas de integración de la API. • Escenarios BDD y smoke E2E sobre endpoints clave (registrar deuda, programar pago, notificaciones).  | ![junit](https://upload.wikimedia.org/wikipedia/commons/5/59/JUnit_5_Banner.png)  |
 |   **3. Staging**   | Docker, GitHub Actions | • Despliegue en entorno espejo con contenedores: `backend-api`, `web-app`, `db` (y servicios auxiliares). • Orquestación vía `docker-compose.staging.yml`. • Semillas/datos de prueba y variables por ambiente. |  ![docker](https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/97_Docker_logo_logos-512.png) |
 | **4. QA / UAT**   |Checklist de validación, gestor de issues (Jira/GitHub Projects)   |  • Verificación funcional y de usabilidad. • Revisión de performance básica y accesibilidad. • Aprobación por checklist antes de _release_.  | ![jira](https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Jira_Logo.svg/2560px-Jira_Logo.svg.png)  |
-|  **5. Production**   |  Azure App Service / Azure Container Apps (o equivalente), Monitorización | • _Health checks_ y *auto-rollback* ante fallos. • Publicación de *release* etiquetada e invariabilidad de imágenes  |  ![azure](https://download.logo.wine/logo/Microsoft_Azure/Microsoft_Azure-Logo.wine.png) |
+|  **5. Production**   |  Dockploy | • Despliegue de contenedores Docker del Backend API y servicios auxiliares. <br> • Estrategia **Blue/Green** o **Rolling** administrada desde Dokploy (dos stacks/servicios). <br> • *Health checks* y verificación de estado antes del *switch* de tráfico. <br> • **Rollback** inmediato a la imagen anterior si hay fallos.  |  ![dockploy](https://ph-files.imgix.net/06e930c7-ab5c-4507-922d-4c113570ea80.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=400&h=210&fit=max&frame=1) |
 
 **Descripción del pipeline**
 
-El flujo de entrega continua de **DebtGo** automatiza desde la construcción hasta el monitoreo en vivo, utilizando herramientas estándar de la industria. Cada etapa valida aspectos críticos: primero se compilan los artefactos y se ejecutan pruebas unitarias/BDD y de integración; luego se despliega en **staging** con contenedores para asegurar paridad entre entornos. La fase **QA/UAT** combina validación manual guiada por *checklists* con resolución de hallazgos en el gestor de issues, garantizando que solo versiones estables pasen a producción. Finalmente, el despliegue en **producción** emplea estrategias **Blue/Green** o **Rolling**, con comprobaciones de salud y reversión automática, reduciendo riesgos y acelerando la entrega de valor al usuario.
+El flujo de entrega continua de **DebtGo** automatiza desde la construcción hasta el monitoreo en vivo, utilizando herramientas estándar de la industria. Cada etapa valida aspectos críticos: primero se compilan los artefactos y se ejecutan pruebas unitarias/BDD y de integración; luego se despliega en **staging** con contenedores para asegurar paridad entre entornos. La fase **QA/UAT** combina validación manual guiada por *checklists* con resolución de hallazgos en el gestor de issues, garantizando que solo versiones estables pasen a producción. Finalmente, El pipeline de despliegue continuo de DebtGo integra herramientas estándar en un flujo automatizado que garantiza calidad y confiabilidad. Cada etapa valida aspectos críticos del software, desde la construcción inicial hasta el monitoreo en producción. La combinación de pruebas automatizadas y validación manual asegura que solo versiones estables lleguen a los usuarios finales. La estrategia **Blue/Green en Dokploy** minimiza riesgos durante despliegues, mientras que los contenedores Docker proporcionan consistencia entre entornos. Este enfoque sistemático reduce errores y acelera la entrega de valor.
+
 
 ## 7.3. Continuous deployment
 La implementación continua (Continuous Deployment, CD) es el proceso automatizado de llevar cambios de código desde un repositorio hasta entornos de producción, asegurando entregas rápidas y confiables. A diferencia de Continuous Delivery, la CD no requiere aprobación manual (todo se despliega automáticamente si pasa las pruebas).
@@ -2542,38 +2544,33 @@ La implementación continua (Continuous Deployment, CD) es el proceso automatiza
 | Herramienta | Función | Prácticas | Logo |
 |---|---|---|---|
 | **Vercel** | Plataforma de entrega continua enfocada en *frontends*. Se integra con GitHub para construir y publicar automáticamente la **Web App / Landing**. | - *Auto-deploy* al hacer push a `main` y *preview deployments* por cada PR. <br> - Dominios personalizados y SSL gestionados por la plataforma. <br> - Builds optimizados con caché para mejores tiempos de respuesta. | ![vercel](https://logos-world.net/wp-content/uploads/2024/10/Vercel-Logo.jpg) |
-| **Railway** | IaaS/PaaS para ejecutar el **Backend API** y servicios de apoyo (BD). Simplifica el despliegue y la operación. | - Integración directa con GitHub para *auto-deploy*. <br> - Gestión centralizada de variables de entorno por ambiente. <br> - *Autoscaling* bajo demanda. <br> - Monitoreo integrado de logs y métricas. | ![Railway](https://railway.com/brand/logotype-dark.png) |
+| **Dokploy** |  PaaS auto-gestionado para ejecutar el **Backend API** y servicios de apoyo en contenedores **Docker**. Facilita despliegue, variables de entorno y gestión de dominios/SSL en un servidor propio. | - Integración con GitHub para *auto-deploy* por rama/PR. <br> - Gestión centralizada de **Environment Variables** y **Secrets** por ambiente. <br> - Despliegue de imágenes Docker y plantillas `docker-compose`. <br> - Logs en vivo y *health checks* para supervisión básica. | ![dockploy](https://ph-files.imgix.net/06e930c7-ab5c-4507-922d-4c113570ea80.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=400&h=210&fit=max&frame=1) |
 | **GitHub Pages** | Hosting de sitios estáticos directamente desde el repo (ideal para **documentación** o landing estática). | - Publicación automática desde la rama `gh-pages` (o `main` con acción de build). <br> - Configuración de dominio propio y HTTPS sin costo. | ![GitHub Pages](https://ugeek.github.io/blog/images-blog/githubpages.png) |
 
 ### 7.3.2. Production Deployment Pipeline Components
 
 Para asegurar un despliegue continuo y confiable en **producción**, definimos los componentes del pipeline utilizando:
 - **Vercel** para Frontend Web (Web App / Landing si aplica Next.js).
-- **Railway** para **Backend API** y servicios de soporte.
+- **Dokploy** para **Backend API** y servicios de soporte.
 - **GitHub Pages** para la **Landing** estática o documentación.
 
 ---
-
-**1) Frontend Web (Vercel)**
 
 **Trigger**
 - `push`/`merge` a `main` del repo del frontend o aprobación de un PR con _checks_ verdes.
 
 **Build**
-- Ejecución de `npm ci && npm run build`.
-- Optimización de assets (minificación, compresión, imágenes) y validación de rutas.
+- `npm ci && npm run build`, optimización de assets y validación de rutas.
 
 **Testing**
-- Lanzamiento de pruebas unitarias y de integración de UI (si están configuradas) antes del deploy.
+- Pruebas unitarias/integración de UI (si están configuradas).
 
 **Deployment**
-- Publicación automática en **Vercel**.
-- Soporte de **dominio personalizado** y **SSL** administrado por la plataforma.
-- Generación de **Preview URLs** por PR para revisión previa.
+- Publicación automática en **Vercel**, dominio personalizado y SSL.
+- **Preview URLs** por PR.
 
 **Post-Deployment**
-- Invalidación de caché/CDN para servir la última versión.
-- Monitoreo de **Core Web Vitals** y métricas de rendimiento desde Vercel Analytics.
+- Invalidación de caché/CDN y monitoreo de métricas (Core Web Vitals).
 
 ---
 
@@ -2583,34 +2580,33 @@ Para asegurar un despliegue continuo y confiable en **producción**, definimos l
 - `push`/`merge` a `main` del repo del backend.
 
 **Build**
-- Construcción de imagen **Docker** (si aplica) o build nativo del runtime.
-- Instalación de dependencias y verificación de configuración por entorno.
+- Construcción de imagen **Docker** o build nativo y *push* al registry configurado.
 
 **Testing**
-- Pruebas **unitarias** y **de integración** (DB, colas, servicios externos).
-- _Contract tests_ contra el **OpenAPI** cuando corresponde.
+- Pruebas **unitarias** y **de integración** (DB/servicios externos).
+- (Opcional) *Contract tests* contra OpenAPI.
 
 **Deployment**
-- Despliegue automático en **Railway** con variables de entorno gestionadas por ambiente.
-- **Autoscaling** configurable según demanda y límites de consumo.
+- Despliegue automático en **Dokploy** usando imagen Docker o `docker-compose` plantilla.  
+- Gestión de **variables de entorno** y **secrets** por ambiente.  
+- Configuración de **dominio** y **SSL** desde Dokploy.
 
 **Post-Deployment**
-- **Smoke tests** sobre endpoints críticos (p. ej., `POST /debts`, `POST /payments/schedule`, `GET /notifications`).
-- Revisión de **logs** y **métricas** en tiempo real.
+- **Smoke tests** a endpoints críticos.  
+- Revisión de **logs** y *health checks* desde el panel de Dokploy.
 
 ---
 
 **3) Landing estática / Documentación (GitHub Pages)**
 
 **Trigger**
-- `push` a `main` o `gh-pages` del repo de la landing/documentación.
+- `push` a `main` o `gh-pages`.
 
 **Build**
-- Generación de artefactos estáticos (HTML/CSS/JS). Si se usa Jekyll u otro generador, minificación automática.
+- Generación de artefactos estáticos y minificación de recursos.
 
 **Deployment**
-- Publicación en **GitHub Pages** con **HTTPS** habilitado.
-- Opción de dominio propio.
+- Publicación en **GitHub Pages** con **HTTPS** y dominio propio (opcional).
 
 **Post-Deployment**
 - Validación de enlaces/recursos y verificación de sitemap.
@@ -2620,29 +2616,22 @@ Para asegurar un despliegue continuo y confiable en **producción**, definimos l
 **Prácticas para Continuous Deployment**
 
 **Automatización de Pipelines**
-- Workflows en **GitHub Actions** para ejecutar build, pruebas y despliegues por ambiente (`dev`, `staging`, `prod`).
-- Ejemplo: un push a `main` dispara unit tests → integración → deploy a producción si todos los _checks_ pasan.
+- Workflows en **GitHub Actions** para build, pruebas y despliegues por ambiente (`dev`, `staging`, `prod`).
 
 **Feature Flags**
-- Activación/desactivación de funcionalidades en **producción** sin nuevos despliegues (rollouts controlados).
+- Activación/desactivación de funcionalidades en producción sin desplegar nuevamente.
 
-**Rollbacks Automáticos**
-- Monitoreo continuo de salud y disponibilidad; ante fallas críticas, reversión automática a la última versión estable.
+**Rollbacks**
+- Monitoreo continuo; ante fallas críticas, revertir a la última versión estable.
 
-**Blue-Green Deployments**
-- Dos entornos idénticos (**blue** y **green**) para minimizar downtime y facilitar reversión inmediata.
-
-**Canary Releases**
-- Liberación gradual a un subconjunto de usuarios para validar comportamiento antes del 100% del tráfico.
+**Blue-Green / Canary**
+- Estrategias de liberación gradual y conmutación entre entornos para minimizar riesgos.
 
 **Integración entre componentes**
-- Webhooks/notificaciones para coordinar la liberación entre **frontend** y **backend** y mantener compatibilidad de versiones.
-
-**Notificaciones**
-- Alertas en Slack/Email sobre estado del pipeline (éxito/fallo, métricas clave posteriores al deploy).
+- Webhooks/notificaciones para coordinar la liberación entre frontend y backend.
 
 **Seguridad**
-- Escaneo de vulnerabilidades en dependencias antes de desplegar (Dependabot/Snyk) y _policies_ de secretos en CI.
+- Escaneo de vulnerabilidades (Dependabot/Snyk) y políticas de secretos en CI.
 
 # Conclusiones
 ## Conclusiones y recomendaciones
