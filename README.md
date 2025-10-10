@@ -1538,25 +1538,8 @@ En la versión mobile el navbar se reemplaza por un menu desplegable.
 
 **User Goal:** Registrar una deuda y configurar notificaciones personalizadas para evitar moras.
 
-**Inicio / Login / Bienvenida** <br> <br>
- <img src="assets/Chapter-4/home1.png" width="800px"> <br> <br>
 
-**Resumen de pagos** <br> <br>
- <img src="assets/Chapter-4/manage-payments.png" width="800px"> <br> <br>
-
-**Configuración de pago** <br> <br>
-<img src="assets/Chapter-4/add-payment-configuration.png" width="800px"> <br> <br>
-<img src="assets/Chapter-4/add-new-debt.png" width="800px"> <br> <br>
-
-**Configuración de notificaciones** <br> <br>
-<img src="assets/Chapter-4/notification.png" width="800px"> <br> <br>
-<img src="assets/Chapter-4/notification2.png" width="800px"> <br> <br>
-
-**Confirmación visual** <br> <br>
-<img src="assets/Chapter-4/notification3.png" width="800px"> <br> <br>
- 
-**Historial de notificaciones** <br> <br>
-<img src="assets/Chapter-4/home1.png" width="800px"> <br> <br>
+<img src="assets/Chapter-5/userflow_diagrams.png" width="800px"> <br> <br>
 
 Este User Flow cubre el objetivo principal del usuario emprendedor de registrar deudas, configurar recordatorios y visualizar el estado de sus pagos. Se incluyen tanto el camino esperado (happy path) como rutas alternativas (unhappy paths) que muestran errores de conexión, advertencias de canales desactivados y confirmaciones exitosas. Las pantallas fueron diseñadas para guiar visualmente al usuario con feedback claro, colores distintivos y navegación intuitiva.
 
@@ -2008,9 +1991,9 @@ Este apartado se detalla las decisiones, herramientas y convenciones adoptadas p
 ### 5.1.2. Source Code Management
 
 **Repositorios Oficiales**:
-- [Landing Page (Frontend Web)](https://github.com/...)
-- [Web Services (Backend API .NET)](https://github.com/...)
-- [Aplicación Móvil (Android Kotlin)](https://github.com/...)
+- [Landing Page (Frontend Web)](https://github.com/upc-pre-202502-2520-14651-debtgo/Landing-Page)
+- [Web Services (Backend API .NET)](https://github.com/upc-pre-202502-2520-14651-debtgo/Back-End-DebtGo)
+- [Aplicación Móvil (Android Kotlin)](https://github.com/upc-pre-202502-2520-14651-debtgo/App-Mobile-DebtGo)
 
 **Workflow Adoptado GitFlow**
 - Ramas principales:
@@ -2072,7 +2055,7 @@ Este apartado se detalla las decisiones, herramientas y convenciones adoptadas p
 
 ## 5.2. Product Implementation & Deployment
 ### 5.2.1. Sprint Backlogs
-#### 6.2.1.2. Sprint Backlog 1  
+#### 5.2.1.2. Sprint Backlog 1  
 | **User Story**                           | **Work-item/Task**            | **Descripción**                                                                          | **Estimación (Horas)** | **Assigned To**  | **Status** |
 | ---------------------------------------- | ----------------------------- | ---------------------------------------------------------------------------------------- | ---------------------- | ---------------- | ---------- |
 | E1-US01 Demostración de la aplicación    | W01 Integrate demo playback    | Integrar un video de demostración o prototipo interactivo en la página de inicio         | 4                      | Daniel Chávarri     | Done       |
@@ -2285,6 +2268,10 @@ Evidencia en DebtGo Flutter:
 
 La Landing Page de DebtGo fue implementada utilizando HTML5, CSS3 y JavaScript puro en Visual Studio Code. Esta página es totalmente responsiva y está diseñada para captar la atención del usuario con una propuesta de valor clara: el control de las finanzas personales mediante una experiencia atractiva e intuitiva.
 
+
+**Link al repositorio de la lading page:**
+[Landing Page (Frontend Web)](https://github.com/upc-pre-202502-2520-14651-debtgo/Landing-Page)
+
 **Características principales:**
 
 - Encabezado con navegación clara (About, How It Works, Testimonials, Contact).
@@ -2306,6 +2293,9 @@ La Landing Page de DebtGo fue implementada utilizando HTML5, CSS3 y JavaScript p
 
 El frontend de la aplicación web de DebtGo fue construido en Vue.js, permitiendo una interfaz moderna, modular y altamente reactiva. Se brindó una experiencia de usuario fluida, centrada en la navegación intuitiva y la gestión clara de las funcionalidades.
 
+**Link al repositorio del Front-End**
+[Front-End (aplicación web)](https://github.com/upc-pre-202502-2520-14651-debtgo/Front-End-DebtGo)
+
 **Características principales:**
 
 - Registro con validaciones (mínimo de 8 caracteres, número, términos aceptados).
@@ -2320,6 +2310,9 @@ El frontend de la aplicación web de DebtGo fue construido en Vue.js, permitiend
 #### 5.2.4. Implemented Native-Mobile Application Evidence
 
 DebtGo también cuenta con una versión adaptada a dispositivos móviles, desarrollada en Kotlin o adaptando el frontend Vue a formato responsive para dispositivos. Las funcionalidades son consistentes con la versión web, con énfasis en la experiencia móvil.
+
+**Link al repositorio del Front-End Mobile**
+[Front-End (aplicación móvil)](https://github.com/upc-pre-202502-2520-14651-debtgo/App-Mobile-DebtGo)
 
 **Características destacadas:**
 
