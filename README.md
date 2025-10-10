@@ -2683,6 +2683,6 @@ A medida que se avanza en el desarrollo, se recomienda aumentar la frecuencia de
 
 # Anexos
 
-[Frontend:](https://detbgo.netlify.app/login) https://detbgo.netlify.app/login
+[Frontend:](https://frontend-debtogo.homeservergv.com/) https://frontend-debtogo.homeservergv.com/
 
-[Backend:](https://debtgo.azurewebsites.net/swagger/index.html) https://debtgo.azurewebsites.net/swagger/index.html
+[Backend:](https://backend-debtogo.homeservergv.com/swagger-ui/index.html) https://backend-debtogo.homeservergv.com/swagger-ui/index.html
