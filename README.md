@@ -2375,6 +2375,34 @@ El desarrollo del sistema DebtGo se realizó mediante metodologías ágiles (Scr
 [Link](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202211108_upc_edu_pe/EWTv9b_CulxJjdwTSq3upFEBnz2RD8X1LcOhCr5Oeyywjg?e=PGLqcC&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) 
 https://upcedupe-my.sharepoint.com/:v:/g/personal/u202211108_upc_edu_pe/EWTv9b_CulxJjdwTSq3upFEBnz2RD8X1LcOhCr5Oeyywjg?e=PGLqcC&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
 
+# Capítulo VI: Product Verification & Validation
+## 6.1. Testing suites & Validations
+### 6.1.1. Core Entities Unit tests.
+
+### 6.1.2. Core Integration Tests. 
+### 6.1.3. Core Behavior-Driven Development 
+
+**EPIC 01 - US01- Demostración de la aplicación**
+![US01](assets/Chapter-6/US01.png) <br><br><br>
+
+**EPIC 02 - US07 - Pago por servicios**
+![US07](assets/Chapter-6/US07.png) <br><br><br>
+
+**EPIC 03 - US11 - Elección y actualización de plan**
+![US11](assets/Chapter-6/US11.png) <br><br><br>
+
+**EPIC 05 - US23 - Actualización de solicitudes**
+![US23](assets/Chapter-6/US23.png) <br><br><br>
+
+**EPIC 06 - US27 - Visualización de métricas propias**
+![US27](assets/Chapter-6/US27.png) <br><br><br>
+
+**EPIC 07 - US34 - Creación de presupuestos**
+![US34](assets/Chapter-6/US34.png) <br><br><br>
+
+### 6.1.4. Core System Tests. 
+
+
 # Conclusiones
 ## Conclusiones y recomendaciones
 
