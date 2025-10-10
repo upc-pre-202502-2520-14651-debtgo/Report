@@ -2378,8 +2378,35 @@ https://upcedupe-my.sharepoint.com/:v:/g/personal/u202211108_upc_edu_pe/EWTv9b_C
 # Capítulo VI: Product Verification & Validation
 ## 6.1. Testing suites & Validations
 ### 6.1.1. Core Entities Unit tests.
+Esta sección agrupa las pruebas unitarias del backend de DebtGo para los componentes clave del dominio. Cada caso verifica el comportamiento y la gestión de estado de servicios y modelos —como Advisory, Simulation, ConsultantProfile, Payment, Education y Review— garantizando que la lógica de negocio responda como se espera. Se validan construcción de objetos, actualización de propiedades, reglas de cálculo (p. ej., simulaciones y calificación), manejo de escenarios límite y métodos utilitarios. Los resultados muestran ejecuciones exitosas por servicio, asegurando una base estable para las funcionalidades de registro de deudas, asesoría y valoración de consultores.
+
+**UNIT TEST EVIDENCES**
+![unit](assets/Chapter-6/UNIT%20TEST.jpg)
+
 
 ### 6.1.2. Core Integration Tests. 
+
+Esta sección reúne las **pruebas de integración del núcleo web de DebtGo**, enfocadas en los **controladores**. Usamos `@WebMvcTest` con **MockMvc** y **ObjectMapper**, aislando la capa web mediante `@MockBean` de los servicios de dominio (p. ej., `AdvisoryService`).
+
+**Qué validamos**
+- **Contratos HTTP**: rutas, métodos, códigos de estado y encabezados.
+- **Serialización/Deserialización JSON**: estructura y tipos esperados en requests/responses.
+- **Validaciones**: reglas de entrada (campos obligatorios, formatos, rangos).
+- **Manejo de errores**: mensajes y códigos para casos inválidos o excepciones.
+- **Orquestación del controlador**: interacción correcta con el servicio mockeado.
+
+**Cobertura (ejemplos)**
+- `AdvisoryControllerWebMvcTest`: creación y consulta de asesorías.
+- `ConsultantAppServiceControllerWebMvcTest`: endpoints para consulta de consultores/perfiles.
+
+**Resultado actual**
+- Ejecución exitosa de los casos (p. ej., *Tests run: 4, Failures: 0, Errors: 0, Skipped: 0*), lo que confirma que la capa de control expone contratos estables y listos para promover a entornos superiores.
+
+> Con estas pruebas aseguramos que los componentes centrales del sistema se comporten de forma coherente como una **unidad**, cumpliendo los requisitos funcionales de negocio y aportando **confianza** para despliegues a producción.
+
+**INTEGRATION TEST EVIDENCES**
+
+![int](assets/Chapter-6/UNIT%20TEST.jpg)
 
 ### 6.1.3. Core Behavior-Driven Development 
 
