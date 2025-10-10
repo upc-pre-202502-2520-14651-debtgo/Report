@@ -2321,36 +2321,27 @@ Al registrarse y utilizar la plataforma DebtGo, el Usuario acepta los términos 
 DebtGo es una solución Software as a Service (SaaS) que permite a los usuarios —emprendedores y consultores financieros— gestionar deudas, registrar ingresos y gastos, acceder a asesorías personalizadas y mejorar su educación financiera.
 El servicio opera completamente en la nube, accesible desde navegadores web o dispositivos móviles, sin necesidad de instalación local. Las funcionalidades principales incluyen:
 
-Gestión de deudas y creación de planes de pago personalizados.
-
-Seguimiento de ingresos, egresos y presupuestos.
-
-Acceso a consultores financieros certificados.
-
-Talleres y contenidos de educación financiera.
-
-Notificaciones automáticas sobre vencimientos o recordatorios de pagos.
+- Gestión de deudas y creación de planes de pago personalizados.
+- Seguimiento de ingresos, egresos y presupuestos.
+- Acceso a consultores financieros certificados.
+- Talleres y contenidos de educación financiera.
+- Notificaciones automáticas sobre vencimientos o recordatorios de pagos.
 
 **3. Derechos y Responsabilidades del Usuario**
 
 **3.1. Uso Autorizado**
 
-DebtGo otorga una licencia no exclusiva e intransferible para el uso de la plataforma con fines personales o empresariales legítimos.
-
-El Usuario es responsable de la confidencialidad de sus credenciales de acceso y del uso adecuado del sistema.
-
-El Usuario se compromete a mantener información financiera veraz y actualizada.
+- DebtGo otorga una licencia no exclusiva e intransferible para el uso de la plataforma con fines personales o empresariales legítimos.
+- El Usuario es responsable de la confidencialidad de sus credenciales de acceso y del uso adecuado del sistema.
+- El Usuario se compromete a mantener información financiera veraz y actualizada.
 
 **3.2. Restricciones**
 El Usuario no podrá:
 
-Reproducir, modificar, distribuir o revender el servicio.
-
-Usar la plataforma para actividades ilegales o fraudulentas.
-
-Intentar acceder sin autorización a datos de otros usuarios o a la infraestructura del sistema.
-
-Compartir credenciales o usar la plataforma para manipular información financiera de terceros.
+- Reproducir, modificar, distribuir o revender el servicio.
+- Usar la plataforma para actividades ilegales o fraudulentas.
+- Intentar acceder sin autorización a datos de otros usuarios o a la infraestructura del sistema.
+- Compartir credenciales o usar la plataforma para manipular información financiera de terceros.
 
 **4. Responsabilidades de DebtGo**
 
@@ -2379,11 +2370,9 @@ El presente Acuerdo entra en vigor desde el momento de registro del usuario y pe
 
 **6.2. Terminación**
 
-El Usuario puede cancelar su cuenta desde el panel de configuración.
-
-DebtGo puede suspender o eliminar una cuenta ante uso indebido, impago, o incumplimiento de los términos.
-
-Los datos se conservarán por 30 días posteriores a la cancelación, tras lo cual serán eliminados permanentemente.
+- El Usuario puede cancelar su cuenta desde el panel de configuración.
+- DebtGo puede suspender o eliminar una cuenta ante uso indebido, impago, o incumplimiento de los términos.
+- Los datos se conservarán por 30 días posteriores a la cancelación, tras lo cual serán eliminados permanentemente.
 
 **7. Limitación de Responsabilidad**
 
