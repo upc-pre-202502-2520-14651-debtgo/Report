@@ -2307,7 +2307,103 @@ El frontend de la aplicación web de DebtGo fue construido en Vue.js, permitiend
 
 ![image](assets/Chapter-5/Mensaje.png) <br><br><br>
 
-#### 5.2.4. Implemented Native-Mobile Application Evidence
+
+#### 5.2.4. Acuerdo de Servicio – SaaS
+
+El presente Acuerdo de Servicio (SaaS) define los términos, condiciones, derechos y responsabilidades entre DebtGo y sus usuarios, en relación con el uso de la plataforma digital DebtGo, un software de gestión financiera y asesoramiento económico en la nube. Este acuerdo busca garantizar la correcta prestación del servicio, la protección de los datos de los usuarios y el cumplimiento de los principios éticos y legales aplicables en el ámbito financiero digital.
+
+**1. Aceptación del Acuerdo**
+
+Al registrarse y utilizar la plataforma DebtGo, el Usuario acepta los términos y condiciones establecidos en este documento, así como cualquier actualización futura. En caso de no estar de acuerdo, el Usuario deberá abstenerse de utilizar el servicio. La aceptación digital (checkbox o registro en línea) constituye la aceptación formal de este Acuerdo.
+
+**2. Descripción del Servicio**
+
+DebtGo es una solución Software as a Service (SaaS) que permite a los usuarios —emprendedores y consultores financieros— gestionar deudas, registrar ingresos y gastos, acceder a asesorías personalizadas y mejorar su educación financiera.
+El servicio opera completamente en la nube, accesible desde navegadores web o dispositivos móviles, sin necesidad de instalación local. Las funcionalidades principales incluyen:
+
+Gestión de deudas y creación de planes de pago personalizados.
+
+Seguimiento de ingresos, egresos y presupuestos.
+
+Acceso a consultores financieros certificados.
+
+Talleres y contenidos de educación financiera.
+
+Notificaciones automáticas sobre vencimientos o recordatorios de pagos.
+
+**3. Derechos y Responsabilidades del Usuario**
+
+**3.1. Uso Autorizado**
+
+DebtGo otorga una licencia no exclusiva e intransferible para el uso de la plataforma con fines personales o empresariales legítimos.
+
+El Usuario es responsable de la confidencialidad de sus credenciales de acceso y del uso adecuado del sistema.
+
+El Usuario se compromete a mantener información financiera veraz y actualizada.
+
+**3.2. Restricciones**
+El Usuario no podrá:
+
+Reproducir, modificar, distribuir o revender el servicio.
+
+Usar la plataforma para actividades ilegales o fraudulentas.
+
+Intentar acceder sin autorización a datos de otros usuarios o a la infraestructura del sistema.
+
+Compartir credenciales o usar la plataforma para manipular información financiera de terceros.
+
+**4. Responsabilidades de DebtGo**
+
+**4.1. Disponibilidad y Mantenimiento**
+DebtGo garantiza una disponibilidad mínima del 99.5% mensual, salvo interrupciones programadas o causas de fuerza mayor. Los mantenimientos planificados se notificarán con al menos 24 horas de anticipación.
+
+**4.2. Seguridad y Protección de Datos**
+DebtGo aplica medidas de seguridad cifrada (SSL/TLS), control de acceso basado en roles, y respaldo automático de información. Cumple con la Ley N° 29733 – Ley de Protección de Datos Personales del Perú y el GDPR europeo.
+
+**4.3. Privacidad y Uso Ético de Datos**
+DebtGo no compartirá ni venderá los datos de los usuarios sin su consentimiento expreso. Los datos recolectados se utilizan exclusivamente para la prestación y mejora del servicio.
+
+**5. Tarifas y Facturación**
+
+**5.1. Planes y Suscripción**
+DebtGo ofrece planes gratuitos y premium, los cuales incluyen acceso a servicios personalizados, análisis financiero avanzado y talleres en línea.
+Los detalles y precios de los planes estarán disponibles en la web oficial.
+
+**5.2. Facturación**
+Los pagos podrán realizarse de forma mensual o anual mediante los métodos habilitados (tarjeta o transferencia). No se realizarán reembolsos una vez iniciado el periodo de uso, salvo error comprobado en la facturación.
+
+**6. Duración y Terminación del Acuerdo**
+
+**6.1. Vigencia**
+El presente Acuerdo entra en vigor desde el momento de registro del usuario y permanecerá activo hasta su cancelación voluntaria o por incumplimiento.
+
+**6.2. Terminación**
+
+El Usuario puede cancelar su cuenta desde el panel de configuración.
+
+DebtGo puede suspender o eliminar una cuenta ante uso indebido, impago, o incumplimiento de los términos.
+
+Los datos se conservarán por 30 días posteriores a la cancelación, tras lo cual serán eliminados permanentemente.
+
+**7. Limitación de Responsabilidad**
+
+DebtGo no será responsable por pérdidas económicas indirectas, errores de interpretación financiera o daños derivados del uso inadecuado del servicio. La responsabilidad máxima de DebtGo se limita al monto abonado por el usuario durante los últimos 12 meses.
+
+**8. Modificaciones del Acuerdo**
+
+DebtGo podrá actualizar los términos del presente acuerdo para mejorar la experiencia del usuario o cumplir nuevas normativas. Las modificaciones serán notificadas mediante correo electrónico y publicadas en la plataforma.
+
+**9. Legislación Aplicable**
+
+Este Acuerdo se rige por las leyes de la República del Perú, siendo competentes los tribunales de Lima Metropolitana para cualquier controversia legal derivada del mismo.
+
+**10. Contacto**
+
+Para consultas o soporte, los usuarios pueden comunicarse a:
+📧 soporte@debtgo.com
+🌐 www.debtgo.com
+
+#### 5.2.5. Implemented Native-Mobile Application Evidence
 
 DebtGo también cuenta con una versión adaptada a dispositivos móviles, desarrollada en Kotlin o adaptando el frontend Vue a formato responsive para dispositivos. Las funcionalidades son consistentes con la versión web, con énfasis en la experiencia móvil.
 
@@ -2326,7 +2422,7 @@ DebtGo también cuenta con una versión adaptada a dispositivos móviles, desarr
 
   ![image](assets/Chapter-5/img-evidence-5.png) <br><br><br>
 
-#### 5.2.5. Implemented RESTful API and/or Serverless Backend Evidence
+#### 5.2.6. Implemented RESTful API and/or Serverless Backend Evidence
 
 El backend fue desarrollado con ASP NET CORE, bajo el enfoque RESTful. La API permite registrar usuarios, autenticarlos, administrar notificaciones y suscripciones, todo siguiendo las mejores prácticas de seguridad y estructura por capas.
 
@@ -2339,7 +2435,7 @@ El backend fue desarrollado con ASP NET CORE, bajo el enfoque RESTful. La API pe
 
   ![image](assets/Chapter-5/img-evidence-6.png) <br><br><br>
 
-#### 5.2.6. RESTful API documentation
+#### 5.2.7. RESTful API documentation
 
 La API de DebtGo se documentó mediante Swagger UI, ofreciendo una interfaz interactiva y profesional para desarrolladores. Esta documentación permite visualizar, probar y validar los servicios RESTful disponibles.
 
@@ -2351,7 +2447,7 @@ La API de DebtGo se documentó mediante Swagger UI, ofreciendo una interfaz inte
 
   ![image](assets/Chapter-5/img-evidence-6.png) <br><br><br>
 
-#### 5.2.7. Team Collaboration Insights
+#### 5.2.8. Team Collaboration Insights
 
 El desarrollo del sistema DebtGo se realizó mediante metodologías ágiles (Scrum), con herramientas colaborativas como:
 
