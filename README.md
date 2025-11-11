@@ -34,10 +34,6 @@
             <td>U202113279</td>
         </tr>
         <tr>
-            <td>Ramos Fuentes Rivera, Adriana Nicole</td>
-            <td>U202018427</td>
-        </tr>
-        <tr>
             <td>Gamarra Vega, Anderson José William</td>
             <td>U202016154</td>
         </tr>
@@ -45,10 +41,9 @@
 </div>
 
 <p align="center">
-    <strong>Setiembre, 2025</strong>
+    <strong>Noviembre, 2025</strong>
 </p>
 <br>
-
 <h1 align="center">Registro de versiones del Informe</h1>
 </br>
 <table>
@@ -64,26 +59,57 @@
             <tr>
                 <th>TB1</th>
                 <td>20/09/2025</td>
-                <td>
-                    <ul>
-          <li>Daniel Chávarri</li>
-          <li>Maria Fernanda Peña</li>
-          <li>Adriana Ramos</li>
-          <li>Anderson Gamarra</li>
-                    <ul>
-           </td>
-      <td>            
-             <ul>
-          <li>Capítulo I: Introducción</li>
-          <li>Capítulo II: Requirements Elicitation & Analysis</li>
-          <li>Capítulo III: Requirements Specification</li>
-          <li>Capítulo IV: Product Design</li>
-          <li>Capítulo V: Product Implementation</li>
-          <li>Avance de Conclusiones, Bibliografía y Anexos</li>
-        </ul>
-      </td>
-  </tr>
-</tbody>
+                <td><ul>
+                  <li>Daniel Chávarri</li>
+                  <li>Maria Fernanda Peña</li>
+                  <li>Adriana Campos</li>
+                  <li>Anderson Gamarra</li>
+                <ul></td>
+              <td><ul>
+                <li>Capítulo I: Introducción</li>
+                <li>Capítulo II: Requirements Elicitation & Analysis</li>
+                <li>Capítulo III: Requirements Specification</li>
+                <li>Capítulo IV: Product Design</li>
+                <li>Capítulo V: Product Implementation</li>
+                <li>Avance de Conclusiones, Bibliografía y Anexos</li>
+              </ul></td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <th>TP</th>
+                <td>10/10/2025</td>
+                <td><ul>
+                  <li>Daniel Chávarri</li>
+                  <li>Maria Fernanda Peña</li>
+                  <li>Anderson Gamarra</li>
+                <ul></td>
+              <td><ul>
+                <li>Capítulo III: Requirements Specification</li>
+                <li>Capítulo V: Product Implementation</li>
+                <li>Capítulo VI: Product Verification & Validation</li>
+                <li>Capítulo VII: DevOps Practices</li>
+                <li>Avance de Conclusiones, Bibliografía y Anexos</li>
+              </ul></td>
+            </tr>
+        </tbody>
+         <tbody>
+            <tr>
+                <th>TB2</th>
+                <td>13/10/2025</td>
+                <td><ul>
+                  <li>Daniel Chávarri</li>
+                  <li>Maria Fernanda Peña</li>
+                  <li>Anderson Gamarra</li>
+                <ul></td>
+              <td><ul>
+                <li>Capítulo VI: Product Verification & Validation</li>
+                <li>Capítulo VII: DevOps Practices</li>
+                <li>Capítulo VIII: Experiment-Driven Development</li>
+                <li>Avance de Conclusiones, Bibliografía y Anexos</li>
+              </ul></td>
+            </tr>
+        </tbody>
 </table>
 
 # Contenido
@@ -187,6 +213,9 @@
   - [6.1.2. Core Integration Tests](#612-core-integration-tests)
   - [6.1.3. Core Behavior-Driven-Development](#613-core-behavior-driven-development)
   - [6.1.4. Core System Tests](#614-core-system-tests)
+- [6.2. Static Code Analysis](#62-static-code-analysis)
+
+
 
 [Capítulo VII: DevOps Practices](capítulo-vii-devops-practices)
 - [7.1. Continuous Integration](#71-continuous-integration)
@@ -2546,6 +2575,58 @@ Esta sección reúne las **pruebas de integración del núcleo web de DebtGo**, 
 
 ### 6.1.4. Core System Tests. 
 
+## 6.2. Static testing & Verification
+
+#### 6.2.1. Static Code Analysis
+
+
+#### 6.2.1.1. Coding standard & Code conventions.
+
+
+#### 6.2.1.2. Code Quality & Code Security.
+
+### 6.2.2. Reviews
+
+## 6.3. Validation Interviews.
+
+
+### 6.3.1. Diseño de Entrevistas.
+
+
+### 6.3.2. Registro de Entrevistas.
+
+
+### 6.3.3. Evaluaciones según heurísticas.
+
+
+## 6.4. Auditoría de Experiencias de Usuario.
+
+
+### 6.4.1. Auditoría realizada.
+
+#### 6.4.1.1. Información del grupo auditado.
+
+
+#### 6.4.1.2. Cronograma de auditoría realizada.
+
+
+#### 6.4.1.3. Contenido de auditoría realizada.
+
+
+### 6.4.2. Auditoría recibida.
+
+
+#### 6.4.2.1. Información del grupo auditor.
+
+
+#### 6.4.2.2. Cronograma de auditoría recibida.
+
+
+#### 6.4.2.3. Contenido de auditoría recibida.
+
+#### 6.4.2.4. Resumen de modificaciones para subsanar hallazgos.
+
+
 # Capítulo VII: DevOps Practices
 ## 7.1. Continuous Integration
 ### 7.1.1. Tools and Practices
@@ -2748,6 +2829,71 @@ Para asegurar un despliegue continuo y confiable en **producción**, definimos l
 
 **Seguridad**
 - Escaneo de vulnerabilidades (Dependabot/Snyk) y políticas de secretos en CI.
+
+
+## 7.4. Continuous Monitoring
+
+### 7.4.1. Tools and Practices
+
+### 7.4.2. Monitoring Pipeline Components
+
+### 7.4.3. Alerting Pipeline Components
+
+### 7.4.4. Notification Pipeline Components.
+
+
+
+# Capítulo VIII: Experiment-Driven Development
+
+
+## 8.1. Experiment Planning
+### 8.1.1. As-Is Summary.
+
+
+### 8.1.2. Raw Material: Assumptions, Knowledge Gaps, Ideas, Claims.
+
+
+### 8.1.3. Experiment-Ready Questions.
+
+
+### 8.1.4. Question Backlog.
+
+
+### 8.1.5. Experiment Cards.
+
+
+## 8.2. Experiment Design
+
+
+### 8.2.1. Hypotheses.
+
+
+### 8.2.2. Domain Business Metrics
+
+
+### 8.2.3. Measures.
+
+
+### 8.2.4. Conditions.
+
+
+### 8.2.5. Scale Calculations and Decisions.
+
+
+### 8.2.6. Methods Selection.
+
+
+### 8.2.7. Data Analytics: Goals, KPIs and Metrics Selection.
+
+### 8.2.8. Web and Mobile Tracking Plan.
+
+## 8.3. Experimentation
+
+### 8.3.1. To-Be User Stories.
+
+### 8.3.2. To-Be Product Backlog
+
+
 
 # Conclusiones
 ## Conclusiones y recomendaciones
