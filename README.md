@@ -248,7 +248,7 @@
   - [7.4.2. Monitoring Pipeline Components](#742-monitoring-pipeline-components)
   - [7.4.3. Alerting Pipeline Components](#743-alerting-pipeline-components)
   - [7.4.4. Notification Pipeline Components](#744-notification-pipeline-components)
-  
+
 [Capítulo VIII: Experiment-Driven Development](#capítulo-viii-experiment-driven-development)
 - [8.1. Experiment Planning](#81-experiment-planning)
   - [8.1.1. As-Is Summary](#811-as-is-summary)
@@ -1413,9 +1413,131 @@ El espaciado entre los elementos del logotipo es uniforme y equilibrado. Esto cr
 
 ### 4.1.2. Web Style Guidelines
 
+Se definió estándares visuales y de interacción para la **Web App/Landing** de DebtGo, asegurando consistencia, accesibilidad (WCAG 2.1 AA) y buen rendimiento en **responsive**.
+
+### Estructura y Layout
+- **Grid:** 12 columnas, `max-width` 1200–1280px en desktop, gutters de 24px.
+- **Breakpoints:**  
+  - `≤576px` (mobile), `>576px` (phablet), `≥768px` (tablet), `≥992px` (laptop), `≥1200px` (desktop).
+- **Espaciado:** sistema 8px (8/16/24/32/48). Áreas grandes: 64–96px.
+- **Contenedores:** `padding` horizontal 16px (mobile), 24–32px (tablet/desktop).
+
+### Diseño de página
+- **Navbar fija** con enlaces: *Resumen*, *Beneficios*, *Cómo funciona*, *Precios* (si aplica), *FAQ* y CTA (*Crear cuenta*).  
+  En mobile: **menú hamburguesa** deslizable.
+- **Hero** con título claro, subtítulo y CTA; ilustración/imagen optimizada.
+- **Secciones**: tarjetas con iconos para beneficios, pasos del flujo, y una sección de **FAQ** expandible.
+- **Footer** con enlaces a *Términos*, *Privacidad*, correo de soporte y redes; badge de seguridad/SSL.
+
+### Responsive
+- **CSS3 + media queries** con unidades relativas (`rem`, `%`, `vh/vw`).
+- Elementos clave (navbar, footer, grids) reordenan y cambian densidad en pantallas pequeñas.
+- Tablas → listas apiladas o tarjetas en mobile.
+
+### Tipografía
+- **Primaria:** Inter / Poppins / Roboto (sans).  
+- Escala recomendada: `H1 40–48px`, `H2 32–36px`, `H3 24–28px`, `Body 16–18px`, `Caption 12–14px`.
+- **Contraste mínimo:** 4.5:1; tamaños fluidos con `clamp()`.
+
+### Colores
+- Usar **tokens** y tema claro/oscuro:
+  - `--color-primary`, `--color-secondary`, `--color-bg`, `--color-surface`, `--color-success`, `--color-warning`, `--color-error`.
+- Estados: hover/focus/disabled definidos; foco visible (`outline` accesible).
+
+### Imágenes y Medios
+- Formatos: **WebP** preferido; fallback **JPEG/PNG**.  
+- Compresión y `loading="lazy"`; `srcset`/`sizes` para responsive.
+
+### Componentes e Interacción
+- **Botones:** primario (filled), secundario (outlined), terciario (text). Altura 40–48px, radios 8–12px.
+- **Forms:** validación en tiempo real, mensajes claros, máscaras de entrada (monto/fecha).  
+- **Animaciones:** sutiles (150–250ms, `ease-out`), sin bloquear contenido; respetar *prefers-reduced-motion*.
+
+### Navegación
+- Breadcrumbs en secciones internas.  
+- Enlaces de redes en footer accesibles con `aria-label`.  
+- Atajos de teclado para acciones frecuentes (opcional).
+
+### Recursos
+- Repositorio de **assets** (logos, íconos, ilustraciones).  
+- Archivo de **tokens de diseño** (CSS variables/JSON).  
+- Fuentes y guía de uso (peso, fallback).
+
 ### 4.1.3. Mobile Style Guidelines
 
+Garantizar coherencia visual y funcional en **iOS** y **Android**, respetando patrones nativos y manteniendo la identidad de DebtGo.
+
+Reglas comunes:
+- **Sistema de espaciado:** base 8px.  
+- **Tamaños táctiles mínimos:** 44×44pt (iOS) / 48×48dp (Android).  
+- **Accesibilidad:** tamaños dinámicos (Dynamic Type / Font Scaling), contraste ≥4.5:1, soporte *screen readers* (VoiceOver/TalkBack).
+
 #### 4.1.3.1. iOS Mobile Style Guidelines
+
+**Principios (HIG):** claridad, deferencia al contenido y profundidad.
+
+#### Navegación
+- **Navigation Bar**: título centrado o alineado a la izquierda según jerarquía; acciones a la derecha (*Guardar*, *Editar*).
+- **Tab Bar** (hasta 5 tabs): icono + etiqueta (texto corto). Badges para estados relevantes (p. ej., notificaciones).
+
+#### Interacción
+- **Botones:** estilo *filled* y *tinted*; radio 12pt; altura 44–48pt.
+- **Feedback:** cambio de opacidad y **haptic** sutil en acciones principales.
+- **Gestos:** *swipe* para acciones en listas (p. ej., marcar pagado/posponer).
+
+#### Tipografía
+- **SF Pro** (San Francisco).  
+  - Títulos: 17pt (semibold) con Dynamic Type.  
+  - Cuerpo: 15pt (regular).  
+  - Subtítulos/labels: 13pt.
+
+#### Colores y Espaciado
+- Tokens iOS: `label`, `secondaryLabel`, `systemBackground`, `secondarySystemBackground`, `separator`.  
+- **Contraste** AA y estados claros (enabled/disabled/error/success).
+
+#### Iconografía
+- **SF Symbols** priorizado para coherencia y adaptabilidad (peso/escala).  
+- Íconos de acción consistentes entre pantallas (ej.: calendario, campana, tarjeta).
+
+#### Patrones de DebtGo
+- **Flujo “Registrar deuda”**: formulario paso a paso con validación por campo.  
+- **“Programar recordatorios”**: controles de fecha/hora nativos + switches de canales (push/email/SMS).  
+- **Dashboard**: tarjetas de deuda con chips de estado (Vencida/Próxima/Al día).
+
+#### 4.1.3.2. Android Mobile Style Guidelines
+
+**Principios (Material Design 3):** jerarquía clara, movimiento significativo y personalización (Material You).
+
+#### Navegación
+- **App Bar** (Top App Bar): título a la izquierda; acciones en **overflow (⋮)** cuando superen 2.  
+- **Bottom Navigation**: 3–5 destinos; estados activos con **indicator** y color de énfasis.  
+- **Navigation Drawer** para accesos secundarios (perfil, ajustes).
+
+#### Interacción
+- **Botones (MD3):**  
+  - **Filled**: acción primaria (pago/guardar).  
+  - **Outlined**: secundaria.  
+  - **Text**: terciaria.  
+  - Altura 48dp; radios según MD3 (8–12dp).
+- **Feedback:** **Ripple** táctil; transiciones 200–250ms.
+
+#### Tipografía
+- **Roboto** o **Roboto Flex**.  
+  - Title Large ~22sp, Title Medium ~16–18sp, Body ~14–16sp.  
+  - Respeto a *fontScale* del sistema.
+
+#### Colores y Elevación
+- **Material Theming** con `primary`, `secondary`, `tertiary`, `error`, `surface`, `on*`.  
+- **Elevación** para jerarquía: `Card` 1–3dp, `FAB` 6dp.  
+- Soporte de **tema dinámico** (Material You) cuando el sistema lo permita.
+
+#### Iconografía
+- **Material Icons** (Filled/Outlined/Rounded); tamaño 24dp en controles, 20dp en listas densas.
+
+#### Patrones de DebtGo
+- **Flujo “Registrar deuda”**: `TextField` MD3 con helper/error; teclado numérico para monto y `DatePicker`.  
+- **“Programar pagos”**: `SegmentedButtons` para frecuencia + `TimePicker`.  
+- **Notificaciones**: switches por canal; `Snackbar/Toast` para feedback.
 
 ## 4.2. Information Architecture
 La Arquitectura de la Información (AI, por sus siglas en inglés) es una disciplina y una práctica de diseño que se ocupa de optimizar la forma en que se organiza, estructura, etiqueta y conecta la información en entornos digitales. Esta arquitectura es esencialmente una especie de ‘mapa’ que se usa para ayudar a los usuarios a comprender dónde se encuentran en un entorno digital, cómo llegaron allí y cómo pueden continuar hacia otras secciones relacionadas o importantes.
