@@ -2741,7 +2741,7 @@ Esta sección reúne las **pruebas de integración del núcleo web de DebtGo**, 
 
 ## 6.2. Static testing & Verification
 
-#### 6.2.1. Static Code Analysis
+### 6.2.1. Static Code Analysis
 
 
 #### 6.2.1.1. Coding standard & Code conventions.
@@ -2751,10 +2751,68 @@ Esta sección reúne las **pruebas de integración del núcleo web de DebtGo**, 
 
 ### 6.2.2. Reviews
 
-## 6.3. Validation Interviews.
+El repositorio de **DebtGo** se gestiona con **Pull Requests** en GitHub. Todo cambio pasa por revisión de al menos **1 revisor** (ideal: 2) antes de integrarse a `main`. Se valida:
 
+- Estándares de código (naming, formateo, pruebas unitarias/integración).
+- **Contratos de dominio (DDD):** entidades, agregados, repositorios y límites de contexto (p. ej., *Debt*, *Reminder*, *Payment*, *User*).  
+  - Rechazamos acoplamientos cruzados entre *contexts* y dependencias “hacia dentro”.
+- **Seguridad y datos:** validación/sanitización, manejo de errores, no exponer PII.
+- **Evidencia en CI:** pipelines verdes (GitHub Actions), cobertura mínima de pruebas y *lint*.
+
+Como soporte de calidad estática, se usa **SonarQube** (u otra alternativa de SAST) para detectar *code smells*, vulnerabilidades y duplicaciones. Las conversaciones de revisión quedan trazadas en el PR.
+
+## 6.3. Validation Interviews.
+Validar si DebtGo **reduce fricción** en el alta de deudas, **mejora recordatorios** (canal y timing) y **aumenta pagos a tiempo**. Las entrevistas se enfocan en comportamiento real y decisiones financieras cotidianas.
 
 ### 6.3.1. Diseño de Entrevistas.
+
+- **Formato:** semi-estructuradas (15–25 min), con tareas cortas (pensamiento en voz alta).
+- **Muestra:** 6–8 entrevistas por segmento (mín. 12 totales).
+- **Ética:** consentimiento informado; no recolectar datos sensibles (montos reales opcionales/anónimos).
+
+**Segmentos Objetivo**
+
+1) **Segmento Objetivo: Consultores financieros:**  
+   Estudiantes, jóvenes profesionales o jefes de hogar con pagos recurrentes (servicios, tarjetas, préstamos).
+
+2) **Segmento Objetivo: Gestores de Deudas y Emprendedores**  
+   Quienes administran pagos a proveedores/servicios y necesitan control de vencimientos.
+
+**Preguntas generales**
+
+¿Cuál es tu nombre?
+¿Cuáles son tus apellidos?
+¿Cuál es tu edad?
+¿En qué distrito resides?
+
+**Segmento Objetivo: Consultores financieros:**
+1. ¿Te resulta claro cómo entrar con tu correo y contraseña? ¿Agregarías “continuar con Google/Apple”?
+2. ¿Entiendes qué datos debes completar y las reglas de contraseña antes de registrarte?
+3. ¿Aceptarías los Términos/Política desde esa vista sin dudas? ¿Qué te haría confiar más?
+4. ¿Queda claro lo que incluye Basic vs Premium y el precio mensual? ¿Cuál elegirías y por qué?
+5. Al hacer clic, ¿qué esperas que ocurra (pago, prueba gratis, más detalles)?
+6. ¿Es sencillo ver y editar tu nombre, correo y contraseña? ¿Qué mejorarías del flujo?
+7. ¿Te queda claro tu plan actual y cómo cancelar o cambiar de plan?
+8. Al entrar a My Workspace, ¿sabes qué acciones están disponibles (métricas, presupuestos, cursos)?
+9. En Financial tools, ¿entiendes qué hay en Analytics, Budgets y Courses? ¿Qué te falta?
+10. ¿Te resulta fácil iniciar conversación con un consultor y entender el historial del caso?
+11. ¿La jerarquía (títulos, botones, tarjetas) te guía sin perderte? ¿Dónde hubo confusión o clics extra?
+12. ¿Qué señales aumentarían tu confianza para manejar datos financieros (sellos, 2FA, explicación de seguridad)?
+
+
+**Segmento Objetivo: Gestores de Deudas y Emprendedores** 
+1. ¿Puedes iniciar sesión y llegar a tu Workspace sin pasos confusos?
+2. ¿Editar nombre/correo/contraseña es directo? ¿Dónde cambiarías disponibilidad u horario?
+3. ¿Entiendes de inmediato dónde ver reseñas, mensajes y métricas?
+4. ¿Distingues claramente Edit service de Post new service?
+5. En Post new service, ¿los campos (título, descripción, precio, archivos) son suficientes y claros?
+6. ¿El selector de precio es claro (moneda, unidad, por sesión/hora)? ¿Qué formato ayudaría?
+7. ¿Dónde te gustaría ver y gestionar reseñas y calificaciones (responder, reportar, destacar)?
+8. ¿Puedes localizar contactos, adjuntar archivos y seguir el historial del caso sin perder contexto?
+9. ¿Qué indicadores necesitas (tasa de respuesta, conversiones, ingresos, NPS)?
+10. ¿La sección Courses te motiva para mejorar perfil/ingresos? ¿Qué certificación te sería útil?
+11. ¿La sección Courses te motiva para mejorar perfil/ingresos? ¿Qué certificación te sería útil?
+12. ¿Qué te falta para sentir seguridad al ofrecer servicios (verificación de identidad, términos claros, protección al consultor)?
 
 
 ### 6.3.2. Registro de Entrevistas.
