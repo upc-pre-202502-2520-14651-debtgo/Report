@@ -2740,26 +2740,30 @@ Esta sección reúne las **pruebas de integración del núcleo web de DebtGo**, 
 ### 6.1.4. Core System Tests. 
 
 ## 6.2. Static testing & Verification
-
 ### 6.2.1. Static Code Analysis
-
-
 #### 6.2.1.1. Coding standard & Code conventions.
 
+DebtGo utiliza Java 17 y Spring Boot 3 con una arquitectura por capas (controller, service, repository, domain, dto). El estilo de código sigue una convención simple: paquetes en minúsculas con el prefijo com.debtgo.`debtgo_backend`, clases e interfaces en PascalCase (por ejemplo, `AdvisoryController`, `ConsultantService`) y miembros/métodos en camelCase. La indentación es de cuatro espacios, los imports se mantienen ordenados y sin comodines, y se evita superar las 120 columnas para preservar la legibilidad. Cada archivo contiene una sola clase pública.
+
+En la superficie de la API, los controladores REST agrupan endpoints por agregado de dominio y exponen rutas en plural, aplicando los verbos HTTP de forma idempotente cuando corresponde. Las entidades JPA nunca se exponen directamente; la entrada y salida se modela con DTOs validados con jakarta.validation para asegurar contratos explícitos. Los errores se estandarizan mediante un `@ControllerAdvice`, de modo que los clientes reciben códigos y mensajes consistentes.
+
+A nivel de dominio y persistencia, las entidades residen en domain y los repositorios Spring Data en repository, mientras que la lógica de aplicación se concentra en service con transacciones donde haga falta. Lombok se usa para eliminar boilerplate (getters, setters y builders), evitando @Data en entidades para no comprometer igualdad y hash. La documentación mínima se mantiene con JavaDoc en APIs públicas y se fomenta el nombrado expresivo sobre comentarios redundantes. El resultado es un código uniforme, fácil de revisar y listo para automatizar con herramientas como Checkstyle/Spotless o SonarLint cuando el equipo lo requiera.
 
 #### 6.2.1.2. Code Quality & Code Security.
 
+En DebtGo la calidad y seguridad del código se controlan de extremo a extremo desde la integración continua. Cada *push* o *pull request* dispara un flujo en **GitHub Actions** que compila el backend con Maven y ejecuta la batería de pruebas con **JUnit 5** y **Mockito** (además de tests web con Spring MockMvc). Este circuito *fail-fast* evita que lleguen a la rama principal cambios que rompan la construcción o el comportamiento esperado.
+
+La cadena de dependencias se vigila con alertas automáticas de **GitHub** (Dependabot) y con escaneos de vulnerabilidades en tiempo de construcción (por ejemplo, **OWASP Dependency-Check**). Así se detectan CVEs conocidas y transitives desactualizadas, proponiendo upgrades seguros. A nivel de repositorio también se activa secret scanning para impedir que llaves o tokens se filtren por accidente.
+
+En el código se aplican prácticas defensivas coherentes con DDD y Spring: validación de entrada con `jakarta.validation` en DTOs, manejo centralizado de errores con `@ControllerAdvice`, serialización segura evitando exponer entidades JPA, límites de paginación para prevenir abusos, configuración por variables de entorno (credenciales nunca en el repositorio) y despliegue en **Dokploy** con secretos gestionados como *environment variables*. Con esta combinación de pruebas, análisis estático y escaneo de dependencias, el proyecto mantiene un ciclo de mejora continua que reduce deuda técnica y riesgos antes de llegar a producción.
+
 ### 6.2.2. Reviews
 
-El repositorio de **DebtGo** se gestiona con **Pull Requests** en GitHub. Todo cambio pasa por revisión de al menos **1 revisor** (ideal: 2) antes de integrarse a `main`. Se valida:
+El flujo de trabajo de DebtGo se basa en **Pull Requests** con ramas protegidas. Todo cambio pasa por revisión cruzada: al menos un revisor valida el código antes de fusionarlo a `main`. La PR debe aprobar checks obligatorios: compilación Maven, pruebas **(JUnit 5, Mockito/MockMvc)** y análisis estático con SonarQube/SonarScanner. Si hay hallazgos críticos, la PR queda bloqueada hasta corregirlos.
 
-- Estándares de código (naming, formateo, pruebas unitarias/integración).
-- **Contratos de dominio (DDD):** entidades, agregados, repositorios y límites de contexto (p. ej., *Debt*, *Reminder*, *Payment*, *User*).  
-  - Rechazamos acoplamientos cruzados entre *contexts* y dependencias “hacia dentro”.
-- **Seguridad y datos:** validación/sanitización, manejo de errores, no exponer PII.
-- **Evidencia en CI:** pipelines verdes (GitHub Actions), cobertura mínima de pruebas y *lint*.
+Las revisiones combinan lectura manual y evidencias del pipeline. Nuestro checklist se centra en: (a) cumplimiento de convenios de código y arquitectura, (b) contrato REST (nombres, estatus HTTP, DTOs validados con `jakarta.validation`), (c) cobertura mínima de pruebas por capa, (d) seguridad básica (no exponer entidades, manejo de errores con `@ControllerAdvice`, secretos fuera del repo) y (e) impacto en rendimiento/paginación.
 
-Como soporte de calidad estática, se usa **SonarQube** (u otra alternativa de SAST) para detectar *code smells*, vulnerabilidades y duplicaciones. Las conversaciones de revisión quedan trazadas en el PR.
+Al seguir **DDD**, la revisión prioriza la correcta separación por **bounded contexts** (deuda, educación, pagos, asesoría), la integridad de **agregados/entidades** y el bajo acoplamiento entre módulos. Este proceso mantiene la calidad, reduce deuda técnica y evita regresiones antes del despliegue en Dokploy.
 
 ## 6.3. Validation Interviews.
 Validar si DebtGo **reduce fricción** en el alta de deudas, **mejora recordatorios** (canal y timing) y **aumenta pagos a tiempo**. Las entrevistas se enfocan en comportamiento real y decisiones financieras cotidianas.
