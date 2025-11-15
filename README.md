@@ -3185,115 +3185,134 @@ Este circuito asegura respuestas rápidas, con evidencia suficiente (logs, repor
 ## 8.1. Experiment Planning
 ### 8.1.1. As-Is Summary.
 
-**Contexto actual.** DebtGo permite registrar deudas, programar pagos y configurar recordatorios (push/email/SMS). Los pilotos iniciales muestran interés, pero hay fricciones que afectan adopción y activación temprana:
-- **Adopción inicial moderada:** parte de usuarios abandona antes de completar el registro/primera deuda.
-- **Onboarding con fricción:** dudas al ingresar monto, fecha límite y método de pago.
-- **Valor percibido desigual:** los recordatorios gustan, pero no todos configuran reglas (anticipación/canal/frecuencia).
-- **Móvil prioritario:** la mayoría de eventos clave ocurren en mobile.
+**DebtGo** es una plataforma web y móvil para gestión de deudas personales que ofrece: registro e inicio de sesión, selección de planes (Básico/Premium), panel con progreso de deuda y próximos pagos, configuración de pagos recurrentes, alta de nuevas deudas, centro de notificaciones (email/SMS/push) y un módulo de educación financiera con cursos.
 
-**Objetivos De Mejora**
-- Aumentar A1 (primera deuda <24h) en ≥ +30%.
-- Reducir tiempo de onboarding (registro → primera deuda) a ≤ 3 min.
-- Lograr ≥ 60% de usuarios con al menos 1 regla de recordatorio activa.
-- Mejorar Retención 7 días (R7)** en +15%.
+**Problemas identificados (situación actual):**
+
+- **Adopción inicial moderada:** fricción en el primer uso y en la selección de plan; algunos usuarios abandonan antes de completar el registro o el checkout.
+- **Onboarding y captura de datos financieros:** el alta de deudas requiere varios campos; hay dudas sobre terminología (tasa, pago mínimo, frecuencia).
+- **Adherencia a pagos y recordatorios:** parte de los usuarios desactiva notificaciones o las ignora; faltan métricas finas por canal (email/SMS/push).
+- **Experiencia web/móvil inconsistente:** diferencias menores en navegación y estados de carga; tiempos de respuesta variables en endpoints de pagos/consultas.
+- **Analítica limitada:** tracking básico de eventos; no hay panel unificado de funnels (registro → plan → primer pago) ni de éxito de recordatorios.
+- **Contenido educativo desconectado del flujo de deuda:** los cursos no siempre se relacionan con el contexto financiero actual del usuario.
+
+**Objetivos de mejora (To-Be):**
+
+- **Incrementar la tasa de finalización de registro/checkout** en ≥15% mediante mejoras UX (validaciones en vivo, ayudas contextuales y autocompletado).
+- **Reducir el tiempo de onboarding** (crear cuenta + registrar primera deuda) a ≤3 min con formularios progresivos y campos inteligentes.
+- **Elevar la tasa de pago a tiempo** en ≥10% optimizando la lógica de recordatorios (canal, frecuencia y contenido) y la configuración de pagos recurrentes.
+- **Unificar la experiencia web/móvil** logrando LCP ≤2.5 s en vistas críticas (Login, Dashboard, Add Debt) y estados de carga coherentes.
+- **Ampliar la analítica de producto** con funnels de conversión y cohortes de retención para decisiones basadas en datos.
+- **Vincular educación con el estado de la deuda**, recomendando módulos y tips según tipo de deuda y progreso (p. ej., “reducción de intereses” cuando APR alto).
 
 ### 8.1.2. Raw Material: Assumptions, Knowledge Gaps, Ideas, Claims.
 
 **Assumptions**
-- Un wizard guiado reduce abandono.
-- Plantillas por categoría (luz/internet/tarjeta) aceleran el alta.
-- Recordatorios preconfigurados (3 y 1 día antes) elevan uso.
-- Confirmaciones rápidas (pagado/posponer) mejoran retención.
+
+- Los usuarios con deudas múltiples valorarán un onboarding guiado que calcule automáticamente pagos (mínimo/óptimo) y fechas sugeridas.
+- Recordatorios multicanal (email/SMS/push) aumentarán el pago a tiempo y reducirán la morosidad.
+- Un checkout simple (planes Básico/Premium) mejorará la conversión sin requerir registro extenso previo.
+- Recomendar cursos financieros según el estado de la deuda incrementará la retención y el uso semanal.
+- Un dashboard claro con “próximo pago”, “saldo restante” y “progreso” será suficiente para el 80% de consultas diarias.
 
 **Knowledge Gaps**
-- ¿Dónde se traba más el alta inicial (monto/fecha vs método de pago)?
-- ¿Qué canal de recordatorio impacta más (push vs email vs SMS)?
-- ¿Qué plantilla es la más usada por segmento?
+- ¿Qué canal de notificación (email, SMS, push) produce mayor acción de pago por segmento de usuario?
+- ¿Qué campos del alta de deuda generan más abandono (monto, tasa, pago mínimo, frecuencia)?
+- ¿Qué barreras perciben los usuarios para registrar su primera deuda (confianza, tiempo, desconocimiento de términos)?
+- ¿Qué métricas del dashboard son más útiles (proyección, intereses ahorrados, calendario de pagos)?
+- ¿Cómo impacta el contenido educativo contextual (tips/módulos sugeridos) en la reducción de impagos?
 
 **Ideas**
-- Onboarding con checklist (3 pasos).
-- Wizard 2 pantallas (monto/fecha → confirmar).
-- Plantillas + atajos de fecha (quincena/fin de mes).
-- Presets de recordatorio por defecto (3 y 1 día, editable).
+
+- Onboarding progresivo con validación en vivo y textos aclaratorios (glosario simple para APR, cuota mínima, etc.).
+- Asistente de configuración de pagos con simulación “¿qué pasa si…?” (monto variable y fecha límite).
+- Motor de recordatorios adaptativos (canal + frecuencia según respuesta previa del usuario).
+- Recomendaciones educativas vinculadas al tipo de deuda (tarjeta, préstamo estudiantil, auto).
+- Mini-widgets de atajos en Home: “Añadir deuda”, “Registrar pago”, “Editar recordatorios”.
 
 **Claims**
-- Wizard + plantillas → A1 ≥ +30%.
-- Presets de recordatorio → +20% en confirmaciones de pago.
+
+- Simplificar el onboarding reducirá el abandono en el primer uso en ≥15%.
+- Optimizar recordatorios multicanal aumentará los pagos a tiempo en ≥10% en 30 días.
+- Un checkout más directo elevará la conversión a plan Básico/Premium en ≥12%.
 
 ### 8.1.3. Experiment-Ready Questions.
 
-A partir de los hallazgos del capítulo 8.1 (As-Is/Raw Material), definimos un set de **preguntas experimentales** enfocadas en activar más rápido a los usuarios, reducir fricción en el alta de deudas y aumentar la efectividad de recordatorios. Cada pregunta se puntúa con **Confianza, Riesgo, Impacto e Interés** (1–10) y se prioriza por el **Total**.
+Estas preguntas guían la validación de nuestras hipótesis a través de experimentos controlados. Se priorizan con cuatro criterios: **Confianza**, **Riesgo**, **Impacto** e **Interés**; la suma determina el **Total**.
 
-| Pregunta                                                                                               | Confianza | Riesgo | Impacto | Interés | Total |
-|--------------------------------------------------------------------------------------------------------|:---------:|:------:|:-------:|:------:|:-----:|
-|¿Un **wizard de 2 pasos** para registrar la primera deuda incrementa la **activación A1 ≥ 30%**?        |     7     |   3    |    9    |   8    |  27   |
-|¿Ofrecer **plantillas** (luz, internet, tarjeta) reduce el **tiempo de onboarding a ≤ 3 min**?          |     6     |   2    |    8    |   7    |  23   |
-|¿Habilitar **recordatorios preconfigurados** (3 y 1 día antes) eleva la **confirmación de pago ≥ 20%**? |     6     |   3    |    8    |   7    |  24   |
-|¿El canal **push** supera a **email** en **CTR** para recordar pagos pendientes en la primera semana?   |     5     |   2    |    7    |   6    |  20   |
-|¿Un **dashboard de estado** (Vencidas/Próximas/Al día) mejora la **retención 7-días (R7) ≥ 10%**?       |     6     |   3    |    7    |   6    |  22   |
+| Pregunta                                                                                                        | Confianza | Riesgo | Impacto | Interés | Total |
+|---|---:|---:|---:|---:|---:|
+| ¿Los recordatorios **multicanal adaptativos** (email/SMS/push) aumentan los **pagos a tiempo**?                | 6 | 3 | 9 | 9 | **27** |
+| ¿Simplificar el **onboarding** (formularios progresivos + validación en vivo) reduce el **abandono inicial**?  | 7 | 3 | 8 | 8 | **26** |
+| ¿Un **asistente de configuración de pagos** (“¿qué pasa si…?”) reduce **pagos omitidos** en el primer mes?     | 6 | 4 | 8 | 7 | **25** |
+| ¿Un **checkout directo** para planes Básico/Premium mejora la **conversión** de visitantes a suscriptores?     | 6 | 2 | 8 | 7 | **23** |
+| ¿Las **recomendaciones educativas contextuales** elevan el **uso semanal** y disminuyen **impagos recurrentes**?| 5 | 3 | 7 | 6 | **21** |
 
 ### 8.1.4. Question Backlog.
 
-Priorizamos las **preguntas** que guiarán los próximos ciclos de experimentación. Cada ítem se redacta en **formato interrogativo** y se ordena por **Prioridad** (1 = primero a ejecutar).
+Este backlog prioriza las preguntas críticas para los próximos ciclos de experimentación. Se ordenan por **prioridad estratégica** (1 = más alta), alineadas a los objetivos de DebtGo: aumentar pagos a tiempo, reducir abandono inicial y mejorar conversión a planes.
 
-| Pregunta                                                                                                     | Prioridad |
-|--------------------------------------------------------------------------------------------------------------|:---------:|
-| ¿Un **wizard de 2 pasos** para registrar la primera deuda incrementa la **activación A1** en **≥ 30%**?      |     1     |
-| ¿Habilitar **recordatorios preconfigurados** a **3 y 1 día** eleva la **confirmación de pago** en **≥ 20%**? |     2     |
-| ¿Ofrecer **plantillas** (luz, internet, tarjeta) reduce el **tiempo de onboarding** a **≤ 3 minutos**?       |     3     |
-| ¿El canal **push** supera a **email** en **CTR** de recordatorios durante la **primera semana**?             |     4     |
-| ¿Un **dashboard de estado** (Vencidas/Próximas/Al día) mejora la **retención a 7 días (R7)** en **≥ 10%**?   |     5     |
+| # | Pregunta                                                                                                       | Prioridad |
+|---:|---|---:|
+| 1 | ¿Los recordatorios **multicanal adaptativos** (email/SMS/push) aumentan los **pagos a tiempo**?               | 1 |
+| 2 | ¿Simplificar el **onboarding** (formularios progresivos + validación en vivo) reduce el **abandono inicial**? | 2 |
+| 3 | ¿Un **asistente de configuración de pagos** (“¿qué pasa si…?”) reduce **pagos omitidos** en el primer mes?    | 3 |
+| 4 | ¿Un **checkout directo** para planes Básico/Premium mejora la **conversión** de visitantes a suscriptores?    | 4 |
+| 5 | ¿Las **recomendaciones educativas contextuales** elevan el **uso semanal** y disminuyen **impagos**?          | 5 |
 
 ### 8.1.5. Experiment Cards.
 
-Las **Experiment Cards** detallan cada experimento planificado en base a las preguntas del *Question Backlog*. Cada tarjeta sigue el formato: **Question** (qué se valida), **Why** (por qué), **What** (qué se implementa) y **Hypothesis** (resultado esperado, medible).
+Las siguientes tarjetas describen los experimentos planificados a partir del **Question Backlog**. Cada experimento se estructura con **Question, Why, What, Hypothesis** para asegurar trazabilidad y resultados medibles.
 
+---
 
-**Experimento 1: Wizard de 2 pasos → Activación A1**
-
-| Campo | Descripción |
+#### Experimento 1: Recordatorios multicanal adaptativos
+| Campo | Detalle |
 |---|---|
-| **Question** | ¿Un **wizard de 2 pasos** para registrar la primera deuda incrementa la **activación A1** en **≥ 30%**? |
-| **Why** | El mayor abandono ocurre entre el registro y el alta de la primera deuda. Reducir campos y dividir el flujo en dos pasos puede disminuir carga cognitiva y acelerar la activación. |
-| **What** | Implementar un **wizard**: **Paso 1** (monto, fecha, categoría) → **Paso 2** (confirmación + validaciones y barra de progreso). Telemetría: `sign_up`, `debt_created`, tiempos por paso. |
-| **Hypothesis** | Los usuarios expuestos al wizard alcanzarán **A1 ≥ +30%** vs. control y el **T_onboarding** disminuirá **≥ 25%**. |
+| **Question** | ¿Los recordatorios multicanal adaptativos (email/SMS/push) aumentan los pagos a tiempo? |
+| **Why** | Muchos usuarios olvidan fechas de pago o no ven un solo canal (p. ej., correo). Un esquema adaptativo, que prioriza el canal con mejor respuesta por usuario, podría elevar la puntualidad y reducir intereses moratorios. |
+| **What** | Activar una regla que envíe recordatorios 5/2/1 días antes del vencimiento y el mismo día. Se probarán combinaciones (solo email vs. email+SMS+push) con asignación aleatoria por usuario. |
+| **Hypothesis** | Los usuarios expuestos a recordatorios multicanal adaptativos incrementarán su **on-time payment rate** en **≥12 p.p.** y reducirán pagos atrasados en **≥20%** durante 4 semanas. |
 
-**Experimento 2: Presets de recordatorios → Confirmación de pago**
+---
 
-| Campo | Descripción |
+#### Experimento 2: Onboarding simplificado y validación en vivo
+| Campo | Detalle |
 |---|---|
-| **Question** | ¿Habilitar **recordatorios preconfigurados** a **3 y 1 día** eleva la **confirmación de pago** en **≥ 20%**? |
-| **Why** | Muchos usuarios no configuran manualmente reglas; *defaults* razonables reducen fricción y promueven la acción a tiempo. |
-| **What** | Activar por defecto 2 reglas (3 y 1 día antes del vencimiento), **canal editable** (push/email) y switch global ON/OFF. Telemetría: `reminder_sent`, `reminder_clicked`, `marked_paid`, `snooze`. |
-| **Hypothesis** | Con presets, la proporción de recordatorios que terminan en **pagado/posponer ≤ 7 días** aumentará **≥ 20%** vs. control. |
+| **Question** | ¿Simplificar el onboarding (formularios progresivos + validación en vivo) reduce el abandono inicial? |
+| **Why** | Formularios largos y validaciones tardías generan fricción y abandono en el registro. Dividir en pasos cortos y validar en tiempo real debería disminuir errores y fricción cognitiva. |
+| **What** | Reemplazar el formulario único por 3 pasos (cuenta → perfil → primer objetivo de deuda) con validación inline y autocompletado de bancos comunes. A/B test contra la versión actual. |
+| **Hypothesis** | El **completion rate** de onboarding aumentará **≥15 p.p.** y el **tiempo a completar** se reducirá **≥25%** en nuevos usuarios durante 2 semanas. |
 
+---
 
-**Experimento 3: Plantillas por categoría → Tiempo de onboarding**
-
-| Campo | Descripción |
+#### Experimento 3: Asistente de configuración de pagos (“¿qué pasa si…?”)
+| Campo | Detalle |
 |---|---|
-| **Question** | ¿Ofrecer **plantillas** (luz, internet, tarjeta) reduce el **tiempo de onboarding** a **≤ 3 minutos**? |
-| **Why** | Empezar “en blanco” genera dudas (fechas típicas, periodicidad). Plantillas con sugerencias disminuyen errores y aceleran la captura. |
-| **What** | Mostrar 3 **plantillas** con campos prellenados y atajos de fecha (quincena/fin de mes); edición en el último paso. Telemetría de errores de validación y tiempo por campo. |
-| **Hypothesis** | El **T_onboarding** promedio será **≤ 3 min** y la **finalización del alta** subirá **≥ 15%** vs. control. |
+| **Question** | ¿Un asistente de configuración de pagos reduce pagos omitidos en el primer mes? |
+| **Why** | Usuarios indecisos sobre montos/frecuencias terminan sin programar pagos o configurándolos mal. Un asistente que simule escenarios puede dar claridad y compromiso. |
+| **What** | Desplegar un wizard con simulación de fechas, montos y proyección de intereses; al final, crear la regla de pago recurrente en un click. Cohorte treatment vs. control sin asistente. |
+| **Hypothesis** | La **tasa de usuarios con pago recurrente activo** subirá **≥18 p.p.** y los **pagos omitidos en el primer ciclo** bajarán **≥25%**. |
 
-**Experimento 4: Canal de recordatorio → CTR y conversión**
+---
 
-| Campo | Descripción |
+#### Experimento 4: Checkout directo para planes (Básico/Premium)
+| Campo | Detalle |
 |---|---|
-| **Question** | ¿El canal **push** supera a **email** en **CTR** de recordatorios durante la **primera semana**? |
-| **Why** | Elegir el canal más efectivo maximiza atención y acción; el push podría ser más oportuno en mobile. |
-| **What** | **A/B por canal** (Push vs. Email) manteniendo mismo contenido y timing. Segmentación por plataforma (iOS/Android/Web) y horario. |
-| **Hypothesis** | El **CTR Push** será **≥ 25%** mayor que el **CTR Email** y mostrará **mayor conversión a “marcar pagado”**. |
+| **Question** | ¿Un checkout directo para planes mejora la conversión de visitantes a suscriptores? |
+| **Why** | Pasos intermedios (redirecciones, confirmaciones redundantes) elevan la caída en compra. Un checkout embebido, con menos campos y medios locales, puede convertir mejor. |
+| **What** | Implementar un **checkout en una sola vista** con guardado de tarjeta y medios locales; medir conversión desde el landing y desde paywall in-app. |
+| **Hypothesis** | La **plan conversion rate** aumentará **≥20%** y el **abandono del checkout** disminuirá **≥30%** en 3 semanas. |
 
-**Experimento 5: Dashboard de estado → Retención 7 días (R7)**
+---
 
-| Campo | Descripción |
+#### Experimento 5: Recomendaciones educativas contextuales
+| Campo | Detalle |
 |---|---|
-| **Question** | ¿Un **dashboard de estado** (Vencidas/Próximas/Al día) mejora la **retención a 7 días (R7)** en **≥ 10%**? |
-| **Why** | La visión clara de obligaciones y próximos vencimientos incentiva el retorno y la gestión continua. |
-| **What** | Nueva **vista dashboard** con tarjetas y filtros; accesos rápidos a “marcar pagado/posponer” y CTA para configurar recordatorios. |
-| **Hypothesis** | Los usuarios con dashboard tendrán **R7 ≥ +10%** vs. control y mayor **frecuencia de sesiones** en la semana 1. |
+| **Question** | ¿Las recomendaciones educativas contextuales elevan el uso semanal y disminuyen impagos? |
+| **Why** | Micro-contenidos en el momento de la decisión (p. ej., antes de configurar un pago) pueden mejorar comprensión y hábitos, impactando uso y puntualidad. |
+| **What** | Mostrar cápsulas educativas (≤60s) ligadas a acciones clave (crear deuda, programar pago, revisar proyección). Medir consumo y efecto en comportamiento vs. grupo sin cápsulas. |
+| **Hypothesis** | Los **WAU** crecerán **≥10%** y los **pagos atrasados** caerán **≥12%** en usuarios que consumen ≥2 cápsulas por semana. |
 
 ## 8.2. Experiment Design
 
