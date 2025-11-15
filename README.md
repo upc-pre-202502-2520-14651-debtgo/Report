@@ -303,27 +303,31 @@ Criterio: La capacidad de reconocer responsabilidades éticas y profesionales en
         <p><b>Avance 1:</b></p>
         <p>Hice el Capítulo I, Capítulo II, Capítulo III y Capítulo IV, de igual manera, me aseguré de que todo vaya de acorde a los puntos indicados para la tb1.</p>
         <p><b>TB1:</b></p>
-        <p>Hice el Capítulo I, Capítulo II, Capítulo III y Capítulo IV, de igual manera, me aseguré de que todo vaya de acorde a los puntos indicados para la tb1.</p>
+        <p>Configure el control de acceso por rol y protección de credenciales (hashing de contraseñas, variables de entorno</p>
         <p><b>Avance 2:</b></p>
-        <p>Hice el Capítulo I, Capítulo II, Capítulo III y Capítulo IV, de igual manera, me aseguré de que todo vaya de acorde a los puntos indicados para la tb1.</p>
+        <p>Aseguró accesibilidad básica en la web (contraste, semántica, etiquetas) para no excluir usuarios</p>
         <p><b>Peña Riofrio, Maria Fernanda</b></p>
         <p><b>Avance 1:</b></p>
         <p>Realice una entrevista y desarrolle su respectivo análisis, con esto se reconoció la importancia de manejar la información de la entrevista con responsabilidad.</p>
-        <p><b>TB1 1:</b></p>
-        <p>Realice una entrevista y desarrolle su respectivo análisis, con esto se reconoció la importancia de manejar la información de la entrevista con responsabilidad.</p>
-        <p><b>Avance 1:</b></p>
-        <p>Realice una entrevista y desarrolle su respectivo análisis, con esto se reconoció la importancia de manejar la información de la entrevista con responsabilidad.</p>
+        <p><b>TB 1:</b></p>
+        <p>Prepare plan de respuesta a incidentes (contención, comunicación al usuario, remediación).</p>
+        <p><b>Avance 2:</b></p>
+        <p>Documentó políticas de registro de auditoría (quién hizo qué y cuándo) para trazabilidad y resolución de incidentes.</p>
         <p><b>Gamarra Vega, Anderson José William</b></p>
-       <p><b>TB1:</b></p>
+        <p><b>Avance 1:</b></p>
         <p>Realicé una entrevista y desarrollé algunos de los puntos establecidos en la TB1, asegurándome de manejar de manera ética la información recopilada.</p>
+        <p><b>TB1:</b></p>
+        <p>Lideró revisiones estáticas (estilo, seguridad, dependencia) y checklist de privacidad por diseño en PRs.</p>
+        <p><b>Avance 2:</b></p>
+        <p>Validó términos y avisos de privacidad en registro e inicio de sesión (transparencia en tratamiento de datos).</p>
       </td>
       <td>
         <p><strong>Avance 1:</strong></p>
         <p>Para la primera entrega, se realizó la investigación de los respectivos capítulos, manteniendo la responsabilidad ética y profesional en el desarrollo.</p>
         <p><strong>TB 1:</strong></p>
-        <p>Para la primera entrega, se realizó la investigación de los respectivos capítulos, manteniendo la responsabilidad ética y profesional en el desarrollo.</p>
+        <p>Para la segunda entrega, se probaron flujos con datos ficticios, reforzando accesibilidad, consentimiento y revisiones de seguridad en PR..</p>
         <p><strong>Avance 2:</strong></p>
-        <p>Para la primera entrega, se realizó la investigación de los respectivos capítulos, manteniendo la responsabilidad ética y profesional en el desarrollo.</p>
+        <p>Para la tercera entrega, con CI/CD y escaneo de dependencias, el equipo demostró cumplimiento sistemático de prácticas éticas y operativas (auditoría, gestión de incidentes, minimización de PII).</p>
       </td>
     </tr>
     <tr>
@@ -333,31 +337,31 @@ Criterio: La capacidad de reconocer responsabilidades éticas y profesionales en
         <p><b>Avance 1:</b></p>
         <p>Hice el Capítulo I, Capítulo II, Capítulo III y Capítulo IV, de igual manera, me aseguré de que todo vaya de acorde a los puntos indicados para la tb1.</p>
         <p><strong>TB 1:</strong></p>
-        <p>Para la primera entrega, se realizó la investigación de los respectivos capítulos, manteniendo la responsabilidad ética y profesional en el desarrollo.</p>
+        <p>Evalue riesgos de sobre-endeudamiento en funcionalidades (mensajes educativos, límites y advertencias).</p>
         <p><strong>Avance 2:</strong></p>
-        <p>Para la primera entrega, se realizó la investigación de los respectivos capítulos, manteniendo la responsabilidad ética y profesional en el desarrollo.</p>
+        <p>Priorice eficiencia de recursos en el backend (costo/energía) y reutilización de infraestructura.</p>
         <p><b>Peña Riofrio, Maria Fernanda</b></p>
-       <p><b>Avance 1:</b></p>
+        <p><b>Avance 1:</b></p>
         <p>A partir del análisis del video, se reflexionó sobre cómo una solución futura de software respondería a las necesidades del segmento entrevistado.</p>
         <p><strong>TB 1:</strong></p>
-        <p>Para la primera entrega, se realizó la investigación de los respectivos capítulos, manteniendo la responsabilidad ética y profesional en el desarrollo.</p>
+        <p>Analice el impacto económico y social de planes (Basic/Premium) para inclusión financiera y transparencia de precios..</p>
         <p><strong>Avance 2:</strong></p>
-        <p>Para la primera entrega, se realizó la investigación de los respectivos capítulos, manteniendo la responsabilidad ética y profesional en el desarrollo.</p>
+        <p>Realice que los dark patterns se evitarán en UX (opt-in real, cancelación visible), favoreciendo decisiones informadas del usuari</p>
         <p><b>Gamarra Vega, Anderson José William</b></p>
-       <p><b>Avance 1:</b></p>
+        <p><b>Avance 1:</b></p>
         <p>Realicé una entrevista y participé en el desarrollo de diferentes puntos de la TB1, considerando el impacto que tendría una futura solución de software en los aspectos sociales y económicos del contexto estudiado.</p>
         <p><strong>TB 1:</strong></p>
-        <p>Para la primera entrega, se realizó la investigación de los respectivos capítulos, manteniendo la responsabilidad ética y profesional en el desarrollo.</p>
+        <p>Consideró escalabilidad por regiones (latencia, regulaciones locales de datos) y localización (moneda, idioma).</p>
         <p><strong>Avance 2:</strong></p>
-        <p>Para la primera entrega, se realizó la investigación de los respectivos capítulos, manteniendo la responsabilidad ética y profesional en el desarrollo.</p>
+        <p>Propuso contenido educativo integrado (ahorro, presupuesto responsable) para beneficio social directo.</p>
       </td>
        <td>
-        <p><strong>TB1:</strong></p>
+        <p><strong>Avance 1:</strong></p>
         <p>Para la primera entrega, se realizaron los respectivos capítulos, donde se consideraron contextos globales en la presentación y elaboración de nuestro proyecto como una solución de ingeniería de software.</p>
         <p><strong>TB 1:</strong></p>
-        <p>Para la primera entrega, se realizó la investigación de los respectivos capítulos, manteniendo la responsabilidad ética y profesional en el desarrollo.</p>
+        <p>Para la segunda entrega, Los experimentos priorizaron métricas de bienestar del usuario (retención saludable, comprensión de riesgo) por encima de métricas de vanidad.</p>
         <p><strong>Avance 2:</strong></p>
-        <p>Para la primera entrega, se realizó la investigación de los respectivos capítulos, manteniendo la responsabilidad ética y profesional en el desarrollo.</p>
+        <p>Para la tercera entrega, Se consolidó un producto socialmente responsable, con educación financiera integrada, mensajes preventivos y operación eficiente con visión global (idioma/moneda/latencia).</p>
       </td>
     </tr>
   </tbody>
