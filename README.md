@@ -14,7 +14,9 @@
 <p align="center"><strong>NRC:</strong>14651</p>
 <p align="center"><strong>Docente:</strong>Juan Carlos Tinoco Licas</p>
 
+---
 
+# <p align="center">Informe del Avance 2</p>
 
 <p align="center">
     <strong>Startup: DebtGo</strong><br>
