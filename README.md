@@ -1,17 +1,20 @@
 <hr>
 
-# <center>COURSE PROJECT</center>
+<div align="center">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png"" alt="Logo de UPC" />
+</div>
 
-<p align="center">
-    <strong>Universidad Peruana de Ciencias Aplicadas</strong><br>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png"></img><br>
-    <strong>Ingeniería de Software - 7mo Ciclo</strong><br>
-    <strong>Diseño de Experimentos de Ingeniería de Software - 14651</strong><br>
-    <strong>Profesor: Juan Carlos Tinoco Licas</strong><br>
-    <br>INFORME DE TRABAJO FINAL - TF
-</p>
+# <p align="center">Universidad Peruana de Ciencias Aplicadas</p>
 
-</p>
+### <p align="center">Carrera de Ingeniería de Software</p>
+
+<p align="center"><strong>Período:</strong> 202520</p>
+
+<p align="center"><strong>1ASI0732 | Diseño de Experimentos de Ingeniería de Software </strong> </p>
+<p align="center"><strong>NRC:</strong>14651</p>
+<p align="center"><strong>Docente:</strong>Juan Carlos Tinoco Licas</p>
+
+
 
 <p align="center">
     <strong>Startup: DebtGo</strong><br>
@@ -57,7 +60,7 @@
         </thead>
         <tbody>
             <tr>
-                <th>TB1</th>
+                <th>Avance 1</th>
                 <td>20/09/2025</td>
                 <td><ul>
                   <li>Daniel Chávarri</li>
@@ -77,7 +80,7 @@
         </tbody>
         <tbody>
             <tr>
-                <th>TP</th>
+                <th>TB1</th>
                 <td>10/10/2025</td>
                 <td><ul>
                   <li>Daniel Chávarri</li>
@@ -95,7 +98,7 @@
         </tbody>
          <tbody>
             <tr>
-                <th>TB2</th>
+                <th>Avance 2</th>
                 <td>13/10/2025</td>
                 <td><ul>
                   <li>Daniel Chávarri</li>
@@ -295,20 +298,29 @@ Criterio: La capacidad de reconocer responsabilidades éticas y profesionales en
       <td><b>4.c.1 Reconoce responsabilidad ética y profesional en situaciones de ingeniería de software</b></td>
       <td>
         <p><b>Chávarri Zarzosa, Daniel Jhared</b></p>
+        <p><b>Avance 1:</b></p>
+        <p>Hice el Capítulo I, Capítulo II, Capítulo III y Capítulo IV, de igual manera, me aseguré de que todo vaya de acorde a los puntos indicados para la tb1.</p>
         <p><b>TB1:</b></p>
         <p>Hice el Capítulo I, Capítulo II, Capítulo III y Capítulo IV, de igual manera, me aseguré de que todo vaya de acorde a los puntos indicados para la tb1.</p>
+        <p><b>Avance 2:</b></p>
+        <p>Hice el Capítulo I, Capítulo II, Capítulo III y Capítulo IV, de igual manera, me aseguré de que todo vaya de acorde a los puntos indicados para la tb1.</p>
         <p><b>Peña Riofrio, Maria Fernanda</b></p>
-       <p><b>TB1:</b></p>
+        <p><b>Avance 1:</b></p>
         <p>Realice una entrevista y desarrolle su respectivo análisis, con esto se reconoció la importancia de manejar la información de la entrevista con responsabilidad.</p>
-        <p><b>Ramos Fuentes Rivera, Adriana Nicole</b></p>
-        <p><b>TB1:</b></p>
-        <p>Para esta primera entrega realicé una corrección general de los aspectos desarrollados. Además, incluí los Spikes Stories reconociendo las dificultades que se deben reducir antes de realizar la implementación de las funcionalidades.</p>
+        <p><b>TB1 1:</b></p>
+        <p>Realice una entrevista y desarrolle su respectivo análisis, con esto se reconoció la importancia de manejar la información de la entrevista con responsabilidad.</p>
+        <p><b>Avance 1:</b></p>
+        <p>Realice una entrevista y desarrolle su respectivo análisis, con esto se reconoció la importancia de manejar la información de la entrevista con responsabilidad.</p>
         <p><b>Gamarra Vega, Anderson José William</b></p>
        <p><b>TB1:</b></p>
         <p>Realicé una entrevista y desarrollé algunos de los puntos establecidos en la TB1, asegurándome de manejar de manera ética la información recopilada.</p>
       </td>
       <td>
-        <p><strong>TB1:</strong></p>
+        <p><strong>Avance 1:</strong></p>
+        <p>Para la primera entrega, se realizó la investigación de los respectivos capítulos, manteniendo la responsabilidad ética y profesional en el desarrollo.</p>
+        <p><strong>TB 1:</strong></p>
+        <p>Para la primera entrega, se realizó la investigación de los respectivos capítulos, manteniendo la responsabilidad ética y profesional en el desarrollo.</p>
+        <p><strong>Avance 2:</strong></p>
         <p>Para la primera entrega, se realizó la investigación de los respectivos capítulos, manteniendo la responsabilidad ética y profesional en el desarrollo.</p>
       </td>
     </tr>
@@ -316,21 +328,34 @@ Criterio: La capacidad de reconocer responsabilidades éticas y profesionales en
       <td><b>4.c.2 Emite juicios informados considerando el impacto de las soluciones de ingeniería de software en contextos globales, económicos, ambientales y sociales</b></td>
       <td>
         <p><b>Chávarri Zarzosa, Daniel Jhared</b></p>
-        <p><b>TB1:</b></p>
+        <p><b>Avance 1:</b></p>
         <p>Hice el Capítulo I, Capítulo II, Capítulo III y Capítulo IV, de igual manera, me aseguré de que todo vaya de acorde a los puntos indicados para la tb1.</p>
+        <p><strong>TB 1:</strong></p>
+        <p>Para la primera entrega, se realizó la investigación de los respectivos capítulos, manteniendo la responsabilidad ética y profesional en el desarrollo.</p>
+        <p><strong>Avance 2:</strong></p>
+        <p>Para la primera entrega, se realizó la investigación de los respectivos capítulos, manteniendo la responsabilidad ética y profesional en el desarrollo.</p>
         <p><b>Peña Riofrio, Maria Fernanda</b></p>
-       <p><b>TB1:</b></p>
+       <p><b>Avance 1:</b></p>
         <p>A partir del análisis del video, se reflexionó sobre cómo una solución futura de software respondería a las necesidades del segmento entrevistado.</p>
-        <p><b>Ramos Fuentes Rivera, Adriana Nicole</b></p>
-       <p><b>TB1:</b></p>
-        <p>Al realizar los Spikes Stories, se investigó las dificultades técnicas y funcionales que se presentan en las funcionalidades, lo que nos permite como equipo realizar una toma de decisión de forma informada teniendo en cuenta contextos globales.</p>
+        <p><strong>TB 1:</strong></p>
+        <p>Para la primera entrega, se realizó la investigación de los respectivos capítulos, manteniendo la responsabilidad ética y profesional en el desarrollo.</p>
+        <p><strong>Avance 2:</strong></p>
+        <p>Para la primera entrega, se realizó la investigación de los respectivos capítulos, manteniendo la responsabilidad ética y profesional en el desarrollo.</p>
         <p><b>Gamarra Vega, Anderson José William</b></p>
-       <p><b>TB1:</b></p>
+       <p><b>Avance 1:</b></p>
         <p>Realicé una entrevista y participé en el desarrollo de diferentes puntos de la TB1, considerando el impacto que tendría una futura solución de software en los aspectos sociales y económicos del contexto estudiado.</p>
+        <p><strong>TB 1:</strong></p>
+        <p>Para la primera entrega, se realizó la investigación de los respectivos capítulos, manteniendo la responsabilidad ética y profesional en el desarrollo.</p>
+        <p><strong>Avance 2:</strong></p>
+        <p>Para la primera entrega, se realizó la investigación de los respectivos capítulos, manteniendo la responsabilidad ética y profesional en el desarrollo.</p>
       </td>
        <td>
         <p><strong>TB1:</strong></p>
         <p>Para la primera entrega, se realizaron los respectivos capítulos, donde se consideraron contextos globales en la presentación y elaboración de nuestro proyecto como una solución de ingeniería de software.</p>
+        <p><strong>TB 1:</strong></p>
+        <p>Para la primera entrega, se realizó la investigación de los respectivos capítulos, manteniendo la responsabilidad ética y profesional en el desarrollo.</p>
+        <p><strong>Avance 2:</strong></p>
+        <p>Para la primera entrega, se realizó la investigación de los respectivos capítulos, manteniendo la responsabilidad ética y profesional en el desarrollo.</p>
       </td>
     </tr>
   </tbody>
