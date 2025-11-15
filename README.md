@@ -3316,347 +3316,478 @@ Las siguientes tarjetas describen los experimentos planificados a partir del **Q
 
 ## 8.2. Experiment Design
 
-Esta sección define cómo evaluaremos, de forma sistemática, el impacto de las iniciativas de UX/UI y producto en **DebtGo**. Con un enfoque basado en experimentos controlados, buscamos medir efectos directos sobre: **activación (A1)**, **tiempo de onboarding**, **confirmación de pagos**, **retención (R7)** y **engagement**.  
-Cada hipótesis se formula a partir del *Question Backlog* y se contrasta con variantes A/B controladas mediante **feature flags** en Web/iOS/Android, con ventanas de 1–2 semanas y segmentación por plataforma.
+El **Experiment Design** define cómo validaremos, con evidencia, que las mejoras de DebtGo impactan en los resultados que importan: puntualidad de pagos, reducción de atrasos, adopción de planes y uso sostenido de la app.  
+Trabajaremos con ciclos cortos de experimentación (2–4 semanas) usando cohortes control–tratamiento, medición estandarizada y tableros de seguimiento.  
+Cada experimento especifica **qué** cambiamos (intervención), **por qué** lo hacemos (racional), **cómo** lo medimos (métricas y ventanas de observación) y **cuál** es la hipótesis a contrastar.
+
+Principios operativos:
+- **Validez y comparabilidad**: asignación aleatoria cuando sea posible; mismas ventanas de medición y segmentos comparables.
+- **Métricas accionables**: on-time payment rate, pagos atrasados, completion rate de onboarding, conversión a planes, WAU/MAU, consumo de cápsulas educativas, configuración de pagos recurrentes.
+- **Ejecución segura**: feature flags y guardrails (p. ej., límites de envío de SMS/email, reintentos).
+- **Cierre de ciclo**: decisión explícita (escalar, iterar o descartar) basada en resultados y confianza estadística.
 
 ### 8.2.1. Hypotheses.
 
-> Estructura usada: **Question** (qué se valida) · **Belief** (supuesto que la sustenta) · **Hypothesis** (resultado cuantificable esperado) · **Null Hypothesis** (no hay efecto).
+Las hipótesis se derivan de los problemas y oportunidades priorizados (puntualidad de pagos, fricción en el onboarding, configuración de pagos, conversión de planes y educación financiera contextual). Cada tabla resume **Question, Belief, Hypothesis y Null Hypothesis**.
 
-**Hypothesis 1 — Wizard de 2 pasos → Activación A1**
+### Hypothesis 1: Recordatorios multicanal adaptativos
 
-|             | Hypothesis |
-|-------------|------------|
-| **Question** | ¿Un **wizard** de 2 pasos para registrar la primera deuda incrementa la **activación A1** en **≥ 30%**? |
-| **Belief**   | Reducir la complejidad inicial (menos campos y navegación clara) baja la carga cognitiva y acelera la primera acción significativa. |
-| **Hypothesis** | Los usuarios expuestos al wizard alcanzarán **A1 ≥ +30%** y reducirán el **tiempo de onboarding** **≥ 25%** frente al control. |
-| **Null Hypothesis** | El wizard **no cambia** significativamente A1 ni el tiempo de onboarding vs. control. |
+| Campo | Hypothesis |
+|---|---|
+| **Question** | ¿Los recordatorios multicanal adaptativos (email/SMS/push) aumentan los pagos a tiempo? |
+| **Belief** | Usuarios distintos reaccionan mejor a canales distintos; combinar y adaptar por respuesta individual mejorará la puntualidad. |
+| **Hypothesis** | La **on-time payment rate** del grupo con recordatorios adaptativos aumentará **≥ 12 p.p.** y los pagos atrasados caerán **≥ 20%** frente al control en 4 semanas. |
+| **Null Hypothesis** | No habrá diferencias estadísticamente significativas en puntualidad ni en atrasos frente al control. |
 
-**Hypothesis 2 — Presets de recordatorios → Confirmación de pago**
+### Hypothesis 2: Onboarding simplificado con validación en vivo
 
-|             | Hypothesis |
-|-------------|------------|
-| **Question** | ¿Activar **recordatorios preconfigurados** (3 y 1 día) eleva la **confirmación de pago** en **≥ 20%**? |
-| **Belief**   | Los *defaults* eliminan fricción de configuración y disparan acciones oportunas sin esfuerzo adicional. |
-| **Hypothesis** | Con presets por defecto, el % de recordatorios que terminan en **pagado/posponer ≤ 7 días** aumentará **≥ 20%** vs. control. |
-| **Null Hypothesis** | Los presets **no alteran** la tasa de confirmación frente al control. |
+| Campo | Hypothesis |
+|---|---|
+| **Question** | ¿Simplificar el onboarding (pasos progresivos + validación en vivo) reduce el abandono inicial? |
+| **Belief** | Menos campos por vista y feedback inmediato disminuyen la fricción cognitiva y los errores. |
+| **Hypothesis** | El **completion rate** del onboarding subirá **≥ 15 p.p.** y el **tiempo a completar** bajará **≥ 25%** respecto a la versión actual. |
+| **Null Hypothesis** | No se observan mejoras significativas ni en finalización ni en tiempo de completado. |
 
-**Hypothesis 3 — Plantillas por categoría → Tiempo de onboarding**
+### Hypothesis 3: Asistente de configuración de pagos (“¿qué pasa si…?”)
 
-|             | Hypothesis |
-|-------------|------------|
-| **Question** | ¿Ofrecer **plantillas** (luz, internet, tarjeta) reduce el **tiempo de onboarding** a **≤ 3 minutos**? |
-| **Belief**   | Empezar con campos sugeridos y fechas típicas (quincena/fin de mes) disminuye dudas y errores de validación. |
-| **Hypothesis** | Con plantillas, el **T_onboarding** promedio será **≤ 3 min** y la **finalización del alta** subirá **≥ 15%** vs. control. |
-| **Null Hypothesis** | Las plantillas **no** reducen el tiempo ni aumentan la finalización de forma significativa. |
+| Campo | Hypothesis |
+|---|---|
+| **Question** | ¿Un asistente que simula escenarios reduce pagos omitidos en el primer mes? |
+| **Belief** | Ver el impacto de montos/fechas en intereses y duración aumenta la confianza para activar pagos recurrentes. |
+| **Hypothesis** | La **tasa de usuarios con pago recurrente activo** crecerá **≥ 18 p.p.** y los **pagos omitidos del primer ciclo** caerán **≥ 25%** frente al control. |
+| **Null Hypothesis** | No hay cambios significativos en activación de pagos recurrentes ni en omisiones. |
 
-**Hypothesis 4 — Canal de recordatorio → CTR y conversión**
+### Hypothesis 4: Checkout directo de planes (Básico/Premium)
 
-|             | Hypothesis |
-|-------------|------------|
-| **Question** | ¿El canal **push** supera a **email** en **CTR** de recordatorios durante la **primera semana**? |
-| **Belief**   | Las notificaciones *push* son más visibles y oportunas en mobile, lo que impulsa atención y acción inmediata. |
-| **Hypothesis** | El **CTR Push** será **≥ 25%** mayor que el **CTR Email** y tendrá **mayor conversión** a “marcar pagado”. |
-| **Null Hypothesis** | No existe diferencia estadísticamente significativa entre **push** y **email** en CTR y conversión. |
+| Campo | Hypothesis |
+|---|---|
+| **Question** | ¿Un checkout embebido de un solo paso mejora la conversión a planes? |
+| **Belief** | Reducir redirecciones y campos, y ofrecer medios locales de pago disminuye el abandono. |
+| **Hypothesis** | La **plan conversion rate** aumentará **≥ 20%** y el **abandono del checkout** disminuirá **≥ 30%** vs. el flujo actual. |
+| **Null Hypothesis** | La conversión y el abandono no difieren de manera significativa respecto al flujo actual. |
 
-**Hypothesis 5 — Dashboard de estado → Retención 7 días (R7)**
+### Hypothesis 5: Recomendaciones educativas contextuales
 
-|             | Hypothesis |
-|-------------|------------|
-| **Question** | ¿Un **dashboard de estado** (Vencidas/Próximas/Al día) mejora la **retención a 7 días (R7)** en **≥ 10%**? |
-| **Belief**   | Una visión clara de obligaciones pendientes incentiva el retorno para seguimiento y acciones rápidas. |
-| **Hypothesis** | La variante con dashboard tendrá **R7 ≥ +10%** y **mayor frecuencia de sesiones** en la semana 1 vs. control. |
-| **Null Hypothesis** | El dashboard **no** mejora R7 ni la frecuencia de uso de manera significativa. |
+| Campo | Hypothesis |
+|---|---|
+| **Question** | ¿Cápsulas educativas contextuales elevan el uso y reducen impagos? |
+| **Belief** | Micro-contenidos en el momento de la decisión mejoran comprensión y hábitos de pago. |
+| **Hypothesis** | Los **WAU** crecerán **≥ 10%** y los **pagos atrasados** bajarán **≥ 12%** en usuarios que consumen ≥ 2 cápsulas/semana frente al control. |
+| **Null Hypothesis** | No hay diferencia significativa en uso semanal ni en atrasos frente al control. |
 
 ### 8.2.2. Domain Business Metrics
 
- Definir las métricas núcleo del **dominio de gestión de deudas** que reflejan valor real para el usuario y para el producto. Estas métricas se usan en discovery, experimentación y operación (cap. 7.4) para tomar decisiones con evidencia.
+Esta sección alinea la medición de los experimentos con los objetivos de negocio de **DebtGo**.  
+Todas las hipótesis y Experiment Cards solo pueden referirse a métricas definidas aquí.  
+Cada métrica incluye **definición**, **fórmula de cálculo**, **técnica de recolección** y **meta**.  
+Segmentaciones estándar: `plan` (Básico/Premium), `plataforma` (Web/Móvil), `cohorte_alta`, `país`, `edad_de_cuenta` (0–7, 8–30, 31–90 días).
 
-**North Star & Drivers**
+**Resultados de negocio (Pagos y cartera)**
 
-| Tipo | Métrica | Definición | Fórmula/Medición | Frecuencia | Meta inicial |
-|---|---|---|---|---|---|
-| **North Star** | **On-time Payment Rate (OTPR)** | % de deudas que se marcan **pagadas a tiempo** (≤ fecha de vencimiento). | `OTPR = Pagos a tiempo / Total de deudas con vencimiento en periodo` | Semanal/Mensual | ≥ **70%** |
-| Driver | **Activation A1** | Usuario crea su **primera deuda** dentro de 24h tras el registro. | `A1 = Usuarios con 1ª deuda <24h / Usuarios nuevos` | Diario/Semanal | +30% vs. línea base |
-| Driver | **Reminder → Payment Conversion** | % de recordatorios enviados que terminan en **pagado/posponer** ≤ 7 días. | `Conv = (Pagado ∨ Pospuesto ≤ 7d) / Recordatorios enviados` | Semanal | +20% |
-| Driver | **R7 Retention** | % de usuarios que vuelven en día 7 tras su primera sesión. | `R7 = Usuarios activos día 7 / Cohorte día 0` | Semanal (por cohorte) | +10% |
-| Driver | **Time-to-Onboard (T_onboarding)** | Segundos desde `sign_up` hasta `debt_created` (primera). | Diferencia de timestamps | Diario/Semanal | ≤ **180s** |
-
-**Catálogo de Métricas del Dominio**
-| Código | Métrica | Objeto | Definición Operacional | Eventos/Campos necesarios |
+| Métrica | Definición | Fórmula | Recolección | Meta |
 |---|---|---|---|---|
-| DM-01 | On-time Payment Rate (OTPR) | Deuda | Pago registrado con `paid_at ≤ due_date`. | `debt_created`, `debt_due_set`, `marked_paid(paid_at)`, `updated_due` |
-| DM-02 | Late Rate | Deuda | % de deudas pagadas **tarde** (`paid_at > due_date`). | Igual a DM-01 |
-| DM-03 | Overdue Stock | Usuario | # de deudas **vencidas y no pagadas** al corte. | `debt_status_changed`, consultas diarias |
-| DM-04 | Reminder Engagement (CTR) | Recordatorio | `clicks / enviados` por canal (push/email/SMS). | `reminder_sent{channel}`, `reminder_clicked` |
-| DM-05 | Reminder→Payment Conversion | Recordatorio | % de recordatorios que terminan en **pagado/posponer ≤ 7d**. | `reminder_sent`, `marked_paid`, `snooze`, join por `debt_id` |
-| DM-06 | A1 Activation | Usuario | 1ª deuda en <24h desde registro. | `sign_up`, `debt_created` |
-| DM-07 | T_onboarding | Usuario | Tiempo (seg) registro → 1ª deuda. | `sign_up(ts)`, `debt_created(ts)` |
-| DM-08 | Sessions/Week | Usuario | Frecuencia de uso (semana 1 y 4). | `session_start` |
-| DM-09 | Churn (opt-in) | Usuario | Usuario no vuelve en 28 días. | `last_session_at` |
+| **On-Time Payment Rate (OTPR)** | Porcentaje de pagos realizados en o antes de su fecha de vencimiento. | `pagos_on_time / pagos_programados` | Webhooks/procesador de pagos + cron diario que marca `on_time=true` si `fecha_pago ≤ due_date`. | **≥ 75%** (tratamiento H1). |
+| **Late Payment Rate** | Porcentaje de pagos con atraso. | `pagos_atrasados / pagos_programados` | Igual que OTPR, con `fecha_pago > due_date`. | **≤ 20%**. |
+| **Missed Payment Count (MPC)** | Número de pagos no realizados dentro de la ventana de gracia. | `count(pagos saltados)` en **t+7** días | Job semanal; compara `pagos_programados` vs. `pagos_realizados`. | **−25%** en H3. |
+| **Average Days Past Due (DPD)** | Días promedio de atraso por pago. | `avg(max(0, fecha_pago − due_date))` | Query mensual por cohorte. | **≤ 3 días**. |
+| **Interés evitado** | Intereses potenciales no incurridos por adelantar pagos o mantener al día. | `∑(tasa_diaria * saldo * días_ev)` | Simulador financiero + registros de pago. | Tendencia **↑** trimestral. |
 
-**Segmentación recomendada**
 
-| Dimensión | Valores ejemplo | Uso |
+**Adopción y activación de funcionalidades**
+
+| Métrica | Definición | Fórmula | Recolección | Meta |
+|---|---|---|---|---|
+| **Recurring Payment Activation Rate (RPAR)** | Usuarios activos que habilitan pagos recurrentes. | `usuarios_con_recurrente / usuarios_activos` | Evento `payment_recurring_enabled` (Web/Móvil). | **≥ 35%** (H3). |
+| **Plan Conversion Rate (PCR)** | Visitas a checkout que terminan en suscripción (Básico/Premium). | `suscripciones / sesiones_checkout` | Evento `checkout_completed`. | **+20%** vs. baseline (H4). |
+| **Onboarding Completion Rate (OCR)** | Usuarios que finalizan el onboarding en ≤ 24 h. | `usuarios_onboarding_ok / usuarios_onboarding_iniciado` | Evento de paso final + temporizador. | **≥ 85%** (H2). |
+| **Onboarding Time (p50/p90)** | Tiempo desde inicio hasta fin del onboarding. | `percentil(t_fin − t_inicio)` | Timestamps de pasos de onboarding. | **−25%** (H2). |
+
+**Uso y compromiso del producto**
+
+| Métrica | Definición | Fórmula | Recolección | Meta |
+|---|---|---|---|---|
+| **WAU / MAU** | Usuarios activos semanal/mensual. | Distintos `user_id` con sesión/acción en ventana. | Eventos de sesión y acciones clave. | **WAU/MAU ≥ 0.55**. |
+| **Educational Capsules Consumption** | Usuarios que ven ≥2 cápsulas/semana. | `usuarios_2plus_caps / usuarios_activos` | Evento `capsule_viewed`. | **≥ 30%** (H5). |
+| **Feature Adoption – “Manage Payments”** | Sesiones con uso del módulo de pagos. | `sesiones_con_manage_payments / sesiones_totales` | Evento `manage_payments_opened`. | **≥ 40%**. |
+
+**Notificaciones y comunicación (para H1)**
+
+| Métrica | Definición | Fórmula | Recolección | Meta |
+|---|---|---|---|---|
+| **Open Rate** | Aperturas sobre envíos por canal. | `aperturas / envíos` | Proveedor de email/SMS/push. | **Email ≥ 35%**, **Push ≥ 20%**, **SMS ≥ 90% entrega**. |
+| **CTA Click/Deep-Link Rate** | Clics hacia “Pagar ahora” u acción objetivo. | `clics / aperturas` | UTM + deep links. | **≥ 12%**. |
+| **Lift en OTPR atribuible** | Mejora de OTPR en 7 días post-recordatorio vs. control. | `OTPR_trat − OTPR_ctrl` | Experimento con cohortes. | **≥ +12 p.p.**. |
+
+**Satisfacción y salud del servicio (guardrails)**
+
+| Métrica | Definición | Fórmula | Recolección | Meta |
+|---|---|---|---|---|
+| **CSAT post-pago** | Satisfacción tras completar un pago. | Promedio escala 1–5 | Encuesta in-app tras pago. | **≥ 4.4**. |
+| **Crash-Free Sessions (Móvil)** | Sesiones sin crash / sesiones totales. | `1 − (crashes / sesiones)` | SDK de errores. | **≥ 99.5%**. |
+| **Latency p95 – API pagos** | p95 de `POST /payments` end-to-end. | Medición APM | Instrumentación backend. | **≤ 600 ms**. |
+| **Error Rate – API** | 5xx / requests. | `errores_5xx / requests` | Logs + APM | **≤ 0.3%**. |
+
+**Mapeo hipótesis ↔ métricas**
+
+| Hypothesis | Métricas primarias | Métricas secundarias |
 |---|---|---|
-| Plataforma | iOS / Android / Web | Ver impacto por canal de acceso |
-| Canal recordatorio | Push / Email / SMS | Comparar CTR y conversión |
-| Categoría de deuda | Luz / Internet / Tarjeta / Otro | Encontrar dónde plantillas funcionan mejor |
-| Antigüedad | Semana 1 / Semana 4 | Ver sostenibilidad del cambio |
-| Cohorte | Mes de registro | Control de estacionalidad |
+| **H1** Recordatorios adaptativos | OTPR, Late Payment Rate, Lift en OTPR | Open/Click Rate, DPD |
+| **H2** Onboarding simplificado | OCR, Onboarding Time p50/p90 | WAU/MAU (primer mes) |
+| **H3** Asistente de configuración | RPAR, Missed Payment Count | Late Payment Rate, DPD |
+| **H4** Checkout de un paso | PCR, Abandono de checkout | WAU/MAU, CSAT post-pago |
+| **H5** Educación contextual | WAU, Consumo de cápsulas | Late Payment Rate, Interés evitado |
 
-| Métrica | Baseline | Semana actual | Δ | Estado |
-|---|---:|---:|---:|---|
-| OTPR | 62% | 69% | +7 pp | 🟢 |
-| A1 Activation | 38% | 52% | +14 pp | 🟢 |
-| Reminder→Payment | 24% | 29% | +5 pp | 🟡 |
-| R7 | 21% | 24% | +3 pp | 🟡 |
-| T_onboarding (s) | 260 | 175 | −85 | 🟢 |
+**Notas de implementación**
 
-> **Estado**: 🟢 cumple meta · 🟡 en vigilancia · 🔴 debajo de meta.
-
-**Instrumentación (eventos y propiedades)**
-
-| Evento | Propiedades mínimas | Nota |
-|---|---|---|
-| `sign_up` | `user_id`, `ts`, `platform` | Nueva cuenta |
-| `session_start` | `user_id`, `ts`, `platform` | Frecuencia/retención |
-| `debt_created` | `debt_id`, `user_id`, `amount`, `category`, `due_date`, `ts` | Alta inicial |
-| `marked_paid` | `debt_id`, `user_id`, `paid_at`, `method` | Resultado clave para OTPR |
-| `snooze` | `debt_id`, `user_id`, `new_due_date`, `ts` | Posponer pago |
-| `reminder_sent` | `reminder_id`, `debt_id`, `user_id`, `channel`, `scheduled_for`, `ts` | Envío |
-| `reminder_clicked` | `reminder_id`, `debt_id`, `user_id`, `channel`, `ts` | Engagement |
-| `debt_status_changed` | `debt_id`, `from`, `to`, `ts` | Cálculo de stock vencido |
-
-**Guardrails (no romper mientras experimentamos)**
-
-| Guardrail | Límite | Acción |
-|---|---|---|
-| Tasa de errores (5xx) API | ≤ 0.5% | Rollback (cap. 7.4.4) |
-| Caída en finalización del flujo de alta | ≤ −10% vs. control | Pausar experimento |
-| Reportes de notificación “spam” | > 0.5% usuarios | Desactivar canal ofensivo |
-| LCP p75 (Web) | ≤ 2.5 s | Optimizar assets/caché |
-
-**Vinculación con Experimentos (8.1)**
-
-| Experimento | Driver afectado | North Star impactada | Evidencia primaria |
-|---|---|---|---|
-| Wizard 2 pasos | A1, T_onboarding | OTPR (indirecto) | ΔA1, ΔT_onboarding |
-| Presets recordatorios | Reminder→Payment | OTPR (directo) | ΔConversión ≤ 7d |
-| Plantillas | T_onboarding, A1 | OTPR (indirecto) | ΔTiempo, ΔFinalización |
-| Canal push vs email | CTR, Conversión | OTPR (directo) | ΔCTR, ΔPago |
-| Dashboard estado | R7, sesiones | OTPR (indirecto) | ΔR7, Δfreq sesiones |
+- **Granularidad**: diario para pagos/alertas; semanal para adopción/uso; mensual para impacto financiero.  
+- **Privacidad**: anonimización de `user_id` en analítica; opt-in de notificaciones; retención de datos según política.  
+- **Éxito de experimento**: diferencia mínima detectable (MDE) y nivel de significancia definidos por experimento; detener si se violan guardrails (latencia, error rate o quejas).
 
 ### 8.2.3. Measures.
 
-Las *measures* definen **cómo** validaremos cada hipótesis con evidencia cuantitativa y trazable. En DebtGo apuntamos a medir cambios en:
-- **Activación (A1)**: crear la **primera deuda** en < 24h.
-- **Tiempo de Onboarding (T_onboarding)**: segundos desde `sign_up` → `debt_created`.
-- **Conversión de Recordatorios**: recordatorios que terminan en **pagado/posponer** ≤ 7 días.
-- **Engagement de Recordatorios (CTR)**: clics/envíos por canal.
-- **Retención (R7)** y **frecuencia de uso**.
+Para evaluar si las hipótesis de **DebtGo** se cumplen, definimos métricas que miden de forma objetiva el impacto del producto sobre adopción, retención, conversión y salud financiera del usuario. Todas las métricas se calculan con datos del backend (servicios `auth`, `user`, `payment`, `debt`, `notifications`, `education`, `consultant`) y con eventos de frontend enviados a Analytics.
 
-Todas las métricas se obtienen de eventos instrumentados en Web/iOS/Android (`sign_up`, `debt_created`, `reminder_sent`, `reminder_clicked`, `marked_paid`, `snooze`, `session_start`) y se analizan por cohorte y plataforma.
+**Métricas primarias**
 
-**Measure: (Q1) Wizard de 2 pasos → Activación A1**
+- **Tasa de conversión a plan (CVR Plan)**  
+  **Fórmula:** usuarios que pagan un plan / usuarios que visitan *Select a plan*.  
+  **Fuente:** `payment` + eventos `plan_view`, `plan_purchase`.
 
-| Campo    | Descripción |
-|---|---|
-| **Question** | ¿Un **wizard de 2 pasos** para registrar la primera deuda incrementa la **activación A1** en **≥ 30%**? |
-| **Measure**  | **A1** = `% usuarios que crean su primera deuda < 24h desde sign_up` (eventos: `sign_up` → `debt_created`). Complementos: **T_onboarding** (seg) y **% finalización** del flujo. Comparación Control vs Variante (feature flag). |
+- **Tiempo de onboarding hasta primer valor (TTV)**  
+  **Definición:** minutos desde primer login hasta completar el tutorial y registrar la primera deuda o presupuesto.  
+  **Fuente:** `auth`, eventos `tutorial_completed`, `debt_created`, `budget_created`.
 
-**Measure: (Q3) Presets de recordatorios → Confirmación de pago**
+- **Pago a tiempo (On-Time Payment Rate)**  
+  **Fórmula:** pagos realizados ≤ fecha de vencimiento / total de pagos con vencimiento en el período.  
+  **Fuente:** `payments(due_date, paid_at)`.
 
-| Campo    | Descripción |
-|---|---|
-| **Question** | ¿Habilitar **recordatorios preconfigurados** a **3 y 1 día** eleva la **confirmación de pago** en **≥ 20%**? |
-| **Measure**  | **Conversión Recordatorio → Acción** = `% de recordatorios que terminan en **pagado** o **posponer** ≤ 7 días` (eventos: `reminder_sent`, `reminder_clicked`, `marked_paid`, `snooze`). Reportar por canal y por cohorte. |
+- **Retención a 7/30 días (D7/D30)**  
+  **Fórmula:** usuarios activos día 7/30 con al menos 1 evento clave (pago, simulación, avance de curso) / usuarios instalados.  
+  **Fuente:** `activity_log`.
 
-**Measure: (Q2) Plantillas por categoría → Tiempo de Onboarding**
+- **Exactitud percibida del simulador**  
+  **Definición:** puntuación (1–5) en encuesta in-app sobre claridad y utilidad del resultado.  
+  **Fuente:** `education/surveys`.
 
-| Campo    | Descripción |
-|---|---|
-| **Question** | ¿Ofrecer **plantillas** (luz, internet, tarjeta) reduce el **T_onboarding** a **≤ 3 minutos**? |
-| **Measure**  | **T_onboarding (seg)** = `ts(debt_created) − ts(sign_up)`. Soportes: **% finalización** del alta y **errores de validación por campo**. Segmentar por plantilla elegida. |
+**Métricas secundarias**
 
-**Measure: (Q4) Canal de recordatorio → CTR y conversión**
+- **Engagement con recordatorios**  
+  **Definición:** tasa de apertura/click de notificaciones (push, email, SMS) y % de usuarios que ajustan preferencias.  
+  **Fuente:** `notifications(sent, opened, clicked, settings_updated)`.
 
-| Campo    | Descripción |
-|---|---|
-| **Question** | ¿El canal **push** supera a **email** en **CTR** durante la **primera semana**? |
-| **Measure**  | **CTR por canal** = `reminder_clicked / reminder_sent` (dentro de 7 días). Medir también **conversión a “marcar pagado”** posterior al click. Segmentar por plataforma y franja horaria. |
+- **Tiempo de resolución de incidencias de pago**  
+  **Fórmula:** horas desde `payment_failed` hasta `payment_resolved`.  
+  **Fuente:** `payments`, `support_tickets` (si aplica).
 
-**Measure: (Q5) Dashboard de estado → Retención 7-días (R7)**
+- **Progreso en educación financiera**  
+  **Definición:** % de cursos iniciados/completados, lecciones vistas por sesión, nota de evaluación final.  
+  **Fuente:** `education`.
 
-| Campo    | Descripción |
-|---|---|
-| **Question** | ¿Un **dashboard de estado** (Vencidas/Próximas/Al día) mejora la **retención a 7 días (R7)** en **≥ 10%**? |
-| **Measure**  | **R7** = `% de usuarios de la cohorte día 0 que vuelven el día 7` (evento `session_start`). Soportes: **sesiones/semana** y **acciones rápidas** (pagado/posponer) desde el dashboard. Comparar Control vs Variante. |
+- **Actividad en consultoría**  
+  **Definición:** mensajes por usuario/semana, servicios publicados, ratio *contacto → cita*.  
+  **Fuente:** `consultant`, `messages`, `services`.
+
+- **Satisfacción general (CSAT/NPS interno)**  
+  **Definición:** encuesta post-acción (pago, simulación, compra de plan) con escala 1–5 y pregunta NPS.  
+  **Fuente:** `surveys`.
+
+
+**Medidas por pregunta de experimento**
+
+**Measure 1 — ¿Reducirá el tiempo de onboarding un tutorial interactivo?**
+
+| Campo       | Definición                                                                                                                                                                     |
+|-------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Question**| ¿Reducirá el tiempo de onboarding un tutorial interactivo?                                                                                                                     |
+| **Measure** | Medir **TTV** desde primer login hasta (a) `tutorial_completed` y (b) primera acción de valor (`debt_created` o `budget_created`). Comparar medianas antes/después (A/B) y tasa de abandono del tutorial. |
+
+
+**Measure 2 — ¿Mejorará la utilidad del simulador de deudas para planificar pagos?**
+
+| Campo       | Definición                                                                                                                                             |
+|-------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Question**| ¿Mejorará la utilidad del simulador de deudas para planificar pagos?                                                                                   |
+| **Measure** | Trackear sesiones de simulación por usuario, % que guardan un plan (`plan_saved`) y **exactitud percibida** (encuesta 1–5). Éxito si ↑ plan guardado ≥ 20% y puntuación media ≥ 4.0. |
+
+
+**Measure 3 — ¿Disminuirán los pagos tardíos con preferencias de notificación claras?**
+
+| Campo       | Definición                                                                                                                                                       |
+|-------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Question**| ¿Disminuirán los pagos tardíos con preferencias de notificación claras?                                                                                          |
+| **Measure** | Comparar **On-Time Payment Rate** entre usuarios con preferencias configuradas (`notif_settings_on`) vs. control. Medir apertura/click y conversión *recordatorio → pago*. Meta: +10 pp en pagos a tiempo. |
+
+**Measure 4 — ¿Aumentará la conversión mostrando comparación simple de planes?**
+
+| Campo       | Definición                                                                                                                          |
+|-------------|-------------------------------------------------------------------------------------------------------------------------------------|
+| **Question**| ¿Aumentará la conversión mostrando comparación simple de planes?                                                                     |
+| **Measure** | Medir **CVR Plan** y tiempo en la vista de comparación. Éxito si CVR aumenta ≥ 15% y reembolsos no aumentan. Segmentar por dispositivo (web vs. mobile). |
+
+**Measure 5 — ¿Incrementará el engagement permitir perfilar consultores y mensajería?**
+
+| Campo       | Definición                                                                                                                                      |
+|-------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Question**| ¿Incrementará el engagement permitir perfilar consultores y mensajería?                                                                          |
+| **Measure** | Medir mensajes enviados/usuario, servicios publicados y ratio *primer mensaje → cita*. Meta: +25% mensajes y ≥ 10% *mensaje→cita*. CSAT post-conversación ≥ 4/5. |
+
+**Recolección y validez**
+
+- **Recolección:** eventos front (Web/Mobile) → Analytics; métricas de negocio desde servicios (`payments`, `debt`, `notifications`, `education`, `consultant`) consolidadas en un *warehouse* o vistas materializadas.  
+- **Ventana de análisis:** semanal para indicadores operativos; quincenal/mensual para conversión y retención.  
+- **Segmentación mínima:** dispositivo (web/mobile), plan (free/premium), cohortes por semana de alta.  
+- **Criterios de éxito:** mejoras estadísticamente significativas (p < 0.05) o con efecto práctico definido en cada medida.
 
 ### 8.2.4. Conditions.
 
-Definimos las **condiciones de ejecución** para cada experimento a fin de aislar efectos y permitir comparaciones válidas entre **Variante (grupo experimental)** y **Control**. Todos los ensayos se liberan mediante **feature flags**, con ventana de 1–2 semanas y segmentación por plataforma (iOS/Android/Web).
+Para garantizar comparaciones válidas en los experimentos de **DebtGo**, definimos las siguientes condiciones generales y, luego, condiciones específicas por pregunta.
+
+**Condiciones experimentales (generales)**
+- **Grupo experimental:** cohorte de usuarios nuevos o existentes expuestos a la variante de producto (tutorial interactivo, simulador mejorado, preferencias de notificaciones, comparador de planes, perfil de consultores + mensajería). Se registran uso, conversión y encuestas durante una ventana definida (2–4 semanas).
+
+**Condiciones de control (generales)**
+- **Grupo de control:** cohorte comparable que usa la versión actual sin el cambio. Mantiene la misma ventana temporal y segmentación (web vs. mobile, plan, país).
+
+**Condiciones controladas (constantes)**
+- Mismo período de análisis por cohorte, mismas campañas y precios.
+- Misma definición de eventos y fuentes de datos.
+- Segmentación mínima: dispositivo (web/mobile), plan (free/premium), cohorte de alta semanal.
+
+**Conditions — Q1: ¿Reducirá el tiempo de onboarding un tutorial interactivo?**
+
+| Campo                    | Definición                                                                                                  |
+|--------------------------|--------------------------------------------------------------------------------------------------------------|
+| **Question**             | ¿Reducirá el tiempo de onboarding un tutorial interactivo?                                                  |
+| **Condición Experimental** | Habilitar tutorial paso a paso en el primer login. **Éxito si** la mediana de **TTV** baja ≥ **25%** y la tasa de abandono del onboarding disminuye ≥ **15%**. |
+| **Condición de Control** | Onboarding actual sin tutorial interactivo. TTV y abandono se mantienen en los valores de línea base.       |
+
+**Conditions — Q2: ¿Mejorará la utilidad del simulador de deudas para planificar pagos?**
+
+| Campo                    | Definición                                                                                                              |
+|--------------------------|--------------------------------------------------------------------------------------------------------------------------|
+| **Question**             | ¿Mejorará la utilidad del simulador de deudas para planificar pagos?                                                    |
+| **Condición Experimental** | Desplegar simulador con escenarios guardables y explicación de resultados. **Éxito si** ↑ de ≥ **20%** en `plan_saved` y **≥ 4.0/5** en exactitud percibida. |
+| **Condición de Control** | Simulador actual o inexistente. Tasas de guardado y puntuación de utilidad permanecen en línea base.                    |
+
+**Conditions — Q3: ¿Disminuirán los pagos tardíos con preferencias de notificación claras?**
+
+| Campo                    | Definición                                                                                                                         |
+|--------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
+| **Question**             | ¿Disminuirán los pagos tardíos con preferencias de notificación claras?                                                            |
+| **Condición Experimental** | Mostrar centro de preferencias (canal y frecuencia) y recordatorios escalonados (−5d, −1d, día 0). **Éxito si** **On-Time Payment Rate** sube **≥ 10 pp** y apertura/click ≥ **25%/8%**. |
+| **Condición de Control** | Recordatorios por defecto, sin configuración visible. On-Time se mantiene en línea base.                                           |
+
+**Conditions — Q4: ¿Aumentará la conversión mostrando comparación simple de planes?**
+
+| Campo                    | Definición                                                                                                       |
+|--------------------------|-------------------------------------------------------------------------------------------------------------------|
+| **Question**             | ¿Aumentará la conversión mostrando comparación simple de planes?                                                  |
+| **Condición Experimental** | Incluir tabla comparativa y CTA persistente en *Select a plan*. **Éxito si** **CVR Plan** aumenta **≥ 15%** y el ratio de reembolso no sube. |
+| **Condición de Control** | Pantalla de planes sin comparador. CVR se mantiene en línea base.                                                |
+
+**Conditions — Q5: ¿Incrementará el engagement permitir perfilar consultores y mensajería?**
+
+| Campo                    | Definición                                                                                                               |
+|--------------------------|---------------------------------------------------------------------------------------------------------------------------|
+| **Question**             | ¿Incrementará el engagement permitir perfilar consultores y mensajería?                                                   |
+| **Condición Experimental** | Habilitar perfiles de consultor, envío de mensaje y publicación de servicios. **Éxito si** mensajes/usuario **+25%** y ratio *mensaje→cita* **≥ 10%**, con **CSAT ≥ 4/5**. |
+| **Condición de Control** | Sin perfil detallado ni mensajería directa. Volumen de mensajes y conversión se mantienen en línea base.                 |
 
 ### 8.2.5. Scale Calculations and Decisions.
 
-**Condiciones experimentales (generales)**
+Para que los resultados sean comparables y accionables, fijamos parámetros estadísticos y umbrales de decisión por hipótesis. Estas reglas se aplicarán a todos los experimentos A/B y pruebas controladas de DebtGo.
 
-- **Grupo experimental:** usuarios asignados aleatoriamente a la **Variante** reciben el cambio (wizard, presets, plantillas, etc.).  
-  - La telemetría registra eventos y tiempos por paso.  
-  - Se monitorean **guardrails** (errores 5xx, caída de finalización, rendimiento Web).
-- **Constantes controladas:** misma versión de app/base de datos, mismos precios/copys, calendario de campañas y reglas de notificación excepto lo probado, misma estrategia de sampling por plataforma.
+**Parámetros estadísticos**
 
-**Condiciones de control (generales)**
+- **Nivel de significancia (α):** 0.05 (confianza 95%).  
+- **Potencia estadística (1−β):** 0.8–0.85 para detectar efectos mínimos con probabilidad alta.  
+- **Efecto mínimo detectable (MDE):** definido por hipótesis:
+  - **Pagos a tiempo:** +15 p.p. en tasa de pagos puntuales.
+  - **Onboarding del Asesor de Presupuesto:** −30% en tiempo a completar el primer presupuesto.
+  - **Añadir Deuda (UX):** +20 p.p. en tasa de éxito sin error y −40% en errores de validación.
+  - **Consultorías financieras:** −25% en tiempo de respuesta y +10 p.p. en conversión a reserva.
+  - **Educación financiera:** +20 p.p. en finalización de curso a 30 días.
+- **Tamaño de muestra (guía):** determinado por *power analysis* por métrica; como referencia operativa, al menos **n≥60 usuarios por grupo** (control/experimento) para métricas de conversión por sesión y **≥200 eventos** por variante para tiempos/errores.
 
-- **Grupo de control:** usuarios asignados aleatoriamente a **Control** mantienen el comportamiento actual sin cambios.  
-- **Entorno:** sin modificaciones de UI/UX relacionadas con la hipótesis; solo hotfixes críticos permitidos.  
-- **Comparabilidad:** mismo periodo y segmentación que el grupo experimental.
 
-**Condiciones por Experimento (tablas)**
+**Matriz de decisiones por hipótesis**
 
-***Wizard de 2 pasos → Activación A1***
-
-| Campo | Definición |
-|---|---|
-| **Question** | ¿Un **wizard de 2 pasos** para registrar la primera deuda incrementa la **activación A1** en **≥ 30%**? |
-| **Condición Experimental** | **ON (flag `wizard_first_debt`)**. Variante muestra flujo en 2 pasos: Paso 1 (monto, fecha, categoría) → Paso 2 (confirmación con validaciones y barra de progreso). Telemetría: `sign_up`, `debt_created`, tiempos por paso. |
-| **Condición de Control** | **OFF**. Los usuarios ven el flujo actual de alta (formulario estándar sin división en pasos). |
-
-***Presets de recordatorios → Confirmación de pago***
-
-| Campo | Definición |
-|---|---|
-| **Question** | ¿Habilitar **recordatorios preconfigurados** a **3 y 1 día** eleva la **confirmación de pago** en **≥ 20%**? |
-| **Condición Experimental** | **ON (flag `reminder_presets`)**. Se crean automáticamente dos reglas (3 y 1 día antes del vencimiento), con canal **editable** (push/email). Telemetría: `reminder_sent`, `reminder_clicked`, `marked_paid`, `snooze`. |
-| **Condición de Control** | **OFF**. No existen reglas por defecto; el usuario debe configurarlas manualmente. |
-
-***Plantillas por categoría → Tiempo de Onboarding***
-
-| Campo | Definición |
-|---|---|
-| **Question** | ¿Ofrecer **plantillas** (luz, internet, tarjeta) reduce el **tiempo de onboarding** a **≤ 3 minutos**? |
-| **Condición Experimental** | **ON (flag `debt_templates`)**. La pantalla inicial muestra 3 plantillas con campos sugeridos (importe, fechas típicas) y atajos de calendario (quincena/fin de mes). |
-| **Condición de Control** | **OFF**. El alta inicia en blanco; el usuario completa todos los campos manualmente. |
-
-***Canal de recordatorio → CTR y conversión***
-
-| Campo | Definición |
-|---|---|
-| **Question** | ¿El canal **push** supera a **email** en **CTR** durante la **primera semana**? |
-| **Condición Experimental** | **Asignación por canal (flag `reminder_channel_ab`)**: 50% recibe **push**, 50% **email** con mismo contenido y timing. Se bloquean otros canales para la deuda evaluada. Métricas: `reminder_clicked` y conversión a `marked_paid`. |
-| **Condición de Control** | No aplica clásica (es un A/B entre variantes). **Control operacional**: mantener contenido/horario idéntico y solo variar el **canal**. |
-
-***Dashboard de estado → Retención 7 días (R7)***
-
-| Campo | Definición |
-|---|---|
-| **Question** | ¿Un **dashboard de estado** (Vencidas/Próximas/Al día) mejora la **retención a 7 días (R7)** en **≥ 10%**? |
-| **Condición Experimental** | **ON (flag `home_dashboard`)**. Home muestra tarjetas con estados, filtros y accesos rápidos (“marcar pagado”, “posponer”, “configurar recordatorios”). Telemetría: `session_start`, acciones rápidas. |
-| **Condición de Control** | **OFF**. Home mantiene la vista actual (lista simple sin agregaciones ni CTAs rápidos). |
+| **Scale Calculation / Métrica primaria** | **Decisión propuesta** | **Desfavorable** | **Aceptable** | **Ideal** | **Excelente** |
+|---|---|---:|---:|---:|---:|
+| **H1 – Recordatorios inteligentes de pago**  \> Métrica: **% Pagos a tiempo (On-Time Payment Rate)**; guardas: no aumentar opt-outs ni quejas. | Desplegar **multi-canal** (push/email/SMS) con A/B de cadencia y ventana “antes del vencimiento”. | Δ < +5 p.p. | +5 a +10 p.p. | +10 a +15 p.p. | **> +15 p.p.** sin incremento de opt-out/soporte |
+| **H2 – Onboarding del Asesor de Presupuesto**  \> Métricas: **Tiempo al 1er presupuesto** y **% que completan onboarding**. | Implementar **stepper + tooltips + plantillas** y precarga de categorías. | Reducción < 15% o finalización < +5 p.p. | Reducción 15–25% | Reducción 25–30% | **Reducción > 30%** y finalización **> +10 p.p.** |
+| **H3 – UX “Añadir nueva deuda”**  \> Métricas: **Task-Success Rate**, **Error Rate** y **Tiempo de tarea**. | Añadir **autocompletado** (emisor/tasa), validaciones in-line y ayuda contextual. | Éxito < +10 p.p. o errores −<20% | Éxito +10–15 p.p. | Éxito +15–20 p.p. y errores −30–40% | **Éxito > +20 p.p.**, **errores −>40%**, tiempo −>25% |
+| **H4 – Marketplace y chat con consultores**  \> Métricas: **Mediana de tiempo de respuesta** y **% chats→reserva**. | Publicar **listado + chat** con disponibilidad y mensaje inicial guiado. | Resp. −<10% o conv. +<3 p.p. | Resp. −10–20% o conv. +3–6 p.p. | Resp. −20–25% y conv. +6–10 p.p. | **Resp. −>25%** y **conv. +>10 p.p.** |
+| **H5 – Centro de Educación (gamificación)**  \> Métricas: **Finalización a 30 días** y **Re-engagement semanal**. | Activar **progreso visible**, logros y recordatorios de módulo. | Finalización +<8 p.p. | +8–15 p.p. | +15–20 p.p. | **> +20 p.p.** y re-engagement +>10 p.p. |
 
 ### 8.2.6. Methods Selection.
 
-Para evaluar los experimentos de DebtGo (A1, T_onboarding, CTR/Conversión de recordatorios, R7) necesitamos herramientas que cubran **analítica de eventos y funnels**, **telemetría móvil**, **rendimiento web**, y **observabilidad** en producción (logs/métricas) desplegada en **Dokploy**.  
-La siguiente matriz compara opciones por **costo**, **capacidad de análisis**, **sencillez**, **uso recomendado en DebtGo** y **ventajas**.
+Esta sección define **cómo** investigaremos cada hipótesis de DebtGo siguiendo el principio **Simplest Useful Thing (SUT)**: el método más simple que aún sea suficiente para alcanzar el tamaño de muestra y las condiciones de validez requeridas.  
+Diferenciamos **objeto de investigación** (la pregunta/hipótesis) del **método** (técnica para medirla).  
+Normas operativas:
+- No se ejecutan **experimentos simultáneos** sobre el mismo tema que expongan a la misma persona a múltiples variantes.
+- Toda medición respeta principios éticos: **consentimiento informado** en pruebas moderadas, anonimización de datos y no causar daño (p. ej., no enviar recordatorios invasivos).
 
-| Herramienta | Precio | Capacidad de análisis | Sencillez | Uso recomendado en DebtGo | Ventajas |
-|---|---|---|---|---|---|
-| **Firebase Analytics** (iOS/Android) | Plan gratuito | Eventos móviles, funnels, cohorts, audiencias; integración con FCM (push) | SDK simple en Kotlin/Swift | Medir A1, T_onboarding, CTR/Conversión en **apps móviles**; segmentar por plataforma | Nativo para mobile, tiempo real básico, sin costo inicial |
-| **Google Analytics 4** (Web) | Plan gratuito | Eventos web, embudos y métricas de adquisición/retención | Implementación con `gtag` o GTM | Medir A1 y funnels en **Web** (landing + app); atribución básica | Reportería flexible y amplia documentación |
-| **PostHog** (Self-host o Cloud) | Free tier / self-host | Analítica de producto: eventos, funnels, **cohortes**, feature flags, heatmaps | UI clara; SDK web/móvil | Panel único para **experimentos** (control/variante) y análisis por **cohorte** | Open-source; soporta auto-hosting si se requiere |
-| **Mixpanel** / **Amplitude** (alternativas) | Free tier | Funnels detallados, cohortes, retención, paths | Curva suave | Comparativas de R7, embudos de recordatorio→pago | Excelente para análisis de producto (alternativa a PostHog) |
-| **Sentry** | Free tier | Captura de errores JS/Kotlin/Swift, performance traces | SDK sencillo | Guardrail de **errores** y latencia p95 en Web/Mobile | Alertas rápidas y trazas hasta el stack |
-| **Lighthouse** / **Web Vitals** | Gratuito | Rendimiento Web: LCP, CLS, INP | Ejecución local/CI | Validar impacto de cambios UI en **Web** (cap. 7.4 SLO LCP) | Métricas estándar de rendimiento y accesibilidad |
-| **Grafana + Prometheus** (Dokploy) | Open-source | Métricas de contenedores, CPU/Mem, tasas de error | Requiere setup inicial | Observabilidad de **backend** (SLOs: 99.5%, 5xx≤0.5%) | Dashboards y alertas personalizables |
-| **GitHub Actions** (CI/CD) | Free tier (minutos limitados) | Jobs de build/test, reportes, artefactos | YAML declarativo | Ejecutar pruebas, Lighthouse en CI y publicar artefactos de medición | Integra con el repo y automatiza evidencia |
-| **OpenTelemetry** (tracing opcional) | Open-source | Trazas distribuidas (spans) y correlación | Configuración media | Correlacionar flujo **recordatorio→pago** extremo a extremo | Estándar abierto, portable |
+**Matriz de selección de métodos (SUT)**
 
-**Selección operativa sugerida.**
-- **Móvil:** Firebase Analytics (+ FCM para push) como base; Sentry para errores.  
-- **Web:** GA4 o PostHog; Lighthouse/Web Vitals en CI para rendimiento.  
-- **Producto/Experimentos:** PostHog (o Mixpanel/Amplitude) para funnels, cohortes, y seguimiento de **feature flags**.  
-- **Observabilidad en Dokploy:** Grafana/Prometheus + Sentry; triggers y evidencias desde **GitHub Actions**.
+| Id | Objeto de investigación (Hipótesis) | Método principal (SUT) | Asignación | Tamaño de muestra (meta) | Duración típica | Fuentes de datos | Métricas guardas |
+|---|---|---|---|---|---|---|---|
+| **H1** | Recordatorios inteligentes aumentan la **tasa de pagos a tiempo** | **A/B** de cadencia/canal de recordatorio (push/email/SMS) | Random 50/50 por usuario | ≥ 60 usuarios por grupo | 14 días (1 ciclo de vencimientos) | Eventos app/web (PostHog/GA4), logs de pagos (API) | Opt-out de notificaciones, tickets de soporte |
+| **H2** | Onboarding guiado reduce el **tiempo al 1er presupuesto** | **A/B** de onboarding (stepper + plantillas vs. actual) | Random al primer inicio | ≥ 60 por grupo | 7–14 días | Telemetría de funnel, tiempos de tarea | Crash-free sessions, tasa de abandono del onboarding |
+| **H3** | Mejoras UX en **Añadir deuda** aumentan tasa de éxito y reducen errores | **Prueba de usabilidad moderada** (5–8 usuarios) + **A/B** en producción de validaciones in-line | Convenience en test; Random en prod | Usab.: 5–8 por ronda; Prod: ≥ 60 por grupo | Usab.: 1–2 días; Prod: 14 días | Grabaciones de sesión (con consentimiento), eventos de errores de formulario | Error rate global del módulo, tiempo de respuesta del backend |
+| **H4** | Marketplace + chat con consultores reduce **tiempo de respuesta** y aumenta **conversión a reserva** | **Rollout controlado** (feature flag) con **cuasi-experimento** (control vs. habilitado) | Por cohortes (región/antigüedad) | ≥ 80 control, 80 tratamiento | 14–21 días | Métricas de mensajería, reservas | SLA de respuesta del consultor, satisfacción post-chat |
+| **H5** | Gamificación en **Educación financiera** aumenta **finalización a 30 días** | **A/B** de insignias/progreso + recordatorios | Random 50/50 | ≥ 60 por grupo | 30 días | Progreso de cursos, re-engagement semanal | Reportes de abuso/opt-out, carga de soporte |
 
+**Criterio práctico:** elegir siempre el método más simple que logre el poder estadístico objetivo (α=0.05, 1−β≈0.8). Escalar a métodos más complejos (multi-variante, tests secuenciales) solo si el SUT no alcanza el MDE definido en 8.2.5 o si hay interferencias entre variantes.
 
 ### 8.2.7. Data Analytics: Goals, KPIs and Metrics Selection.
 
+Para que cada experimento tenga impacto comprobable, definimos objetivos de analítica y un set mínimo de **KPIs/métricas** alineadas al dominio de DebtGo (gestión de deudas, educación y consultoría). Solo estas métricas podrán referenciarse en Experiment Cards y Measures.
+
+**Objetivos de analítica**
+
+- **Adopción y activación:** medir el *happy path* web (registro → plan → pago → primera deuda creada).
+- **Salud financiera y cumplimiento:** seguimiento de configuraciones, recordatorios, puntualidad y moras.
+- **Engagement educativo:** uso y finalización de cursos del Centro de Educación Financiera.
+- **Eficiencia de consultoría:** uso del workspace (mensajería, reservas, publicaciones) y sus resultados.
+- **Calidad de experiencia:** satisfacción, errores y performance percibida para priorizar mejoras.
+
+**KPIs principales (tablero ejecutivo)**
+
+| KPI | Definición | Fórmula / Cálculo | Fuente de datos | Frecuencia | Meta inicial |
+|---|---|---|---|---|---|
+| **Activation Rate (TTV ≤24h)** | % que alcanza valor en ≤24h (plan elegido + pago exitoso + 1ª deuda creada). | `Usuarios con plan+checkout+debt ≤24h ÷ Nuevos registros` | Eventos web (`/register_success`, `/plan_selected`, `/checkout_success`, `/debt_created`) | Diario / Semanal | ≥ 35% |
+| **On-Time Payment Rate (OTPR)** | Pagos en o antes de la fecha objetivo. | `Pagos on_time ÷ Pagos programados` | `PaymentController` + eventos `/payment_due`, `/payment_made` | Semanal / Mensual | ≥ 75% |
+| **Reminder CTR** | Efectividad de recordatorios. | `Clicks en recordatorio ÷ Recordatorios enviados` | `/notif_sent`, `/notif_click` | Semanal | ≥ 12% |
+| **Course Completion Rate** | Finalización de cursos iniciados. | `Cursos completados ÷ Cursos iniciados` | `EducationController` + `/course_start`, `/course_complete` | Mensual | ≥ 40% |
+| **Consultation Booking Rate** | Conversiones tras ver servicios. | `Usuarios con booking ÷ Visitantes de servicios` | `Consultant*Controller` + `/service_view`, `/booking_created` | Mensual | ≥ 8% |
+| **DAU/MAU** | Profundidad de uso mensual. | `DAU promedio mes ÷ MAU` | Sesiones autenticadas web | Diario / Mensual | ≥ 0.22 |
+| **NPS** | Disposición a recomendar. | `%Promotores − %Detractores` | Encuesta in-app | Mensual / Trimestral | ≥ +25 |
+
+**Métricas de producto (operativas)**
+
+| Métrica | Definición | Cálculo / Nota | Fuente |
+|---|---|---|---|
+| **Signup→Plan Conversion** | % de registros que eligen plan. | `/register_success → /plan_selected` | Front web |
+| **Plan→Checkout Success** | % que finaliza pago. | `/plan_selected → /checkout_success` | `PaymentController` |
+| **Tiempo a 1ª Deuda** | Minutos hasta primer `/debt_created` (P50/P90). | `t(debt_created) − t(register)` | Front + `DebtController` |
+| **Payment Config Adoption** | % con ≥1 configuración activa. | `Usuarios con payment_config > 0` | `PaymentController` |
+| **Missed Payment Rate** | % de pagos vencidos. | `Pagos late ÷ Programados` | `PaymentController` |
+| **Reattempt Recovery ≤7d** | % de pagos tardíos recuperados ≤7 días. | `Late luego pagado ≤7d ÷ Late` | `PaymentController` |
+| **Education Progress** | Avance promedio por curso. | `Lecciones completadas ÷ Totales` | `EducationController` |
+| **Messaging Responsiveness** | Mediana de tiempo de respuesta. | `t(respuesta) − t(mensaje)` | `ConsultantRequestController` |
+| **Service Post → Booking** | % de publicaciones con reserva. | `booking_created ÷ service_posted` | `Consultant*Controller` |
+
+**Métricas de calidad y riesgo**
+
+| Métrica | Definición | Umbral / Meta | Fuente |
+|---|---|---|---|
+| **Error Rate 5xx** | Errores servidor por 1 000 req. | ≤ 1 / 1000 | Logs/API |
+| **Latency p95** | p95 respuesta en endpoints críticos. | ≤ 500 ms | APM/Logs |
+| **Checkout Failure** | % de intentos de pago fallidos. | ≤ 2% | `PaymentController` |
+| **Form Abandon Rate** | Abandono en login/registro/checkout. | Tendencia a la baja semanal | Front web |
+| **CSAT Post-Task** | Satisfacción tras tarea clave (1–5). | ≥ 4.3/5 | Encuesta in-app |
+
+**Relación con hipótesis y experimentos**
+
+- **H1 – Activación mejora con UX guiada y planes claros:** Activation Rate, *Signup→Plan* y *Plan→Checkout*.
+- **H2 – Recordatorios aumentan puntualidad:** OTPR, Reminder CTR y Reattempt Recovery.
+- **H3 – Educación incrementa cumplimiento:** Course Completion Rate y variación de OTPR por cohorte “curso completado”.
+- **H4 – Consultoría mejora resultados:** Booking Rate, Messaging Responsiveness y cambio de OTPR vs. cohorte sin consultoría.
+- **H5 – Workspace web incrementa engagement:** DAU/MAU, Tiempo a 1ª Deuda y Payment Config Adoption.
+
+
 ### 8.2.8. Web and Mobile Tracking Plan.
 
-Medir con rigor cómo las mejoras de DebtGo impactan la **activación (A1)**, el **tiempo de onboarding**, la **conversión de recordatorios → pago**, el **CTR por canal** y la **retención (R7)**, tanto en **Web** como en **iOS/Android**, para iterar el producto guiados por datos.
+**Objetivo.** Establecer un plan integral de tracking para web y móvil que permita medir con precisión la adopción, el cumplimiento de pagos, el avance educativo y la efectividad de consultoría en DebtGo. El plan define qué eventos capturar, cómo etiquetarlos, dónde almacenarlos y cómo analizarlos para guiar decisiones de producto.
 
-**Fases del Monitoreo**
+**Fases del monitoreo**
 
-***1) Implementación inicial (Baseline)***
+**1) Implementación inicial (línea base)**
 
-**Meta:** desplegar la instrumentación mínima y establecer línea base.
+- **Instrumentación mínima viable (MVP de analítica):**
+  - Autenticación y registro: `register_success`, `login_success`, `logout`.
+  - Activación: `plan_selected`, `checkout_success`, `debt_created`.
+  - Cumplimiento: `payment_config_created`, `payment_due`, `payment_made`, `payment_late`.
+  - Educación: `course_start`, `lesson_complete`, `course_complete`.
+  - Consultoría: `service_view`, `service_posted`, `booking_created`, `message_sent`.
+  - Notificaciones: `notif_sent`, `notif_click`.
+- **Línea base:** recolectar 2–4 semanas de datos previos a cambios relevantes (nuevos planes, recordatorios, flujos de pago) para comparar contra el estado posterior.
 
-- **Instrumentación de eventos (mínimo viable)**
-  - `sign_up(user_id, platform, ts)`
-  - `session_start(user_id, platform, ts)`
-  - `debt_created(debt_id, user_id, amount, category, due_date, ts)`
-  - `reminder_sent(reminder_id, debt_id, user_id, channel, scheduled_for, ts)`
-  - `reminder_clicked(reminder_id, debt_id, user_id, channel, ts)`
-  - `marked_paid(debt_id, user_id, paid_at, method)`
-  - `snooze(debt_id, user_id, new_due_date, ts)`
-  - `view_dashboard(user_id, ts)` / `quick_action(type, debt_id, ts)`
+**2) Seguimiento continuo (iteración y mejora)**
 
-- **Métricas base (por plataforma)**
-  - **A1** (% usuarios con 1ª deuda <24h), **T_onboarding** (seg), **CTR** por canal (push/email), **Conversión recordatorio → pagado/posponer ≤7d**, **R7**, **frecuencia de sesiones**.
-  - **Core Web Vitals (Web):** LCP, CLS, INP (Lighthouse/Web Vitals en CI).
+- **Monitoreo en tiempo real:** dashboards operativos (DAU/MAU, funnel de activación, OTPR, abandono de checkout, tiempos a primer valor).
+- **Segmentación analítica:** por dispositivo (web/móvil), plan (Basic/Premium), cohorte de alta, origen de tráfico, y rol (usuario/consultor).
+- **Ciclos de revisión:** 
+  - Diario: salud operativa (errores 5xx, latencia p95, fallos de checkout).
+  - Semanal: KPIs de producto (Activation Rate, OTPR, Course Completion, Booking Rate).
+  - Mensual: KPIs ejecutivos y NPS.
 
-- **Feedback cualitativo**
-  - Encuesta corta posterior al alta de la 1ª deuda (NPS/CSAT + pregunta abierta sobre fricción).
-  - Registro de texto libre al posponer/posponer recurrente (“¿por qué pospusiste?”).
+**Especificación de eventos y propiedades**
 
-- **Análisis comparativo**
-  - Comparar baseline vs. la primera semana post-lanzamiento de experimentos (wizard, plantillas, presets).
+**Convención de nombres:** `snake_case`, verbo_en_pasado + objeto.  
+**Contexto común (todas las plataformas):**
+- `user_id` (hash), `session_id`, `platform` (`web|android|ios`), `app_version`, `locale`, `tz`, `ts`.
+- `utm_source|utm_medium|utm_campaign` (si aplica).
 
-***2) Seguimiento continuo (Iteración dirigida por datos)***
+**Eventos clave y payload recomendado:**
 
-**Meta:** detectar oportunidades y validar impacto sostenido.
+- `register_success` → `{ method, country, referral }`
+- `plan_selected` → `{ plan_id, plan_name, price_pen, currency }`
+- `checkout_success` → `{ plan_id, amount, provider, txn_id, status }`
+- `debt_created` → `{ debt_id, category, amount, interest_rate, due_day }`
+- `payment_config_created` → `{ config_id, frequency, amount, channel }`
+- `payment_due` → `{ debt_id, due_date, amount }`
+- `payment_made` → `{ debt_id, amount, method, on_time: boolean, days_delta }`
+- `payment_late` → `{ debt_id, days_late, amount }`
+- `notif_sent` / `notif_click` → `{ template, channel, topic }`
+- `course_start` / `lesson_complete` / `course_complete` → `{ course_id, lesson_id, progress_pct }`
+- `service_view` / `service_posted` → `{ service_id, price, category }`
+- `booking_created` → `{ service_id, consultant_id, scheduled_at }`
+- `message_sent` → `{ thread_id, from_role, has_attachment }`
 
-- **Monitoreo en tiempo (casi) real**
-  - Panel de **funnels**: `sign_up → debt_created → reminder_sent → reminder_clicked → marked_paid`.
-  - Panel de **cohortes** (R7 por cohorte semanal y por plataforma).
-  - Panel de **guardrails** (tasa 5xx, p95 latencia, LCP p75, caídas de finalización).
-
-- **Segmentación**
-  - **Plataforma:** iOS / Android / Web.
-  - **Canal recordatorio:** Push / Email (y SMS si aplica).
-  - **Categoría de deuda:** luz, internet, tarjeta, otras.
-  - **Cohorte:** mes de registro / campaña.
-
-- **Evaluación y mejoras**
-  - **Reportes mensuales** con KPIs: A1, T_onboarding, CTR/Conversión, R7, OTPR (On-time Payment Rate).
-  - Iteraciones controladas por **feature flags** y **A/B**; cada cambio con su *decision log* (ship / iterate / kill).
+**Embudos (funnels) obligatorios:**
+1. **Activación:** `register_success → plan_selected → checkout_success → debt_created`
+2. **Cumplimiento:** `payment_due → notif_sent/notif_click → payment_made`
+3. **Educación:** `course_start → lesson_complete (≥70%) → course_complete`
+4. **Consultoría:** `service_view → booking_created → message_sent`
 
 
-***Stack de Tracking recomendado***
+**Métricas y tableros derivados**
 
-| Capa | Web | iOS/Android | Propósito |
-|---|---|---|---|
-| Analítica de producto | PostHog / Mixpanel / Amplitude | Firebase + PostHog SDK | Eventos, funnels, cohortes, experimentos |
-| Analítica web | GA4 | — | Adquisición, embudos de landing |
-| Rendimiento | Lighthouse + Web Vitals en CI | — | LCP/CLS/INP, accesibilidad |
-| Errores/Performance | Sentry | Sentry | Guardrails de estabilidad |
-| Observabilidad backend (Dokploy) | Grafana/Prometheus | — | SLOs (99.5%, 5xx ≤0.5%), latencia |
+- **Activation Rate (≤24h):** % que completa `checkout_success` y `debt_created` en 24h.
+- **OTPR (On-Time Payment Rate):** `on_time / programados`.
+- **Reattempt Recovery ≤7d:** pagos tardíos recuperados dentro de 7 días.
+- **Course Completion Rate:** `course_complete / course_start`.
+- **Consultation Booking Rate:** `booking_created / service_view`.
+- **DAU/MAU**, **Abandono en Checkout**, **Tiempo a 1ª Deuda** (P50/P90).
+- **Calidad técnica:** errores 5xx por 1 000 req, latencia p95 endpoints de `Auth`, `Payment`, `Debt`.
 
-***Definiciones clave (métricas de producto)***
+Cada tablero mostrará valores **por cohorte** (semana de registro) y **por plataforma** (web vs móvil).
 
-| Métrica | Definición | Cálculo |
-|---|---|---|
-| **A1** | 1ª deuda creada <24h desde registro | `users(debt_created<24h)/users(sign_up)` |
-| **T_onboarding** | Tiempo sign_up → debt_created | `ts(debt_created)-ts(sign_up)` |
-| **CTR por canal** | Interacción con recordatorios | `reminder_clicked / reminder_sent` |
-| **Conv. recordatorio → acción** | Recordatorio termina en pagado/posponer ≤7d | `(marked_paid∨snooze)/reminder_sent` |
-| **R7** | Retención día 7 | `active_d7 / cohort_d0` |
-| **OTPR** | Pagos a tiempo | `pagos_on_time / deudas_con_vencimiento` |
+**Arquitectura de datos (alto nivel)**
 
-***Gobernanza de datos***
+1. **Ingesta:** SDK web/móvil → colector (evento HTTP) → cola.
+2. **Procesamiento:** normalización + enriquecimiento (UTM, geolight) → almacén (Data Warehouse).
+3. **Modelos de métricas:** tablas derivadas por funnel y por cohorte.
+4. **Visualización:** dashboards operativos y ejecutivos (tiempo real y acumulados).
+5. **Gobernanza:** catálogo de eventos, control de cambios y revisión quincenal.
 
-- **Calidad:** validación semanal de esquemas y volumen de eventos (alerta si ±20% vs. media).
-- **Privacidad:** IDs seudónimos, consentimiento y opt-out; no registrar PII en texto libre.
-- **Propiedad:** *Product Analytics Owner* (responsable), *Data Steward* (esquema/eventos), *Tech Lead* (instrumentación en código).
+**Privacidad, seguridad y cumplimiento**
+
+- **Principio de minimización:** no capturar PII sensible (números completos de tarjeta, documentos). 
+- **Pseudonimización:** `user_id` hash; en pagos, solo metadatos no sensibles.
+- **Consentimiento:** banner de cookies/tracking y centro de preferencias.
+- **Retención:** eventos crudos 12 meses; agregados históricos 24+ meses.
+- **Accesos:** solo lectura para analistas; segregación por rol.
+
+**Criterios de calidad del tracking**
+
+- **Cobertura:** ≥ 95% de sesiones con `session_id`.
+- **Pérdida de eventos:** < 1% por lote.
+- **Desfase máximo:** < 5 min (tiempo real) / < 24 h (batch).
+- **Paridad web/móvil:** definiciones y payloads equivalentes.
+
 
 ## 8.3. Experimentation
 
