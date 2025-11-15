@@ -2770,6 +2770,30 @@ Esta sección reúne las **pruebas de integración del núcleo web de DebtGo**, 
 
 ### 6.1.4. Core System Tests. 
 
+**Consultant Profile Service Test**
+![CST](assets/Chapter-6/consultant_serv_test.jpeg)<br><br><br>
+
+**Dashboard Service Test**
+![DaST](assets/Chapter-6/dashboard_serv_test.jpeg)<br><br><br>
+
+**Debt Service Test**
+![CST](assets/Chapter-6/debt_serv_test.jpeg)<br><br><br>
+
+**Education Service Test**
+![CST](assets/Chapter-6/education_serv_test.jpeg)<br><br><br>
+
+**Payment Service Test**
+![CST](assets/Chapter-6/payment_serv_test.jpeg)<br><br><br>
+
+**Review Service Test**
+![CST](assets/Chapter-6/review_serv_test.jpeg)<br><br><br>
+
+**Simulation Service Test**
+![CST](assets/Chapter-6/simulation_serv_test.jpeg)<br><br><br>
+
+**User Service Test**
+![CST](assets/Chapter-6/user_serv_test.jpeg)<br><br><br>
+
 ## 6.2. Static testing & Verification
 ### 6.2.1. Static Code Analysis
 #### 6.2.1.1. Coding standard & Code conventions.
