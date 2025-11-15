@@ -3059,148 +3059,126 @@ Para asegurar un despliegue continuo y confiable en **producción**, definimos l
 
 ## 7.4. Continuous Monitoring
 
- Asegurar que la plataforma esté **medible, monitoreada y recuperable**, con seguridad aplicada de extremo a extremo y prácticas que permitan detectar, diagnosticar y resolver incidentes con rapidez. Aplicable a **frontend** y **backend** desplegados en **Dokploy**, con pipelines en **GitHub Actions**.
+El **monitoreo continuo** en DebtGo asegura que las APIs de backend (Spring Boot) y los servicios de soporte mantengan **disponibilidad, rendimiento y seguridad** tras cada despliegue en **Dokploy**. Monitoreamos de forma proactiva la salud del servicio, latencia de endpoints, tasas de error y estado de la base de datos (MySQL).
+El monitoreo se aplica en **staging y producción**, y alimenta un ciclo de mejora: cuando un indicador cae bajo umbrales, se crea una tarea técnica (issue) y se ejecutan fixes o rollbacks controlados.
 
 ### 7.4.1. Tools and Practices
 
-**Alcance y métricas**
-| Componente | Métrica/SLI | Descripción | Fuente/Tool |
-|---|---|---|---|
-| API (Backend) | Disponibilidad | Tiempo saludable / tiempo total (mensual) | Health checks en Dokploy |
-| API (Backend) | Latencia p95 | p95 en `POST /debts`, `POST /payments/schedule` | Logs + APM (si aplica) |
-| API (Backend) | Tasa 5xx | 5xx / total requests | Reverse proxy / app logs |
-| Frontend (Web) | LCP p75 | Core Web Vitals (rendimiento real) | Vercel Analytics / RUM |
-| Contenedores | CPU/Memory/Restarts | Saturación y estabilidad de pods/servicios | Dokploy Metrics |
-| Jobs/Colas | Lag / duración | Atraso y tiempo de ejecución de jobs/cron | Logs + métricas custom |
+**A) Runtime & Availability**
 
-**SLO iniciales**
-| SLI | SLO | Ventana |
-|---|---|---|
-| Disponibilidad API | ≥ 99.5% | Mensual |
-| Latencia p95 API | ≤ 400 ms | 10 min rolling |
-| Tasa 5xx API | ≤ 0.5% | 5 min rolling |
-| LCP p75 Web | ≤ 2.5 s | Últimos 7 días |
+|Objetivo|Herramienta|¿Qué revisa?|Acción ante falla|
+|-|-|-|-|
+|Health de la app|**Spring Boot Actuator** `(/actuator/health)`|Liveness/Readiness|Reinicio del contenedor en Dokploy|
+|Estado en despliegue|**Dokploy health checks**|Disponibilidad del servicio|Restart / bloquear release|
+|Observación de errores|**Logback** con correlation-id|Errores y trazas por request|Análisis y hotfix|
 
-**Reglas de alerta**
-| Condición | Umbral | Duración | Severidad | Acción |
-|---|---:|---:|---|---|
-| Disponibilidad API baja | SLI < 99.5% | 5 min | Alta | Aviso a #ops-debtgo |
-| Latencia elevada | p95 > 400 ms | 10 min | Media | Revisar DB/CPU/colas |
-| Errores 5xx | > 0.5% | 5 min | Alta | Rollback si continúa |
-| Memoria alta | > 85% uso | 10 min | Media | Escalar/optimizar |
+**B) Code Quality en CI/CD**
 
-**Flujo de notificación**
-| Medio | Destino | Escalamiento | Cierre |
-|---|---|---|---|
-| Slack/Email | Canal `#ops-debtgo` | On-call si > 15–30 min | Post-mortem y etiqueta de incidente |
+|Objetivo|	Herramienta	|¿Cuándo corre?	|Criterio de bloqueo|
+|--|--|--|--|
+|Build y pruebas|**GitHub Actions** (build + tests)|En cada push/PR|Falla pipeline ⇒ no hay merge|
+|Seguridad de dependencias|**Dependabot / Alerts**|Automático|Actualizar versión vulnerable|
+|Smoke funcional|**Postman Collections**|Post-deploy|Rollback si falla algún smoke|
+
+**C) Datos & Performance**
+
+|Objetivo|Herramienta|Métrica clave|Umbral de alerta|
+|--|--|--|--|
+|Métricas de API|	**Micrometer**|	p95 latencia, tasa 4xx/5xx|p95 > 600 ms o errores > 2%|
+|Base de datos	|**MySQL monitor + Backups**|	Pool de conexiones, latencia, backups diarios|Uso pool > 80% o backup fallido|
+|Carga/estrés	|**JMeter**	|Throughput y errores bajo concurrencia|No cumplir SLA definido|
 
 
 ### 7.4.2. Monitoring Pipeline Components
 
-**Estandarización de logs**
-| Aspecto | Convención | Ejemplo |
-|---|---|---|
-| Formato | JSON estructurado | `{"ts":"...","level":"INFO","service":"api",...}` |
-| Correlación | `X-Request-Id` en Frontend → API → Jobs | `requestId: a1b2c3` |
-| Niveles | INFO/WARN/ERROR (DEBUG fuera de prod) | `level: "ERROR"` |
-| Campos mínimos | ts, level, service, requestId, endpoint, status, duration_ms, userId | Ver ejemplo |
+El pipeline de monitoreo de **DebtGo** cubre todo el ciclo: desde la instrumentación en la app hasta la visualización y respuesta operativa. Así aseguramos salud, rendimiento y experiencia de usuario en producción (Dokploy) y pre-producción.
 
-**Ejemplo de log de request (API)**
+**1) Instrumentación (fuente de datos)**
 
-```json
-{
-  "ts": "2025-11-11T10:15:21.123Z",
-  "level": "INFO",
-  "service": "backend-api",
-  "requestId": "a1b2c3",
-  "endpoint": "POST /payments/schedule",
-  "status": 201,
-  "duration_ms": 142,
-  "userId": "u-98341",
-  "extras": { "debtId": "d-221", "channel": "push" }
-}
-```
+- El backend Spring Boot expone **Actuator** (`/actuator/health`, `/actuator/metrics`, `/actuator/info`) y métricas **Micrometer** (latencias p95/p99, throughput, tasa 4xx/5xx, uso del pool JDBC).
+- El logger **Logback** añade un correlation-id por petición para trazar errores extremo a extremo.
+- Pruebas de carga con **JMeter** generan series de rendimiento bajo concurrencia antes de promover un release.
 
-**Tracing**
-| Elemento | Práctica | Tool/Salida |
-|---|---|---|
-| Spans | Frontend (evento→fetch) / API (controller→service→repo) | OpenTelemetry (opcional) |
-| Propagación | `requestId` en headers | Logs correlacionados |
-| Visualización | Jaeger/Tempo (si aplica) | Trazas por request |
+**2) Recolección y transporte**
 
-**Retención**
-| Entorno | Política | Observaciones |
-|---|---|---|
-| Producción | Rotación 7–14 días | Export a almacenamiento frío si se requiere auditoría |
-| Staging/Dev | Rotación 3–7 días | Nivel DEBUG permitido |
+- Los health checks de **Dokploy** consultan `/actuator/health` para decidir restart/rollback del contenedor.
+- Las métricas de **Micrometer** se publican en el endpoint de scrape (formato Prometheus-compatible), listo para ser consumido por un recolector de series temporales si se configura uno; en paralelo, se registran contadores/resúmenes clave en logs para auditoría mínima.
+
+**3) Almacenamiento**
+
+- Los artefactos de cada despliegue (build log, resultados de pruebas, reporte de JMeter/Postman) quedan versionados en **GitHub Actions** como evidencias del estado del release.
+- Backups automáticos de **MySQL** (semanales) preservan datos operativos y permiten comparar métricas históricas (tamaño, tiempos de consulta, errores de conexión).
+
+**4) Análisis y alertamiento**
+
+- Reglas operativas (SLOs) sobre las métricas base: `latencia p95 < 600 ms`, `errores 5xx < 2%`, `uso del pool JDBC < 80%`.
+- Si una regla se incumple, Dokploy marca el servicio como no saludable y dispara restart o bloquea la promoción.
+
+**5) Visualización**
+
+- Panel básico con Actuator/Micrometer (endpoints JSON) para ver salud y métricas por versión (`/actuator/info` incluye el commit).
+- Logs estructurados (Logback) se consultan desde Dokploy para analizar trazas por correlation-id durante incidentes.
+- Reportes de **JMeter** y resultados de **Postman** (smoke tests) se adjuntan al release en GitHub para lectura rápida del estado.
+
+**6) Feedback loop (operación → mejora)**
+
+- Incidentes y breaches de SLO se registran como issues; el commit desplegado se identifica con el SHA del **Actuator** `/info`.
+- Hallazgos de monitoreo alimentan tareas de optimización (índices SQL, pool sizing, reducción de N+1, circuit breakers si aplica) y pruebas adicionales en el siguiente ciclo.
+
+**7) Validación continua de performance**
+
+- En cada cambio relevante de backend se ejecuta **JMeter** en pre-producción para validar throughput y estabilidad. Si los resultados empeoran contra la línea base, el release no se promueve a Dokploy.
+
+> Resultado: con esta cadena (Actuator/Micrometer → Dokploy health checks → evidencias en GitHub Actions + JMeter/Postman → Quality Gate SonarQube) mantenemos visibilidad operacional, prevenimos degradaciones y reaccionamos rápido ante fallos en DebtGo.
 
 ### 7.4.3. Alerting Pipeline Components
 
-**CI/CD (GitHub Actions)**
-| Control | Implementación | Efecto |
-|---|---|---|
-| Dependencias | Dependabot/Snyk en PR | Bloquea vulns críticas |
-| SAST | Escaneo en cada PR (si aplica) | Falla pipeline ante hallazgos severos |
-| Secretos | GitHub Secrets + env cifradas | Sin secretos en código |
-| Policies | Status checks obligatorios | No merge sin verde |
+El **pipeline de alertas** de DebtGo combina señales de la aplicación, del despliegue y del CI/CD para notificar incidentes con rapidez y contexto accionable.
 
-**Runtime (Dokploy)**
-| Control | Implementación | Efecto |
-|---|---|---|
-| TLS/HTTPS | Dominio + SSL en Dokploy | Tráfico cifrado |
-| Variables/Secrets | Inyectados en Dokploy, no en imágenes | Menor riesgo de fuga |
-| Imágenes | Registry confiable + tags inmutables | Reproducibilidad/rollback |
+**Fuentes de alerta.**
 
-**Aplicación**
-| Área | Práctica | Detalle |
-|---|---|---|
-| AuthN/AuthZ | JWT/sesión con expiración | Refresh controlado |
-| Validación | Sanitización + DTO/OpenAPI | Límites de tamaño |
-| Headers | HSTS, CSP, X-CTO, X-FO | Endurecimiento |
-| Rate-limit | Básico por IP/usuario | Protección de abuso |
+**(1)** La app expone **Spring Boot Actuator** y **Micrometer**: si la latencia p95 de `/api/**` supera 600 ms, si el ratio de errores 5xx > 2% sostenido o si el pool JDBC supera 80% de uso, se dispara una alerta.
 
-**Datos y privacidad**
-| Aspecto | Medida | Nota |
-|---|---|---|
-| En tránsito | HTTPS | Obligatorio |
-| En reposo | Cifrado (si motor/infra lo permite) | Recomendado |
-| Retención | Minimización + políticas | Solo lo necesario |
+**(2)** **Dokploy** evalúa liveness/readiness; si el healthcheck falla (servicio unhealthy), marca el despliegue como no saludable y aplica restart automático.
+
+**(3)** **GitHub Actions** marca como failed el build/test o el post-deploy smoke (colección Postman); esto alerta de regresiones funcionales o de un release defectuoso.
+
+**(4)** Dependabot crea avisos ante CVE en dependencias y abre PR de actualización.
+
+**Ruteo y notificación.**
+
+Los fallos de CI/CD y Dependabot llegan por las notificaciones nativas de **GitHub** (web, correo o app). Los estados unhealthy y reinicios de **Dokploy** quedan visibles en el panel y se comunican al equipo como incidente operativo. Cuando se configure un recolector de métricas (p. ej., Prometheus) y un notifier (Alertmanager), las métricas de **Micrometer** podrán enviarse a canales como correo/Slack para alertas en tiempo real.
+
+**Contenido mínimo de la alerta.**
+
+Cada alerta incluye **endpoint/servicio afectado**, **métrica/umbral violado**, **timestamp**, **entorno** (staging/producción) y **versión desplegada** (commit SHA expuesto en /actuator/info). Esto permite reproducir, trazar y decidir **rollback** o hotfix sin pérdida de tiempo.
+
+**Propiedad y respuesta.**
+
+Los incidentes crean un **issue** con el enlace al job o a los logs y un checklist de runbook: revisar health, confirmar versión, inspeccionar trazas con correlation-id, decidir rollback, y abrir tarea raíz (optimización de consulta, límites de paginación, ajuste de pool, etc.). Con este circuito, las anomalías de rendimiento, disponibilidad o seguridad se detectan y atienden antes de impactar de forma sostenida a los usuarios.
 
 ### 7.4.4. Notification Pipeline Components.
 
-**Backups**
-| Recurso | Frecuencia | Retención | Validación |
-|---|---|---|---|
-| Base de datos | Diario (full) + horario (incremental) | 7–14 días | Restore en Staging (≥ 1 por sprint) |
-| Archivos críticos | Semanal | 30 días | Verificación de integridad |
+En DebtGo, las notificaciones del pipeline se gestionan con **GitHub Actions** y el entorno de **Dokploy** para informar, en tiempo real, el estado de build, pruebas y despliegue.
 
-**Disaster Recovery (DR)**
-| Objetivo | Meta | Procedimiento |
-|---|---|---|
-| RPO | ≤ 24 h | Restaurar último backup válido |
-| RTO | ≤ 2 h | Runbook: DB → secrets → servicios en Dokploy |
+**Eventos notificados.**  
+Cada *push* o *pull request* ejecuta CI: si **compila** y pasan las **pruebas** (JUnit/MockMvc), GitHub marca la PR con checks en verde y notifica por web/correo/app. Si falla la compilación, un test o el **quality gate** (Sonar), la PR queda bloqueada y los autores reciben el aviso con enlace directo al log y a las anotaciones del job.
 
-**Rollback (Dokploy)**
-| Estrategia | Pasos | Éxito |
-|---|---|---|
-| Blue/Green | 1) Desplegar `green` con nueva imagen → 2) Health checks y smoke tests → 3) Switch de tráfico | Tráfico estable |
-| Rolling | Actualizar réplicas gradualmente | Cero downtime |
-| Reversión | Volver a imagen previa (`blue`) | Inmediato si fallas |
+**Despliegue y post-deploy.**  
+Al fusionar a `main`, el job CD construye la imagen y ordena el **deploy en Dokploy**. Si no pasan los *health checks* o fallan los **smoke tests** (Postman) posteriores, el job marca **failed** y GitHub notifica a quienes participaron en el cambio. Dokploy muestra el estado (healthy/unhealthy), facilitando confirmar el incidente y decidir **rollback**.
 
-**Smoke tests post-deploy**
-| Área | Test | Resultado esperado |
-|---|---|---|
-| API | `POST /debts` → `GET /debts/{id}` | 201/200 y payload válido |
-| Notificaciones | Encolar/simular envío | 200 y ack |
-| Frontend | `GET /` + recursos críticos | 200/OK y carga estable |
+**Alertas de seguridad y dependencias.**  
+**Dependabot** emite notificaciones cuando detecta **CVE** en librerías y abre PRs de actualización, avisando a los responsables. Estas alertas llegan al inbox de GitHub y por correo.
 
-**Evidencia operativa**
-| Registro | Contenido | Ubicación |
-|---|---|---|
-| Despliegues | Fecha, versión, commit SHA, autor | CHANGELOG/README |
-| Runs CI | Artefactos + tiempos por etapa | GitHub Actions |
-| Eventos Dokploy | Deploy logs, health, restarts | Panel Dokploy |
+**Trazabilidad del release.**  
+Cada despliegue publica el **commit SHA** y la versión en `/actuator/info`. Ante una incidencia, el equipo sigue la notificación del job/PR, verifica el SHA desplegado y ejecuta **rollback** o *hotfix*; el resultado queda documentado en el hilo de la PR.
 
+**Resumen operativo.**  
+- GitHub Actions notifica **éxito/fallo** de CI/CD con enlaces a logs y artefactos.  
+- Sonar/Dependabot generan avisos **proactivos** antes de producción.  
+- Dokploy aporta la **señal post-deploy** (health) para decidir rollback.
+
+Este circuito asegura respuestas rápidas, con evidencia suficiente (logs, reportes y commit exacto en producción) para reducir el tiempo de resolución.
 # Capítulo VIII: Experiment-Driven Development
 
 
