@@ -3791,18 +3791,60 @@ Cada tablero mostrará valores **por cohorte** (semana de registro) y **por plat
 
 ## 8.3. Experimentation
 
-En DebtGo aplicamos un enfoque de **desarrollo guiado por experimentos** para iterar con rapidez sobre las funcionalidades que impactan el comportamiento financiero del usuario: registrar su primera deuda, configurar recordatorios efectivos y marcar pagos a tiempo. Cada ciclo parte de supuestos claros (hipótesis), se implementa como una variante controlada (feature flag) y se valida con métricas del dominio (A1, T_onboarding, Conversión de recordatorios, R7 y OTPR).  
-Este proceso nos permite aprender con evidencias —no sólo percepciones— y alinear el roadmap a los resultados que más valor generan: **menos fricción en el alta**, **más recordatorios útiles** y **más pagos en fecha**.
+En esta sección presentamos cómo validaremos la propuesta de valor de **DebtGo** mediante experimentos guiados por historias **To-Be**. Las historias se diseñan a partir del Project Statement y de las interfaces Web/Mobile compartidas (registro/login, planes de pago, onboarding, gestión de deudas y pagos, educación financiera, notificaciones, mensajería y “workspace” de consultores).
+El objetivo es iterar rápido sobre lo esencial: **adopción**, **activación**, **retención** y **percepción de valor**(reducción de fricción para registrar deudas, configurar pagos y acceder a educación/asesoría). Cada historia incluye criterios de aceptación en estilo Gherkin para poder instrumentar pruebas y telemetría.
 
 ### 8.3.1. To-Be User Stories.
 
-Las historias de usuario “To-Be” de DebtGo se definen a partir de los aprendizajes de la fase previa (mapa de fricciones del alta, análisis de engagement con recordatorios y patrones de uso móvil). Su objetivo es **probar valor** de manera incremental: flujos más simples (wizard), atajos inteligentes (plantillas), defaults accionables (presets de recordatorios) y visualizaciones que incentiven el retorno (dashboard de estado).  
-Estas historias no son un listado exhaustivo; funcionan como **vehículos de experimento**: cada una incluye criterios medibles (A1, tiempo, CTR/conversión, R7) para decidir **ship / iterate / kill** en función de resultados.
+Convención de épicas:
+**EP01** Autenticación y Cuenta • **EP02** Suscripción y Cobros • **EP03** Deudas y Pagos • **EP04** Educación Financiera • **EP05** Workspace del Consultor • **EP06** Mensajería/Reseñas • **EP07** Notificaciones
+
+**Conjunto A — Usuario (ahorrista/deudor)**
+
+| **User Story ID** | **Título** | **Descripción (Como / Quiero / Para)** | **Criterios de Aceptación (resumen Gherkin)** | **Epic** |
+|---|---|---|---|---|
+| UA01 | Registro e inicio de sesión simple | **Como** usuario nuevo, **quiero** registrarme y loguearme con validaciones mínimas y “remember me”, **para** empezar a usar DebtGo sin fricción. | **Given** estoy en `/register` **When** ingreso nombre, email, rol y contraseña válida **Then** veo confirmación y puedo **Log in**. **Given** marco “Remember me” **Then** la sesión persiste al volver. | EP01 |
+| UA02 | Selección de plan y checkout | **Como** usuario, **quiero** elegir plan (Básico/Premium) y completar checkout, **para** activar funciones avanzadas. | **Given** elijo “Basic” o “Premium” **When** completo tarjeta y email **Then** el pago se valida y el plan queda **activo**; **And** recibo comprobante. | EP02 |
+| UA03 | Onboarding de deudas | **Como** usuario, **quiero** registrar una nueva deuda (monto, tasa, pago mínimo, notas), **para** ver mi proyección y próximos pagos. | **Given** “Add New Debt” **When** completo campos obligatorios **Then** la deuda aparece en “Upcoming Payments” y en el progreso de deuda. | EP03 |
+| UA04 | Configurar pagos recurrentes | **Como** usuario, **quiero** crear configuraciones de pago (monto, frecuencia, deuda objetivo), **para** automatizar mi planificación mensual. | **Given** “Manage Payments” **When** agrego configuración válida **Then** se guarda con frecuencia “Monthly”; **And** se recalculan proyecciones. | EP03 |
+| UA05 | Preferencias de notificación | **Como** usuario, **quiero** activar/desactivar recordatorios y canales (email/SMS/push), **para** recibir solo alertas útiles. | **Given** “Notification Preferences” **When** guardo toggles **Then** veo “Your preferences have been saved successfully” **And** los eventos futuros usan esos canales. | EP07 |
+| UA06 | Centro de educación financiera | **Como** usuario, **quiero** acceder a cursos con progreso, **para** mejorar mis hábitos y puntaje crediticio. | **Given** Education Center **When** entro a un curso **Then** veo temario y botón “Start/Continue”; **And** el porcentaje progresa tras completar lecciones. | EP04 |
+
+**Conjunto B — Consultor Financiero**
+
+| **User Story ID** | **Título** | **Descripción (Como / Quiero / Para)** | **Criterios de Aceptación (resumen Gherkin)** | **Epic** |
+|---|---|---|---|---|
+| UC01 | Perfil y Workspace del consultor | **Como** consultor, **quiero** ver y editar mi perfil y horario, **para** presentarme profesionalmente. | **Given** “Profile” **When** edito nombre/horario/avatar **Then** los cambios persisten y se reflejan en “My Workspace”. | EP05 |
+| UC02 | Publicar servicios | **Como** consultor, **quiero** publicar servicios con título, descripción, precio y archivos, **para** ofrecer asesorías. | **Given** “Post new service” **When** envío un formulario válido **Then** el servicio aparece en el catálogo del consultor. | EP05 |
+| UC03 | Mensajería con clientes | **Como** consultor, **quiero** conversar con mis clientes y adjuntar archivos, **para** dar seguimiento a casos. | **Given** “Messages” **When** envío un mensaje **Then** se visualiza en el hilo y el cliente recibe notificación; **And** puedo abrir “Case history”. | EP06 |
+| UC04 | Métricas básicas del consultor | **Como** consultor, **quiero** ver métricas simples (contactos, reservas, ingresos estimados), **para** priorizar mis esfuerzos. | **Given** “Metrics” **When** accedo **Then** veo tarjetas con tendencias del último mes; **And** filtros por rango temporal. | EP05 |
+
+**Conjunto C — Sistema / Seguridad**
+
+| **User Story ID** | **Título** | **Descripción (Como / Quiero / Para)** | **Criterios de Aceptación (resumen Gherkin)** | **Epic** |
+|---|---|---|---|---|
+| SYS01 | Recuperación de contraseña | **Como** usuario, **quiero** recuperar mi contraseña, **para** volver a ingresar si la olvidé. | **Given** “Forgot password?” **When** envío mi email **Then** recibo enlace de reset válido por tiempo limitado. | EP01 |
+| SYS02 | Eliminación de cuenta | **Como** usuario, **quiero** borrar mi cuenta desde el perfil, **para** controlar mis datos personales. | **Given** “Delete Account” **When** confirmo **Then** la cuenta se anonimiza y se revocan tokens/suscripciones. | EP01/EP02 |
+
 
 ### 8.3.2. To-Be Product Backlog
 
-El Product Backlog “To-Be” prioriza las funcionalidades que **mejor mueven los drivers del North Star** (OTPR). La priorización combina impacto esperado, complejidad técnica y riesgo, y orquesta la entrega por etapas: primero **reducción de fricción** (wizard/plantillas), luego **activación y hábito** (presets y canal óptimo de recordatorios) y, finalmente, **retención** (dashboard y acciones rápidas).  
-A la espera de entrevistas y validaciones complementarias, este backlog sirve como **espina dorsal** para los próximos sprints, dejando explícitos los indicadores de éxito que deberá cumplir cada ítem antes de consolidarse en la plataform
+Escala de **Story Points**: 1 (muy pequeño), 2 (pequeño), 3 (mediano), 5 (grande).
+
+| **Orden** | **User Story ID** | **Título** | **Descripción (Como / Quiero / Para)** | **Story Points** |
+|---:|:---:|---|---|:---:|
+| 1 | UA01 | Registro e inicio de sesión simple | **Como** usuario nuevo, **quiero** registrarme y loguearme con “remember me”, **para** empezar a usar DebtGo sin fricción. | 3 |
+| 2 | UA02 | Selección de plan y checkout | **Como** usuario, **quiero** elegir plan (Básico/Premium) y pagar, **para** activar funciones avanzadas. | 5 |
+| 3 | UA03 | Onboarding de deudas | **Como** usuario, **quiero** registrar una nueva deuda (monto, tasa, pago mínimo), **para** ver proyecciones y próximos pagos. | 5 |
+| 4 | UA04 | Configurar pagos recurrentes | **Como** usuario, **quiero** crear configuraciones de pago (monto y frecuencia), **para** automatizar mi planificación mensual. | 5 |
+| 5 | UA05 | Preferencias de notificación | **Como** usuario, **quiero** activar/desactivar recordatorios y canales (email/SMS/push), **para** recibir solo alertas útiles. | 3 |
+| 6 | UA06 | Centro de educación financiera | **Como** usuario, **quiero** acceder a cursos con progreso, **para** mejorar mis hábitos y puntaje crediticio. | 3 |
+| 7 | UC01 | Perfil y Workspace del consultor | **Como** consultor, **quiero** editar mi perfil y horario, **para** presentarme profesionalmente. | 2 |
+| 8 | UC02 | Publicar servicios | **Como** consultor, **quiero** publicar servicios con precio y adjuntos, **para** ofrecer asesorías. | 3 |
+| 9 | UC03 | Mensajería con clientes | **Como** consultor, **quiero** conversar y adjuntar archivos, **para** dar seguimiento a casos. | 3 |
+| 10 | UC04 | Métricas del consultor | **Como** consultor, **quiero** ver contactos, reservas e ingresos estimados, **para** priorizar esfuerzos. | 2 |
+| 11 | SYS01 | Recuperación de contraseña | **Como** usuario, **quiero** recuperar mi contraseña vía enlace temporal, **para** reingresar en caso de olvido. | 1 |
+| 12 | SYS02 | Eliminación de cuenta | **Como** usuario, **quiero** borrar mi cuenta y revocar suscripciones, **para** controlar mis datos personales. | 2 |
 
 # Conclusiones
 ## Conclusiones y recomendaciones
