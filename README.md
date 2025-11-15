@@ -2876,8 +2876,146 @@ Validar si DebtGo **reduce fricción** en el alta de deudas, **mejora recordator
 
 ### 6.3.2. Registro de Entrevistas.
 
+**Segmento Objetivo: Consultores financieros:**
+
+**Entrevista #1**
+
+- Nombre: Maria Pilares Pocochuanca
+- Edad: 26 años
+- Distrito: Los Olivos
+- Duración: 5:05
+
+![image](assets/Chapter-6/Entrevista1_Segm1_validation.png)
+[Entrevista 1 - video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202214214_upc_edu_pe/EQ77TmeMzZxLv83IOvsXFtMBa3PM7kygfpVsY93jZnukZg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=ReJpXc)
+
+Resumen: Como consultor financiero Maria Pilares, el front web de DebtGo le guía de forma natural: el ingreso/registro es limpio, la pantalla de planes con tarjetas “Basic” y “Premium” explica beneficios sin ruido visual y el botón “Start” reduce fricción. En “Profile” veo de inmediato plan activo y datos del cliente; desde “My Workspace” puedo abrir reseñas o enviar “Mensaje” sin perder el contexto. El estilo minimal con bloques bien contrastados y call-to-actions morados hace que cada recomendación termine en una acción clara. 
+
+
+**Segmento Objetivo: Gestores de Deudas y Emprendedores**
+
+**Entrevista #2**
+- Nombre: George Garcia Durand
+- Edad: 20 años
+- Distrito: Rimac
+- Duración: 4:57
+
+
+![image](assets/Chapter-2/George.png)
+
+[Entrevista 3 - video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202113279_upc_edu_pe/Ea0th-UAr9JBrljOSf-yPTIBE_7YfuXWx3s9Yz9cgeTWGQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=humfYy)
+
+Resumen: Desde la mirada de un gestor de deudas, George cree que la interfaz favorece el trabajo diario porque concentra todo en vistas muy directas. En “My Workspace” tiene la cabecera del cliente con foto, horario y acceso rápido a “Reseñas” y “Mensaje”; debajo, los paneles “Services” y “Metrics” separan ejecución y seguimiento: puedo “Post new service” con un modal simple (título, descripción, precio y archivos) y, a la vez, monitorear el avance con gráficos de la sección Metrics. La pantalla “Messages” replica el patrón de herramientas profesionales: lista de contactos a la izquierda, historial al centro y caja de envío con adjuntos, ideal para registrar acuerdos o solicitar comprobantes. Para cerrar el circuito operativo, propondría una vista tipo tablero dentro de “Services” que agrupe por estado (pendiente, en negociación, reprogramado, cerrado) y atajos en cada tarjeta para “Registrar pago” o “Enviar recordatorio”, alineados con el mismo estilo visual del resto del front.
 
 ### 6.3.3. Evaluaciones según heurísticas.
+
+**1) Consistencia y estándares**
+
+**Descripción.** Mantener patrones uniformes en diseño y flujos.
+
+**Hallazgos.**
+- Tipografías y espaciados son consistentes, pero el grosor de botones (p. ej., `Log in`, `Register`, `Start`) varía levemente entre pantallas.
+- En “Profile” el label “Acount” está mal escrito (**Account**), rompiendo consistencia lingüística.
+- Iconos (ojo de contraseña, campana, idioma) mantienen estilo, pero su tamaño no es uniforme en todas las vistas.
+
+**Evidencia.**  
+“En **Register** el botón principal se ve más alto que en **Log in** y en **Select a plan**.”  
+
+**Recomendaciones.**
+- Unificar tokens de diseño (altura de botón, padding horizontal, radio y sombra) en un Design System.
+- Revisión de UX writing (ortografía y terminología: *Account*, *Plan*, *Messages*, etc.).
+- Definir escala de iconos (p. ej., 20/24/28 px) y aplicarla globalmente.
+
+**Severidad:** 2 (Moderado)
+
+**2) Control y libertad del usuario**
+
+**Descripción.** Permitir deshacer/rehacer y corregir acciones con facilidad.
+
+**Hallazgos.**
+- En **Post new service** falta feedback claro tras “Confirm” (no se indica éxito/fracaso ni CTA de retorno).
+- En **Messages** el “This chat is empty” no ofrece acciones rápidas (crear/adjuntar primer mensaje).
+- En **Select a plan** no hay confirmación secundaria para evitar clics accidentales en *Start*.
+
+**Evidencia.**  
+“Confirmé un servicio y no supe si se publicó ni a dónde volver.”  
+
+**Recomendaciones.**
+- Añadir snackbar/toast con resultado y botón “Ver servicio”.
+- En **Messages**, CTA “Start conversation” y atajo para adjuntar archivos.
+- Diálogo de confirmación al elegir plan y opción “Cambiar plan” en **Profile**.
+
+**Severidad:** 3 (Alto)
+
+**3) Prevención de errores**
+
+**Descripción.** Evitar errores mediante validaciones y mensajes oportunos.
+
+**Hallazgos.**
+- Validación de **Email/Password** no indica reglas mínimas (p. ej., longitud/formatos) antes de intentar enviar.
+- En **Password** el icono “ojo” carece de etiqueta accesible (*aria-label*) y estado visible.
+- En **Post new service** el precio no explicita moneda/decimales; puede provocar registros inconsistentes.
+
+**Evidencia.**  
+“Probé registrarme con una clave corta; el formulario solo se limpió sin explicar por qué.”  
+
+**Recomendaciones.**
+- Validación en tiempo real con mensajes claros y ejemplos (email válido, 8+ caracteres, etc.).
+- Etiquetas accesibles y estados de *show/hide password*.
+- Campo **Price** con máscara numérica, selector de moneda (S/ o $) y validación de rango.
+
+**Severidad:** 2 (Moderado)
+
+**4) Flexibilidad y eficiencia de uso**
+
+**Descripción.** Atajos y personalización para usuarios frecuentes.
+
+**Hallazgos.**
+- Falta **Remember me** persistente visible en **Register** (solo en **Log in**).
+- No hay atajos de teclado (p. ej., `Enter` para enviar en **Messages**, `Esc` para cerrar modales).
+- En **Workspace** las “Metrics” son maquetas estáticas; no permiten filtros o periodos rápidos (última semana/mes).
+
+**Evidencia.**  
+“Quisiera enviar con *Enter* y filtrar métricas por mes sin ir a otra pantalla.”  
+
+**Recomendaciones.**
+- Unificar persistencia de sesión y preferencias por usuario.
+- Atajos básicos (`Enter`, `Esc`) y foco gestionado en modales.
+- Filtros de periodo y exportación rápida (CSV/PDF) en “Metrics”.
+
+**Severidad:** 2 (Moderado)
+
+**5) Diseño estético y minimalista**
+
+**Descripción.** Mostrar solo lo necesario y jerarquizar bien.
+
+**Hallazgos.**
+- El gradiente de fondo es correcto, pero en pantallas amplias reduce contraste de algunos textos secundarios.
+- En **Profile** la foto y el bloque de datos compiten por atención; falta jerarquía de títulos y espaciado vertical.
+- En **Services** (listado) los *thumbnails* grandes desplazan el texto; se sugiere rejilla con cards más compactas.
+
+**Evidencia.**  
+“En **Profile**, lo que más resalta es la foto; el nombre y plan quedan en segundo plano.”  
+
+**Recomendaciones.**
+- Ajustar contraste mínimo (WCAG AA) para textos secundarios.
+- Reordenar **Profile**: título > nombre > plan > acciones; foto en soporte, no foco primario.
+- Cards compactas con título, breve descripción y CTA consistente.
+
+**Severidad:** 1 (Bajo)
+
+---
+
+**Resumen de priorización**
+
+| Heurística                      | Severidad | Recomendación clave                                  |
+|---------------------------------|-----------|-------------------------------------------------------|
+| Control y libertad              | **3**     | Feedback y confirmaciones + CTAs de retorno           |
+| Consistencia y estándares       | 2         | Unificar tokens/estilos e idioma                      |
+| Prevención de errores           | 2         | Validación en tiempo real + mensajes claros           |
+| Flexibilidad y eficiencia       | 2         | Atajos, persistencia y filtros en métricas            |
+| Diseño estético/minimalista     | 1         | Mejorar contraste y jerarquía en **Profile/Services** |
+
+**Conclusión.** DebtGo presenta una base visual coherente y clara. Las mejoras con mayor impacto UX a corto plazo se concentran en **control/libertad del usuario** (feedback y confirmaciones), **validaciones preventivas** y **consistencia de componentes**. Al abordar estos puntos, el flujo de registro, publicación de servicios y mensajería ganará confianza, velocidad y accesibilidad.
 
 
 ## 6.4. Auditoría de Experiencias de Usuario.
