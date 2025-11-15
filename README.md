@@ -16,7 +16,7 @@
 
 ---
 
-# <p align="center">Informe del Avance 2</p>
+# <p align="center">Informe de Trabajo final</p>
 
 <p align="center">
     <strong>Startup: DebtGo</strong><br>
