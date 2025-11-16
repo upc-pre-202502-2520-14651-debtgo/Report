@@ -3017,34 +3017,213 @@ Resumen: Desde la mirada de un gestor de deudas, George cree que la interfaz fav
 
 **Conclusión.** DebtGo presenta una base visual coherente y clara. Las mejoras con mayor impacto UX a corto plazo se concentran en **control/libertad del usuario** (feedback y confirmaciones), **validaciones preventivas** y **consistencia de componentes**. Al abordar estos puntos, el flujo de registro, publicación de servicios y mensajería ganará confianza, velocidad y accesibilidad.
 
-
 ## 6.4. Auditoría de Experiencias de Usuario.
-
-
 ### 6.4.1. Auditoría realizada.
-
 #### 6.4.1.1. Información del grupo auditado.
 
+- **Nombre del grupo auditor:** DebtGo
+- **Responsable del equipo:** Daniel Jhared Chavarri Zarzosa
+- **Integrantes del grupo auditor:**
+  - Maria Fernanda Peña Riofrio
+  - Daniel Jhared Chavarri Zarzosa
+  - Anderson José William Gamarrra Vega
+- **Objetivo de la auditoría:** Evaluar la usabilidad de las funciones principales de la plataforma Moobile, identificar hallazgos críticos y proponer mejoras alineadas a principios de usabilidad reconocidos (heurísticas de Nielsen).
 
 #### 6.4.1.2. Cronograma de auditoría realizada.
 
+| Actividad | Fecha de ejecución | Duración estimada | Responsables |
+|---|---|--|---|
+| Planificación de auditoría | 08/11/2025 | 1 día |Equipo DebtGo |
+| Evaluación heurística de la plataforma | 09/11/2025 - 12/11/2025 | 3 días | Equipo DebtGo |
+| Documentación de hallazgos preliminares | 13/11/2025 | 1 día | Equipo DebtGo |
+| Reunión de retroalimentación | 14/11/2025 | 2 horas | Auditores + equipo Cowders |
+| Entrega del informe de evaluación de heurísticas final | 14/11/2025 | - | Equipo DebtGo |
 
 #### 6.4.1.3. Contenido de auditoría realizada.
 
+**Moobile - Evaluación de Heurísticas y Principios UX** 
+- Carrera: Ingeniería de Software
+- Curso: Diseño de Experimentos de Software - 1ASI0732
+- NRC: 14651
+- Profesores: Todos
+- Auditor: DebtGo
+- Cliente: Cowders (Equipo de Moobile)
+- Sitio o App a Evaluar: Moobile
+
+*TAREAS A EVALUAR:*
+
+El alcance de esta evaluación incluye la revisión de la usabilidad de las siguientes tareas:
+1. Registro de un usuario nuevo
+2. Visualización del perfil del usuario
+3. Gestión de bovinos
+4. Gestión de establos
+5. Gestión de vacunas
+6. Gestión de staff
+
+No están incluidas en esta versión de la evaluación las siguientes tareas:
+
+1. Gestión de campañas
+2. Funcionalidades con comandos de voz
+
+*ESCALA DE SEVERIDAD:*
+
+
+| Nivel | Descripción |
+|---|---|
+| 1 | Problema superficial: puede ser fácilmente superado por el usuario o puede ocurrir con muy poca frecuencia. No necesita ser arreglado a no ser que exista disponibilidad de tiempo. | 
+| 2 | Problema menor: puede ocurrir un poco más frecuentemente o es un poco más difícil de superar para el usuario. Se le debería asignar una prioridad baja para resolverlo de cara al siguiente release. | 
+| 3 | Problema mayor: ocurre frecuentemente o los usuarios no son capaces de resolver por sí mismos. Es importante corregirlo y asignarle una prioridad alta. | 
+| 4 | Problema muy grave: error de gran impacto que impide al usuario continuar con el uso de la herramienta. Es imperativo corregirlo antes del lanzamiento. | 
+
+*TABLA RESUMEN:*
+
+| # | Problema (pantalla) | Severidad | Heurística violada |
+|---:|---|:--:|---|
+| 1 | Falta de opciones de registro con terceros | **3** | 6. Recognition Rather Than Recall |
+| 2 |Poca personalización del perfil | **2** | 7. Flexibility and Efficiency of Use |
+| 3 | Falta de confirmación clara después de registrar bovinos, establos o staff | **2** | 9. Help Users Recognize, Diagnose, and Recover from Errors|
+| 4 | Listados extensos sin buscador o filtros | **3** | 7. Flexibility and Efficiency of Use |
+
+*DESCRIPCIÓN DE PROBLEMAS:*
+
+| PROBLEMA #1: Falta de opciones de registro con terceros |
+|---|
+| **Severidad**: 3 |
+| **Heurística violada:** 6. Recognition Rather Than Recall |
+| **Descripción**: El proceso de registro solo permite crear una cuenta mediante nombre de usuario, correo y contraseña. Esto obliga al usuario a recordar datos y crear credenciales nuevas, generando fricción y aumentando la probabilidad de abandono del proceso de registro.|
+| **Recomendación**: Incorporar botones de registro con Google o Apple para facilitar un acceso rápido, reducir carga cognitiva y mejorar la experiencia de ingreso.|
+
+| PROBLEMA #2: Poca personalización del perfil del usuario |
+|---|
+| **Severidad**: 2 |
+| **Heurística violada:** 7. Flexibility and Efficiency of Use|
+| **Descripción**: El perfil solo permite editar campos básicos como el nombre de usuario y el correo. Esto limita la capacidad del usuario de personalizar su experiencia, debilitando el sentido de identidad y control dentro de la aplicación. |
+| **Recomendación**: Permitir editar información adicional como foto de perfil, datos personales o preferencias, brindando mayor flexibilidad y una experiencia más completa.|
+
+
+| PROBLEMA #3: Falta de confirmación clara después de registrar bovinos, establos o staff |
+|---|
+| **Severidad**: 2 |
+| **Heurística violada:** 9. Help Users Recognize, Diagnose, and Recover from Errors|
+| **Descripción**: Al completar un registro, la aplicación no muestra un mensaje de éxito claro ni retroalimentación visual inmediata. Esto genera incertidumbre sobre si la acción se realizó correctamente y puede llevar a duplicar registros o cometer errores. |
+| **Recomendación**: Mostrar mensajes de confirmación visibles y consistentes, y actualizar el listado automáticamente después de registrar un elemento.|
+
+
+| PROBLEMA #4: Listados extensos sin buscador o filtros |
+|---|
+| **Severidad**: 3 |
+| **Heurística violada:**  7. Flexibility and Efficiency of Use|
+| **Descripción**: Las secciones que contienen muchos elementos (bovinos, establos, vacunas o staff) se vuelven difíciles de navegar debido a la falta de filtros, buscador o herramientas de organización. Esto incrementa el tiempo necesario para encontrar información y afecta la eficiencia del sistema.|
+| **Recomendación**: Agregar herramientas de búsqueda, filtros por categoría o paginación para facilitar la navegación y mejorar la eficiencia en tareas repetitivas o con grandes volúmenes de datos|
 
 ### 6.4.2. Auditoría recibida.
-
-
 #### 6.4.2.1. Información del grupo auditor.
 
+- **Nombre del grupo auditor:** Cowders
+- **Responsable del equipo:** Renzo Cesar Silva Morales
+- **Integrantes del grupo auditor:**
+  - Renzo Cesar Silva Morales
+  - Jorge Rafael Bravo Gavilano
+  - Jack Eddie Roque Tello
+  - Carlos Alberto Gonzalez Custodio
+- **Objetivo de la auditoría:** Evaluar la usabilidad de las funciones principales de la plataforma DebtGo, identificar hallazgos críticos y proponer mejoras alineadas a principios de usabilidad reconocidos (heurísticas de Nielsen).
 
 #### 6.4.2.2. Cronograma de auditoría recibida.
 
+| Actividad | Fecha de ejecución | Duración estimada | Responsables |
+|---|---|--|---|
+| Planificación de auditoría | 09/11/2025 | 1 día |Equipo Cowders |
+| Evaluación heurística de la plataforma | 09/11/2025 - 14/11/2025 | 3 días | Equipo Cowders |
+| Documentación de hallazgos preliminares | 13/11/2025 | 1 día | Equipo Cowders |
+| Reunión de retroalimentación | 14/11/2025 | 2 horas | Auditores + equipo DebtGo |
+| Entrega del informe de evaluación de heurísticas final | 14/11/2025 | - | Equipo Cowders |
 
 #### 6.4.2.3. Contenido de auditoría recibida.
 
+**Moobile - Evaluación de Heurísticas y Principios UX** 
+- Carrera: Ingeniería de Software
+- Curso: Diseño de Experimentos de Software - 1ASI0732
+- NRC: 14651
+- Profesores: Todos
+- Auditor: Cowders
+- Cliente: DebtGo 
+- Sitio o App a Evaluar: DebtGo 
+
+*TAREAS A EVALUAR:*
+
+El alcance de esta evaluación incluye la revisión de la usabilidad de las siguientes tareas:
+1. Registro de usuario
+2. Inicio de sesión
+3. Workspace
+4. Mensajeria
+
+
+No están incluidas en esta versión de la evaluación las siguientes tareas:
+
+1. Historial de Pagos
+2. Simuladores de Pagos
+
+*ESCALA DE SEVERIDAD:*
+
+
+| Nivel | Descripción |
+|---|---|
+| 1 | Problema superficial: puede ser fácilmente superado por el usuario o puede ocurrir con muy poca frecuencia. No necesita ser arreglado a no ser que exista disponibilidad de tiempo. | 
+| 2 | Problema menor: puede ocurrir un poco más frecuentemente o es un poco más difícil de superar para el usuario. Se le debería asignar una prioridad baja para resolverlo de cara al siguiente release. | 
+| 3 | Problema mayor: ocurre frecuentemente o los usuarios no son capaces de resolver por sí mismos. Es importante corregirlo y asignarle una prioridad alta. | 
+| 4 | Problema muy grave: error de gran impacto que impide al usuario continuar con el uso de la herramienta. Es imperativo corregirlo antes del lanzamiento. | 
+
+*TABLA RESUMEN:*
+
+| # | Problema (pantalla) | Severidad | Heurística violada |
+|---:|---|:--:|---|
+| 1 | Sin opciones de inicio/registro con terceros (Login/Registro)| **3** | 6. Recognition Rather Than Recall |
+| 2 |Validación y requisitos de contraseña poco visibles (Registro) | **3** | 5. Error Prevention |
+| 3 |Búsqueda/filtros inexistentes en listados | **2** | 7. Flexibility & Efficiency|
+| 4 | Persistencia de idioma | **2** | 2. Match with Real World |
+
+*DESCRIPCIÓN DE PROBLEMAS:*
+
+| PROBLEMA #1:Sin opciones de registro/inicio con terceros |
+|---|
+| **Severidad**: 3 |
+| **Heurística violada:** 6. Recognition Rather Than Recall |
+| **Descripción**: Solo se permite crear cuenta con correo y contraseña. Eleva fricción (recordar credenciales nuevas) y puede afectar la conversión en móviles.|
+| **Recomendación**:  Incorporar OAuth 2.0 (Google/Apple/Microsoft). Mantener _ fallback _ por email. Mostrar tiempos/beneficios (“Accede en 2 clics, sin crear otra clave”)|
+
+| PROBLEMA #2:  Requisitos de contraseña poco visibles |
+|---|
+| **Severidad**: 3 |
+| **Heurística violada:** 5. Error Prevention|
+| **Descripción**: Los criterios (“≥8 caracteres, al menos 1 número…”) aparecen como lista estática y no se **marcan en vivo** al tipear; los errores no siempre indican cómo resolverlos. |
+| **Recomendación**: Validación en tiempo real con checklist dinámico (verde/rojo), medidor de fortaleza, mensajes accionables y botón “mostrar contraseña” alineado a accesibilidad (ARIA).|
+
+
+| PROBLEMA #3: Sin búsqueda/filtros en listados |
+|---|
+| **Severidad**: 2 |
+| **Heurística violada:** 7. Flexibility & Efficiency|
+| **Descripción**: En Services y Messages no hay Search ni Filters. La localización de conversaciones o servicios escala mal con volumen |
+| **Recomendación**: Añadir barra de búsqueda (por nombre/título) y filtros (estado, rango de precio/fecha). Paginación o carga incremental para rendimiento.|
+
+
+| PROBLEMA #4: Persistencia de idioma |
+|---|
+| **Severidad**: 2 |
+| **Heurística violada:**  2. Real World|
+| **Descripción**: El selector EN/ES no indica claramente persistencia; al navegar entre vistas puede perderse la preferencia.|
+| **Recomendación**: Guardar preferencia en localStorage / cookie, hidratar desde el backend cuando el usuario está autenticado y mostrar indicador breve de idioma activo.|
+
+
+
 #### 6.4.2.4. Resumen de modificaciones para subsanar hallazgos.
 
+| # | Hallazgo identificado | Modificación propuesta | Severidad | Prioridad |
+|---:|---|---|:--:|:--:|
+| 1 | Sin SSO (correo/clave únicamente) | Implementar OAuth 2.0*(Google/Apple/MS) con scopes mínimos. | 3 | Alta |
+| 2 | Requisitos de contraseña poco claros | Validación en vivo + checklist dinámico + medidor de fortaleza + mensajes guiados | 3 | Alta |
+| 3 | Sin búsqueda/filtros | Agregar Search + Filters + paginación/carga perezosa en Services/Messages | 2 | Media |
+| 4 | Idioma no persistente | Persistir preferencia EN/ES (localStorage/cookie) y sincronizar tras login | 2 | Media |
 
 # Capítulo VII: DevOps Practices
 ## 7.1. Continuous Integration
