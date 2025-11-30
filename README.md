@@ -350,7 +350,23 @@ En la entrega final (TF1) se consolidó el trabajo experimental y técnico de De
 - [8.3. Experimentation](#83-experimentation)
   - [8.3.1. To-Be User Stories](#831-to-be-user-stories)
   - [8.3.2. To-Be Product Backlog](#832-to-be-product-backlog)
-
+  - [8.3.3. Pipeline-supported, Experiment-Driven To-Be Software Platform Lifecycle]()
+    - [8.3.3.1. To-Be Sprint Backlogs](#8331-to-be-sprint-backlogs)
+    - [8.3.3.2. Implemented To-Be Landing Page Evidence](#8332-implemented-to-be-landing-page-evidence)
+    - [8.3.3.3. Implemented To-Be Frontend-Web Application Evidence](#8333-implemented-to-be-frontend-web-application-evidence)
+    - [8.3.3.4. Implemented To-Be Native-Mobile Application Evidence](#8334-implemented-to-be-native-mobile-application-evidence)
+    - [8.3.3.5. Implemented To-Be RESTful API and/or Serverless Backend Evidence](#8335-implemented-to-be-restful-api-andor-serverless-backend-evidence)
+    - [8.3.3.6. Team Collaboration Insights](#8336-team-collaboration-insights)
+  - [8.3.4. To-Be Validation Interviews](#834-to-be-validation-interviews)
+    - [8.3.4.1. Diseño de Entrevistas.](#8341-diseño-de-entrevistas)
+    - [8.3.4.2. Registro de Entrevistas.](#8342-registro-de-entrevistas)
+- [8.4. Experiment Aftermath & Analysis](#84-experiment-aftermath--analysis)
+  - [8.4.1. Analysis and Interpretation of Results](#841-analysis-and-interpretation-of-results)
+  - [8.4.2. Re-scored and Re-prioritized Question Backlog](#842-re-scored-and-re-prioritized-question-backlog)
+- [8.5. Continuous Learning](#85-continuous-learning)
+  - [8.5.1. Shareback Session Artifacts: Learning Workflow](#851-shareback-session-artifacts-learning-workflow)
+- [8.6. To-Be Software Platform Pre-launch](#86-to-be-software-platform-pre-launch)
+  - [8.6.1. About-the-ProductIntro Video](#861-about-the-productintro-video)
 
 [Conclusiones](#conclusiones)
 - [Conclusiones y recomendaciones](#conclusiones-y-recomendaciones)
@@ -4295,6 +4311,58 @@ Escala de **Story Points**: 1 (muy pequeño), 2 (pequeño), 3 (mediano), 5 (gran
 | 10 | UC04 | Métricas del consultor | **Como** consultor, **quiero** ver contactos, reservas e ingresos estimados, **para** priorizar esfuerzos. | 2 |
 | 11 | SYS01 | Recuperación de contraseña | **Como** usuario, **quiero** recuperar mi contraseña vía enlace temporal, **para** reingresar en caso de olvido. | 1 |
 | 12 | SYS02 | Eliminación de cuenta | **Como** usuario, **quiero** borrar mi cuenta y revocar suscripciones, **para** controlar mis datos personales. | 2 |
+
+### 8.3.3. Pipeline-supported, Experiment-Driven To-Be Software Platform Lifecycle
+
+
+#### 8.3.3.1. To-Be Sprint Backlogs
+
+
+#### 8.3.3.2. Implemented To-Be Landing Page Evidence
+
+
+#### 8.3.3.3. Implemented To-Be Frontend-Web Application Evidence
+
+
+#### 8.3.3.4. Implemented To-Be Native-Mobile Application Evidence
+
+
+#### 8.3.3.5. Implemented To-Be RESTful API and/or Serverless Backend Evidence
+
+
+#### 8.3.3.6. Team Collaboration Insights
+
+
+### 8.3.4. To-Be Validation Interviews
+
+
+#### 8.3.4.1. Diseño de Entrevistas.
+
+
+#### 8.3.4.2. Registro de Entrevistas.
+
+
+## 8.4. Experiment Aftermath & Analysis
+
+
+### 8.4.1. Analysis and Interpretation of Results
+
+
+### 8.4.2. Re-scored and Re-prioritized Question Backlog
+
+
+## 8.5. Continuous Learning
+
+
+### 8.5.1. Shareback Session Artifacts: Learning Workflow
+
+
+## 8.6. To-Be Software Platform Pre-launch
+
+
+### 8.6.1. About-the-ProductIntro Video 
+
+
 
 # Conclusiones
 ## Conclusiones y recomendaciones
