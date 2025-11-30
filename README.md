@@ -127,11 +127,72 @@
               <td><ul>
                 <li>Capítulo VII: DevOps Practices</li>
                 <li>Capítulo VIII: Experiment-Driven Development</li>
-                <li>Conclusiones, Bibliografía y Anexos</li>
+                <li>Conclusiones, Recomendaciones, Bibliografía y Anexos</li>
               </ul></td>
             </tr>
         </tbody>
 </table>
+
+# Project Report Collaboration Insights
+
+A continuación se describe el proceso seguido en cada una de las entregas del informe, junto con capturas de pantalla que muestran la colaboración del equipo y el historial de commits registrados en GitHub dentro del repositorio del proyecto.
+
+|  |  |
+|--------|-----|
+| **Url de la Organización:** | https://github.com/upc-pre-202502-2520-14651-debtgo |
+| **Url de los repositorios de la organización:**  |  https://github.com/orgs/upc-pre-202502-2520-14651-debtgo/repositories |
+| **URL del Reporte:** | https://github.com/upc-pre-202502-2520-14651-debtgo/Report  |
+| **URL de la Landing Page:** |  https://github.com/upc-pre-202502-2520-14651-debtgo/Landing-Page |
+| **URL del FrontEnd:** | https://github.com/upc-pre-202502-2520-14651-debtgo/Front-End-DebtGo |
+| **URL del BackEnd:** |https://github.com/upc-pre-202502-2520-14651-debtgo/Back-End-DebtGo |
+
+
+**Entrega N°1: TB1**
+
+En la entrega TB1 se completaron las tareas iniciales del proyecto, centradas en construir la base del producto y del informe. El equipo trabajó los capítulos de Introducción, requisitos, especificación y diseño, además de la primera versión del Product Implementation. En esta etapa se definió con mayor claridad la propuesta de valor de DebtGo, se organizaron los artefactos de diseño (landing page, app web y móvil a nivel de UX/UI) y se dejó avanzado el borrador de conclusiones, bibliografía y anexos.
+
+<center> <img src="assets/Chapter-1/EXP_COMMITS_TB1_REPORT.png" style="width: 600px;"/> </center>
+<br>
+
+*<p align="center">Historial de commits en la documentación</p>*
+
+**Entrega N°2: TP1** 
+
+En la entrega TP1 el foco pasó a asegurar la calidad técnica de la solución y preparar el terreno para las prácticas DevOps. Se reforzó el capítulo de Product Implementation y se desarrollaron las secciones de verificación y validación (capítulo VI) y DevOps Practices (capítulo VII). En este punto se implementaron pruebas sobre las entidades e integraciones clave, se configuraron los primeros pipelines de build y test, y se documentó el avance de cada componente para mantener trazabilidad entre código, pruebas y objetivos del proyecto.
+
+<center> <img src="assets/Chapter-1/EXP_COMMITS_TP_REPORT.png" style="width: 600px;"/> </center>
+<br>
+
+<center> <img src="assets/Chapter-1/EXP_COMMITS_TP_FRONTEND.png" style="width: 600px;"/> </center>
+<br>
+
+<center> <img src="assets/Chapter-1/EXP_COMMITS_TP_BACKEND.png" style="width: 600px;"/> </center>
+<br>
+
+*<p align="center">Historial de commits en la documentación, el front-end y back-end</p>*
+
+**Entrega N°3: TB2**
+
+En TB2 se profundizó en la calidad del software y en la automatización del ciclo de desarrollo. Se completaron las secciones de Product Verification & Validation y DevOps Practices, incorporando suites de pruebas más completas (unitarias, de integración, BDD y de sistema) y fortaleciendo los pipelines de integración, entrega y despliegue continuo. Además, se desarrolló el capítulo de Experiment-Driven Development, definiendo hipótesis, métricas y experimentos para validar con datos el impacto real de DebtGo en la gestión de deudas y educación financiera de los usuarios.
+
+<center> <img src="assets/Chapter-1/EXP_COMMITS_TB2_REPORT.png" style="width: 600px;"/> </center>
+<br>
+
+*<p align="center">Historial de commits en la documentación</p>*
+
+**Entrega N°4: TF1**
+
+En la entrega final (TF1) se consolidó el trabajo experimental y técnico de DebtGo, cerrando el desarrollo del producto y su documentación. Se refinaron las prácticas DevOps y los experimentos del capítulo VIII, se analizaron los resultados obtenidos y se ajustó el Question Backlog en función de lo aprendido. También se integraron las distintas evidencias del producto (landing page, aplicación web, prototipos móviles y backend) en una visión coherente, se elaboraron las conclusiones finales y se preparó el material de pre-lanzamiento, incluyendo el video de presentación de la solución.
+ 
+<center> <img src="assets/Chapter-1/EXP_COMMITS_TF_FRONTEND.png" style="width: 600px;"/> </center>
+<br>
+
+<center> <img src="assets/Chapter-1/EXP_COMMITS_TF_BACKEND.png" style="width: 600px;"/> </center>
+<br>
+
+*<p align="center">Historial de commits en la documentación, el front-end y back-end</p>*
+
+
 
 # Contenido
 [Student Outcome](#student-outcome)
@@ -382,6 +443,7 @@ Criterio: La capacidad de reconocer responsabilidades éticas y profesionales en
     </tr>
   </tbody>
 </table>
+
 
 # Capítulo I: Introducción
 ## 1.1. Startup Profile
