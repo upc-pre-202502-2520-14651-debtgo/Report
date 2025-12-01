@@ -399,6 +399,8 @@ Criterio: La capacidad de reconocer responsabilidades éticas y profesionales en
         <p>Configure el control de acceso por rol y protección de credenciales (hashing de contraseñas, variables de entorno</p>
         <p><b>TB2:</b></p>
         <p>Aseguró accesibilidad básica en la web (contraste, semántica, etiquetas) para no excluir usuarios</p>
+        <p><b>TF:</b></p>
+        <p>En la TF se encargó de revisar los endpoints y la información mostrada en los dashboards y vistas por rol, verificando que DebtGo no exponga datos financieros innecesarios y que los ejemplos usados en pruebas y capturas sean ficticios. Además, revisó que el cuestionario de Google Forms no recoja datos sensibles, manteniendo el anonimato de los participantes.</p>
         <p><b>Peña Riofrio, Maria Fernanda</b></p>
         <p><b>TB1:</b></p>
         <p>Realice una entrevista y desarrolle su respectivo análisis, con esto se reconoció la importancia de manejar la información de la entrevista con responsabilidad.</p>
@@ -406,6 +408,8 @@ Criterio: La capacidad de reconocer responsabilidades éticas y profesionales en
         <p>Prepare plan de respuesta a incidentes (contención, comunicación al usuario, remediación).</p>
         <p><b>TB2:</b></p>
         <p>Documentó políticas de registro de auditoría (quién hizo qué y cuándo) para trazabilidad y resolución de incidentes.</p>
+        <p><b>TF:</b></p>
+        <p>En la TF se ocupó de documentar las evidencias técnicas (APIs, front y mobile) y del video “About-the-Product”, asegurándose de incluir aclaraciones sobre el uso responsable de DebtGo y de no prometer beneficios garantizados. También cuidó que la información de la encuesta se use solo con fines de mejora del producto.</p>
         <p><b>Gamarra Vega, Anderson José William</b></p>
         <p><b>TB1:</b></p>
         <p>Realicé una entrevista y desarrollé algunos de los puntos establecidos en la TB1, asegurándome de manejar de manera ética la información recopilada.</p>
@@ -413,6 +417,8 @@ Criterio: La capacidad de reconocer responsabilidades éticas y profesionales en
         <p>Lideró revisiones estáticas (estilo, seguridad, dependencia) y checklist de privacidad por diseño en PRs.</p>
         <p><b>TB2:</b></p>
         <p>Validó términos y avisos de privacidad en registro e inicio de sesión (transparencia en tratamiento de datos).</p>
+        <p><b>TF:</b></p>
+        <p>Durante la TF se centró en la parte de UX de la landing y de las vistas móvil/web, evitando mensajes engañosos sobre resultados financieros y clarificando los textos de consentimiento y avisos. Su trabajo ayudó a que el flujo de registro, pruebas de la app y experimentos se presenten de forma honesta y comprensible para usuarios no expertos en finanzas.</p>
       </td>
       <td>
         <p><strong>TB1:</strong></p>
@@ -421,6 +427,8 @@ Criterio: La capacidad de reconocer responsabilidades éticas y profesionales en
         <p>Para la segunda entrega, se probaron flujos con datos ficticios, reforzando accesibilidad, consentimiento y revisiones de seguridad en PR..</p>
         <p><strong>TB2:</strong></p>
         <p>Para la tercera entrega, con CI/CD y escaneo de dependencias, el equipo demostró cumplimiento sistemático de prácticas éticas y operativas (auditoría, gestión de incidentes, minimización de PII).</p>
+        <p><strong>TF:</strong></p>
+        <p>Para la TF se aplicaron criterios éticos al diseñar encuestas, vistas y evidencias técnicas, protegiendo datos sensibles, evitando promesas engañosas y dejando claros los límites de la herramienta, lo que refuerza su responsabilidad profesional en el contexto de una solución financiera.</p>
       </td>
     </tr>
     <tr>
@@ -433,6 +441,8 @@ Criterio: La capacidad de reconocer responsabilidades éticas y profesionales en
         <p>Evalue riesgos de sobre-endeudamiento en funcionalidades (mensajes educativos, límites y advertencias).</p>
         <p><strong>TB2:</strong></p>
         <p>Priorice eficiencia de recursos en el backend (costo/energía) y reutilización de infraestructura.</p>
+        <p><b>TF:</b></p>
+        <p>En la TF analice cómo las mejoras propuestas (mejor dashboard, recordatorios personalizados, integración de consultores) pueden impactar en la reducción de morosidad de emprendedores y personas endeudadas. Sus aportes ayudaron a priorizar funcionalidades que favorezcan decisiones financieras más sostenibles.</p>
         <p><b>Peña Riofrio, Maria Fernanda</b></p>
         <p><b>TB1:</b></p>
         <p>A partir del análisis del video, se reflexionó sobre cómo una solución futura de software respondería a las necesidades del segmento entrevistado.</p>
@@ -440,6 +450,8 @@ Criterio: La capacidad de reconocer responsabilidades éticas y profesionales en
         <p>Analice el impacto económico y social de planes (Basic/Premium) para inclusión financiera y transparencia de precios..</p>
         <p><strong>TB2:</strong></p>
         <p>Realice que los dark patterns se evitarán en UX (opt-in real, cancelación visible), favoreciendo decisiones informadas del usuari</p>
+        <p><b>TF:</b></p>
+        <p> Evalue el impacto social de la educación financiera integrada en DebtGo, especialmente en los módulos recomendados según el estado de la deuda. Consideró cómo el contenido y las notificaciones pueden disminuir el estrés financiero y fomentar hábitos responsables en distintos tipos de usuarios. </p>
         <p><b>Gamarra Vega, Anderson José William</b></p>
         <p><b>TB1:</b></p>
         <p>Realicé una entrevista y participé en el desarrollo de diferentes puntos de la TB1, considerando el impacto que tendría una futura solución de software en los aspectos sociales y económicos del contexto estudiado.</p>
@@ -447,6 +459,9 @@ Criterio: La capacidad de reconocer responsabilidades éticas y profesionales en
         <p>Consideró escalabilidad por regiones (latencia, regulaciones locales de datos) y localización (moneda, idioma).</p>
         <p><strong>TB2:</strong></p>
         <p>Propuso contenido educativo integrado (ahorro, presupuesto responsable) para beneficio social directo.</p>
+        <p><b>TF:</b></p>
+        <p>En la TF valore la posibilidad de escalar DebtGo a otros contextos (moneda, idioma, canales de notificación), reflexionando sobre cómo los experimentos y métricas diseñadas hoy condicionan la adopción futura en otros mercados. Propuso mantener mensajes y flujos flexibles para adaptarse a realidades económicas variadas.
+ </p>
       </td>
        <td>
         <p><strong>TB 1:</strong></p>
@@ -455,6 +470,8 @@ Criterio: La capacidad de reconocer responsabilidades éticas y profesionales en
         <p>Para la segunda entrega, Los experimentos priorizaron métricas de bienestar del usuario (retención saludable, comprensión de riesgo) por encima de métricas de vanidad.</p>
         <p><strong>TB2:</strong></p>
         <p>Para la tercera entrega, Se consolidó un producto socialmente responsable, con educación financiera integrada, mensajes preventivos y operación eficiente con visión global (idioma/moneda/latencia).</p>
+        <p><strong>TF:</strong></p>
+        <p>Para la TF, se emitieron juicios informados sobre el impacto económico y social de DebtGo, priorizando funcionalidades que mejoren el bienestar financiero, la educación del usuario y la posibilidad de adaptación a diferentes contextos, más allá de la mera viabilidad técnica del sistema.</p>
       </td>
     </tr>
   </tbody>
