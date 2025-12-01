@@ -4332,17 +4332,68 @@ Escala de **Story Points**: 1 (muy pequeño), 2 (pequeño), 3 (mediano), 5 (gran
 
 #### 8.3.3.2. Implemented To-Be Landing Page Evidence
 
+Landing Page Hero – Versión para usuarios con deudas  
+La landing de DebtGo incorpora un banner principal con el mensaje **“Take Control of Your Finances with DebtGo”** y llamados a la acción para iniciar asesoría o solicitar consultoría financiera, comunicando de forma directa el propósito de ayudar a organizar y pagar deudas.
+
+![ladgtb1](assets/Chapter-6/img-evidence-1.png)
+
+Landing Page Hero – Versión para consultores financieros  
+Se diseñó también una variante del hero orientada a consultores, con el mensaje **“Empower Your Client's Financial Future”**, destacando los beneficios exclusivos de DebtGo para asesores (cursos interactivos, contenido especializado y oportunidades de consultoría), alineando la propuesta de valor a este segmento.
+
+![ladgtb2](assets/Chapter-6/img-evidence-2.png)
+
 
 #### 8.3.3.3. Implemented To-Be Frontend-Web Application Evidence
+
+Lasimagenes que se muestran la implementación del **dashboard web del consultor** de DebtGo, alineado con las historias To-Be **UC01 – Perfil y Workspace del consultor** y **UC04 – Métricas del consultor**.  
+En este sprint se corrigió la separación de vistas entre **consultor** y **emprendedor**, de modo que el consultor accede ahora a un panel exclusivo con tarjetas de **casos activos, clientes asesorados y calificación general**, además de una tabla con los **últimos casos asignados** y accesos directos a *Gestionar casos*, *Servicios* y *Métricas*. Esto asegura que las funcionalidades clave del workspace del consultor queden reflejadas de forma clara y consistente en la aplicación web.
+![fronttb1](assets/Chapter-8/front_tobe1.jpeg)
+
+![fronttb1](assets/Chapter-8/front_tobe1.jpeg)
 
 
 #### 8.3.3.4. Implemented To-Be Native-Mobile Application Evidence
 
+US01 – Se implementó la pantalla de **registro móvil** de DebtGo, permitiendo crear cuenta con nombre, email, rol (Emprendedor/Consultor) y contraseña segura, incluyendo validaciones de longitud y complejidad, así como la aceptación de Términos y Condiciones.
+
+
+![mobtb1](assets/Chapter-6/img-evidence-3.png)
+
+US02 – Se desarrolló el módulo **“My Financial Education Center”**, donde el usuario puede visualizar cursos financieros con su porcentaje de avance, continuar lecciones pendientes e identificar oportunidades de certificación y mentoring dentro del ecosistema de DebtGo.
+
+![mobtb2](assets/Chapter-6/img-evidence-4.png)
+
+
+US03 – Se habilitó la **bandeja de mensajes** en la app móvil, que centraliza comunicaciones del sistema y conversaciones con otros usuarios o consultores, facilitando el seguimiento de recordatorios, consejos y actualizaciones relacionadas a la gestión de deudas.
+
+![mobtb3](assets/Chapter-6/img-evidence-5.png)
+
 
 #### 8.3.3.5. Implemented To-Be RESTful API and/or Serverless Backend Evidence
+TS001 – Endpoints para gestión de consultores y sus servicios  
+(consultant-controller: creación, actualización, listado y resumen de consultores y servicios financieros).
+
+![backtb1](assets/Chapter-8/back_tobe1.png)
+
+TS002 – Endpoints para reseñas, asesorías y simulaciones de deuda  
+(review-controller, advisory-controller y simulation-controller: gestión de reseñas, asignación de asesorías y simulaciones de pago).
+![backtb2](assets/Chapter-8/back_tobe2.png)
+
+TS003 – Endpoints para solicitudes de consultoría, generación de PDF, pagos y deudas  
+(consultant-request-controller, pdf-controller, payment-controller y debt-controller: registro de solicitudes, exportación de simulaciones a PDF, registro de pagos y resumen de deudas).
+![backtb3](assets/Chapter-8/back_tobe3.png)
+
+TS004 – Endpoints para usuarios, perfiles de consultor, educación y métricas de uso  
+(user-controller, consultant-profile-controller, education-controller, case-request-controller, metrics-controller, home-controller y dashboard-controller: registro/login, gestión de perfil, contenidos educativos, solicitudes de casos, métricas y dashboard del consultor).
+
+![backtb4](assets/Chapter-8/back_tobe4.png)
 
 
+![backtb5](assets/Chapter-8/back_tobe5.png)
 #### 8.3.3.6. Team Collaboration Insights
+
+![fronttobe](assets/Chapter-8/frontend_tobe_insights.png)
+![backtobe](assets/Chapter-8/backend_tobe_insights.png)
 
 
 ### 8.3.4. To-Be Validation Interviews
