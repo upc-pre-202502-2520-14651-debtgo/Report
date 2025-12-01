@@ -4428,22 +4428,147 @@ Escala de **Story Points**: 1 (muy pequeño), 2 (pequeño), 3 (mediano), 5 (gran
 
 ### 8.4.1. Analysis and Interpretation of Results
 
+Para este proyecto se aplicará una encuesta breve a usuarios potenciales de DebtGo (consultores financieros y
+gestores de deudas/emprendedores) con el fin de obtener respuestas claras y cuantificables que permitan
+analizar la experiencia de uso de la nueva versión (landing actualizada, conexión front–back y separación de
+vistas por rol).
+
+A continuación, se proponen las preguntas para el formulario:
+
+1. ¿Cómo calificarías tu experiencia general usando **DebtGo** para gestionar deudas personales o de tu negocio?  
+   *(Escala: 1 = Muy mala, 5 = Excelente)*
+
+2. ¿Qué tan clara te pareció la explicación de la plataforma en la sección **“Learn More About DebtGo”** de la landing page?  
+   *(Escala: 1 = Nada clara, 5 = Muy clara)*
+
+3. ¿Qué tan intuitiva y fácil de usar consideras la **interfaz web/móvil** de DebtGo?  
+   *(Escala: 1 = Muy complicada, 5 = Muy intuitiva)*
+
+4. En tu caso, la **vista correspondiente a tu rol** (Consultor / Emprendedor) se mostró claramente separada y sin confusiones.  
+   *(Opciones: Sí / No / Parcialmente)*
+
+5. ¿Qué tan útil te resultó el **dashboard** (próximos pagos, saldo restante, progreso de deuda) para entender tu situación financiera?  
+   *(Escala: 1 = Nada útil, 5 = Muy útil)*
+
+6. ¿Las funcionalidades de **registro de deudas, programación de pagos y notificaciones** cubren tus necesidades actuales?  
+   *(Opciones: Sí / No / Parcialmente)*
+
+7. ¿Con qué frecuencia crees que utilizarías DebtGo en tu día a día?  
+   *(Opciones: Diario / Varias veces por semana / Una vez por semana / Ocasionalmente)*
+
+8. ¿Has tenido problemas técnicos al usar DebtGo (errores, vistas que no cargan, fallos al guardar información)?  
+   *(Opciones: Sí / No)*  
+   - En caso afirmativo, ¿qué problemas presentaste?  
+     *(Respuesta abierta corta)*
+
+9. ¿Qué tan seguro/a te sientes al registrar **información financiera** (deudas, montos, pagos) en DebtGo?  
+   *(Escala: 1 = Nada seguro, 5 = Muy seguro)*
+
+10. ¿Recomendarías DebtGo a otras personas que gestionan deudas o brindan asesoría financiera?  
+    *(Opciones: Sí / No / Con reservas)*
+
+11. ¿Qué mejorarías en DebtGo para que sea más útil en tu gestión de deudas o en tu trabajo como consultor?  
+    *(Respuesta abierta)*
+
+**Experiencia general usando DebtGo**
+
+La percepción global es claramente positiva: el **60 %** de los encuestados calificó su experiencia general con **4/5** y el **40 %** con **5/5**. No se registraron puntajes menores a 4, lo que indica que, aun siendo un prototipo, DebtGo ya ofrece una experiencia satisfactoria para gestionar deudas personales o de negocio.
+
+![atobe1](assets/Chapter-8/analysis_tobe1.png)
+
+**Claridad de la sección “Learn More About DebtGo”**
+
+Respecto a la explicación de la plataforma en la landing, el **60 %** la evaluó con **4/5**, un **20 %** con **5/5** y otro **20 %** con **3/5**. En general, el contenido se percibe claro, aunque la presencia de respuestas en 3/5 sugiere oportunidades de mejora en la forma de explicar beneficios y casos de uso (por ejemplo, con ejemplos más concretos o visuales).
+
+![atobe2](assets/Chapter-8/analysis_tobe2.png)
+
+**Usabilidad de la interfaz web/móvil**
+
+La interfaz se percibe entre “aceptable” y “muy intuitiva”: el **40 %** calificó con **3/5**, el **20 %** con **4/5** y el **40 %** con **5/5**. Esto muestra una base sólida de usabilidad, pero también señala que parte de los usuarios aún encuentra zonas mejorables (flujo, distribución de elementos o feedback visual).
+
+![atobe3](assets/Chapter-8/analysis_tobe3.png)
+
+**Separación de vistas por rol (Consultor / Emprendedor)**
+
+El **80 %** indicó que la vista de su rol se mostró **claramente separada**, mientras que el **20 %** respondió **“Parcialmente”** y nadie marcó “No”. La separación entre el espacio del consultor y el del emprendedor se percibe mayormente exitosa, aunque conviene seguir refinando etiquetas, menús y mensajes para eliminar por completo cualquier ambigüedad.
+
+![atobe4](assets/Chapter-8/analysis_tobe4.png)
+
+**Utilidad del dashboard de deuda**
+
+En cuanto al dashboard (próximos pagos, saldo restante, progreso de deuda), el **80 %** lo valoró con **4/5** y el **20 %** con **5/5**. No hubo valoraciones por debajo de 4, lo que indica que el panel es uno de los puntos fuertes del producto: ayuda a entender la situación financiera de un vistazo y refuerza el valor de DebtGo como herramienta de control.
+
+![atobe5](assets/Chapter-8/analysis_tobe5.png)
+
+**Cobertura de funcionalidades clave**
+
+Sobre si el **registro de deudas, programación de pagos y notificaciones** cubren las necesidades actuales, el **80 %** respondió **“Sí”** y el **20 %** **“No”**. La mayoría percibe que la funcionalidad básica está cubierta, pero existe un segmento que demanda capacidades adicionales o mayor flexibilidad (por ejemplo, más tipos de recordatorios o configuraciones avanzadas).
+
+![atobe6](assets/Chapter-8/analysis_tobe6.png)
+
+**Frecuencia de uso esperada**
+
+El **40 %** de los participantes usaría DebtGo **a diario**, otro **40 %** lo haría **varias veces por semana** y el **20 %** **una vez por semana**. Nadie eligió “ocasionalmente”, lo que sugiere que la herramienta encaja en rutinas recurrentes y tiene potencial para convertirse en parte del hábito financiero de los usuarios.
+
+![atobe7](assets/Chapter-8/analysis_tobe7.png)
+
+**Problemas técnicos**
+
+El **100 %** de los encuestados respondió **“No”** a la pregunta sobre problemas técnicos (errores, vistas que no cargan, fallos al guardar). Esto refuerza que, en el estado actual del prototipo, la estabilidad y el desempeño básico son adecuados para las pruebas realizadas.
+
+![atobe8](assets/Chapter-8/analysis_tobe8.png)
+
+**Percepción de seguridad al registrar información financiera**
+
+En cuanto a la seguridad percibida al registrar información sensible, el **40 %** calificó con **4/5**, otro **40 %** con **5/5** y el **20 %** con **3/5**. En conjunto, la confianza es alta, pero la respuesta en 3/5 indica que hay espacio para comunicar mejor las medidas de seguridad (mensajes, iconografía, políticas visibles) y reforzar la sensación de protección de datos.
+
+![atobe9](assets/Chapter-8/analysis_tobe9.png)
+
+**Recomendación de DebtGo**
+
+El **80 %** de los encuestados **recomendaría DebtGo** a otras personas que gestionan deudas o brindan asesoría financiera, mientras que el **20 %** lo haría **“con reservas”**. Esto muestra una base sólida de promotores, aunque el grupo con reservas apunta a que todavía hay áreas por pulir antes de un lanzamiento a mayor escala.
+
+![atobe10](assets/Chapter-8/analysis_tobe10.png)
+
 
 ### 8.4.2. Re-scored and Re-prioritized Question Backlog
 
+A partir de los resultados de la encuesta de satisfacción y las mejoras sugeridas por los usuarios, se actualiza el Question Backlog priorizando las próximas líneas de experimentación para DebtGo:
+
+| # | Pregunta | Prioridad |
+|---|----------|-----------|
+| 1 | ¿Mejorará la comprensión y el control de las deudas añadir más gráficos y resúmenes visuales en el dashboard de DebtGo? | 1 |
+| 2 | ¿Aumentará la puntualidad de los pagos permitir una mayor personalización de los recordatorios (horarios, tono de urgencia y canal por deuda)? | 2 |
+| 3 | ¿Incrementará la adopción y el uso frecuente de DebtGo habilitar integraciones con bancos o billeteras digitales para registrar pagos automáticamente? | 3 |
+| 4 | ¿Mejorará la retención de usuarios y su educación financiera ofrecer rutas de aprendizaje y contenido educativo personalizados según el tipo de deuda? | 4 |
 
 ## 8.5. Continuous Learning
 
-
 ### 8.5.1. Shareback Session Artifacts: Learning Workflow
 
+**Figma (Prototipo)**
+
+El prototipo interactivo elaborado en Figma recoge las principales pantallas y flujos de uso de **DebtGo**, construidos a partir de los hallazgos de la investigación con usuarios. Este artefacto permite visualizar las distintas iteraciones de diseño, mostrando cómo se fueron refinando elementos como la landing page, el onboarding de deudas, el dashboard de pagos y la separación de vistas entre emprendedores y consultores. El prototipo se utilizó como herramienta de validación temprana, facilitando pruebas de usabilidad y la recolección de feedback antes del desarrollo definitivo de la aplicación.
+
+Link de Figma: <https://www.figma.com/design/zcaWF86uXVNEiBXaqxb312/Mobile?node-id=0-1&p=f&t=Z0xdTlV2Q4oXv6tf-0>
+
+![tobefigma](assets/Chapter-8/Figma_tobe.png)
+
+**Encuesta de Google Forms**
+
+La encuesta aplicada en Google Forms se utilizó para recoger feedback cuantitativo y cualitativo de usuarios potenciales y actuales de **DebtGo**. Mediante preguntas cerradas y abiertas sobre usabilidad, claridad de la información financiera, separación de roles (emprendedor/consultor) y desempeño general de la plataforma, fue posible validar hipótesis clave del Capítulo 8. Los resultados obtenidos orientaron decisiones de mejora, como el refinamiento de la landing, ajustes en el onboarding de deudas y la optimización del dashboard, asegurando que la evolución del producto responda a necesidades reales de los usuarios.
+
+Link de la encuesta: <https://docs.google.com/forms/d/e/1FAIpQLSfIO273VW5gKhneKQe5-WrZOsIsqRrQGnBl5n5x42yuAAnvXg/viewform?usp=preview>
+
+![tobeforms](assets/Chapter-8/Analisis_TOBE.png)
 
 ## 8.6. To-Be Software Platform Pre-launch
 
-
 ### 8.6.1. About-the-ProductIntro Video 
 
+![introvideo](assets/Chapter-8/About-the-Product-Intro-Video.png)
 
+Link de About-the-Product-Intro-Video: <https://www.youtube.com/watch?v=m73QDqMx1vo>
 
 # Conclusiones
 ## Conclusiones y recomendaciones
