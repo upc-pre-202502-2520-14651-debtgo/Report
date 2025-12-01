@@ -4314,9 +4314,21 @@ Escala de **Story Points**: 1 (muy pequeño), 2 (pequeño), 3 (mediano), 5 (gran
 
 ### 8.3.3. Pipeline-supported, Experiment-Driven To-Be Software Platform Lifecycle
 
-
 #### 8.3.3.1. To-Be Sprint Backlogs
 
+| Sprint | Sprint 1 |   |   |   |  |   |
+|--------|----------|---|---|---|---------------------------|-------------|
+| User Story |  | WorkItem/Task |  |  |  |  |
+| Id | Title | Id | Title | Description | Estimation (Story Points) | Assigned To |
+| UA01 | Registro e inicio de sesión simple | TK1 | Diseñar vistas de registro y login (web) | Diseñar formularios de registro y login en Angular con campos básicos y opción “Remember me”. | 2 | Anderson Gamarra |
+|  |  | TK2 | Implementar autenticación en backend | Crear endpoints de registro/login en Spring Boot con hashing de contraseña y generación de JWT. | 3 | Daniel Chávarri |
+| UA03 | Onboarding de deudas | TK3 | Diseñar formulario de alta de deuda | Definir layout del formulario para registrar deuda (monto, tasa, pago mínimo, frecuencia, fecha de inicio). | 2 | María Fernanda Peña |
+|  |  | TK4 | Implementar entidad y API de deudas | Modelar entidad deuda, repositorio y endpoints REST para crear y listar deudas por usuario. | 3 | Daniel Chávarri |
+|  |  | TK5 | Resumen de deuda en dashboard | Mostrar en el dashboard próximo pago, saldo restante y progreso de la deuda registrada. | 2 | Anderson Gamarra |
+| UA05 | Preferencias de notificación | TK6 | Diseñar pantalla de preferencias | Diseñar vista para activar/desactivar canales de notificación (email/SMS/push) y su frecuencia. | 2 | María Fernanda Peña |
+|  |  | TK7 | Implementar modelo y API de preferencias | Crear modelo de preferencias, endpoints REST y persistencia en el backend. | 3 | Daniel Chávarri |
+| SYS01 | Recuperación de contraseña | TK8 | Flujo backend “Olvidé mi contraseña” | Implementar generación de token temporal y envío de enlace de recuperación por correo. | 2 | Daniel Chávarri |
+|  |  | TK9 | Vista de restablecimiento de contraseña | Crear vista para ingresar nueva contraseña usando el enlace de recuperación. | 1 | Anderson Gamarra |
 
 #### 8.3.3.2. Implemented To-Be Landing Page Evidence
 
@@ -4335,15 +4347,84 @@ Escala de **Story Points**: 1 (muy pequeño), 2 (pequeño), 3 (mediano), 5 (gran
 
 ### 8.3.4. To-Be Validation Interviews
 
-
 #### 8.3.4.1. Diseño de Entrevistas.
+- **Formato:** semi-estructuradas (15–25 min), con tareas cortas (pensamiento en voz alta).
+- **Muestra:** 6–8 entrevistas por segmento (mín. 12 totales).
+- **Ética:** consentimiento informado; no recolectar datos sensibles (montos reales opcionales/anónimos).
 
+**Segmentos Objetivo**
+
+1) **Segmento Objetivo: Consultores financieros:**  
+   Estudiantes, jóvenes profesionales o jefes de hogar con pagos recurrentes (servicios, tarjetas, préstamos).
+
+2) **Segmento Objetivo: Gestores de Deudas y Emprendedores**  
+   Quienes administran pagos a proveedores/servicios y necesitan control de vencimientos.
+
+**Preguntas generales**
+
+- ¿Cuál es tu nombre completo?
+- ¿Qué edad tienes y en qué distrito resides?
+- ¿Cuál es tu rol principal en DebtGo (consultor financiero / emprendedor)?
+- ¿Qué tan familiarizado estás con aplicaciones de gestión de deudas o finanzas personales?
+
+**Segmento Objetivo: Consultores financieros:**
+1. Cuando ingresas a la landing, ¿la sección *“Learn More About DebtGo”* te ayuda a entender rápidamente qué ofrece la plataforma para consultores?
+2. ¿El proceso de registro/inicio de sesión para el rol de consultor te resultó sencillo? ¿Hubo algún paso confuso o redundante?
+3. Una vez dentro, ¿queda claro que estás en un espacio exclusivo para consultores y no en la vista de emprendedor?
+4. ¿Te resulta fácil localizar tu sección de **Profile** y **My Workspace**? ¿Qué elementos te ayudaron más a orientarte?
+5. Al publicar un servicio, ¿los campos de “título, descripción, precio y archivos” son claros y suficientes para explicar tu oferta?
+6. ¿Notas que los cambios se guardan sin errores ni demoras (por ejemplo, al editar perfil o crear un servicio)? ¿En qué momento sentiste mayor fricción técnica?
+7. En la bandeja de mensajes, ¿entiendes de inmediato cómo continuar una conversación con un cliente y revisar el historial del caso?
+8. ¿La separación entre tus métricas (ingresos, reservas, contactos) y la parte de gestión de deudas del emprendedor te parece clara?
+9. ¿Te sientes cómodo con la forma en que se presenta tu información profesional (foto, experiencia, horarios) a los emprendedores?
+10. Después de usar esta nueva versión, ¿qué tan probable es que uses DebtGo regularmente para ofrecer consultorías? ¿Qué mejora te animaría aún más a hacerlo?
+
+
+**Segmento Objetivo: Gestores de Deudas y Emprendedores** 
+1. En la landing actualizada, ¿la sección *“Learn More About DebtGo”* te deja claro en pocos segundos cómo te ayuda la plataforma con tus deudas y tu negocio?
+2. ¿El flujo para registrarte, elegir un plan (Basic/Premium) y entrar a tu cuenta te pareció más directo y entendible que en otras herramientas que conozcas?
+3. Una vez dentro de la aplicación, ¿identificas claramente qué partes son para gestionar tus deudas/pagos y cuáles están relacionadas con consultores financieros?
+4. ¿Te resulta sencillo registrar tu primera deuda (monto, tasa, pago mínimo) y entender cómo se reflejan en el panel de “Próximos pagos” y “Progreso de deuda”?
+5. ¿Sientes que la separación de vistas evita confusiones entre “gestionar mis deudas” y “contratar un consultor”? ¿En qué pantalla lo notaste más?
+6. Al buscar asesoría, ¿es fácil encontrar la sección donde se listan los consultores y sus servicios, sin mezclarse con tus paneles de deuda?
+7. ¿Percibes que la respuesta de la aplicación (guardar deudas, actualizar pagos, mostrar datos) es rápida y sin errores visibles?
+8. Desde tu perspectiva, ¿qué tan útil es la nueva estructura para ayudarte a tomar decisiones sobre tus deudas (por ejemplo, qué pagar primero o cuándo pedir ayuda)?
+9. ¿Qué tan confiable te parece DebtGo para manejar información financiera sensible luego de usar esta versión (diseño, mensajes de seguridad, navegación)?
+10. Si pudieras cambiar una cosa de esta versión To-Be para mejorar aún más tu experiencia, ¿cuál sería y por qué?
 
 #### 8.3.4.2. Registro de Entrevistas.
 
+**Segmento Objetivo: Consultores financieros:**
+
+**Entrevista #1**
+
+- Nombre: Maria Pilares Pocochuanca
+- Edad: 26 años
+- Distrito: Los Olivos
+- Duración: 5:05
+
+![image](assets/Chapter-6/Entrevista1_Segm1_validation.png)
+[Entrevista 1 - video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202214214_upc_edu_pe/EQ77TmeMzZxLv83IOvsXFtMBa3PM7kygfpVsY93jZnukZg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=ReJpXc)
+
+**Resumen**: María Pilares, consultora financiera independiente, considera que la nueva versión de DebtGo le permite gestionar mejor sus servicios y clientes. Percibe que la sección “Learn More About DebtGo” explica con mayor claridad la propuesta de valor, y que el espacio exclusivo para consultores evita confusiones con la vista del emprendedor. Destaca que publicar y editar sus servicios es ahora más ordenado y que la bandeja de mensajes le facilita continuar la comunicación con cada cliente sin perder el contexto de la asesoría
+
+
+**Segmento Objetivo: Gestores de Deudas y Emprendedores**
+
+**Entrevista #2**
+- Nombre: George Garcia Durand
+- Edad: 20 años
+- Distrito: Rimac
+- Duración: 4:57
+
+
+![image](assets/Chapter-2/George.png)
+
+[Entrevista 3 - video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202113279_upc_edu_pe/Ea0th-UAr9JBrljOSf-yPTIBE_7YfuXWx3s9Yz9cgeTWGQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=humfYy)
+
+**Resumen**: George Durand, emprendedor con varias deudas activas, percibe que DebtGo le ofrece una experiencia más clara para registrar y monitorear sus obligaciones financieras. Señala que la separación entre su panel de deudas y la zona de consultores le ayuda a entender dónde gestionar pagos y dónde buscar asesoría. Además, comenta que el nuevo flujo de registro y el panel con “Próximos pagos” y “Progreso de deuda” le permiten organizarse mejor y confiar más en la plataforma para tomar decisiones sobre sus finanzas.
 
 ## 8.4. Experiment Aftermath & Analysis
-
 
 ### 8.4.1. Analysis and Interpretation of Results
 
